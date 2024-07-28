@@ -1,0 +1,268 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "IS415 Geospatial Analytics and Applications",
+    "section": "",
+    "text": "In this web site, you will find all course materials here.\nInstructor: Dr. Kam Tin Seong, Associate Professor of Information Systems (Practice)\nPiazza link.\nConsultation booking link.\nVirtual Meeting Room: Zoom\n\n\n\nSection\nTime\nVenue\n\n\n\n\nG1\n8:15-11:30\nSCIS1 SR 3-2\n\n\n\n\n\nFor the next 12 weeks, your learning journey will be very bumpy, especially come to R programming\n\nLearning R can be difficult at first—it’s like learning a new language, just like Spanish, French, or Chinese. Hadley Wickham—the chief data scientist at RStudio and the author of some amazing R packages you’ll be using like ggplot2 — made this wise observation:\n\nIt’s easy when you start out programming to get really frustrated and think, “Oh it’s me, I’m really stupid,” or, “I’m not made out to program.” But, that is absolutely not the case. Everyone gets frustrated. I still get frustrated occasionally when writing R code. It’s just a natural part of programming. So, it happens to everyone and gets less and less over time. Don’t blame yourself. Just take a break, do something fun, and then come back and try again later.\n\nEven experienced programmers find themselves bashing their heads against seemingly intractable errors.\n\nIf you’re finding yourself taking way too long hitting your head against a wall and not understanding, take a break, talk to classmates, and don’t hesitate to approach me.\nThe students who have a bad time in this course are the ones who don’t work with one another to learn. We are a learning community, and we should help each other to learn.\nIf you understand something and someone is struggling with it, try and help them. If you are struggling, take a breath, and try to pinpoint what you are struggling with.\nOur goal is to be better programmers each day, not to be the perfect programmer. There’s no such thing as a perfect programmer. I’ve been learning new things almost every day.\nI promise you can succeed in this class as long as you are willing to learn, practice, be open minded and don’t give up easily.\n\n\n\n\n\n\nAll acts of academic dishonesty (including, but not limited to, plagiarism, cheating, fabrication, facilitation of acts of academic dishonesty by others, unauthorized possession of exam questions, or tampering with the academic work of other students) are serious offences. All work (whether oral or written) submitted for purposes of assessment must be the student’s own work. Penalties for violation of the policy range from zero marks for the component assessment to expulsion, depending on the nature of the offense. When in doubt, students should consult the instructors of the course. Details on the SMU Code of Academic Integrity may be accessed at http://www.smuscd.org/resources.html\n\n\n\nCourse materials obtained during your course of study at SMU are meant for personal use only, namely, for the purposes of studying and research. You are strictly not permitted to make copies of or print additional copies or distribute such copies of the course materials or any parts thereof, for commercial gain or exchange. For example, offering such materials on the Internet through CourseHero, Carousell and the like, is strictly prohibited.\nThe selling of these materials and/or any copies thereof are strictly prohibited under Singapore copyright laws. Printed materials and electronic materials are both protected by copyright laws. All students are subject to Singapore copyright laws and must strictly adhere to SMU’s procedures and requirements relating to copyright.\nPlease also note that for some materials, the publishers may specifically state that each copy is for the personal use of one individual only and no further reprographic reproduction is allowed, including for personal use. These restrictions are spelt out clearly on these specific sets of resources and students are required to adhere to these rules.\nStudents who infringe any of the aforesaid rules, laws and requirements shall be liable to disciplinary action by SMU. In addition, such students may also leave themselves open to suits by copyright owners who are entitled to take legal action against persons who infringe their copyright.\nWe strongly urge all students to respect the copyright laws and abide by SMU’s procedures and requirements relating to copyright.\n\n\n\nSMU strives to make learning experiences accessible for all. If you anticipate or experience physical or academic barriers due to disability, please let the instructor know immediately. You are also welcome to contact the university’s disability support team if you have questions or concerns about academic accommodations:included@smu.edu.sg\nPlease be aware that the accessible tables in our seminar room should remain available for students who require them.\n\n\n\nAs part of emergency preparedness, Instructors may conduct lessons online via the Zoom platform during the term, to prepare students for online learning. During an actual emergency, students will be notified to access the Zoom platform for their online lessons. The class schedule will mirror the current face-to-face class timetable unless otherwise stated."
+  },
+  {
+    "objectID": "index.html#words-of-encouragement",
+    "href": "index.html#words-of-encouragement",
+    "title": "IS415 Geospatial Analytics and Applications",
+    "section": "",
+    "text": "For the next 12 weeks, your learning journey will be very bumpy, especially come to R programming\n\nLearning R can be difficult at first—it’s like learning a new language, just like Spanish, French, or Chinese. Hadley Wickham—the chief data scientist at RStudio and the author of some amazing R packages you’ll be using like ggplot2 — made this wise observation:\n\nIt’s easy when you start out programming to get really frustrated and think, “Oh it’s me, I’m really stupid,” or, “I’m not made out to program.” But, that is absolutely not the case. Everyone gets frustrated. I still get frustrated occasionally when writing R code. It’s just a natural part of programming. So, it happens to everyone and gets less and less over time. Don’t blame yourself. Just take a break, do something fun, and then come back and try again later.\n\nEven experienced programmers find themselves bashing their heads against seemingly intractable errors.\n\nIf you’re finding yourself taking way too long hitting your head against a wall and not understanding, take a break, talk to classmates, and don’t hesitate to approach me.\nThe students who have a bad time in this course are the ones who don’t work with one another to learn. We are a learning community, and we should help each other to learn.\nIf you understand something and someone is struggling with it, try and help them. If you are struggling, take a breath, and try to pinpoint what you are struggling with.\nOur goal is to be better programmers each day, not to be the perfect programmer. There’s no such thing as a perfect programmer. I’ve been learning new things almost every day.\nI promise you can succeed in this class as long as you are willing to learn, practice, be open minded and don’t give up easily."
+  },
+  {
+    "objectID": "index.html#other-important-information",
+    "href": "index.html#other-important-information",
+    "title": "IS415 Geospatial Analytics and Applications",
+    "section": "",
+    "text": "All acts of academic dishonesty (including, but not limited to, plagiarism, cheating, fabrication, facilitation of acts of academic dishonesty by others, unauthorized possession of exam questions, or tampering with the academic work of other students) are serious offences. All work (whether oral or written) submitted for purposes of assessment must be the student’s own work. Penalties for violation of the policy range from zero marks for the component assessment to expulsion, depending on the nature of the offense. When in doubt, students should consult the instructors of the course. Details on the SMU Code of Academic Integrity may be accessed at http://www.smuscd.org/resources.html\n\n\n\nCourse materials obtained during your course of study at SMU are meant for personal use only, namely, for the purposes of studying and research. You are strictly not permitted to make copies of or print additional copies or distribute such copies of the course materials or any parts thereof, for commercial gain or exchange. For example, offering such materials on the Internet through CourseHero, Carousell and the like, is strictly prohibited.\nThe selling of these materials and/or any copies thereof are strictly prohibited under Singapore copyright laws. Printed materials and electronic materials are both protected by copyright laws. All students are subject to Singapore copyright laws and must strictly adhere to SMU’s procedures and requirements relating to copyright.\nPlease also note that for some materials, the publishers may specifically state that each copy is for the personal use of one individual only and no further reprographic reproduction is allowed, including for personal use. These restrictions are spelt out clearly on these specific sets of resources and students are required to adhere to these rules.\nStudents who infringe any of the aforesaid rules, laws and requirements shall be liable to disciplinary action by SMU. In addition, such students may also leave themselves open to suits by copyright owners who are entitled to take legal action against persons who infringe their copyright.\nWe strongly urge all students to respect the copyright laws and abide by SMU’s procedures and requirements relating to copyright.\n\n\n\nSMU strives to make learning experiences accessible for all. If you anticipate or experience physical or academic barriers due to disability, please let the instructor know immediately. You are also welcome to contact the university’s disability support team if you have questions or concerns about academic accommodations:included@smu.edu.sg\nPlease be aware that the accessible tables in our seminar room should remain available for students who require them.\n\n\n\nAs part of emergency preparedness, Instructors may conduct lessons online via the Zoom platform during the term, to prepare students for online learning. During an actual emergency, students will be notified to access the Zoom platform for their online lessons. The class schedule will mirror the current face-to-face class timetable unless otherwise stated."
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Where should the next new business outlet be located in order to optimise the profit? What are the location factors that affect the resale prices of HDB housing units? Which are the economic or service activities such as IT professional firms, car workshops, fast food chains (ie. KFC, McDonalds), coffee outlets (Starbucks, Ya Kun Kaya Toast, Toast Box) that tend to be located close to one another and which are the ones that tend to be a distance apart? Do these observed patterns and processes occur at random or are they being constrained by geographical factors? These and many other related questions are the challenges faced by data scientists and data analysts today especially when geographical data are used.\nGeospatial analytics offers the solutions to these questions by providing data scientists and analysts a problem-driven and data-centric analysis framework focusing on discovering actionable understanding from geographically referenced data. It makes extensive use of geospatial data wrangling, geoprocessing, spatial statistical, geospatial machine learning and spatial data visualisation techniques to support decision- and strategy-making.\nThis course provides students with an introduction to the concepts, principles and methods of geospatial analytics and their practical applications of geospatial analytics in real world operations. Emphasis will be placed on\n\nperforming geospatial data science tasks such as importing, tidying, manipulating, transforming, projecting and processing geospatial data programmatically,\nvisualising, analysing and describing geographical patterns and process using appropriate geovisualisation and thematic mapping techniques,\nConducting geospatial analysis by using appropriate spatial statistics and machine learning methods and\nbuilding web-based geospatial analytics applications."
+  },
+  {
+    "objectID": "syllabus.html#synopsis",
+    "href": "syllabus.html#synopsis",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Where should the next new business outlet be located in order to optimise the profit? What are the location factors that affect the resale prices of HDB housing units? Which are the economic or service activities such as IT professional firms, car workshops, fast food chains (ie. KFC, McDonalds), coffee outlets (Starbucks, Ya Kun Kaya Toast, Toast Box) that tend to be located close to one another and which are the ones that tend to be a distance apart? Do these observed patterns and processes occur at random or are they being constrained by geographical factors? These and many other related questions are the challenges faced by data scientists and data analysts today especially when geographical data are used.\nGeospatial analytics offers the solutions to these questions by providing data scientists and analysts a problem-driven and data-centric analysis framework focusing on discovering actionable understanding from geographically referenced data. It makes extensive use of geospatial data wrangling, geoprocessing, spatial statistical, geospatial machine learning and spatial data visualisation techniques to support decision- and strategy-making.\nThis course provides students with an introduction to the concepts, principles and methods of geospatial analytics and their practical applications of geospatial analytics in real world operations. Emphasis will be placed on\n\nperforming geospatial data science tasks such as importing, tidying, manipulating, transforming, projecting and processing geospatial data programmatically,\nvisualising, analysing and describing geographical patterns and process using appropriate geovisualisation and thematic mapping techniques,\nConducting geospatial analysis by using appropriate spatial statistics and machine learning methods and\nbuilding web-based geospatial analytics applications."
+  },
+  {
+    "objectID": "syllabus.html#course-objectives",
+    "href": "syllabus.html#course-objectives",
+    "title": "Syllabus",
+    "section": "Course Objectives",
+    "text": "Course Objectives\nUpon completion of the course, students will be able to:\n\nProvide accurate explanation of the mathematical and input data requirements of the analysis method(s) used,\nImport, extract, process, transform and assemble geospatial analytical sandbox programmatically to meet the analysis needs,\nApply appropriate geospatial analysis methods in addressing specific analysis tasks,\nCommunicate the analysis procedures in a reproducible manner,\nCommunicate the analysis results effectively and in an easy to understand manner with the help of appropriate geo- and data visualisation techniques, and\nDesign and implement web-enabled geospatial analytics applications."
+  },
+  {
+    "objectID": "syllabus.html#competencies",
+    "href": "syllabus.html#competencies",
+    "title": "Syllabus",
+    "section": "Competencies",
+    "text": "Competencies\n\nDefining Geospatial Analytics and describing the applications of geospatial analytics by using real-world examples.\nExplaining the differences between Geospatial Analytics and Geographic Information Systems (GIS).\nImporting, wrangling and transforming aspatial data by using tidyverse family of packages\nImporting, wrangling and transforming geographical data by sing sf package.\nGeocoding and georeferencing geographical data programmatically.\nPerforming geoprocessing operations programmatically by using sf packages.\nPerforming Exploratory Data Analysis (EDA) using ggplot2 and Confirmatory Data Analysis using ggstatsplot.\nPreparing cartographic quality analytical maps by using tmap package.\nVisualising and analysing multivariate geospatial data using corrplot and heatmaply packages.\nExplaining the principles and methods of spatial point patterns and complete spatial randomness.\nPerforming spatial point pattern analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nExplaining the principles and methods of spatial weights.\nComputing spatial weights by using appropriate functions of spdep package.\nExplaining the concepts of spatial autocorrelation, spatial clusters, hot spot and cold spot areas.\nComputing localised geospatial statistics by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nExplaining the principles of explanatory modelling and methods of geographically weighted regression.\nCalibrating geographically weighted regression models by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nExplaining the concept of geographic segmentation and methods of spatially constrained clustering.\nPerforming spatially constrained cluster analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nExplaining the concept of spatial dependency and methods of spatial interpolation.\nPerforming spatial interpolation by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nDefining geographic accessibility and explaining the methods of accessibility analysis.\nPerforming geographic accessibility analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nDesigning geospatial application programmatically by using free and open source software and packages (i.e. R, R packages and Shiny)."
+  },
+  {
+    "objectID": "syllabus.html#prerequisitesco-requisites",
+    "href": "syllabus.html#prerequisitesco-requisites",
+    "title": "Syllabus",
+    "section": "Prerequisites/Co-requisites",
+    "text": "Prerequisites/Co-requisites\nNIL. (But a basic working knowledge of computer and numeracy will be assumed. Students are expected to understand Windows-based operating systems and to manage files and disk space responsibly. More importantly, students taking this course must be willing to learn R programming.)"
+  },
+  {
+    "objectID": "syllabus.html#course-assessments",
+    "href": "syllabus.html#course-assessments",
+    "title": "Syllabus",
+    "section": "Course Assessments",
+    "text": "Course Assessments\nAssessment Categories Weightage (%)\n\nClass Participation and In-class Exercise 25%\nTake-Home Exercise (15% x 3) 45%\nGeospatial Analytics Project 30%"
+  },
+  {
+    "objectID": "syllabus.html#course-assessment-details",
+    "href": "syllabus.html#course-assessment-details",
+    "title": "Syllabus",
+    "section": "Course Assessment Details",
+    "text": "Course Assessment Details\n\nClass Participation\nA strict requirement for each class meeting is to complete the assigned readings and to try out the hands-on exercises before coming to class. Readings will be provided from the textbook on technical information and from provided documents and articles on real-world applications of geospatial analytics. Students are required to review the recommended readings and class exercises before coming to class. Without preparation, the learning and discussions would not be as meaningful. Student sharing of insights from readings and hands-on exercises of assigned materials in class participation will form a large part of the learning in this course. Students may also be quizzed in class and thereby contribute to class participation.\n\n\nTake-home Exercise\nThere are three take-home exercises that are due throughout the term. They aim to provide students the opportunities to apply the methods learned in class by working through mini real world cases.\nStudents may work together to help one another with computer or geospatial issues and discuss the materials that constitute the take-home exercise. However, each student is required to prepare and submit the take-home exercise (including any computer work) on their own. Cheating is strictly prohibited. Cheating includes but not limited to: plagiarism and submission of work that is not the student’s\n\nAY2021-22 Sample Take-home Exercises\n\nTake-home Exercise 1\n\n\n\n\nGeospatial Analytics Project\nThe purpose of the Geospatial Analytics Project is to provide students first-hand experience on collecting, processing and analysing spatial data using real world data. A project may involve creating geospatially enabled business data and subsequently analysing these data for business strategic or market analysis. Alternatively, a project may be in the form of application development by integrating analytical tools or models within a web framework. Students are encouraged to focus on research topics that are relevant to their field of study.\nThe project is team work. Students are required to form a project team of 3 members by the third week of the academic term. Each project teams must start thinking about their project ideas between week 4 and week 7. They are expected to discuss their project topic and scope of works with the instructor during the weeks too. A project website will be prepared and submitted to the instructor for approval by the end of week 8.\nAll project teams will give a postal presentation outlining the database design and implementation process, analytical methods used and findings of their project in week 14. Students are also required to prepare a project report or research paper of not more than 15 pages (excluding maps, figures, and tables) for submission by week 14. Additional materials will be distributed in class to assist students with topics selection, project design, postal presentation, and project report."
+  },
+  {
+    "objectID": "R.html",
+    "href": "R.html",
+    "title": "R Resources",
+    "section": "",
+    "text": "This page provides links to a selected resources to learn modern R packages, especially those related to tidyverse framework."
+  },
+  {
+    "objectID": "R.html#getting-started-with-r",
+    "href": "R.html#getting-started-with-r",
+    "title": "R Resources",
+    "section": "Getting Started with R",
+    "text": "Getting Started with R\n\nR for Data Science by Garrett Grolemund and Hadley Wickham.\nModern R with the tidyverse by Bruno Rodrigues. Chapter 2 provides a detail discussion on R data objects.\nBrendan R. E. Ansell Introduction to R - tidyverse\nThe Comprehensive Guide to Installing R Packages from CRAN, Bioconductor, GitHub and Co.. This article provides useful tips on how to install R packages from different sources.\nR Workflow"
+  },
+  {
+    "objectID": "R.html#blog-post",
+    "href": "R.html#blog-post",
+    "title": "R Resources",
+    "section": "Blog post",
+    "text": "Blog post\n\nR Workflow from Statistical Thinking."
+  },
+  {
+    "objectID": "lesson.html",
+    "href": "lesson.html",
+    "title": "Weekly Lesson Plan",
+    "section": "",
+    "text": "Week\nDate\nTopic\nRemark\n\n\n\n\n1\n8/1/2024\nLesson 1: Introduction to Geospatial Analytics\n\n\n\n2\n15/1/2024\nLesson 2: GeoVisualisation and Analytical Mapping\n\n\n\n3\n22/1/2024\nLesson 3: Spatial Point Patterns Analysis\n\n\n\n4\n29/1/2024\nLesson 4: Spatial Weights and Applications\n\n\n\n5\n5/2/2024\nLesson 5: Measures of Global and Local Spatial Association\n\n\n\n6\n14/2/2024\nWorkshop on Shiny for Building Web-enabled Geospatial Analytics Application\nReplacement lesson. Venue: SOE/SCIS2 Seminar Room 3-3, Time: 7:00-10:00pm\n\n\n7\n19/2/2024\nLesson 6: Emerging Emerging Hot Spot Analysis (EHSA)\n\n\n\n8\n26/2/2024\nRecess week\n\n\n\n9\n4/3/2024\nLesson 7: Geographic Segmentation\n\n\n\n10\n11/3/2024\nLesson 8: Geographically Weighted Regression\n\n\n\n11\n18/3/2024\nLesson 9: Geographically Weighted Predictive Modelling\n\n\n\n12\n25/3/2024\nLesson 10: Modelling Geographic of Accessibility\n\n\n\n13\n1/4/2024\nLesson 11: Spatial Interaction Models & Lesson 12: The Epilogue\n\n\n\n14\n8/4/2024\nTownhall Presentation\n\n\n\n15"
+  },
+  {
+    "objectID": "GAproject.html",
+    "href": "GAproject.html",
+    "title": "Geospatial Analytics Project",
+    "section": "",
+    "text": "The purpose of the geospatial analytics project is to provide students first hand experience on building web-based geospatial analytics tool by integrating open source web mapping API(s), data visualisation API(s) and geospatial analysis libraries. You will also learn how to collecting, processing and analysing spatially related issues using real world data. Students are encouraged to focus on research topics that are relevant to their field of study.\nThe project is team work. Students are required to form a project team of 2-3 members by the first week of the academic term. Each project teams must start thinking about their project ideas after the first lesson. They are expected to discuss their project topic and scope of works with the instructor before the end of Week 8. A project proposal in the form website edited using Quarto and publish on Netlify will be prepared and the link must be provided on eLearn by the end of Week 8.\nThe project proposal should describe the motivation of the project, problems or issues that the project will address, the relevant related work, the approach the team plans to take to solve the problem, and early prototypes or storyboards. The project teams should take advantage of this proposal as a chance to get feedback on the direction of the project from their peers.\nStudents are required to update their project websites with all the details including the final application, user guide, poster, practice research paper by the end of week 14."
+  },
+  {
+    "objectID": "GAproject.html#overview",
+    "href": "GAproject.html#overview",
+    "title": "Geospatial Analytics Project",
+    "section": "",
+    "text": "The purpose of the geospatial analytics project is to provide students first hand experience on building web-based geospatial analytics tool by integrating open source web mapping API(s), data visualisation API(s) and geospatial analysis libraries. You will also learn how to collecting, processing and analysing spatially related issues using real world data. Students are encouraged to focus on research topics that are relevant to their field of study.\nThe project is team work. Students are required to form a project team of 2-3 members by the first week of the academic term. Each project teams must start thinking about their project ideas after the first lesson. They are expected to discuss their project topic and scope of works with the instructor before the end of Week 8. A project proposal in the form website edited using Quarto and publish on Netlify will be prepared and the link must be provided on eLearn by the end of Week 8.\nThe project proposal should describe the motivation of the project, problems or issues that the project will address, the relevant related work, the approach the team plans to take to solve the problem, and early prototypes or storyboards. The project teams should take advantage of this proposal as a chance to get feedback on the direction of the project from their peers.\nStudents are required to update their project websites with all the details including the final application, user guide, poster, practice research paper by the end of week 14."
+  },
+  {
+    "objectID": "GAproject.html#project-theme",
+    "href": "GAproject.html#project-theme",
+    "title": "Geospatial Analytics Project",
+    "section": "Project Theme",
+    "text": "Project Theme\nStudents are required to choose one of the following theme to develop the GeoSpaital Analytics Project:\n\nSpatial Point Patterns Analysis\nExploratory Spatial Data Analysis\nAnalytical Regionalisation and Geographical Segmentation\nGeographically Weighted Regression Models\nFlow and Movement Data Analytics\nGeographical Accessibility and Spatial Interaction Models\n\nPlease feel free to approach me for more details."
+  },
+  {
+    "objectID": "GAproject.html#potentially-useful-data-source",
+    "href": "GAproject.html#potentially-useful-data-source",
+    "title": "Geospatial Analytics Project",
+    "section": "Potentially Useful Data Source",
+    "text": "Potentially Useful Data Source\n\nNational Statistical Office Thailand.\nPhilippine Statistics Authority\nVietnam Provincial Competitiveness Index\nGENERAL STATISTICS OFFICE, Vietnam.\nMyanmar Information Management Unit\nArmed Conflict Location & Event Data Project (ACLED).\nIndonesia Geospatial"
+  },
+  {
+    "objectID": "GAproject.html#project-milestone",
+    "href": "GAproject.html#project-milestone",
+    "title": "Geospatial Analytics Project",
+    "section": "Project Milestone",
+    "text": "Project Milestone\n\nBrainstorming project ideas and consulting with course instructor between Week 2 to Week 7.\nEditing and publishing project proposal by the end of Week 8.\nSubmission of project poster: 4th April 2024 by 11:59pm (mid-night)\nTownhall presentation: 8th April 2024 (Monday), at 12:00-2:00pm. Venue: LKSLIB Basement concourse. Students are required to be at the venue latest by 11:30am to setup your project poster.\nSubmission of updated project webpage, final application, user guide, project poster and artifacts: 14th April 2024 by 11:59pm (mid-night)"
+  },
+  {
+    "objectID": "GAproject.html#project-deliverables",
+    "href": "GAproject.html#project-deliverables",
+    "title": "Geospatial Analytics Project",
+    "section": "Project Deliverables",
+    "text": "Project Deliverables\n\nProject Website\n\nProject Github\nAt the beginning of the project, project teams are required to create a project Github. The project Github should include all the materials used to develop the project and the written materials such as proposal, poster and practice research paper. It must be used to maintain a complete project versioning including the application and project documents. The Github link must be included in the project proposal. By the end of the project, the project team must pack the final version of the Github repository and upload onto eLearn for final submission. The Github link also must be provided on eLearn.\n\n\nProject Website\nEach project team are required to create the project website by using Quatro. It will be disseminated by using Netfity web service.\nAs a first step, you should create a project summary at the course wiki that includes:\n\nThe title of your project,\nA short description of not more than 350 word summarising the motivation, objectives, main features of the application your team are going to build, and\nThe project proposal. This should in a webblog page (remember to provide a link at eLearn).\n\n\n\n\nPoster\nThe project poster should provide an overview of your project. It should include, but not limited to the following information:\n\nIssues and problems - A clear statement of the issues or/and problems your project addresses.\nMotivation - An explanation of why the issues and/or problems are interesting and what make them difficult to solve.\nApproach - A description of the techniques or algorithms you used to solve the problem.\nResults - Screenshots and a working demo of the system you built.\nFuture Work - An explanation of how the work could be extended.\n\nThe dimensions for the poster must conform to the International Standards Organization (ISO) poster size format (A1).\n\nSize = ISO A1 (594 × 841mm or 23.39 × 33.11inci)\nResolution = 300dpi or above\nFile format = jpeg\n\nPlease ensure that the poster is in high resolution.\nThe poster will be considered as a final deliverable. So don’t forget to apply good visual design principles to both your poster and project report.\nNote: The course instructor will be responsible for printing your poster. You are required to upload your poster onto the project Dropbox of eLearn according to the submission deadline provided on the project milesotne sub-section.\n\n\nPeer Evaluation\nThis component is not a typical peer evaluation of project. For Geospatial Analytics Project, students are required to evaluate at least three applications prepared by your coursemate during the townhall presentation session. A peer evaluation form will be provided. Each team only need to submit one report.\n\n\nFinal Deliverables\nThe final deliverable will include:\n\nupdated project webpage.\nartifact including the ShinyApp, data and all r modules.\nUser Guide - Step-by-step guide on how to use the Shiny Applications.\nproject poster"
+  },
+  {
+    "objectID": "GAproject.html#grading",
+    "href": "GAproject.html#grading",
+    "title": "Geospatial Analytics Project",
+    "section": "Grading",
+    "text": "Grading\nThe geospatial analytics project will account for 30% of your final grade in the course. The distribution of marks for each stage of the project are as follows:\n\nProject website 25%\nPoster 10%\nPeer Evaluation 15%\nShinyApp 50%\n\nThe course instructor will consider strongly the novelty of the idea (If it has never been done before, you will get lots of credit!), how it addresses the problem at hand, the methodology you employ in doing the research, and your technical skill in implementing the idea.\nIn small group projects, each person will be graded individually. A good group project is a system consisting of a collection of well defined subsystems. Each subsystem should be the responsibility of one person and be clearly identified as their project. A good criteria for whether you should work in a group is whether the system as a whole is greater than the sum of its parts!\n\nGrading criteria for poster\nThe poster will be graded based on the following criteria:\n\nClear communication of key aspects of solution\nClear communication of design approaches\nClear communication of arguments for proposed solution\nCraft quality of the solution"
+  },
+  {
+    "objectID": "GAproject.html#reference",
+    "href": "GAproject.html#reference",
+    "title": "Geospatial Analytics Project",
+    "section": "Reference",
+    "text": "Reference\n\nPaula Moraga (2017) “SpatialEpiApp : A Shiny web application for the analysis of spatial and spatio-temporal disease data”, Spatial and Spatio-temporal Epidemiology, 23, pp. 47-57. Access using SMU e-journal.\nJavier De La Hoz-M, Susana Mendes & María José Fernandez-Gómez (2022) “GeoWeightedModel : An R-Shiny package for Geographically Weighted Models”, SoftwareX, 20.\nMario Figueira, David Conesa & Antonio L´opez-Quílez (2024) “A shiny R app for spatial analysis of species distribution models”, Ecological Informatics, 80."
+  },
+  {
+    "objectID": "GAproject.html#learning-from-past-project",
+    "href": "GAproject.html#learning-from-past-project",
+    "title": "Geospatial Analytics Project",
+    "section": "Learning from past project",
+    "text": "Learning from past project\n\nMust review project\n\nSGSAS: Simple Geo-Spatial Analysis using R-Shiny especially gwr sub-module of the application.\n\n\n\nOthers\n\nAY2018-19 Term 2\n\nSignal and the Shiny application.\n\nAY2020-2021 Term 1\n\nJ-Town and the Shiny Application\n\nAY2021-2022 Term 1\n\nGroup 1: Spatial Interaction Model\nGroup 3: Regionalisation in Reach\nGroup 5: Geographically Weighted Regression\nGroup 7: GeoeXplorer, a web-enabled geospatial analytics toolkit for detecting and visualising global spatial autocorrelation and local clusters and outliers from univariate geographically referenced data.\nGroup 8: Spatial Pointers, a web-enabled Spatial Point Patterns Analysis toolkit for visualising and analysing both spatial and network constrained point patterns.\n\nAY2022-2023 Term 1\nGroup 1: This is FINE: Fire INcidents Explorer\nGroup 2: Spatial Bros\nGroup 3: Analysis of Resale HDB Prices\nGroup 4: GeoNinjas\nGroup 5: Transit-Ability\nGroup 6: CrimeIndia\nGroup 7: The Right Space\nGroup 8: CarSpot: Geospatial Parking Analysis!!\nGroup 9: Dr Go Where\nGroup 10: Spatial Point Pattern Analysis on Seoul’s healthcare accessibility\nGroup 11: Regress Rangers\nGroup 12: Spatial Point Pattern Analysis of Airbnb listings in Beijing"
+  },
+  {
+    "objectID": "GAproject.html#project-links",
+    "href": "GAproject.html#project-links",
+    "title": "Geospatial Analytics Project",
+    "section": "Project Links",
+    "text": "Project Links\n\nGroup 2: CrimeWatch - Vietnam Law and Order\nGroup 3: SimplyGEO-Analysing Push-Pull Factors for Public Bus Demand in Singapore Using Spatial Econometric Interaction Modelling. The project website is well designed, providing a clear and comprehensive description of the project, UI design, and User Guide. The project minutes were well documented.\nGroup 4: ELDANALYZE: Simple Geospatial Analysis Using Shiny\nGroup 5: Culinary Crossroads\nGroup 6: RecycleSG\nGroup 7: WhatTown. The Shiny application is very well designed. Able to provide a collection of useful UIs for calibrating the Accessibility models and Spatial Point Patterns Analysis.\nGroup 8: Quake Quest!\nGroup 9: Happy Hideouts\nGourp 10: ThaiRoad - Spatial Points Pattern Analysis on Road Accidents in Thailand\nGroup 11: HealthGeo Cambodia\nGroup 12: Enhancing Urban Living\nGroup 13: Project Daylight\nGroup 14: GeoMommy"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "git.html",
+    "href": "git.html",
+    "title": "Git and Github",
+    "section": "",
+    "text": "Happy Git and GitHub for the useR. Highly recommended to beginners."
+  },
+  {
+    "objectID": "git.html#book",
+    "href": "git.html#book",
+    "title": "Git and Github",
+    "section": "",
+    "text": "Happy Git and GitHub for the useR. Highly recommended to beginners."
+  },
+  {
+    "objectID": "git.html#gitgithub",
+    "href": "git.html#gitgithub",
+    "title": "Git and Github",
+    "section": "git/github",
+    "text": "git/github\n\ngithub doc\nGitHub and RStudio"
+  },
+  {
+    "objectID": "git.html#blog-post",
+    "href": "git.html#blog-post",
+    "title": "Git and Github",
+    "section": "Blog post",
+    "text": "Blog post\n\nGetting starting with git and GitHub using RStudio\ngit\nTransform a folder as git project synchronized on Github or Gitlab\nRecovering from common Git predicaments\ngit in RStudio\nSolving git(GitHub) token issue"
+  },
+  {
+    "objectID": "Quarto.html",
+    "href": "Quarto.html",
+    "title": "All About Quarto",
+    "section": "",
+    "text": "Getting Started\nRStudio IDE\nUsing R\nHTML Basics"
+  },
+  {
+    "objectID": "Quarto.html#overview",
+    "href": "Quarto.html#overview",
+    "title": "All About Quarto",
+    "section": "",
+    "text": "Getting Started\nRStudio IDE\nUsing R\nHTML Basics"
+  },
+  {
+    "objectID": "Quarto.html#create-websites-and-blogs",
+    "href": "Quarto.html#create-websites-and-blogs",
+    "title": "All About Quarto",
+    "section": "Create websites and blogs",
+    "text": "Create websites and blogs\n\nCreating a Website\nWebsite Navigation\nDocument Listings"
+  },
+  {
+    "objectID": "Quarto.html#authoring-guide",
+    "href": "Quarto.html#authoring-guide",
+    "title": "All About Quarto",
+    "section": "Authoring Guide",
+    "text": "Authoring Guide\n\nMarkdown Basics\nFigures\nTables\nDiagrams\nCitations & Footnotes\nCross References\nArticle Layout"
+  },
+  {
+    "objectID": "Quarto.html#useful-web-resources",
+    "href": "Quarto.html#useful-web-resources",
+    "title": "All About Quarto",
+    "section": "Useful web resources",
+    "text": "Useful web resources\n\nAwesome Quarto. This github repository provides a comprehensive listing of Quarto resources. It should be the second stop (after Quarto homepage) if you need to look for revelent materials about Quarto."
+  },
+  {
+    "objectID": "ShinyResources.html",
+    "href": "ShinyResources.html",
+    "title": "Shiny Resources",
+    "section": "",
+    "text": "Hadley Wickham (2020) Mastering Shiny. Everything you need to know about Shiny can be found here. It is not an easy to read book but worth investing time and effort to read.\nShiny from R Studio\nLearn Shiny\nFunction reference\nThe Shiny Cheat sheet\nColin Fay, Sébastien Rochette, Vincent Guyader, Cervan Girard (2020) Engineering Production-Grade Shiny Apps\nDavid Granjon (2020) Outstanding User Interfaces with Shiny\nHow to Build a Shiny Application from Scratch\nShiny 入門\n\n\n\n\n\nGallery\nShiny Contest Winners 2019 - Full List\nFifteen New Zealand government Shiny web apps\nIntroducing the New Zealand Trade Intelligence Dashboard"
+  },
+  {
+    "objectID": "ShinyResources.html#shiny-web-based-visual-analytics-development-tool-in-r",
+    "href": "ShinyResources.html#shiny-web-based-visual-analytics-development-tool-in-r",
+    "title": "Shiny Resources",
+    "section": "",
+    "text": "Hadley Wickham (2020) Mastering Shiny. Everything you need to know about Shiny can be found here. It is not an easy to read book but worth investing time and effort to read.\nShiny from R Studio\nLearn Shiny\nFunction reference\nThe Shiny Cheat sheet\nColin Fay, Sébastien Rochette, Vincent Guyader, Cervan Girard (2020) Engineering Production-Grade Shiny Apps\nDavid Granjon (2020) Outstanding User Interfaces with Shiny\nHow to Build a Shiny Application from Scratch\nShiny 入門\n\n\n\n\n\nGallery\nShiny Contest Winners 2019 - Full List\nFifteen New Zealand government Shiny web apps\nIntroducing the New Zealand Trade Intelligence Dashboard"
+  },
+  {
+    "objectID": "ShinyResources.html#others",
+    "href": "ShinyResources.html#others",
+    "title": "Shiny Resources",
+    "section": "Others",
+    "text": "Others\n\nAwesome Shiny Extensions"
+  },
+  {
+    "objectID": "index.html#emergency-preparedness-for-teaching-and-learning-eptl",
+    "href": "index.html#emergency-preparedness-for-teaching-and-learning-eptl",
+    "title": "IS415 Geospatial Analytics and Applications",
+    "section": "",
+    "text": "As part of emergency preparedness, Instructors may conduct lessons online via the WebEx platform during the term, to prepare students for online learning. During an actual emergency, students will be notified to access the WebEx platform for their online lessons. The class schedule will mirror the current face-to-face class timetable unless otherwise stated."
+  }
+]

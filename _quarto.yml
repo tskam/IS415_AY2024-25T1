@@ -1,0 +1,52 @@
+project:
+  type: website
+
+website:
+  title: "IS415 AY2022-23T2"
+  navbar:
+    background: "#e0ae24"
+    left:
+    - text: "Syllabus"
+      href: syllabus.html
+    - text: "Lesson Plan"
+      href: lesson.html
+    - text: "Take-home Exercise"
+      menu:
+      - text: "Take-home Exercise 1"
+        href: th_ex1.html
+      - text: "Take-home Exercise 2"
+        href: th_ex2.html
+      - text: "Take-home Exercise 3"
+        href: th_ex3.html
+    - text: "Geospatial Analytics Project"
+      href: GAproject.html
+    - text: "Shiny Workshop"
+      menu:
+      - text: "R Shiny basic"
+        href: "ShinyWorkshop/Shiny1/Shiny1.html"
+      - text: "Beyond the basic"
+        href: "ShinyWorkshop/Shiny2/Shiny2.html"
+      - text: "Customising Shiny"
+        href: "ShinyWorkshop/Shiny3/Shiny3.html"
+      - text: "Shiny Resources"
+        href: ShinyResources.html
+       
+    right:
+    - text: "All About R"
+      menu: 
+        - text: "R Resouces"
+          href: R.html
+        - text: "Quarto"
+          href: Quarto.html
+        - text: "git and github"
+          href: git.html 
+    - text: "Home"
+      href: index.html
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
