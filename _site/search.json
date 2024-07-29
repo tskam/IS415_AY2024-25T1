@@ -60,14 +60,14 @@
     "href": "syllabus.html#course-assessments",
     "title": "Syllabus",
     "section": "Course Assessments",
-    "text": "Course Assessments\nAssessment Categories Weightage (%)\n\nClass Participation and In-class Exercise 25%\nTake-Home Exercise (15% x 3) 45%\nGeospatial Analytics Project 30%"
+    "text": "Course Assessments\n\n\n\nAssessment Categories\nWeighting (%)\n\n\n\n\nHands-on Exercise (2% x 10)\n20%\n\n\nIn-class Exercise (2% x 10)\n20%\n\n\nTake-home Exercise (10% x 3)\n30%\n\n\nGeospatial Analytics Project\n30%"
   },
   {
     "objectID": "syllabus.html#course-assessment-details",
     "href": "syllabus.html#course-assessment-details",
     "title": "Syllabus",
     "section": "Course Assessment Details",
-    "text": "Course Assessment Details\n\nClass Participation\nA strict requirement for each class meeting is to complete the assigned readings and to try out the hands-on exercises before coming to class. Readings will be provided from the textbook on technical information and from provided documents and articles on real-world applications of geospatial analytics. Students are required to review the recommended readings and class exercises before coming to class. Without preparation, the learning and discussions would not be as meaningful. Student sharing of insights from readings and hands-on exercises of assigned materials in class participation will form a large part of the learning in this course. Students may also be quizzed in class and thereby contribute to class participation.\n\n\nTake-home Exercise\nThere are three take-home exercises that are due throughout the term. They aim to provide students the opportunities to apply the methods learned in class by working through mini real world cases.\nStudents may work together to help one another with computer or geospatial issues and discuss the materials that constitute the take-home exercise. However, each student is required to prepare and submit the take-home exercise (including any computer work) on their own. Cheating is strictly prohibited. Cheating includes but not limited to: plagiarism and submission of work that is not the student’s\n\nAY2021-22 Sample Take-home Exercises\n\nTake-home Exercise 1\n\n\n\n\nGeospatial Analytics Project\nThe purpose of the Geospatial Analytics Project is to provide students first-hand experience on collecting, processing and analysing spatial data using real world data. A project may involve creating geospatially enabled business data and subsequently analysing these data for business strategic or market analysis. Alternatively, a project may be in the form of application development by integrating analytical tools or models within a web framework. Students are encouraged to focus on research topics that are relevant to their field of study.\nThe project is team work. Students are required to form a project team of 3 members by the third week of the academic term. Each project teams must start thinking about their project ideas between week 4 and week 7. They are expected to discuss their project topic and scope of works with the instructor during the weeks too. A project website will be prepared and submitted to the instructor for approval by the end of week 8.\nAll project teams will give a postal presentation outlining the database design and implementation process, analytical methods used and findings of their project in week 14. Students are also required to prepare a project report or research paper of not more than 15 pages (excluding maps, figures, and tables) for submission by week 14. Additional materials will be distributed in class to assist students with topics selection, project design, postal presentation, and project report."
+    "text": "Course Assessment Details\n\nPre-lesson Learning and Class Participation\nPre-lesson learning materials, namely: videos, slides, recommended readings and hands-on exercises will be released one week before the weekly lesson starts. A strict requirement for each class meeting is to complete the assigned pre-learning materials before coming to class. Students are required write down at least one question or issue encountered while viewing the video, reading the recommended articles or working on the hands-on exercises and post them on Piazza for discussion.\nStudent sharing of insights from readings of assigned materials on Piazza will form a large part of the learning in this course.\n\n\nHands-on Exercise (20%)\nHands-on exercises aim to provide students to gain hands-on experience on using selected R packages to perform geospatial analysis with real world use cases. It is important for students to complete the hands-on exercises before class.\n\n\nIn-class Exercise (20%)\nIn-class exercise and discussion will extend the methods learned from the hands-on exercise to advanced modelling. The in-class discussion will also focus on how to interpret the analysis results and to communicate the analysis results by using appropriate map and data visualisation techniques. Students may also be quizzed in class and thereby contribute to in-class exercise.\n\n\nTake-home Exercise (30%)\nThere are three take-home exercises that are due throughout the term. They aim to provide students the opportunities to apply the methods learned in class by working through mini real-world cases. Each take-home exercise is an extension of the hands-on and in-class exercises. What this means is that, for example, in Lesson 1, students will learn the concept of spatial point processes and the hands-on exercise will provide students step-by-step guide on how to use R packages to perform spatial point patterns analysis. The in-class discussion, beside clarification of the concepts and usage of R packages syntax and argument, it will focus more on how to interpret and communicate the analysis results. Then the take-home exercise will require students to synthesise what they have learned from the readings, hands-on exercise and in-class exercise. The estimated workload will be about 6-8 hours per week.\nEach take-home exercise will carry a same weightage of 10%. The deliverable format of the take-home exercises and marking rubric of will be provided on the handout of the take-home exercise. Feedback on take-home exercise will be provided weekly before the weekly lesson starts. This is to ensure that students will learn from mistakes made in the earlier take-home exercise and improve their work progressively in the subsequent take-home exercises.\nStudents may work together to help one another with computer or geospatial issues and discuss the materials that constitute the take-home exercise. However, each student is required to prepare and submit the take-home exercise (including any computer work) on their own. Cheating is strictly prohibited. Cheating includes but not limited to: plagiarism and submission of work that is not the student’s.\n\n\nGeospatial Analytics Project (30%)\nThe purpose of the geospatial analytics project is to provide students first hand experience on building web-based geospatial analytics tool by integrating open source web mapping API(s), data visualisation API(s) and geospatial analysis libraries. You will also learn how to collecting, processing and analysing spatially related issues using real world data. Students are encouraged to focus on research topics that are relevant to their field of study.\n\n\nFinal Exam\nThere will be no final examination for this course."
   },
   {
     "objectID": "R.html",
@@ -95,7 +95,7 @@
     "href": "lesson.html",
     "title": "Weekly Lesson Plan",
     "section": "",
-    "text": "Week\nDate\nTopic\nRemark\n\n\n\n\n1\n8/1/2024\nLesson 1: Introduction to Geospatial Analytics\n\n\n\n2\n15/1/2024\nLesson 2: GeoVisualisation and Analytical Mapping\n\n\n\n3\n22/1/2024\nLesson 3: Spatial Point Patterns Analysis\n\n\n\n4\n29/1/2024\nLesson 4: Spatial Weights and Applications\n\n\n\n5\n5/2/2024\nLesson 5: Measures of Global and Local Spatial Association\n\n\n\n6\n14/2/2024\nWorkshop on Shiny for Building Web-enabled Geospatial Analytics Application\nReplacement lesson. Venue: SOE/SCIS2 Seminar Room 3-3, Time: 7:00-10:00pm\n\n\n7\n19/2/2024\nLesson 6: Emerging Emerging Hot Spot Analysis (EHSA)\n\n\n\n8\n26/2/2024\nRecess week\n\n\n\n9\n4/3/2024\nLesson 7: Geographic Segmentation\n\n\n\n10\n11/3/2024\nLesson 8: Geographically Weighted Regression\n\n\n\n11\n18/3/2024\nLesson 9: Geographically Weighted Predictive Modelling\n\n\n\n12\n25/3/2024\nLesson 10: Modelling Geographic of Accessibility\n\n\n\n13\n1/4/2024\nLesson 11: Spatial Interaction Models & Lesson 12: The Epilogue\n\n\n\n14\n8/4/2024\nTownhall Presentation\n\n\n\n15"
+    "text": "Week\nDate\nTopic\nRemark\n\n\n\n\n1\n19/8/2024\nLesson 1: Introduction to Geospatial Analytics\n\n\n\n2\n26/8/2024\nLesson 2: GeoVisualisation and Analytical Mapping\n\n\n\n3\n2/9/2024\nLesson 3: Spatial Point Patterns Analysis\n\n\n\n4\n9/9/2024\nLesson 4: Spatial Weights and Applications\n\n\n\n5\n16/9/2024\nLesson 5: Measures of Global and Local Spatial Association\n\n\n\n6\n23/9/2024\nLesson 6: Geographic Segmentation\n\n\n\n7\n30/9/2024\nLesson 7: Shiny for Building Web-enabled Geospatial Analytics Application\n\n\n\n8\n7/10/2024\nRecess week\n\n\n\n9\n14/10/2024\nLesson 8: Geographically Weighted Regression\n\n\n\n10\n21/10/2024\nLesson 9: Geographically Weighted Predictive Modelling\n\n\n\n11\n28/10/2024\nLesson 10: Modelling Geographic of Accessibility\n\n\n\n12\n4/11/2024\nLesson 11: Spatial Interaction Models\n\n\n\n13\n11/11/2024\nLesson 12: The Epilogue\n\n\n\n14\n18/11/2024\nTownhall Presentation\n\n\n\n15"
   },
   {
     "objectID": "GAproject.html",
@@ -264,5 +264,985 @@
     "title": "IS415 Geospatial Analytics and Applications",
     "section": "",
     "text": "As part of emergency preparedness, Instructors may conduct lessons online via the WebEx platform during the term, to prepare students for online learning. During an actual emergency, students will be notified to access the WebEx platform for their online lessons. The class schedule will mirror the current face-to-face class timetable unless otherwise stated."
+  },
+  {
+    "objectID": "outline/Lesson01_outline.html",
+    "href": "outline/Lesson01_outline.html",
+    "title": "Lesson 1: Introduction to Geospatial Analytics",
+    "section": "",
+    "text": "This lesson consists of two parts. First, it provides an overview of geospatial analytics. Second, R objects used to import, integrate, wrangle, process geospatial data will be discussed. The discussion will focus on sfpackage. Other R packages for storing (i.e. sp), transforming (i.e. rgdal), and processing (i.e. rgeos) geospatial data will be discussed briefly too."
+  },
+  {
+    "objectID": "outline/Lesson01_outline.html#overview",
+    "href": "outline/Lesson01_outline.html#overview",
+    "title": "Lesson 1: Introduction to Geospatial Analytics",
+    "section": "",
+    "text": "This lesson consists of two parts. First, it provides an overview of geospatial analytics. Second, R objects used to import, integrate, wrangle, process geospatial data will be discussed. The discussion will focus on sfpackage. Other R packages for storing (i.e. sp), transforming (i.e. rgdal), and processing (i.e. rgeos) geospatial data will be discussed briefly too."
+  },
+  {
+    "objectID": "outline/Lesson01_outline.html#content",
+    "href": "outline/Lesson01_outline.html#content",
+    "title": "Lesson 1: Introduction to Geospatial Analytics",
+    "section": "Content",
+    "text": "Content\n\nIntroduction to Geospatial Analytics\n\nDemystifying Geospatial Analytics\nMotivation of Geospatial Analytics\nA Tour Through the Geospatial Analytics Zoo\nGeospatial Analytics and Social Consciousness\n\nGeospatial Data Science\n\nAn overview of Geospatial Data Models\nMap Projection and Georeferencing\nGeocoding\nClasses of Spatial Data in R: Simple features class"
+  },
+  {
+    "objectID": "outline/Lesson01_outline.html#lesson-slides",
+    "href": "outline/Lesson01_outline.html#lesson-slides",
+    "title": "Lesson 1: Introduction to Geospatial Analytics",
+    "section": "Lesson Slides",
+    "text": "Lesson Slides\n\nLesson 1: Introduction to Geospatial Analytics slides.\nLesson 1: Geospatial Data Science with R slides."
+  },
+  {
+    "objectID": "outline/Lesson01_outline.html#hands-on-exercise",
+    "href": "outline/Lesson01_outline.html#hands-on-exercise",
+    "title": "Lesson 1: Introduction to Geospatial Analytics",
+    "section": "Hands-on Exercise",
+    "text": "Hands-on Exercise\n\nHands-on Exercise 1: Geospatial Data Wrangling with R"
+  },
+  {
+    "objectID": "outline/Lesson01_outline.html#references",
+    "href": "outline/Lesson01_outline.html#references",
+    "title": "Lesson 1: Introduction to Geospatial Analytics",
+    "section": "References",
+    "text": "References\n\n“Spatial Data, Spatial Analysis, Spatial Data Science” by Prof. Luc Anselin. (This is a long lecture 1hr 15minutes but don’t turn away just because it is lengthy.)\nXie, Yiqun et. al. (2017) “Transdisciplinary Foundations of Geospatial Data Science” ISPRS International Journal of Geo-information, 2017, Vol.6 (12), p.395.\nPaez, A., and Scott, D.M. (2004) “Spatial statistics for urban analysis: A review of techniques with examples”, GeoJournal, 61: 53-67. Available in SMU eLibrary.\n“Geospatial Analytics Will Eat The World, And You Won’t Even Know It”."
+  },
+  {
+    "objectID": "outline/Lesson01_outline.html#r-packages-for-data-science",
+    "href": "outline/Lesson01_outline.html#r-packages-for-data-science",
+    "title": "Lesson 1: Introduction to Geospatial Analytics",
+    "section": "R packages for Data Science",
+    "text": "R packages for Data Science\n\nsf package.\n\nSimple Features for R\nReading, Writing and Converting Simple Features\nManipulating Simple Feature Geometries\nManipulating Simple Features\n\ntidyverse: a family of modern R packages specially designed to meet the tasks of Data Science in R.\n\nreadr: a fast and effective library to parse csv, txt, and tsv files as tibble data.frame in R. To get started, refer to Chapter 11 Data import of R for Data Science book.\n\ntidyr: an R package for tidying data. To get started, refer to Chapter 5 Data tidying of R for Data Science book.\n\ndplyr: a grammar of data manipulation. To get started, read articles under Getting Started and Articles tabs.\nggplot2: a grammar of graphics. To get started, read Chapter 1: Data Visualization, Chapter 10 Exploratory Data Analysis and Chapter 11 Communication of R for Data Science (2ed) book.\npipes: a powerful tool for clearly expressing a sequence of multiple operations. To get started, read Chapter 5 Workflow: pipes of R for Data Science (2ed) book."
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny3/Shiny3.html",
+    "href": "ShinyWorkshop/Shiny3/Shiny3.html",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "",
+    "text": "In this lesson, selected advanced methods of Shiny will be discussed. You will also gain hands-on experiences on using these advanced methods to build Shiny applications.\nBy the end of this lesson, you will be able to:\n\nunderstanding the basic development cycle of creating apps, making changes, and experimenting with the results,\ndebug errors in the codes,\nbuild complex Shiny application using module, and\nimprove the productivity of Shiny applications development"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny3/Shiny3.html#overview",
+    "href": "ShinyWorkshop/Shiny3/Shiny3.html#overview",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "",
+    "text": "In this lesson, selected advanced methods of Shiny will be discussed. You will also gain hands-on experiences on using these advanced methods to build Shiny applications.\nBy the end of this lesson, you will be able to:\n\nunderstanding the basic development cycle of creating apps, making changes, and experimenting with the results,\ndebug errors in the codes,\nbuild complex Shiny application using module, and\nimprove the productivity of Shiny applications development"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny3/Shiny3.html#working-with-shiny-layout",
+    "href": "ShinyWorkshop/Shiny3/Shiny3.html#working-with-shiny-layout",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "Working with Shiny Layout",
+    "text": "Working with Shiny Layout\nShiny includes a number of facilities for laying out the components of an application. This guide describes the following application layout features:\n\nA sidebarLayout(): for placing a sidebarPanel() of inputs alongside a mainPanel() output content.\nCustom layouts using Shiny’s grid layout system (i.e., fluidRow() & column()).\nSegmenting layouts using the tabsetPanel() and navlistPanel() functions.\nCreating applications with multiple top-level components using the navbarPage() function.\n\n\n\nCustomising layout with fluidRow() and column()\nIn this hands-on exercise, you will learn how to rearrange the drill-down bar chart view so that both the Race and Gender bar charts will be placed next to each other as shown in the figure below.\n\n\n\n\nCustomising layout with fluidRow() and column()\n\n\n\nui &lt;- fluidPage(\n  titlePanel(\"Dual Plots Drill-down Bar Chart\"),\n  mainPanel(\n    fluidRow(\n      column(6,\n             plotlyOutput(\n               outputId=\"race\", \n               width=\"300px\",\n               height=\"300px\")),  \n      column(6,\n             plotlyOutput(\n               outputId=\"gender\", \n               width=\"300px\",\n               height=\"300px\"))\n    )\n  )\n)\n\n\nWhat can you learn from the code chunk on the left?\n\nThe first argument of the column function is width, which is based on the Bootstrap 12-wide grid system, so the total width for each row should add up to 12.\nShiny has numerous “Panel” functions, which you can think as the elements you put inside the layout containers you created using the “Layout” functions like sidebarLayout(), fluidrow(), column(), etc.\n\n\n\n\n\n\nCustomising Multi-row layout with fluidRow() and column()\n\n\nsidebarLayout() is built on top of a flexible multi-row layout, which you can use directly to create more visually complex apps.\n\n\nAs usual, you start with fluidPage(). Then you create rows with fluidRow(), and columns with column().\n\nfluidPage(\n  fluidRow(\n    column(4, \n      ...\n    ),\n    column(8, \n      ...\n    )\n  ),\n  fluidRow(\n    column(6, \n      ...\n    ),\n    column(6, \n      ...\n    )\n  )\n)"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny3/Shiny3.html#multi-page-layouts",
+    "href": "ShinyWorkshop/Shiny3/Shiny3.html#multi-page-layouts",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "Multi-page layouts",
+    "text": "Multi-page layouts\n\n\nShiny provides several functions for building multi-page layout, they are:\n\ntabsetPanel() + tabPanel()\nnavlistPanel() + tabPanel()\nnavbarMenu() + tabPanel()\n\n\n\n\n\ntabsetPanel() and tabPanel()\n\n\n\nThe simple way to break up a page into pieces is to use tabsetPanel() and its close friend tabPanel().\n\nui &lt;- fluidPage(\n  titlePanel(\"Multi-pages Layout\"),\n  tabsetPanel(\n    tabPanel(\"Import data\", \n             fileInput(\"file\", \"Data\", buttonLabel = \"Upload...\"),\n             textInput(\"delim\", \"Delimiter (leave blank to guess)\", \"\"),\n             numericInput(\"skip\", \"Rows to skip\", 0, min = 0),\n             numericInput(\"rows\", \"Rows to preview\", 10, min = 1)\n    ),\n    tabPanel(\"Variable selection\"),\n    tabPanel(\"Model calibration\"),\n    tabPanel(\"Model evaluation\")\n  )\n)\n\n\nFigure below shows the multi-page layouts created using the code chunk on the left.\n\n\n\n\n\n\n\nNote\n\n\n\ntabsetPanel() can be used anywhere in your app; it’s totally fine to nest tabsets inside of other components (including tabsets!) if needed.\n\n\n\n\n\n\n\n\nnavlistPanel() and tabPanel()\n\n\n\nnavlistPanel() is similar to tabsetPanel() but instead of running the tab titles horizontally, it shows them vertically in a sidebar.\nIt also allows you to add headings with plain strings.\n\n\nui &lt;- fluidPage(\n  navlistPanel(\n    id = \"tabset\",\n    \"Data Preparation\",\n    tabPanel(\"Data Import\", \n             \"View table\"),\n    tabPanel(\"Data transformation\", \n             \"Output table\"),\n    \"IDEA\",\n    tabPanel(\"Univariate analysis\", \n             \"Distribution plot\"),\n    tabPanel(\"Bivariate analysis\", \n             \"Correlation matrix\")\n  )\n)\n\n\n\n\n\n\n\n\nnavbarMenu() and tabPanel()\n\n\nAnother approach is use navbarPage(): it still runs the tab titles horizontally, but you can use navbarMenu() to add drop-down menus for an additional level of hierarchy.\n\nui &lt;- navbarPage(\n  \"Welcome to TimeVA\",\n  tabPanel(\"Data Import\", \"one\"),\n  navbarMenu(\"IDEA\", \n             tabPanel(\"Time-series line graph\", \"L graph\"),\n             tabPanel(\"Horizon graph\", \"H graph\")\n             ),\n  tabPanel(\"Time-series Analysis\", \"TSA\"),\n  navbarMenu(\"Time-series forecasting\", \n             tabPanel(\"Exponential Smoothing\", \"ES\"),\n             tabPanel(\"ARIMA\", \"ARIMA\"),\n             tabPanel(\"Automatic\", \"auto\")\n  )\n)"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny3/Shiny3.html#shiny-themes",
+    "href": "ShinyWorkshop/Shiny3/Shiny3.html#shiny-themes",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "Shiny Themes",
+    "text": "Shiny Themes\n\n\n\n\nShiny v1.6 and higher integrates with the bslib package providing easy access to modern versions of Bootstrap, Bootswatch themes, as well as custom themes that can even be modified in real time!\nTo use bslib in your own Shiny app, pass a bs_theme() object to the theme argument of the relevant page layout function, such as navbarPage() or fluidPage().\nInside bs_theme(), you can specify a version of Bootstrap and (optionally) a Bootswatch theme (e.g. cyborg)\n\n\n\n\nlibrary(shiny)\nlibrary(tidyverse)\nlibrary(bslib)     \nexam &lt;- read_csv(\"data/Exam_data.csv\")\nui &lt;- fluidPage(\n  theme = bs_theme(bootswatch = \"cyborg\"), \n  titlePanel(\"Pupils Examination Results Dashboard\"),\n\n\n\n\n\n\nCustomising themes\n\n\nbs_theme() provides direct access to Bootstrap’s main colors & fonts as well as any of the 100s of more specific theming options. Also, when it comes to custom font(s) that may not be available on the end users machine, make sure to leverage {bslib}’s helper functions like font_google(), font_link(), and font_face(), which assist in including font file(s) in an convenient, efficient, and responsible way.\n\n\nlibrary(shiny)\nlibrary(tidyverse)\nlibrary(bslib)\n\nexam &lt;- read_csv(\"data/Exam_data.csv\")\n\nui &lt;- fluidPage(\n  theme = bs_theme(bg = \"#0b3d91\", \n                   fg = \"white\",   \n                   primary = \"#FCC780\", \n                   base_font = font_google(\"Roboto\"),  \n                   code_font = font_google(\"Roboto\")), \n  titlePanel(\"Pupils Examination Results Dashboard\"),\n\n\n\n\n\n\nCustomising Plot\n\n\nWhile a lot of custom theming can be done via bs_theme() (i.e., CSS), it fundamentally can’t effect renderPlot(), because the image is rendered by R, not by the web browser. To help solve this problem, thematic package can be used to translate CSS to new R plotting defaults by just calling thematic::thematic_shiny() before running an app.\n\nlibrary(shiny)\nlibrary(tidyverse)\nlibrary(bslib)\n\nthematic::thematic_shiny()\n\nexam &lt;- read_csv(\"data/Exam_data.csv\")"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny3/Shiny3.html#introducing-shiny-module",
+    "href": "ShinyWorkshop/Shiny3/Shiny3.html#introducing-shiny-module",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "Introducing Shiny Module",
+    "text": "Introducing Shiny Module\n\nAs Shiny applications grow larger and more complicated, modules are used to manage the growing complexity of Shiny application code.\nFunctions are the fundamental unit of abstraction in R, and we designed Shiny to work with them.\nWe can write UI-generating functions and call them from our app, and we can write functions to be used in the server function that define outputs and create reactive expressions.\n\n\n\nShiny Modules Workflow\n\n\nAn example of a large and complex Shiny application diagram.\n\n\nAn example of modulerised Shiny application.\n\n\n\n\n\n\nModule basics\nA module is very similar to an app. Like an app, it’s composed of two pieces:\n\nThe module UI function that generates the ui specification.\nThe module server function that runs code inside the server function.\n\nThe two functions have standard forms. They both take an id argument and use it to namespace the module. To create a module, we need to extract code out of the app UI and server and put it in to the module UI and server.\n\n\n\nIn-class Exercise: Building Shiny App with Basic Modele\nIn order to understand the basics of Shiny modules, let us consider a simple Shiny application codes to plot a histogram shown below.\n\n\n\nui &lt;- fluidPage(\n  selectInput(\"var\", \n              \"Variable\", \n              names(mtcars)),\n  numericInput(\"bins\", \n               \"bins\", \n               10, \n               min = 1),\n  plotOutput(\"hist\")\n)\nserver &lt;- function(input, \n                   output, \n                   session) {\n  data &lt;- reactive(mtcars[[input$var]])\n  output$hist &lt;- renderPlot({\n    hist(data(), \n         breaks = input$bins, \n         main = input$var)\n  }, res = 96)\n}\n\n\n\n\n\n\n\n\nModule UI\nWe’ll start with the module UI. There are two steps:\n\nPut the UI code inside a function that has an id argument.\nWrap each existing ID in a call to NS(), so that (e.g.) “var” turns into NS(id, “var”).\n\n\nhistogramUI &lt;- function(id) {\n  tagList(\n    selectInput(NS(id, \"var\"), \"Variable\", choices = names(mtcars)),\n    numericInput(NS(id, \"bins\"), \"bins\", value = 10, min = 1),\n    plotOutput(NS(id, \"hist\"))\n  )\n}\n\n\nHere we have returned the UI components in a tagList(), which is a special type of layout function that allows you to bundle together multiple components without actually implying how they will be laid out.\nIt is the responsibility of the person calling histogramUI() to wrap the result in a layout function like column() or fluidRow() according to their needs.\n\n\n\n\nModule server\nNext we tackle the server function. This gets wrapped inside another function which must have an id argument. This function calls moduleServer() with the id, and a function that looks like a regular server function:\n\nhistogramServer &lt;- function(id) {\n  moduleServer(id, function(input, output, session) {\n    data &lt;- reactive(mtcars[[input$var]])\n    output$hist &lt;- renderPlot({\n      hist(data(), breaks = input$bins, main = input$var)\n    }, res = 96)\n  })\n}\n\n\n\n\n\n\n\nNote\n\n\n\n\nmoduleServer() takes care of the namespacing automatically: inside of moduleServer(id),\ninput\\(var* and *input\\)bins refer to the inputs with names NS(id, “var”) and NS(id, “bins”).\n\n\n\n\n\n\nRevised Shiny Application\nNow that we have the ui and server functions, it’s good practice to write a function that uses them to generate an app which we can use for experimentation and testing:\n\nui &lt;- fluidPage(\n    histogramUI(\"hist\")\n    )\n\nserver &lt;- function(input, output, session) {\n    histogramServer(\"hist\")\n    }\n\nshinyApp(ui, server)\n\n\n\n\n\n\n\nNote\n\n\n\nLike all Shiny control, you need to use the same id in both UI and server, otherwise the two pieces will not be connected.\n\n\n\n\n\nIn-class Exercise: Function to import csv file\n\n\n\n\nModule UI function\n\n# Module UI function\ncsvFileUI &lt;- function(id, label = \"CSV file\") {\n    # `NS(id)` returns a namespace function, which was save as `ns` and will\n    # invoke later.\n    ns &lt;- NS(id)\n    \n    tagList(\n        fileInput(ns(\"file\"), label),\n        checkboxInput(ns(\"heading\"), \"Has heading\"),\n        selectInput(ns(\"quote\"), \"Quote\", c(\n            \"None\" = \"\",\n            \"Double quote\" = \"\\\"\",\n            \"Single quote\" = \"'\"\n        ))\n    )\n}\n\n\n\n\nModule server function\n\ncsvFileServer &lt;- function(id, stringsAsFactors) {\n    moduleServer(\n        id,\n        function(input, output, session) {\n            userFile &lt;- reactive({\n                validate(need(input$file, message = FALSE))\n                input$file\n            })\n            dataframe &lt;- reactive({\n                read.csv(userFile()$datapath,\n                         header = input$heading,\n                         quote = input$quote,\n                         stringsAsFactors = stringsAsFactors)\n            })\n            observe({\n                msg &lt;- sprintf(\"File %s was uploaded\", userFile()$name)\n                cat(msg, \"\\n\")\n            })\n            return(dataframe)\n        }\n    )    \n}\n\n\n\n\nThe Shiny app\n\nui &lt;- fluidPage(\n    sidebarLayout(\n        sidebarPanel(\n            csvFileUI(\"datafile\", \"User data (.csv format)\")\n        ),\n        mainPanel(\n            dataTableOutput(\"table\")\n        )\n    )\n)\n\nserver &lt;- function(input, output, session) {\n    datafile &lt;- csvFileServer(\"datafile\", stringsAsFactors = FALSE)\n    \n    output$table &lt;- renderDataTable({\n        datafile()\n    })\n}\n\nshinyApp(ui, server)"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny3/Shiny3.html#debugging",
+    "href": "ShinyWorkshop/Shiny3/Shiny3.html#debugging",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "Debugging",
+    "text": "Debugging\n\n\n\n\nProgramming == Frustration?\n\nSource: The original article.\n\n\nThree main cases of problems which we’ll discuss below:\n\nYou get an unexpected error. This is the easiest case, because you’ll get a traceback which allows you to figure out exactly where the error occurred.\nYou don’t get any errors, but some value is incorrect. Here, you’ll need to use the interactive debugger, along with your investigative skills to track down the root cause.\nAll the values are correct, but they’re not updated when you expect. This is the most challenging problem because it’s unique to Shiny, so you can’t take advantage of your existing R debugging skills.\n\n\n\n\n\n\nCommon errors\n\n“Object of type ‘closure’ is not subsettable”\n\nYou forgot to use () when retrieving a value from a reactive expression plot(userData) should be plot(userData())\n\n\n\n\n\nCommon errors\n\n“Unexpected symbol\n\n\n“Argument xxx is missing, with no default”\n\nMissing or extra comma in UI.\nSometimes Shiny will realise this and give you a hint, or use RStudio editor margin diagnostics.\n\n\n\n\n\nCommon errors\n\n“Operation not allowed without an active reactive context. (You tried to do something that can only be done from inside a reactive expression or observer.)\n\nTried to access an input or reactive expression from directly inside the server function. You must use a reactive expression or observer instead.\nOr if you really only care about the value of that input at the time that the session starts, then use isolate()."
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny3/Shiny3.html#standard-r-debugging-tools",
+    "href": "ShinyWorkshop/Shiny3/Shiny3.html#standard-r-debugging-tools",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "Standard R debugging tools",
+    "text": "Standard R debugging tools\n\nTracing\n\ntracebacks\nprint()/cat()/str()\nrenderPrint eats messages, must use cat(file = stderr(), ““…)\nAlso consider shinyjs package’s logjs, which puts messages in the browser’s JavaScript console\n\n\nDebugger\n\nSet breakpoints in RStudio\nbrowser()\nConditionals: if (!is.null(input$x)) browser()\n\n\n\n\nIn-class Exercise: Working with Traceback in Shiny\nIn this hands-on exercise, you will learn how to detect error by using traceback in Shiny.\n\n\nThe codes:\n\nlibrary(shiny)\n\nf &lt;- function(x) g(x)\ng &lt;- function(x) h(x)\nh &lt;- function(x) x * 2\n\nui &lt;- fluidPage(\n    selectInput(\"n\", \"N\", 1:10),\n    plotOutput(\"plot\")\n)\nserver &lt;- function(input, output, session) {\n    output$plot &lt;- renderPlot({\n        n &lt;- f(input$n)\n        plot(head(cars, n))\n    }, res = 96)\n}\nshinyApp(ui, server)\n\n\nOp, there is an error!\n\n\n\n\n\n\nLearning how to debug: Traceback in Shiny\n\n\n\n Things to learn from the call stack:\n\nThe first few calls start the app in this case you just see runApp() but depending on how you start the app, you might see something more complicated.\nIn general, you can ignore anything before the first runApp(); this is just the setup code to get the app running.\n\n\n\n\n\nNext, you’ll see some internal Shiny code in charge of calling the reactive expression:\n\nHere, spotting output$plot is really important — that tells which of your reactives (plot) is causing the error. The next few functions are internal, and you can ignore them.\n\nFinally, at the very top, you’ll see the code that you have written:\n\nThis is the code called inside of renderPlot(). You can tell you should pay attention here because of the file path and line number; this lets you know that it’s your code.\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nIf you get an error in your app but don’t see a traceback then make sure that you’re running the app using Cmd/Ctrl + Shift + Enter (or if not in RStudio, calling runApp()), and that you’ve saved the file that you’re running it from. Other ways of running the app don’t always capture the information necessary to make a traceback."
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny3/Shiny3.html#in-class-exercise-working-with-rstudios-interactive-debugger",
+    "href": "ShinyWorkshop/Shiny3/Shiny3.html#in-class-exercise-working-with-rstudios-interactive-debugger",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "In-class Exercise: Working with RStudio’s Interactive Debugger",
+    "text": "In-class Exercise: Working with RStudio’s Interactive Debugger\n\n\nIn this hands-on Exercise, you will learn how to work with the interactive debugger in RStudio.\n\nDouble click prototype7a.\nDouble click on prototype7a.rproj file to open the project file in RStudio.\nClick on app.R file to open the Shiny app file on RStudio\nAdd a call to browser() in your source code (for example line 5).\nClick in Run App button to run the Shiny app.\n\n\n\n\nNext (press n): executes the next step in the function. Note that if you have a variable named n, you’ll need to use print(n) to display its value.\nContinue (press c): leaves interactive debugging and continues regular execution of the function. This is useful if you’ve fixed the bad state and want to check that the function proceeds correctly.\nStop (press Q): stops debugging, terminates the function, and returns to the global workspace. Use this once you’ve figured out where the problem is, and you’re ready to fix it and reload the code."
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny3/Shiny3.html#shinytest",
+    "href": "ShinyWorkshop/Shiny3/Shiny3.html#shinytest",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "Shinytest",
+    "text": "Shinytest\n\nShinytest uses snapshot-based testing strategy.\nThe first time it runs a set of tests for an application, it performs some scripted interactions with the app and takes one or more snapshots of the application’s state.\nThese snapshots are saved to disk so that future runs of the tests can compare their results to them.\n\n\n\nTesting\n\nThere are many possible reasons for an application to stop working. These reasons include:\n\nAn upgraded R package has different behavior. (This could include Shiny itself!)\nYou make modifications to your application.\nAn external data source stops working, or returns data in a changed format.\n\nAutomated tests can alert you to these kinds of problems quickly and with almost zero effort, after the tests have been created."
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny3/Shiny3.html#references",
+    "href": "ShinyWorkshop/Shiny3/Shiny3.html#references",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "References",
+    "text": "References\n\nShiny Layout\n\nApplication layout guide\n\n\n\nShiny Module\n\nChapter 19 Shiny modules of Mastering Shiny.\nModularizing Shiny app code, online article\nCommunication between modules. This is a relatively old article, some functions have changed.\nShiny Modules\nShiny Modules (part 1) : Why using modules?\nShiny Modules (part 2): Share reactive among multiple modules\nShiny Modules (part 3): Dynamic module call"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "",
+    "text": "What is a Web-enabled Geospatial Analytics Application?\nWhy building Web-enabled Geospatial Analytical Application?\nEvolution of web-based Technology\nGetting to Know Shiny"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#content",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#content",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "",
+    "text": "What is a Web-enabled Geospatial Analytics Application?\nWhy building Web-enabled Geospatial Analytical Application?\nEvolution of web-based Technology\nGetting to Know Shiny"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#what-is-a-web-enabled-geospatial-analytics-application",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#what-is-a-web-enabled-geospatial-analytics-application",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "What is a Web-enabled Geospatial Analytics Application?",
+    "text": "What is a Web-enabled Geospatial Analytics Application?\n\n\n\nFocuses and emphasises on interactivity and effective integration of techniques from data analytics, visualization and human-computer interaction (HCI).\n\n\n\n\n\n\n\nWhy building a Web-enabled Geospatial Analytics Application?\n\n\n\nTo explore how the best of these different but related domains can be combined such that the sum is greater than the parts.\nTo democratise data and analytics through web-based analytical applications for data exploration, visualisation analysis and modelling.\n\n\n\n\nSource: Democratize data analytics customer data platform\n\n\n\n\n\n\nTechnology Challenges\n\n\n\nMainframe computing tend to have low usability and low accessibility.\nDesktop computing tend to have high usability but low accessibility.\nWeb-based computing (including mobile computing) are highly accesible but with relatively low capability.\n\n\n\n\n\n\n\n\nWeb-based data visualisation\n\n\n\nThe break-through is Rich Internet Applications (RIA)\n\n\n\n\n\n\nReference: Rich Internet Applications\n\n\n\n\nDevelopment of RIA\n\n\n\nFirst generation RIA data visualisation (2000~)\n\nAdobe Flex Builder\n\nFlare\n\nMicrosoft Silverlight\nJavaFX\n\n\n\n\nSecond generation RIA data visualisation (2010~)\n\nHTML 5 + JavaScript + SVG + CSS\n\nClient-side rendering\nNo plug-in is required\nMobile computing enabled\n\nD3.js - Data Driven Document\n\n\n\n\n\n\n\nMethodological Challenges\n\n\n\nLack of analysis functions.\nNot reproducible.\nNot extendable.\nRequire to learn multiple technologies and methods."
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "Getting to Know Shiny",
+    "text": "Getting to Know Shiny\n\nShiny: Overview\n\n\n\nShiny is an open source package from Posit (formally called RStudio).\nIt provides a web application framework to create interactive web applications (visualization) called “Shiny apps”.\nTo learn more about Shiny, visit its homepage"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-1",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-1",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "Getting to Know Shiny",
+    "text": "Getting to Know Shiny\n\nWhat is so special about Shiny?\n\n\nIt allows R users:\n\nto build and share highly interactive web-enabled applications without having to invest significant among of time and efforts to master core web design technologies such as html5, Javascript and CSS.\nto integrate the analytical and visualisation packages of R without having to change from one programming language to another."
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-2",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-2",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "Getting to Know Shiny",
+    "text": "Getting to Know Shiny\n\nUnderstanding the architecture\n\nEvery Shiny app is maintained by a computer running R."
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-3",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-3",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "Getting to Know Shiny",
+    "text": "Getting to Know Shiny\n\nThe Structure of a Shiny app\n\n\n\nA Shiny app comprises of two components, namely:\n\na user-interface script, and\na server script."
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-4",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-4",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "Getting to Know Shiny",
+    "text": "Getting to Know Shiny\n\nShiny’s user-interface, ui.R\n\nThe ui.R script controls the layout and appearance of a shiny app.\n\nIt is defined in a source script name ui.R.\nActually, ui is a web document that the user gets to see, it is based on the famous Twitter bootstrap framework, which makes the look and layout highly customizable and fully responsive.\nIn fact, you only need to know R and how to use the shiny package to build a pretty web application. Also, a little knowledge of HTML, CSS, and JavaScript may help."
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-5",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-5",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "Getting to Know Shiny",
+    "text": "Getting to Know Shiny\n\nShiny’s server server.R\n\nThe server.R script contains the instructions that your computer needs to build your Shiny app.\nYou are expected to:\n\nknow how to programme with R.\nfamiliar with Tidyverse, specifically dplyr, tidyr and ggplot2"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-6",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-6",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "Getting to Know Shiny",
+    "text": "Getting to Know Shiny\n\nShiny Examples\nThe Shiny package has eleven built-in examples that each demonstrates how Shiny works."
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-7",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-7",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "Getting to Know Shiny",
+    "text": "Getting to Know Shiny\n\nRunning Shiny example\n\n\n\nlibrary(shiny)\nrunExample(\"01_hello\")"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#building-a-shiny-app",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#building-a-shiny-app",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "Building a Shiny app",
+    "text": "Building a Shiny app\n\nA Shiny app can be in a form of a single file called app.R.\nAlternatively, a Shiny app can be also created using separate ui.R and server.R files.\nThe seperate files way is preferred when the app is complex and involves more codes.\n\n\n\n\nA basic Shiny app script\n\n\n\n\nImportant tips of Shiny app file\n\n\n\n\n\n\n\n\nTip\n\n\n\n\nIt is very important that the name of the file is app.R, otherwise it would not be recognized as a Shiny app.\nYou should not have any R code after the shinyApp(ui = ui, server = server) line. That line needs to be the last line in your file.\nIt is good practice to place this app in its own folder, and not in a folder that already has other R scripts or files, unless those other files are used by your app.\n\n\n\n\n\n\n\n\nLoading the dataset\n\n\n\n\npacman::p_load(shiny, sf, tmap,\n               bslib, tidyverse)\n\nhunan &lt;- st_read(dsn = \"data/geospatial\",\n                 layer = \"Hunan\")\ndata &lt;- read_csv(\"data/aspatial/Hunan_2012.csv\")\nhunan_data &lt;- left_join(hunan, data,\n                        by = c(\"County\" = \"COUNTY\"))\n\nui &lt;- fluidPage()\nserver &lt;- function(input, output){}\n\nshinyApp(ui = ui, server = server)\n\n\n\n\nMake sure that the data file path and file name are correct.\nTo check if the dataset has been added correctly, you can add a print() argument after reading the data."
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-layout",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-layout",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "Shiny Layout",
+    "text": "Shiny Layout\n\nShiny ui.R scripts use the function fluidPage to create a display that automatically adjusts to the dimensions of your user’s browser window.\nYou lay out your app by placing elements in the fluidPage function.\ntitlePanel and sidebarLayout are the two most popular elements to add to fluidPage. They create a basic Shiny app with a sidebar."
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-layout-panels",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-layout-panels",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "Shiny Layout Panels",
+    "text": "Shiny Layout Panels\n\nPanels are used to group multiple elements into a single element that has its own properties.\nEspecially important and useful for complex apps with a large number of inputs and outputs such that it might not be clear to the user where to get started.\n\n\n\n\nWorking with titlePanel\n\n\n\ntitlePanel() is used to add the application title.\n\n\n\npacman::p_load(shiny, sf, tmap,\n               bslib, tidyverse)\n\nhunan &lt;- st_read(dsn = \"data/geospatial\",\n                 layer = \"Hunan\")\ndata &lt;- read_csv(\"data/aspatial/Hunan_2012.csv\")\nhunan_data &lt;- left_join(hunan, data,\n                        by = c(\"County\" = \"COUNTY\"))\n\nui &lt;- fluidPage(\n  titlePanel(\"Choropleth Mapping\")\n)\nserver &lt;- function(input, output){}\n\nshinyApp(ui = ui, server = server)\n\n\n\n\n\n\n\n\n\nShiny Layout Panel : sidebarLayout()\n\n\n\nsidebarLayout() always takes two arguments:\n\nsidebarPanel() function output\nmainPanel() function output\n\nThese functions place content in either the sidebar or the main panels.\nThe sidebarPanel() will appear on the left side of your app by default. You can move it to the right side by giving sidebarLayout() the optional argument position = “right”.\n\n\n\n\n\n\n\n\n\nHands-on Exercise: Working with sidebarLayout()\n\n\nLets add the highlighted codes into the original code chunk.\n\n\nRefresh Shiny App and your screen should look similar to the figure below.\n\n\n\n\n\n\n\nNote\n\n\n\nNote that in a fluid design your sidebar and other elements may “collapse” if your browser view is not wide enough."
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-inputs",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-inputs",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "Shiny Inputs",
+    "text": "Shiny Inputs\n\nAn overview of Shiny Inputs\n\n\n\nInputs are what gives users a way to interact with a Shiny app.\nShiny provides many input functions to support many kinds of interactions that the user could have with an app.\n\n\n\n\n\nReference: Refer to 2 Basic UI of Master Shiny to learn more about Shiny UI usage and arguments."
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-inputs-1",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-inputs-1",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "Shiny Inputs",
+    "text": "Shiny Inputs\n\nInputs syntax\n\n\n\nAll input functions have the same first two arguments: inputId and label.\nThe inputId will be the name that Shiny will use to refer to this input when you want to retrieve its current value.\nIt is important to note that every input must have a unique inputId.\nThe label argument specifies the text in the display label that goes along with the input widget.\nEvery input can also have multiple other arguments specific to that input type.\n\n\n\n\n\n\n\n\nHands-on Exercise: Adding inputs\nAdding inputs to the UI by using selectInput() and sliderInput()."
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-output",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-output",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "Shiny Output()",
+    "text": "Shiny Output()\n\nAn overview of Shiny Output()\n\nAfter creating all the inputs, we should add elements to the UI to display the outputs.\nTo display output, add it to fluidPage() with an Output() function.\n\n\n\n\n\n\n\n\nNote\n\n\n\n\nSimilarly to the input functions, all the output functions have a outputId argument that is used to identify each output, and this argument must be unique for each output.\nEach output needs to be constructed in the server code later."
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-output-1",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-output-1",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "Shiny Output()",
+    "text": "Shiny Output()\n\nShiny Output() options\n\n\n\nOutputs can be any object that R creates and that we want to display in our app - such as a plot, a table, or text.\n\n\n\n\n\n\n\n\nHands-on Exercise:\n\n\nAdding plotOutput()"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-server.r",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-server.r",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "Shiny server.R",
+    "text": "Shiny server.R\n\nBuilding an output\nThere are three rules to build an output in Shiny, they are:\n\nSave the output object into the output list (remember the app template - every server function has an output argument).\nBuild the object with a render() function, where is the type of output.\nAccess input values using the input list (every server function has an input argument)\n\n\n\n\n\n\n\nNote\n\n\n\nThe third rule is only required if you want your output to depend on some input."
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-server.r-1",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-server.r-1",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "Shiny server.R",
+    "text": "Shiny server.R\n\nA generic Shiny render() syntax"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-server.r-2",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-server.r-2",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "Shiny server.R",
+    "text": "Shiny server.R\n\nShiny render()\n\n\n\n\nHands-on Exercise: Building a basic output\n\n\nLet’s first see how to build a very basic output using renderPlot(). We’ll create a plot and send it to the mapPlot output.\n\n\n\n\n\n\n\n\nNote\n\n\n\n\nThis simple code shows the first two rules: we’re creating a plot inside the renderPlot() function, and assigning it to distPlot in the output list.\nRemember that every output created in the UI must have a unique ID, now we see why. In order to attach an R object to an output with ID x, we assign the R object to output$distPlot.\nSince distPlot was defined as a plotOutput, we must use the renderPlot() function, and we must create a plot inside the renderPlot() function."
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#the-shinyapp",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#the-shinyapp",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "The shinyApp()",
+    "text": "The shinyApp()\n\n\n\n\n\n\n\n\nImportant\n\n\n\n\nIt is important to add shinyApp() at the end of your Shiny application.\n\n\n\n\nshinyApp(ui = ui, server = server)"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#programming-shiny-survival-tip",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#programming-shiny-survival-tip",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "Programming Shiny: Survival Tip!",
+    "text": "Programming Shiny: Survival Tip!\n\n\n\n\n\n\nTip\n\n\n\n\nAlways run the entire script, not just up to the point where you’re developing code.\nSometimes the best way to see what’s wrong is to run the app and review the error.\nWatch out for commas!"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#building-shiny-application-survival-tip",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#building-shiny-application-survival-tip",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "Building Shiny Application: Survival Tip!",
+    "text": "Building Shiny Application: Survival Tip!\n\n\n\nWhat can we learn from Lego?\n\n\n\n\nSketch the storyboard\nBuilding the app incrementally\n\nUsing prototyping approach\nStart as simple as possible\nAdding features one at a time\n\nSave -&gt; Run App"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#references",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html#references",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "References",
+    "text": "References\n\nHadley Wickham (2021) Mastering Shiny, O’Reilly Media. This is a highly recommended book.\nBuilding Web Applications with Shiny, especially Module 1 and 2.\nShiny Three Parts Tutorial.\nOnline Function reference\nThe basic parts of a Shiny app\nHow to build a Shiny app\nThe Shiny Cheat sheet\n\nBeyond Uncle Google! Last but not least, when you need help\n\nHow to get help"
+  },
+  {
+    "objectID": "outline/Lesson11_outline.html",
+    "href": "outline/Lesson11_outline.html",
+    "title": "Lesson 11: Spatial Interaction Models",
+    "section": "",
+    "text": "In this lesson, you will learn the basic concepts and methods of Spatial Interaction Models."
+  },
+  {
+    "objectID": "outline/Lesson11_outline.html#content",
+    "href": "outline/Lesson11_outline.html#content",
+    "title": "Lesson 11: Spatial Interaction Models",
+    "section": "Content",
+    "text": "Content\n\nBasic Concepts of Spatial Interaction Models\n\nA Family of Gravity Models\n\nUnconstrained\nOrigin constrained\nDestination constrained\nDoubly constrained\n\nStatistical Approach\nInterpreting and Visualising Modelling Results\n\nSpatial Econometric Interaction Models\n\nThe general formula\n\nWhat is Econometrics?\nWhat is Spatial Econometrics?\n\nSpatial Econometric Interaction Model Specifications"
+  },
+  {
+    "objectID": "outline/Lesson11_outline.html#lesson-slides-and-hands-on-notes",
+    "href": "outline/Lesson11_outline.html#lesson-slides-and-hands-on-notes",
+    "title": "Lesson 11: Spatial Interaction Models",
+    "section": "Lesson Slides and Hands-on Notes",
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson slides in html format.\nHands-on Exercise 11a: Processing and Visualising Flow Data.\nHands-on Exercise 11b: Calibrating Spatial Interaction Models with R."
+  },
+  {
+    "objectID": "outline/Lesson11_outline.html#self-reading-before-meet-up",
+    "href": "outline/Lesson11_outline.html#self-reading-before-meet-up",
+    "title": "Lesson 11: Spatial Interaction Models",
+    "section": "Self-reading Before Meet-up",
+    "text": "Self-reading Before Meet-up\nRead before lesson:\n\nKingsley E. Haynes and A. Stewart Fotheringham (2020) Gravity and Spatial Interaction Models, Web Book of Regional Science. Chapter 1 and Sub-section 2.2.\nFarmer, C. and Oshan, T. (2017). “Spatial interaction”. The Geographic Information Science & Technology Body of Knowledge (4th Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2017.4.5 (link is external)\nFlowerdew R, Aitkin M (1982) “A method of fitting the gravity model based on the Poisson distribution”. Journal of Regional Science, 22: 191–202.\n” Chapter 6. Spatial econometrics - common models”, Handbook of Spatial Analysis.\nJames P. LeSage and R. Kelley Pace (2008) “Spatial Econometric Modeling of Origin-Destination Flows”. Journal of Regional Science, Vol. 48, No. 5, pp. 941-967."
+  },
+  {
+    "objectID": "outline/Lesson11_outline.html#reference",
+    "href": "outline/Lesson11_outline.html#reference",
+    "title": "Lesson 11: Spatial Interaction Models",
+    "section": "Reference",
+    "text": "Reference\n\nPavel KLAPKA, et. al. (2013) “The Footfall of Shopping Centre in Olomouc (CZECH REPUBLIC): An Application of The Gravity Model”, Moravian Geographical Reports, Vol 21, pp. 12-26.\n\nYang Yue et. al. (2012) “Exploratory calibration of a spatial interaction model using taxi GPS trajectories”, Computers, Environment and Urban Systems, 36 (2012) 140–153.\nMorito Tsutsumi and Kazuki Tamesue (2012) “Intraregional flow problem in spatial econometric model for origin-destination flows”, Environment and Planning B: Planning and Design, Vol. 39, pp. 1006-1015. Access via SMU e-journal."
+  },
+  {
+    "objectID": "outline/Lesson11_outline.html#all-about-r",
+    "href": "outline/Lesson11_outline.html#all-about-r",
+    "title": "Lesson 11: Spatial Interaction Models",
+    "section": "All About R:",
+    "text": "All About R:\n\nPaul Roback and Julie Legler (2020) Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R, CRC Press. On line version (January 26, 2021). Chapter 4\nNegative Binomial Regression and Poisson Regression from UCLA Institute for Digital Research & Education.\nspflow\nHome-to-work commuting flows within the municipalities around Paris"
+  },
+  {
+    "objectID": "outline/Lesson09_outline.html",
+    "href": "outline/Lesson09_outline.html",
+    "title": "Lesson 9: Geographically Weighted Predictive Modelling",
+    "section": "",
+    "text": "What is Predictive Modelling?\nWhat is Geospatial Predictive Modelling\nIntroducing Recursive Partitioning\nAdvanced Recursive Partitioning: Random Forest\nIntroducing Geographically Weighted Random Forest"
+  },
+  {
+    "objectID": "outline/Lesson09_outline.html#content",
+    "href": "outline/Lesson09_outline.html#content",
+    "title": "Lesson 9: Geographically Weighted Predictive Modelling",
+    "section": "",
+    "text": "What is Predictive Modelling?\nWhat is Geospatial Predictive Modelling\nIntroducing Recursive Partitioning\nAdvanced Recursive Partitioning: Random Forest\nIntroducing Geographically Weighted Random Forest"
+  },
+  {
+    "objectID": "outline/Lesson09_outline.html#lesson-slides-and-hands-on-notes",
+    "href": "outline/Lesson09_outline.html#lesson-slides-and-hands-on-notes",
+    "title": "Lesson 9: Geographically Weighted Predictive Modelling",
+    "section": "Lesson Slides and Hands-on Notes",
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson 9 slides.\nHandout of Hands-on Exercise 9.\n\n\nSelf-reading Before Meet-up\nTo read before class:\n\nStefanos Georganos et. al. (2019) “Geographical Random Forests: A Spatial Extension of the Random Forest Algorithm to Address Spatial Heterogeneity in Remote Sensing and Population Modelling”, Geocarto International, DOI: 10.1080/10106049.2019.1595177.\nGeorganos, S. and Kalogirou, S. (2022) “A Forest of Forests: A Spatially Weighted and Computationally Efficient Formulation of Geographical Random Forests”. ISPRS, International Journal of Geo-Information, 2022, 11, 471. https://www.mdpi.com/2220-9964/11/9/471\n\n\n\nReferences\n\nGeorge Grekousis et. al. (2022) “Ranking the importance of demographic, socioeconomic, and underlying health factors on US COVID-19 deaths: A geographical random forest approach”, Health and Place, vol. 74, pp. 1-12.\nYaowen Luo, Jianguo Yan & Stephen McClure. (2020) “Distribution of the environmental and socioeconomic risk factors on COVID-19 death rate across continental USA: a spatial nonlinear analysis”, Environmental Science and Pollution Research, 28:6587–6599.\nEun-Hee Koh, Eunhee Lee, & Kang-Kun Lee (2020) “Application of geographically weighted regression models to predict spatial characteristics of nitrate contamination: Implications for an effective groundwater management strategy”, Journal of Environmental Management. Vol. 268\n\n\n\nAll About R\n\nSpatialML"
+  },
+  {
+    "objectID": "outline/Lesson07_outline.html#content",
+    "href": "outline/Lesson07_outline.html#content",
+    "title": "Lesson 7: Geographically Weighted Regression",
+    "section": "Content",
+    "text": "Content\n\nBasic concepts and principles of linear regression\n\nSimple linear regression\nMultiple linear regression\n\nThe spatial stationarity assumption of multiple linear regression.\nIntroducing Geographically Weighted Regression\n\nWeighting functions (kernel)\nWeighting schemes\nBandwidth\nInterpreting and Visualising"
+  },
+  {
+    "objectID": "outline/Lesson07_outline.html#lesson-slides",
+    "href": "outline/Lesson07_outline.html#lesson-slides",
+    "title": "Lesson 7: Geographic Segmentation with Spatially Constrained Cluster Analysis",
+    "section": "Lesson slides",
+    "text": "Lesson slides\n\nLesson 7: Geographic Segmentation with Spatially Constrained Cluster Analysis slides."
+  },
+  {
+    "objectID": "outline/Lesson07_outline.html#hands-on-exercise",
+    "href": "outline/Lesson07_outline.html#hands-on-exercise",
+    "title": "Lesson 7: Geographic Segmentation with Spatially Constrained Cluster Analysis",
+    "section": "Hands-on Exercise",
+    "text": "Hands-on Exercise\n\n12 Geographical Segmentation with Spatially Constrained Clustering Techniques\n\n\nSelf-reading Before Meet-up\nTo read before class:\n\nAssuncao, R. M., Neves, M.C., Camara, G. and Costa Freitas, C.D. 2006. “Efficient Regionalization Techniques for Socio-Economic Geographical Units Using Minimum Spanning Trees”. International Journal of Geographical Information Science 20: 797-811. (Available in SMU digital library)\nChavent, M., Kuentz-Simonet, V., Labenne,A. and Saracco, J. 2018. “ClustGeo: an R package for hierarchical clustering with spatial constraints” Computational Statistics, 33: 1799-1822. (Available in SMU digital library)\n\n\n\nReferences\n\nRovan, J. and Sambt, J. (2003) “Socio-economic Differences Among Slovenian Municipalities: A Cluster Analysis Approach”, Developments in Applied Statistics, pp. 265-278.\n\nDemeter, T. and Bratucu, G. (2013) “Statistical Analysis Of The EU Countries from A Touristic Point of View”, Bulletin of the Transilvania University of Braşov, 6(55): 121-130.\nBrown, N.S. & Watson, P. (2012) “What can a comprehensive plan really tell us about a region?: A cluster analysis of county comprehensive plans in Idaho”, Western Economics Forum. Pp.22-37.\nJaya, I.G.M., Ruchjana, B.N., Andriyana, Y. & Agata, R (2019) “Clustering with spatial constraints: The case of diarrhea in Bandung city, Indonesia”\nde Souza, D. C. & Taconeli, C. A. (2022) “Spatial and non-spatial clustering algorithm in the analysis of Brazilian educational data”, Communications in Statistics: Case Studies, Data Analysis, and Applications. Vol. 8, No. 4, 588-606. (Available in SMU digital library)\n\n\n\nAll About R\n\nHierarchical Cluster Analysis.\nskater: A function from spdep package that implements a SKATER procedure for spatial clustering analysis.\nClustGeo: Hierarchical Clustering with Spatial Constraints\n\nIntroduction to Clustgeo"
+  },
+  {
+    "objectID": "outline/Lesson05_outline.html",
+    "href": "outline/Lesson05_outline.html",
+    "title": "Lesson 5: Global and Local Measures of Spatial Autocorrelation",
+    "section": "",
+    "text": "In this lesson, you will learn a collection of geospatial statistical methods specially designed for measuring global and local spatial association.\nThese spatial statistics are well suited for:"
+  },
+  {
+    "objectID": "outline/Lesson05_outline.html#content",
+    "href": "outline/Lesson05_outline.html#content",
+    "title": "Lesson 5: Global and Local Measures of Spatial Autocorrelation",
+    "section": "Content",
+    "text": "Content\n\nWhat is Spatial Autocorrelation\n\nMeasures of Global Spatial Autocorrelation\nMeasures of Global High/Low Clustering\n\nIntroducing Localised Geospatial Analysis\n\nLocal Indicators of Spatial Association (LISA)\n\nCluster and Outlier Analysis\n\nLocal Moran and Local Geary\nMoran scatterplot\nLISA Cluster Map\n\nHot Spot and Cold Spot Areas Analysis\n\nGetis and Ord’s G-statistics"
+  },
+  {
+    "objectID": "outline/Lesson05_outline.html#lesson-slides-and-hands-on-notes",
+    "href": "outline/Lesson05_outline.html#lesson-slides-and-hands-on-notes",
+    "title": "Lesson 5: Global and Local Measures of Spatial Autocorrelation",
+    "section": "Lesson Slides and Hands-on Notes",
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson 5 slides.\nHands-on Exercise 5: Global Measures of Spatial Autocorrelation.\nHands-on Exercise 5: Local Measures of Spatial Autocorrelation"
+  },
+  {
+    "objectID": "outline/Lesson05_outline.html#self-reading-before-meet-up",
+    "href": "outline/Lesson05_outline.html#self-reading-before-meet-up",
+    "title": "Lesson 5: Global and Local Measures of Spatial Autocorrelation",
+    "section": "Self-reading Before Meet-up",
+    "text": "Self-reading Before Meet-up\nTo read before class:\n\nMoran, P. A. P. (1950). “Notes on Continuous Stochastic Phenomena”. Biometrika. 37 (1): 17–23.\nGeary, R.C. (1954) “The Contiguity Ratio and Statistical Mapping”. The Incorporated Statistician, Vol. 5, No. 3, pp. 115-127.\nGetis, A., & Ord, K. (1992). “The Analysis of Spatial Association by Use of Distance Statistics”. Geographical Analysis, 24, 189–206.\nAnselin, L. (1995). “Local indicators of spatial association – LISA”. Geographical Analysis, 27(4): 93-115.\nGetis, A. and Ord, J.K. (1992) “The analysis of spatial association by use of distance statistics”. Geographical Analysis, 24(3): 189-206.\nOrd, J.K. and Getis, A. (2010) “Local spatial autocorrelation statistics: Distributional issues and an application”. Geographical Analysis, 27(4): 286-306.\n\nThese six papers are classics of Global and Local Spatial Autocorrelation. Be warned: All classic papers assume that the readers are academic researchers."
+  },
+  {
+    "objectID": "outline/Lesson05_outline.html#references",
+    "href": "outline/Lesson05_outline.html#references",
+    "title": "Lesson 5: Global and Local Measures of Spatial Autocorrelation",
+    "section": "References",
+    "text": "References\n\nD. A. Griffith (2009) “Spatial autocorrelation”.\nGetis, A., 2010 “B.3 Spatial Autocorrelation” in Fischer, M.M., and Getis, A. 2010 Handbook of Applied Spatial Analysis: Software Tools, Methods and Applications, Springer.\nAnselin, L. (1996) “The Moran scatterplot as an ESDA tool to assess local instability in spatial association”\nGriffith, Daniel (2009) “Modeling spatial autocorrelation in spatial interaction data: empirical evidence from 2002 Germany journey-to-work flows”. Journal of Geographical Systems, Vol.11(2), pp.117-140.\nCelebioglu, F., and Dall’erba, S. (2010) “Spatial disparities across the regions of Turkey: An exploratory spatial data analysis”. The Annals of Regional Science, 45:379–400.\nMack, Z.W.V. and Kam T.S. (2018) “Is There Space for Violence?: A Data-driven Approach to the Exploration of Spatial-Temporal Dimensions of Conflict” Proceedings of 2nd ACM SIGSPATIAL Workshop on Geospatial Humanities (ACM SIGSPATIAL’18). Seattle, Washington, USA, 10 pages.\nTAN, Yong Ying and KAM, Tin Seong (2019). “Exploring and Visualizing Household Electricity Consumption Patterns in Singapore: A Geospatial Analytics Approach”, Information in Contemporary Society: 14th International Conference, iConference 2019, Washington, DC, USA, March 31–April 3, 2019, Proceedings. Pp 785-796.\nSingh A., Pathak P.K., Chauhan R.K., and Pan, W. (2011) “Infant and Child Mortality in India in the Last Two Decades: A Geospatial Analysis”. PLoS ONE 6(11), 1:19."
+  },
+  {
+    "objectID": "outline/Lesson03_outline.html",
+    "href": "outline/Lesson03_outline.html",
+    "title": "Lesson 3: Spatial Point Patterns Analysis",
+    "section": "",
+    "text": "Spatial Point Pattern Analysis is the evaluation of the pattern, or distribution, of a set of points on a surface. It can refer to the actual spatial or temporal location of these points or also include data from point sources. It is one of the most fundamental concepts in geography and spatial analysis. This lesson aims to share with you the basic concepts and methods of Spatial Point Pattern Analysis. You will also gain hands experience on using spatstat, an R package specially designed for Spatial Point Pattern Analysis."
+  },
+  {
+    "objectID": "outline/Lesson03_outline.html#content",
+    "href": "outline/Lesson03_outline.html#content",
+    "title": "Lesson 3: Spatial Point Patterns Analysis",
+    "section": "Content",
+    "text": "Content\n\nIntroducing Spatial Point Patterns\n\nThe basic concepts of spatial point patterns\nSpatial Point Patterns in real world\n\n1st Order Spatial Point Patterns Analysis\n\nKernel Density Estimation (KDE)\n\n2nd Order Spatial Point Patterns Analysis (SPPA)\n\nBasic concepts of 2nd order spatial point patterns\n2nd order SPPA methods: J, F, K and L functions\n\nSpatio-temporal Point Patterns Analysis\n\nSpatio-temporal point patterns\nSpatio-temporal KDE\nSpatio-temporal L function"
+  },
+  {
+    "objectID": "outline/Lesson03_outline.html#lesson-slides",
+    "href": "outline/Lesson03_outline.html#lesson-slides",
+    "title": "Lesson 3: Spatial Point Patterns Analysis",
+    "section": "Lesson Slides",
+    "text": "Lesson Slides\n\nLesson 3 slides."
+  },
+  {
+    "objectID": "outline/Lesson03_outline.html#hands-on-exercise",
+    "href": "outline/Lesson03_outline.html#hands-on-exercise",
+    "title": "Lesson 3: Spatial Point Patterns Analysis",
+    "section": "Hands-on Exercise",
+    "text": "Hands-on Exercise\n\nChapter 4: 1st Order Spatial Point Patterns Analysis Methods\nChapter 5: 2nd Order Spatial Point Patterns Analysis Methods\n\n\nSelf-reading Before Meet-up\n\nChapter 7 Spatial Point Pattern Analysis of Roger S. Bivand, Edzer Pebesma and Virgilio Gómez-Rubio (2013) Applied Spatial Data Analysis with R (2nd Edition), Springer.\nYuan, Y., Qiang, Y., Bin Asad, K., and Chow, T. E. (2020). Point Pattern Analysis. The Geographic Information Science & Technology Body of Knowledge (1st Quarter 2020 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2020.1.13.\nYin, P. (2020). Kernels and Density Estimation. The Geographic Information Science & Technology Body of Knowledge (1st Quarter 2020 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2020.1.12\n\n\n\nEnrichment Resources\nProf. Luc Anselin on point pattern analysis (YouTube):\n\nPoint Pattern Analysis Concepts\nPoint Pattern Analysis: Clustered, Regular and Dispersed Patterns\nPoint Pattern Analysis: Nearest Neighbor Statistics\nPoint Pattern Analysis: Quadrat Counts\nPoint Pattern Analysis: F and J Functions\nPoint Pattern Analysis: K, L and Kd Functions"
+  },
+  {
+    "objectID": "outline/Lesson03_outline.html#references",
+    "href": "outline/Lesson03_outline.html#references",
+    "title": "Lesson 3: Spatial Point Patterns Analysis",
+    "section": "References",
+    "text": "References\n\nO’Sullivan, D., and Unwin, D. (2010) Geographic Information Analysis, Second Edition. John Wiley & Sons Inc., New Jersey, Canada. Chapter 5-6.\nBaddeley A., Rubak E. and Turner R. (2015) Spatial Point Patterns: Methodology and Applications with R, Chapman and Hall/CRC.\nChapter 11 Point Pattern Analysis of Intro to GIS and Spatial Analysis. Section 11.2, 11.3, 11.3.1 and 11.4 • Ripley’s K-function.\nATSUYUKI OKABE, TOSHIAKI SATOH & KOKICHI SUGIHARA (2009) “A kernel density estimation method for networks, its computational method and a GIS-based tool”, International Journal of Geographical Information Science, Vol. 23, No. 1, January 2009, pp. 7–32.\nIkuho Yamada & Jean-Claude Thill (2007) “Local Indicators of Network-Constrained Clusters in Spatial Point Patterns”, Geographical Analysis, Vol. 39, pp 268–292.\nJérémy Gelb & Philippe Apparicio (2023) “Temporal Network Kernel Density Estimation”, Geographical Analysis. (Online open access version)\n\n\nApplications\n\nNaveen Donthu and Roland T. Rust (1989) “Estimating Geographic Customer Densities Using Kernel Density Estimation”, Marketing Science, Vol. 8, No. 2, pp. 191-203.\nJoseph Wartman and Nicholas E. Malasavage (2010). “Spatial Analysis for Identifying Concentrations of Urban Damage” in Methods and Techniques in Urban Engineering, Armando Carlos de Pina Filho and Aloisio Carlos dePina (Ed.), ISBN: 978-953-307-096-4, InTech.\nGiuseppe Borruso and Andrea Porceddu (2009) “A Tale of Two Cities: Density Analysis of CBD on Two Midsize Urban Areas in Northeastern Italy” in Murgante, Beniamino; Borruso, Giuseppe & Lapucci, Alessandra (2009) Studies in Computational Intelligence, Geocomputation and Urban Planning, pp.37-56.\nKang, Youngok ; Cho, Nahye ; Son, Serin; Chen, Peng (2018) “Spatiotemporal characteristics of elderly population’s traffic accidents in Seoul using space-time cube and space-time kernel density estimation”, PloS one, 2018, Vol.13 (5)."
+  },
+  {
+    "objectID": "outline/Lesson03_outline.html#all-about-r",
+    "href": "outline/Lesson03_outline.html#all-about-r",
+    "title": "Lesson 3: Spatial Point Patterns Analysis",
+    "section": "All About R",
+    "text": "All About R\n\nspatstat at R Cran\n\nspatstat resource.\n\nsparr: Spatial and Spatiotemporal Relative Risk package, especially spattemp.density()"
+  },
+  {
+    "objectID": "outline/Lesson02_outline.html",
+    "href": "outline/Lesson02_outline.html",
+    "title": "Lesson 2: GeoVisualisation and Analytical Mapping",
+    "section": "",
+    "text": "In this lesson, the basic principles and concepts of thematic mapping and geovisualisation will be introduced. You will also gain hands-on experience on using tmap package to build cartographic quality thematic maps."
+  },
+  {
+    "objectID": "outline/Lesson02_outline.html#overview",
+    "href": "outline/Lesson02_outline.html#overview",
+    "title": "Lesson 2: GeoVisualisation and Analytical Mapping",
+    "section": "",
+    "text": "In this lesson, the basic principles and concepts of thematic mapping and geovisualisation will be introduced. You will also gain hands-on experience on using tmap package to build cartographic quality thematic maps."
+  },
+  {
+    "objectID": "outline/Lesson02_outline.html#content",
+    "href": "outline/Lesson02_outline.html#content",
+    "title": "Lesson 2: GeoVisualisation and Analytical Mapping",
+    "section": "Content",
+    "text": "Content\n\nGeospatial Visualisation\n\nClassification of maps\nPrinciples of map design\nThematic mapping techniques\nAnalytical mapping techniques"
+  },
+  {
+    "objectID": "outline/Lesson02_outline.html#lesson-slides",
+    "href": "outline/Lesson02_outline.html#lesson-slides",
+    "title": "Lesson 2: GeoVisualisation and Analytical Mapping",
+    "section": "Lesson Slides",
+    "text": "Lesson Slides\n\nLesson 2: GeoVisualisation and Analytical Mapping slides."
+  },
+  {
+    "objectID": "outline/Lesson02_outline.html#hands-on-exercise",
+    "href": "outline/Lesson02_outline.html#hands-on-exercise",
+    "title": "Lesson 2: GeoVisualisation and Analytical Mapping",
+    "section": "Hands-on Exercise",
+    "text": "Hands-on Exercise\n\nChoropleth Mapping with R\n\n\nSelf-reading Before Meet-up\nTo read before class:\n\nProportional Symbols\nChoropleth Maps\nThe Basics of Data Classification\nChoropleth Mapping with Exploratory Data Analysis\nTennekes, M. (2018) “tmap: Thematic Maps in R”, Journal of Statistical Software, Vol 84:6, 1-39."
+  },
+  {
+    "objectID": "outline/Lesson02_outline.html#all-about-r",
+    "href": "outline/Lesson02_outline.html#all-about-r",
+    "title": "Lesson 2: GeoVisualisation and Analytical Mapping",
+    "section": "All About R",
+    "text": "All About R\n\ntmap: thematic maps in R package especially:\n\ntmap: get started!,\ntmap: version changes, and\nChapter 8 Making maps with R of Geocomputation with R."
+  },
+  {
+    "objectID": "outline/Lesson02_outline.html#reference",
+    "href": "outline/Lesson02_outline.html#reference",
+    "title": "Lesson 2: GeoVisualisation and Analytical Mapping",
+    "section": "Reference",
+    "text": "Reference\n\nThe Concept of Map Symbols\nChoropleth map\nChoropleth Maps – A Guide to Data Classification\nBivariate Choropleth\nValue-by-alpha maps\nWhat to consider when creating choropleth maps"
+  },
+  {
+    "objectID": "outline/Lesson03a_outline.html",
+    "href": "outline/Lesson03a_outline.html",
+    "title": "Lesson 4: Advanced Spatial Point Patterns Analysis",
+    "section": "",
+    "text": "In this lesson, you will learn the basic concepts of Network Constrained KDE and Temporal Network Kernel Density Estimate. Using real-world use cases, you will also gain hands-on experience on using spNetwork to analyse spatial point patterns and temporal spatial along networks"
+  },
+  {
+    "objectID": "outline/Lesson03a_outline.html#content",
+    "href": "outline/Lesson03a_outline.html#content",
+    "title": "Lesson 4: Advanced Spatial Point Patterns Analysis",
+    "section": "Content",
+    "text": "Content\n\nNetwork Constrained Kernel Density Estimation (NCKDE)\n\nBasic concepts of network constrained spatial point patterns\nNetwork Constrained KDE methods\nThe Three versions of Network Constrained KDE\n\nTemporal Network Kernel Density Estimation (TNKED)\n\nTempotal dimension\nSpatial dimension\nSpatio-temporal poit patterns\nThe Temporal Network Kernel Density Estimation method\n\n\n\nLesson Slides and Hands-on Notes\n\nLesson 4 slides\nHands-on Exercise 4: Network Constrained Spatial Point Patterns Analysis."
+  },
+  {
+    "objectID": "outline/Lesson03a_outline.html#references",
+    "href": "outline/Lesson03a_outline.html#references",
+    "title": "Lesson 4: Advanced Spatial Point Patterns Analysis",
+    "section": "References",
+    "text": "References\n\nATSUYUKI OKABE, TOSHIAKI SATOH & KOKICHI SUGIHARA (2009) “A kernel density estimation method for networks, its computational method and a GIS-based tool”, International Journal of Geographical Information Science, Vol. 23, No. 1, January 2009, pp. 7–32.\nIkuho Yamada & Jean-Claude Thill (2007) “Local Indicators of Network-Constrained Clusters in Spatial Point Patterns”, Geographical Analysis, Vol. 39, pp 268–292.\nJérémy Gelb & Philippe Apparicio (2023) “Temporal Network Kernel Density Estimation”, Geographical Analysis. (Online open access version)"
+  },
+  {
+    "objectID": "outline/Lesson03a_outline.html#all-about-r",
+    "href": "outline/Lesson03a_outline.html#all-about-r",
+    "title": "Lesson 4: Advanced Spatial Point Patterns Analysis",
+    "section": "All About R",
+    "text": "All About R\n\nspNetwork: An R package to perform spatial analysis on networks.\n\nDetails about NKDE\nNetwork k Functions\nNetwork Kernel Density Estimate\nTemporal Network Kernel Density Estimate"
+  },
+  {
+    "objectID": "outline/Lesson04_outline.html",
+    "href": "outline/Lesson04_outline.html",
+    "title": "Lesson 4: Spatial Weights and Applications",
+    "section": "",
+    "text": "Computing spatial weight is an essential step toward measuring the strength of the spatial relationships between objects. In this lesson, the basic concept of spatial weight will be introduced. This is followed by a discussion of methods to compute spatial weights."
+  },
+  {
+    "objectID": "outline/Lesson04_outline.html#content",
+    "href": "outline/Lesson04_outline.html#content",
+    "title": "Lesson 4: Spatial Weights and Applications",
+    "section": "Content",
+    "text": "Content\n\nTobler’s First law of Geography\nPrinciples of Spatial Autocorrelation\nConcepts of Spatial Proximity and Spatial Weights\n\nContiguity-Based Spatial Weights: Rook’s & Queen’s\nDistance-Band Spatial Weights: fixed and adaptive\n\nApplications of Spatial Weights\n\nSpatially Lagged Variables\nGeographically Weighted Summary Statistics"
+  },
+  {
+    "objectID": "outline/Lesson04_outline.html#lesson-slides-and-hands-on-notes",
+    "href": "outline/Lesson04_outline.html#lesson-slides-and-hands-on-notes",
+    "title": "Lesson 4: Spatial Weights and Applications",
+    "section": "Lesson Slides and Hands-on Notes",
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson 4 slides.\nHands-on Exercise 4\n\n\nSelf-reading Before Meet-up\nTo read before class:\n\nChapter 2. Codifying the neighbourhood structure of Handbook of Spatial Analysis: Theory and Application with R.\n\nAlternatively\n\nChapter 9: Modelling Areal Data of Applied Spatial Data Analysis with R (2nd Edition). This book is available in smu digital library. Until section 9.3.1."
+  },
+  {
+    "objectID": "outline/Lesson04_outline.html#references",
+    "href": "outline/Lesson04_outline.html#references",
+    "title": "Lesson 4: Spatial Weights and Applications",
+    "section": "References",
+    "text": "References\n\nFrançois Bavaud (2010) “Models for Spatial Weights: A Systematic Look” Geographical Analysis, Vol. 30, No.2, pp 153-171.\nTony H. Grubesic and Andrea L. Rosso (2014) “The Use of Spatially Lagged Explanatory Variables for Modeling Neighborhood Amenities and Mobility in Older Adults”, Cityscape, Vol. 16, No. 2, pp. 205-214."
+  },
+  {
+    "objectID": "outline/Lesson04_outline.html#all-about-r",
+    "href": "outline/Lesson04_outline.html#all-about-r",
+    "title": "Lesson 4: Spatial Weights and Applications",
+    "section": "All About R",
+    "text": "All About R\n\nspdep package\nsfdep package\nrgeoda package"
+  },
+  {
+    "objectID": "outline/Lesson06_outline.html",
+    "href": "outline/Lesson06_outline.html",
+    "title": "Lesson 6: Emerging Hot Spot Analysis",
+    "section": "",
+    "text": "Emerging Hot Spot Analysis (EHSA) is a spatio-temporal analysis method for revealing and describing how hot spot and cold spot areas evolve over time. The analysis consist of four main steps:\nIn this lesson, you will learn the basic concepts of time-space cube and EHSA. You will also gain hands-on experience of how to build a time-spce cube and to perform EHSA by using sfdep package."
+  },
+  {
+    "objectID": "outline/Lesson06_outline.html#content",
+    "href": "outline/Lesson06_outline.html#content",
+    "title": "Lesson 6: Geographic Segmentation with Spatially Constrained Cluster Analysis",
+    "section": "Content",
+    "text": "Content\n\nBasic concepts of geographic segmentation\nConventional cluster analysis techniques\nApproaches for clustering geographically referenced data\n\nHierarchical clustering with spatial constraints\nMinimum spanning trees\nClustGeo method"
+  },
+  {
+    "objectID": "outline/Lesson06_outline.html#lesson-slides-and-hands-on-notes",
+    "href": "outline/Lesson06_outline.html#lesson-slides-and-hands-on-notes",
+    "title": "Lesson 6: Emerging Hot Spot Analysis",
+    "section": "Lesson Slides and Hands-on Notes",
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson 5 slides.\nHands-on Exercise 5: Global Measures of Spatial Autocorrelation.\nHands-on Exercise 5: Local Measures of Spatial Autocorrelation"
+  },
+  {
+    "objectID": "outline/Lesson06_outline.html#self-reading-before-meet-up",
+    "href": "outline/Lesson06_outline.html#self-reading-before-meet-up",
+    "title": "Lesson 6: Emerging Hot Spot Analysis",
+    "section": "Self-reading Before Meet-up",
+    "text": "Self-reading Before Meet-up\nTo read before class:\n\nMoran, P. A. P. (1950). “Notes on Continuous Stochastic Phenomena”. Biometrika. 37 (1): 17–23.\nGeary, R.C. (1954) “The Contiguity Ratio and Statistical Mapping”. The Incorporated Statistician, Vol. 5, No. 3, pp. 115-127.\nGetis, A., & Ord, K. (1992). “The Analysis of Spatial Association by Use of Distance Statistics”. Geographical Analysis, 24, 189–206.\nAnselin, L. (1995). “Local indicators of spatial association – LISA”. Geographical Analysis, 27(4): 93-115.\nGetis, A. and Ord, J.K. (1992) “The analysis of spatial association by use of distance statistics”. Geographical Analysis, 24(3): 189-206.\nOrd, J.K. and Getis, A. (2010) “Local spatial autocorrelation statistics: Distributional issues and an application”. Geographical Analysis, 27(4): 286-306.\n\nThese six papers are classics of Global and Local Spatial Autocorrelation. Be warned: All classic papers assume that the readers are academic researchers."
+  },
+  {
+    "objectID": "outline/Lesson06_outline.html#references",
+    "href": "outline/Lesson06_outline.html#references",
+    "title": "Lesson 6: Emerging Hot Spot Analysis",
+    "section": "References",
+    "text": "References\n\nD. A. Griffith (2009) “Spatial autocorrelation”.\nGetis, A., 2010 “B.3 Spatial Autocorrelation” in Fischer, M.M., and Getis, A. 2010 Handbook of Applied Spatial Analysis: Software Tools, Methods and Applications, Springer.\nAnselin, L. (1996) “The Moran scatterplot as an ESDA tool to assess local instability in spatial association”\nGriffith, Daniel (2009) “Modeling spatial autocorrelation in spatial interaction data: empirical evidence from 2002 Germany journey-to-work flows”. Journal of Geographical Systems, Vol.11(2), pp.117-140.\nCelebioglu, F., and Dall’erba, S. (2010) “Spatial disparities across the regions of Turkey: An exploratory spatial data analysis”. The Annals of Regional Science, 45:379–400.\nMack, Z.W.V. and Kam T.S. (2018) “Is There Space for Violence?: A Data-driven Approach to the Exploration of Spatial-Temporal Dimensions of Conflict” Proceedings of 2nd ACM SIGSPATIAL Workshop on Geospatial Humanities (ACM SIGSPATIAL’18). Seattle, Washington, USA, 10 pages.\nTAN, Yong Ying and KAM, Tin Seong (2019). “Exploring and Visualizing Household Electricity Consumption Patterns in Singapore: A Geospatial Analytics Approach”, Information in Contemporary Society: 14th International Conference, iConference 2019, Washington, DC, USA, March 31–April 3, 2019, Proceedings. Pp 785-796.\nSingh A., Pathak P.K., Chauhan R.K., and Pan, W. (2011) “Infant and Child Mortality in India in the Last Two Decades: A Geospatial Analysis”. PLoS ONE 6(11), 1:19."
+  },
+  {
+    "objectID": "outline/Lesson08_outline.html",
+    "href": "outline/Lesson08_outline.html",
+    "title": "Lesson 8: Geographically Weighted Regression",
+    "section": "",
+    "text": "In this lesson, you will learn the basic concepts and methods of geographically weighted regression."
+  },
+  {
+    "objectID": "outline/Lesson08_outline.html#content",
+    "href": "outline/Lesson08_outline.html#content",
+    "title": "Lesson 8: Geographically Weighted Regression",
+    "section": "Content",
+    "text": "Content\n\nBasic concepts and principles of linear regression\n\nSimple linear regression\nMultiple linear regression\n\nThe spatial stationarity assumption of multiple linear regression.\nIntroducing Geographically Weighted Regression\n\nWeighting functions (kernel)\nWeighting schemes\nBandwidth\nInterpreting and Visualising"
+  },
+  {
+    "objectID": "outline/Lesson08_outline.html#lesson-slides-and-hands-on-notes",
+    "href": "outline/Lesson08_outline.html#lesson-slides-and-hands-on-notes",
+    "title": "Lesson 8: Geographically Weighted Regression",
+    "section": "Lesson Slides and Hands-on Notes",
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson 8 slides.\nHands-on Exercise 8."
+  },
+  {
+    "objectID": "outline/Lesson08_outline.html#self-reading-before-meet-up",
+    "href": "outline/Lesson08_outline.html#self-reading-before-meet-up",
+    "title": "Lesson 8: Geographically Weighted Regression",
+    "section": "Self-reading Before Meet-up",
+    "text": "Self-reading Before Meet-up\nTo read before class:\n\nBrunsdon, C., Fotheringham, A.S., and Charlton, M. (2002) “Geographically weighted regression: A method for exploring spatial nonstationarity”. Geographical Analysis, 28: 281-289.\nBrunsdon, C., Fotheringham, A.S. and Charlton, M., (1999) “Some Notes on Parametric Significance Tests for Geographically Weighted Regression”. Journal of Regional Science, 39(3), 497-524."
+  },
+  {
+    "objectID": "outline/Lesson08_outline.html#references",
+    "href": "outline/Lesson08_outline.html#references",
+    "title": "Lesson 8: Geographically Weighted Regression",
+    "section": "References",
+    "text": "References\n\nMennis, Jeremy (2006) “Mapping the Results of Geographically Weighted Regression”, The Cartographic Journal, Vol.43 (2), p.171-179.\nStephen A. Matthews ; Tse-Chuan Yang (2012) “Mapping the results of local statistics: Using geographically weighted regression”, Demographic Research, Vol.26, p.151-166."
+  },
+  {
+    "objectID": "outline/Lesson08_outline.html#all-about-r",
+    "href": "outline/Lesson08_outline.html#all-about-r",
+    "title": "Lesson 8: Geographically Weighted Regression",
+    "section": "All About R",
+    "text": "All About R\n\nGWmodel package, especially\n\nGollini, I et. al. (2015) “GWmodel: An R Package for Exploring Spatial Heterogeneity Using Geographically Weighted Models”, Journal of Statistical Software, Volume 63, Issue 17 and\nBinbin Lu, Paul Harris, Martin Charlton & Chris Brunsdon (2014) “The GWmodel R package: further topics for exploring spatial heterogeneity using geographically weighted models”, Geo-spatial Information Science, 17:2, 85-101, DOI: 10.1080/10095020.2014.917453.\n\nlctools package especially gw() and gwr() related functions.\nspgwr implements of geographically weighted regression methods for exploring possible non-stationarity.\ngwrr: its geographically weighted regression (GWR) models and has tools to diagnose and remediate collinearity in the GWR models. Also fits geographically weighted ridge regression (GWRR) and geographically weighted lasso (GWL) models."
+  },
+  {
+    "objectID": "outline/Lesson10_outline.html",
+    "href": "outline/Lesson10_outline.html",
+    "title": "Lesson 10: Modelling Geographic of Accessibility",
+    "section": "",
+    "text": "Basic Concepts of Geographic Accessibility\nGravitational Law and Distance Decay Function\nIntroducing Potential Models\n\nThe classic model\n\nHansen Potential Accessibility Model\nTwo-step Floating Catchment Area (2SFCA) Method\nKernel Density Two-Step Floating Catchment Area (KD2SFCA) Method\nInterpreting and Visualising Modelling Results"
+  },
+  {
+    "objectID": "outline/Lesson10_outline.html#content",
+    "href": "outline/Lesson10_outline.html#content",
+    "title": "Lesson 10: Modelling Geographic of Accessibility",
+    "section": "",
+    "text": "Basic Concepts of Geographic Accessibility\nGravitational Law and Distance Decay Function\nIntroducing Potential Models\n\nThe classic model\n\nHansen Potential Accessibility Model\nTwo-step Floating Catchment Area (2SFCA) Method\nKernel Density Two-Step Floating Catchment Area (KD2SFCA) Method\nInterpreting and Visualising Modelling Results"
+  },
+  {
+    "objectID": "outline/Lesson10_outline.html#lesson-slides-and-hands-on-notes",
+    "href": "outline/Lesson10_outline.html#lesson-slides-and-hands-on-notes",
+    "title": "Lesson 10: Modelling Geographic of Accessibility",
+    "section": "Lesson Slides and Hands-on Notes",
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson 10 slides.\nHands-on Exercise 10 handout."
+  },
+  {
+    "objectID": "outline/Lesson10_outline.html#self-reading-before-meet-up",
+    "href": "outline/Lesson10_outline.html#self-reading-before-meet-up",
+    "title": "Lesson 10: Modelling Geographic of Accessibility",
+    "section": "Self-reading Before Meet-up",
+    "text": "Self-reading Before Meet-up\nRead before lesson:\n\nLong, J. (2017). Modelling Accessibility. The Geographic Information Science & Technology Body of Knowledge (3rd Quarter 2017 Edition), John P. Wilson (ed.).\nHansen, W. G. (1959): “How Accessibility Shapes Land Use”. Journal of the American Institute of Planners, 25, 2, p. 73-76.\nLuo, W.; Wang, F. (2003) “Measures of spatial accessibility to health care in a GIS environment: synthesis and a case study in the Chicago region”. Environment and Planning B: Planning and Design. 30 (6): 865–884. doi:10.1068/b29120.\nLuo, W.; Qi, Y. (2009). “An enhanced two-step floating catchment area (E2SFCA) method for measuring spatial accessibility to primary care physicians”. Health & Place. 15 (4): 1100–1107."
+  },
+  {
+    "objectID": "outline/Lesson10_outline.html#reference",
+    "href": "outline/Lesson10_outline.html#reference",
+    "title": "Lesson 10: Modelling Geographic of Accessibility",
+    "section": "Reference",
+    "text": "Reference\n\nSection on “Transportation and Accessibility” in The Geography of Transport Systems.\nRich, D.C. (1980) Potential Models in Human Geography.\nOrpana, T./Lampinen, J. (2003) “Building spatial choice models from aggregate data”. Journal of Regional Science,43, 2, p. 319-347.\nTwo-step floating catchment area method.\nCheng, Gang et. al. (2016) “Spatial difference analysis for accessibility to high level hospitals based on travel time in Shenzhen, China” Habitat International, Vol.53, p.485-494.\nPolzin, Pierre ; Borges, José ; Coelho, António (2014) “An Extended Kernel Density Two-Step Floating Catchment Area Method to Analyze Access to Health Care” Environment and planning. B, Planning & design, Vol.41 (4), p.717-735."
+  },
+  {
+    "objectID": "outline/Lesson10_outline.html#all-about-r",
+    "href": "outline/Lesson10_outline.html#all-about-r",
+    "title": "Lesson 10: Modelling Geographic of Accessibility",
+    "section": "All About R:",
+    "text": "All About R:\n\naccessibility\nSpatialAcc package.\nPotential package."
+  },
+  {
+    "objectID": "outline/workshop.html",
+    "href": "outline/workshop.html",
+    "title": "Workshop on Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "",
+    "text": "Motivation of developing web-enabled applications\n\nBasic principles of web applications\n\nIntroducing R Shiny\n\nGetting to know Shiny\nArchitecture of Shiny\nBuilding block of Shiny app\n\nAdvanced R Shiny\n\nReactive feature of Shiny\nBuild interactive Shiny application by using plotly R\nBuild static, interactive and reactive geovisualisation application by using tmap\n\nManaging R Shiny Project\n\nThe basic development cycle of creating apps\nDebug errors in the codes\nBuild complex Shiny application using module\nImprove the productivity of Shiny applications development\n\nDeploying Shiny Application\n\nDeploy to the cloud: shinyapps.io\nDeploy on-premises (open source): Shiny Server\nDeploy on-premises (commercial): RStudio Connect"
+  },
+  {
+    "objectID": "outline/workshop.html#content",
+    "href": "outline/workshop.html#content",
+    "title": "Workshop on Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "",
+    "text": "Motivation of developing web-enabled applications\n\nBasic principles of web applications\n\nIntroducing R Shiny\n\nGetting to know Shiny\nArchitecture of Shiny\nBuilding block of Shiny app\n\nAdvanced R Shiny\n\nReactive feature of Shiny\nBuild interactive Shiny application by using plotly R\nBuild static, interactive and reactive geovisualisation application by using tmap\n\nManaging R Shiny Project\n\nThe basic development cycle of creating apps\nDebug errors in the codes\nBuild complex Shiny application using module\nImprove the productivity of Shiny applications development\n\nDeploying Shiny Application\n\nDeploy to the cloud: shinyapps.io\nDeploy on-premises (open source): Shiny Server\nDeploy on-premises (commercial): RStudio Connect"
+  },
+  {
+    "objectID": "outline/workshop.html#workshop-slides-and-hands-on-notes",
+    "href": "outline/workshop.html#workshop-slides-and-hands-on-notes",
+    "title": "Workshop on Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "Workshop Slides and Hands-on Notes",
+    "text": "Workshop Slides and Hands-on Notes\n\nIntroducing R Shiny slides in html and pdf formats\nAdvanced R Shiny I slides in html and pdf formats\nManaging R Shiny Project slides in html and pdf formats"
+  },
+  {
+    "objectID": "outline/workshop.html#must-do",
+    "href": "outline/workshop.html#must-do",
+    "title": "Workshop on Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "Must Do!",
+    "text": "Must Do!\n\nView the three parts series of Shiny Tutorial at this link."
+  },
+  {
+    "objectID": "outline/workshop.html#readings",
+    "href": "outline/workshop.html#readings",
+    "title": "Workshop on Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "Readings",
+    "text": "Readings\n\nCore Readings\n\nShiny reference guide at CRAN.\nHadley Wickham (2021) Mastering Shiny, O’Reilly Media. This is a highly recommended book. You can find the online version with this link.\nPaula Moraga (2020) Geospatial Health Data: Modeling and Visualization with R-INLA and Shiny, Chapman & Hall/CRC. Chapter 13, 14 and 15.\n\n\n\nAdditional references\n\nColin Fay, Sébastien Rochette, Vincent Guyader, Cervan Girard (2020), Engineering Production-Grade Shiny Apps, Chapman & Hall. You can find the online version with this link.\nOutstanding User Interfaces with Shiny.\nHow to Build a Shiny Application from Scratch.\n\n\n\nDeploying Shiny Application on shinyapps.io\n\nGetting started with shinyapps.io\nshinyapps.io user guide"
+  },
+  {
+    "objectID": "outline/workshop.html#gallery",
+    "href": "outline/workshop.html#gallery",
+    "title": "Workshop on Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "Gallery",
+    "text": "Gallery\n\nWinners of the 1st Shiny Contest\nWinners of the 2nd Annual Shiny Contest\nWinners of the 3rd annual Shiny Contest\nShiny Gallery\nFifteen New Zealand government Shiny web apps\nShinyApps Gallery\ndreamRs shiny gallery\nTools for Teaching Quantitative Thinking"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny2/Shiny2.html",
+    "href": "ShinyWorkshop/Shiny2/Shiny2.html",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "",
+    "text": "In this lesson, selected advanced methods of Shiny will be discussed. You will also gain hands-on experiences on using these advanced methods to build Shiny applications.\nBy the end of this lesson, you will be able to:\n\ngain further understanding of the reactive feature of Shiny and Shiny’s functions that support reactive flow,\nbuild interactive Shiny application by using plotly R and\nbuild static, interactive and reactive geovisualisation application by using tmap"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny2/Shiny2.html#overview",
+    "href": "ShinyWorkshop/Shiny2/Shiny2.html#overview",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "",
+    "text": "In this lesson, selected advanced methods of Shiny will be discussed. You will also gain hands-on experiences on using these advanced methods to build Shiny applications.\nBy the end of this lesson, you will be able to:\n\ngain further understanding of the reactive feature of Shiny and Shiny’s functions that support reactive flow,\nbuild interactive Shiny application by using plotly R and\nbuild static, interactive and reactive geovisualisation application by using tmap"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny2/Shiny2.html#reactive-flow",
+    "href": "ShinyWorkshop/Shiny2/Shiny2.html#reactive-flow",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "Reactive Flow",
+    "text": "Reactive Flow\nBy default, Shiny application is Reactive!\n\n\n\nReactive Flow - the basic\nThe user selects an input, this input goes through some expression in the server, and an output is rendered. Each time the user changes their input selection, the expression that generates the output will automatically re-execute, and the relevant output will be re-rendered based on the new value of the input.\nIn a Shiny application, there’s no need to explictly describe the relationships between inputs and outputs and tell R what to do when each input changes, Shiny automatically handles these details for you.\n\n\nSource: Module 2 of Building Web Applications with Shiny\n\n\n\n\nReactive Flow - The full features\n\n\n\n\nReactive elements\n\n\nThree components of reactive execution in Shiny are:\n\nreactive inputs,\nreactive expressions, and\nreactive outputs.\n\n\n\n\n\n\n\nReactive elements\n\n\n\n\nReactive inputs and outputs\n\nA reactive input is a user input that comes through a browser interface, typically.\nA reactive output is something that appears in the user’s browser window, such as a plot or a table of values.\n\n\n\nOne reactive input can be connected to multiple outputs, and vice versa. For example we might have a UI input widget for filtering out data based on user’s selection, and the filtered data can be used in multiple outputs like plots and summaries.\n\n\n\n\nReactive expressions\n\nA reactive expressions is component between an input and an output.\nIt can both be a dependent (i.e be a child) and have dependents (i.e. be a parent)."
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny2/Shiny2.html#in-class-exercise-building-a-reactive-scatter-plot-using-shiny",
+    "href": "ShinyWorkshop/Shiny2/Shiny2.html#in-class-exercise-building-a-reactive-scatter-plot-using-shiny",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "In-class Exercise: Building a reactive scatter plot using Shiny",
+    "text": "In-class Exercise: Building a reactive scatter plot using Shiny\n\n\nIn this in-class exercise, you are going to explore advanced reactive features.\nTo get started, you need to do the followings:\n\nstart a new Shiny Application\nload the necessary R package, namely Shiny and tidyverse\nimport the data file (i.e. Exam_data.csv )\nbuild a basic scatterplot look similar to the figure on the right.\n\n\n\n\n\n\n\nThe UI\n\nlibrary(shiny)\nlibrary(tidyverse)\nexam &lt;- read_csv(\"data/Exam_data.csv\")\nui &lt;- fluidPage(\n    titlePanel(\"Subject Correlation Analysis\"),\n    sidebarLayout(\n        sidebarPanel(\n            selectInput(inputId = \"yvariable\",\n                        label = \"y Variable:\",\n                        choices = c(\"English\" = \"ENGLISH\",\n                                    \"Maths\" = \"MATHS\",\n                                    \"Science\" = \"SCIENCE\"),\n                        selected = \"MATHS\"),\n            selectInput(inputId = \"xvariable\",\n                        label = \"x Variable:\",\n                        choices = c(\"English\" = \"ENGLISH\",\n                                    \"Maths\" = \"MATHS\",\n                                    \"Science\" = \"SCIENCE\"),\n                        selected = \"SCIENCE\")\n        ),\n        mainPanel(\n            plotOutput(\"scatterPlot\")\n        )\n    )\n)\n\n\n\n\nThe server\n\nserver &lt;- function(input, output, session){    \n    output$scatterPlot &lt;- renderPlot({\n        ggplot(data=exam,\n               aes_string(x = input$xvariable,      \n                          y = input$yvariable)) +   \n                   geom_point()\n    })\n}\n\nLastly, do not forget to add this line!\n\nshinyApp (ui=ui, server=server)\n\n\n\n\nStop-trigger-delay\nIn this section, you will learn how to how to stop, trigger, and delay Shiny actions.\n\nUsing submitButton()\nUsing isolate() and actionButton()\n\n\n\n\nWorking with submitButton()\n\n\n\n\nWorking with submitButton()\n\nsubmitButton() is used when you want to delay a reaction.\nEdit the code as shown below:\n\n\n            selectInput(inputId = \"xvariable\",\n                        label = \"x Variable:\",\n                        choices = c(\"English\" = \"ENGLISH\",\n                                    \"Maths\" = \"MATHS\",\n                                    \"Science\" = \"SCIENCE\"),\n                        selected = \"SCIENCE\"),\n            submitButton(\"Apply changes\")\n\nNote: The use of submitButton() is generally discouraged in favor of the more versatile actionButton().\nReference: submitButton.\n\n\n\nIsolating reactions\n\nWhen to use?\n\n\n\nSuppose your app has an input widget where users can enter text for the title of the plot. However you only want the title to update if any of the other inputs that go into the plot change. You can achieve this by isolating the plot title such that:\n\nWhen input\\(x or input\\)y changes, the plot will update.\nBut when only the title input (input$plot_title) changes, the plot will not update.\n\n\n\n\n\n\nReference: isolation\n\n\n\n\nWorking with isolate() and actionButton()\n\nAt the ui, edit the code as shown below:\n\n\n            selectInput(inputId = \"xvariable\",\n                        label = \"x Variable:\",\n                        choices = c(\"English\" = \"ENGLISH\",\n                                    \"Maths\" = \"MATHS\",\n                                    \"Science\" = \"SCIENCE\"),\n                        selected = \"SCIENCE\"),\n            textInput(                       \n                inputId = \"plot_title\",     \n                label = \"Plot title\",       \n                placeholder = \"Enter text to be used as plot title\"), \n            actionButton(\"goButton\", \"Go!\") \n\n\nReference guide on textInput()\nReference guide on actionButton()\n\n\n\n\nWorking with isolate() and actionButton()\n\nAt the server side, edit the codes as shown below:\n\n\nserver &lt;- function(input, output, session){\n    output$scatterPlot &lt;- renderPlot({\n        input$goButton                           \n        \n        ggplot(data=exam,\n               aes_string(x = input$xvariable,\n                          y = input$yvariable)) +\n            geom_point() +\n            labs(title = isolate({               \n                toTitleCase(input$plot_title)    \n            }))                                  \n    })\n}\n\n\nReference guide on isolate()"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny2/Shiny2.html#embedding-interactive-graphs-in-r-shiny",
+    "href": "ShinyWorkshop/Shiny2/Shiny2.html#embedding-interactive-graphs-in-r-shiny",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "Embedding Interactive Graphs in R Shiny",
+    "text": "Embedding Interactive Graphs in R Shiny\n\nThe plotly way\n\n\nTwo approaches: - Using plotly directly, or - Plot the basic visualisation using ggplot2, then wrap the visualisation object into plotly object using ggplotly().\nReference: - Plotly R Open Source Graphing Library - 17 Server-side linking with shiny of Interactive web-based data visualization with R, plotly, and shiny\n\n\n\n\n\n\n\nIn-class Exercise: Embedding an interactive scatter plot in Shiny\n\n\n\nInstall plotly R package if it has yet to be install in RStudio.\ninclude a new line as shown below to launch plotly library.\n\n\nlibrary(shiny)\nlibrary(plotly) \nlibrary(tidyverse)\n\n\nAt UI, edit the code as shown below\n\n\n mainPanel(\n    plotlyOutput(\"scatterPlot\") \n\n\n\nedit the server section of the Shiny app as shown below.\n\n\nserver &lt;- function(input, output){\n    output$scatterPlot &lt;- renderPlotly({ #&lt;&lt;\n        \n      p &lt;- ggplot(data = exam, \n            aes_string(x = input$xvariable,\n                       y = input$yvariable)) +\n            geom_point(color=\"grey 10\", \n                       size=1)\n        \n            ggplotly(p) #&lt;&lt;                           \n    })\n}\n\n\n\n\n\n\nIn-class Exercise: Embedding an interactive bar chart in Shiny\nIn this exercise, you will learn how going to embed an interactive bar chart in Shiny by using plotly. The output will look similar to the figure below.\n\n\n\n\nIn-class Exercise: Embedding an interactive bar chart in Shiny\n\n\nThe ui:\n\nlibrary(shiny)\nlibrary(plotly)\nlibrary(tidyverse)\n\nexam &lt;- read_csv(\"data/Exam_data.csv\")\n\nui &lt;- fluidPage(\n    titlePanel(\"Pupils Profile\"),\n    mainPanel(\n            plotlyOutput(\"race\"),\n        )\n    )\n\n\nThe server:\n\nserver &lt;- function(input, output) {\n    output$race &lt;- renderPlotly({\n        p &lt;- ggplot(data=exam, \n                    aes(x=RACE)) +\n            geom_bar()\n        ggplotly(p)\n    })\n}\n\nLast but not least the app\n\nshinyApp (ui=ui, server=server)"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny2/Shiny2.html#in-class-exercise-embedding-a-drill-down-bar-chart-in-shiny",
+    "href": "ShinyWorkshop/Shiny2/Shiny2.html#in-class-exercise-embedding-a-drill-down-bar-chart-in-shiny",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "In-class Exercise: Embedding a drill-down bar chart in Shiny",
+    "text": "In-class Exercise: Embedding a drill-down bar chart in Shiny\nIn this exercise, you will learn how to embed a drill-down bar chart in Shiny by using event_data() of plotly.\n\n\n\nIn-class Exercise: Embedding a drill-down bar chart in Shiny\n\n\nThe ui:\n\nlibrary(shiny)\nlibrary(plotly)\nlibrary(tidyverse)\n\nexam &lt;- read_csv(\"data/Exam_data.csv\")\n\nui &lt;- fluidPage(\n    titlePanel(\"Drill-down Bar Chart\"),\n    mainPanel(\n            plotlyOutput(\"race\"),\n            plotlyOutput(\"gender\"),\n            verbatimTextOutput(\"info\")\n        )\n    )\n\nVisit this link to learn more about %in%.\n\nThe server:\n\nserver &lt;- function(input, output) {\n    output$race &lt;- renderPlotly({\n        p &lt;- ggplot(data=exam, \n                    aes(x=RACE)) +\n            geom_bar()\n        ggplotly(p)\n    })\n    output$gender &lt;- renderPlotly({\n        d &lt;- event_data(\"plotly_click\") #&lt;&lt;\n        if (is.null(d)) return(NULL) #&lt;&lt;\n        \n        p &lt;- exam %&gt;% \n            filter(RACE %in% d$x) %&gt;%  #&lt;&lt;\n            ggplot(aes(x=GENDER)) +\n            geom_bar() \n        ggplotly(p) %&gt;%\n            layout(xaxis = list(title = d$x)) #&lt;&lt;\n    })\n    output$info &lt;- renderPrint({\n        event_data(\"plotly_click\") #&lt;&lt;\n    })    \n}\n\n\n\n\n\n\nIn-class Exercise: Embedding a drill-down bar chart in Shiny (Revised version)\n\n\nThe ui:\n\nlibrary(shiny)\nlibrary(plotly)\nlibrary(tidyverse)\n\nexam &lt;- read_csv(\"data/Exam_data.csv\")\n\nui &lt;- fluidPage(\n    titlePanel(\"Drill-down Bar Chart\"),\n    mainPanel(\n            plotlyOutput(\"race\"),\n            plotlyOutput(\"gender\"),\n            verbatimTextOutput(\"info\")\n        )\n    )\n\n\nThe server:\n\nserver &lt;- function(input, output) {\n    output$race &lt;- renderPlotly({\n        p &lt;- exam %&gt;% #&lt;&lt;\n            plot_ly(x = ~RACE) #&lt;&lt;\n    })\n\n    output$gender &lt;- renderPlotly({\n        d &lt;- event_data(\"plotly_click\")\n        if (is.null(d)) return(NULL)\n        \n        p &lt;- exam %&gt;% \n            filter(RACE %in% d$x) %&gt;% \n            ggplot(aes(x=GENDER)) +\n            geom_bar() \n        ggplotly(p) %&gt;%\n            layout(xaxis = list(title = d$x))\n    })\n\n    output$info &lt;- renderPrint({\n        event_data(\"plotly_click\")\n    })    \n}"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny2/Shiny2.html#in-class-exercise-embedding-a-static-map-in-shiny",
+    "href": "ShinyWorkshop/Shiny2/Shiny2.html#in-class-exercise-embedding-a-static-map-in-shiny",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "In-class Exercise: Embedding A Static Map in Shiny",
+    "text": "In-class Exercise: Embedding A Static Map in Shiny\nIn this exercise, you will learn how to embed a static map in Shiny by using renderPlot(). By the end of this exercise, you will be able to plot a static map on Shiny display as shown below.\n\n\n\nIn-class Exercise: Embedding A Static Map in Shiny\n\n\n\nSetting up\n\nlibrary(shiny)\nlibrary(sf)\nlibrary(tmap)\nlibrary(tidyverse)\n\n\n\n\nImporting the geospatial data\n\nmpsz &lt;- st_read(dsn = \"data/geospatial\", \n                layer = \"MP14_SUBZONE_WEB_PL\")\n\n\n\n\n\n\n\nIn-class Exercise: Embedding a static map in Shiny\nThe UI codes\n\nui &lt;- fluidPage(\n    titlePanel(\"A simple map display\"),\n    sidebarLayout(\n        sidebarPanel(\n            checkboxInput(inputId = \"show_data\",\n                          label = \"Show data table\",\n                          value = TRUE)\n        ),\n        mainPanel(\n            plotOutput(\"mapPlot\"),\n            DT::dataTableOutput(outputId = \"szTable\")\n        )\n    )\n)\n\n\n\n\nIn-class Exercise: Embedding a static map in Shiny\nThe Server codes:\n\nserver &lt;- function(input, output){\n    output$mapPlot &lt;- renderPlot({\n        tm_shape(mpsz)+\n            tm_fill() +\n            tm_borders(lwd = 0.1,  alpha = 1)\n    })\n    \n    output$szTable &lt;- DT::renderDataTable({\n        if(input$show_data){\n            DT::datatable(data = mpsz %&gt;% select(1:7),\n                          options= list(pageLength = 10),\n                          rownames = FALSE)\n        }\n    })    \n}\n\n\n\n\n\n\n\nImportant\n\n\n\nImportant, don’t miss out this line\n\nshinyApp (ui=ui, server=server)"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny2/Shiny2.html#in-class-exercise-building-a-choropleth-mapping-application",
+    "href": "ShinyWorkshop/Shiny2/Shiny2.html#in-class-exercise-building-a-choropleth-mapping-application",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "In-class Exercise: Building a choropleth mapping application",
+    "text": "In-class Exercise: Building a choropleth mapping application\nIn this exercise, you will learn how to build a choropleth mapping application by using tmap and Shiny.\n\n\n\nIn-class Exercise: Building a choropleth mapping application\nEdit the code as shown below:\n\nlibrary(shiny)\nlibrary(sf)\nlibrary(tmap)\nlibrary(tidyverse)\n\nmpsz &lt;- st_read(dsn = \"data/geospatial\", \n                layer = \"MP14_SUBZONE_WEB_PL\")\n\npopagsex &lt;- read_csv(\"data/aspatial/respopagsex2000to2018.csv\") #&lt;&lt;\n\n\n\n\nIn-class Exercise: Building a choropleth mapping application\nEdit the codes as shown below:\n\npopagsex2018_male &lt;- popagsex %&gt;%\n    filter(Sex == \"Males\") %&gt;%\n    filter(Time == 2018) %&gt;%\n    spread(AG, Pop) %&gt;%\n    mutate(YOUNG = `0_to_4`+`5_to_9`+`10_to_14`+\n               `15_to_19`+`20_to_24`) %&gt;%\n    mutate(`ECONOMY ACTIVE` = rowSums(.[9:13])+\n               rowSums(.[15:17]))%&gt;%\n    mutate(`AGED`=rowSums(.[18:22])) %&gt;%\n    mutate(`TOTAL`=rowSums(.[5:22])) %&gt;%  \n    mutate(`DEPENDENCY` = (`YOUNG` + `AGED`)\n           /`ECONOMY ACTIVE`) %&gt;%\n    mutate_at(.vars = vars(PA, SZ), \n              .funs = funs(toupper)) %&gt;%\n    select(`PA`, `SZ`, `YOUNG`, \n           `ECONOMY ACTIVE`, `AGED`, \n           `TOTAL`, `DEPENDENCY`) %&gt;%\n    filter(`ECONOMY ACTIVE` &gt; 0)\nmpsz_agemale2018 &lt;- left_join(mpsz,\n                              popagsex2018_male,\n                              by = c(\"SUBZONE_N\" = \"SZ\"))\n\n\n\n\nIn-class Exercise: Building a choropleth mapping application\nAt the UI, edit the codes as shown below:\n\nui &lt;- fluidPage(\n    titlePanel(\"Choropleth Mapping\"),\n    sidebarLayout(\n        sidebarPanel(\n            selectInput(inputId = \"classification\",\n                        label = \"Classification method:\",\n                        choices = list(\"fixed\" = \"fixed\", \n                                       \"sd\" = \"sd\", \n                                       \"equal\" = \"equal\", \n                                       \"pretty\" = \"pretty\", \n                                       \"quantile\" = \"quantile\", \n                                       \"kmeans\" = \"kmeans\", \n                                       \"hclust\" = \"hclust\", \n                                       \"bclust\" = \"bclust\", \n                                       \"fisher\" = \"fisher\", \n                                       \"jenks\" = \"jenks\"),\n                        selected = \"pretty\"),\n\n\n\n\nIn-class Exercise: Building a choropleth mapping application\nAt the UI, continue edit the codes as shown below:\n\n            sliderInput(inputId = \"classes\",\n                        label = \"Number of classes\",\n                        min = 6,\n                        max = 12,\n                        value = c(6)),\n            selectInput(inputId = \"colour\",\n                        label = \"Colour scheme:\",\n                        choices = list(\"blues\" = \"Blues\", \n                                       \"reds\" = \"Reds\", \n                                       \"greens\" = \"Greens\",\n                                       \"Yellow-Orange-Red\" = \"YlOrRd\",\n                                       \"Yellow-Orange-Brown\" = \"YlOrBr\",\n                                       \"Yellow-Green\" = \"YlGn\",\n                                       \"Orange-Red\" = \"OrRd\"),\n                        selected = \"YlOrRd\")\n        ),\n\n\n\n\nIn-class Exercise: Building a choropleth mapping application\nAt the server, edit the codes as shown below:\n\nserver &lt;- function(input, output){\n    output$mapPlot &lt;- renderPlot({\n        tm_shape(mpsz_agemale2018)+ #&lt;&lt;\n            tm_fill(\"DEPENDENCY\",  #&lt;&lt;\n                    n = input$classes, #&lt;&lt;\n                    style = input$classification, #&lt;&lt;\n                    palette = input$colour) + #&lt;&lt;\n            tm_borders(lwd = 0.1,\n                       alpha = 1)\n        })\n}\n\n\n\n\n\n\n\nImportant\n\n\n\nA gentle reminder,\n\nshinyApp (ui=ui, server=server)"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny2/Shiny2.html#embedding-an-interactive-map-in-shiny",
+    "href": "ShinyWorkshop/Shiny2/Shiny2.html#embedding-an-interactive-map-in-shiny",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "Embedding an interactive map in Shiny",
+    "text": "Embedding an interactive map in Shiny\nIn this exercise, you will learn how to embed an interactive map in Shiny by using renderTmap() and tmapOutput() of tmap package. The interactive map is a proportional symbol map showing distribution of winnings by branches/outlets.\n\n\n\nSetting up\n\nlibrary(shiny)\nlibrary(sf)\nlibrary(tmap)\nlibrary(tidyverse)\n\n\n\nImporting the geospatial data\n\nsgpools &lt;- read_csv(\"data/aspatial/SGPools_svy21.csv\")\nsgpools_sf &lt;- st_as_sf(sgpools, \n                       coords = c(\"XCOORD\", \n                                  \"YCOORD\"),\n                       crs= 3414)\n\n\n\nThings to learn from the code chunk above:\n\nst_as_sf() of sf package is used to convert the tibble data frame into simple feature data frame by using values from the XCOORD and YCOORD fields. The crs argument is used to specify the projected coordinates systems (i.e. svy21 for Singapore).\n\n\n\n\nThe ui\n\nui &lt;- fluidPage(\n    titlePanel(\"Interactive Map View\"),\n    sidebarLayout(\n        sidebarPanel(\n            checkboxInput(inputId = \"showData\",\n                          label = \"Show data table\",\n                          value = TRUE)\n        ),\n        mainPanel(\n            tmapOutput(\"mapPlot\"), #&lt;&lt;\n            DT::dataTableOutput(outputId = \"aTable\")\n        )\n    )\n)\n\n\n\n\n\n\n\nNote\n\n\n\nNotice that tmapout() is used instead of plotOutput().\n\n\n\n\n\nThe server\n\nserver &lt;- function(input, output, session){\n    output$mapPlot &lt;- renderTmap({   #&lt;&lt;\n        tm_shape(sgpools_sf)+\n            tm_bubbles(col = \"OUTLET TYPE\",\n                       size = \"Gp1Gp2 Winnings\",\n                       border.col = \"black\",\n                       border.lwd = 0.5)\n    })\n    \n    output$aTable &lt;- DT::renderDataTable({\n        if(input$showData){\n            DT::datatable(data = sgpools_sf %&gt;% \n                            select(1:4),\n                          options= list(pageLength = 10),\n                          rownames = FALSE)\n        }\n    })    \n}\n\n\n\n\n\n\n\nNote\n\n\n\nNotice that renderTmap() is used instead of renderPlot()."
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny2/Shiny2.html#in-class-exercise-reactive-map-in-r-shiny",
+    "href": "ShinyWorkshop/Shiny2/Shiny2.html#in-class-exercise-reactive-map-in-r-shiny",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "In-class Exercise: Reactive Map in R Shiny",
+    "text": "In-class Exercise: Reactive Map in R Shiny\nIn this exercise, you will learn how to create reactive map in Shiny. The output will look similar to the figure below.\n\n\n\nThe ui\n\nui &lt;- fluidPage(\n    titlePanel(\"Reactive Map\"),\n    sidebarLayout(\n        sidebarPanel(\n            selectInput(inputId = \"type\",\n                        label = \"Branch or Outlet?\",\n                        choices = c(\"branch\" = \"Branch\",\n                                    \"outlet\" = \"Outlet\"),\n                        selected = \"Branch\",\n                        multiple = TRUE),\n            sliderInput(inputId = \"winning\", \n                        label = \"Number of winnings\", \n                        min = 2,\n                        max = 80, \n                        value = 20),\n            checkboxInput(inputId = \"showData\",\n                          label = \"Show data table\",\n                          value = TRUE)\n        ),\n\n\n\n\nThe ui (continue)\n\n        mainPanel(\n            tmapOutput(\"mapPlot\"),\n            DT::dataTableOutput(outputId = \"aTable\")\n        )\n    )\n)\n\n\n\n\nThe server\n\nserver &lt;- function(input, output, session){\n    dataset = reactive({ #&lt;&lt;                   \n        sgpools_sf %&gt;% #&lt;&lt;\n            filter(TYPE == input$type) %&gt;% #&lt;&lt;\n            filter(WINNINGS &gt; input$winning) #&lt;&lt;\n    })\n    \n    output$mapPlot &lt;- renderTmap({\n        tm_shape(shp = dataset(), #&lt;&lt;\n                 bbox = st_bbox(sgpools_sf))+ #&lt;&lt;\n            tm_bubbles(col = \"TYPE\",\n                       size = \"WINNINGS\",\n                       border.col = \"black\",\n                       border.lwd = 0.5)\n    })\n\n\n\n\n\n\n\nThings to learn from the code chunk above:\n\n\n\n\nreactive() is used to create a reactive expression (i.e. dataset) that hold the extracted data set.\nbbox = st_bbox() argument is used to fix the extend of the map view.\n\n\n\n\n\n\nThe server (continue)\n\n    output$aTable &lt;- DT::renderDataTable({\n        if(input$showData){\n            DT::datatable(data = dataset() %&gt;% #&lt;&lt;\n                              select(1:4),\n                          options= list(pageLength = 10),\n                          rownames = FALSE)\n        }\n    })    \n}\n\n\n\n\n\n\n\nImportant\n\n\n\nAlso, don’t forget this magic line!\n\nshinyApp (ui=ui, server=server)"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny2/Shiny2.html#references",
+    "href": "ShinyWorkshop/Shiny2/Shiny2.html#references",
+    "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
+    "section": "References",
+    "text": "References\n\nHadley Wickham (2020) Mastering Shiny: Build Interactive Apps, Reports, and Dashboards Powered by R online version\n\nChapter 3 Basic reactivity\nChapter 13 Why reactivity?\nChapter 14 The reactive graph\nChapter 15 Reactive building blocks\nChapter 16 Escaping the graph\n\nCarson Sievert (2019) Interactive web-based data visualization with R, plotly, and shiny, online version.\n\nChapter 17 Server-side linking with shiny"
+  },
+  {
+    "objectID": "outline/Lesson06_outline.html#lesson-slides",
+    "href": "outline/Lesson06_outline.html#lesson-slides",
+    "title": "Lesson 6: Geographic Segmentation with Spatially Constrained Cluster Analysis",
+    "section": "Lesson slides",
+    "text": "Lesson slides\n\nLesson 7: Geographic Segmentation with Spatially Constrained Cluster Analysis slides."
+  },
+  {
+    "objectID": "outline/Lesson06_outline.html#hands-on-exercise",
+    "href": "outline/Lesson06_outline.html#hands-on-exercise",
+    "title": "Lesson 6: Geographic Segmentation with Spatially Constrained Cluster Analysis",
+    "section": "Hands-on Exercise",
+    "text": "Hands-on Exercise\n\n12 Geographical Segmentation with Spatially Constrained Clustering Techniques\n\n\nSelf-reading Before Meet-up\nTo read before class:\n\nAssuncao, R. M., Neves, M.C., Camara, G. and Costa Freitas, C.D. 2006. “Efficient Regionalization Techniques for Socio-Economic Geographical Units Using Minimum Spanning Trees”. International Journal of Geographical Information Science 20: 797-811. (Available in SMU digital library)\nChavent, M., Kuentz-Simonet, V., Labenne,A. and Saracco, J. 2018. “ClustGeo: an R package for hierarchical clustering with spatial constraints” Computational Statistics, 33: 1799-1822. (Available in SMU digital library)\n\n\n\nReferences\n\nRovan, J. and Sambt, J. (2003) “Socio-economic Differences Among Slovenian Municipalities: A Cluster Analysis Approach”, Developments in Applied Statistics, pp. 265-278.\n\nDemeter, T. and Bratucu, G. (2013) “Statistical Analysis Of The EU Countries from A Touristic Point of View”, Bulletin of the Transilvania University of Braşov, 6(55): 121-130.\nBrown, N.S. & Watson, P. (2012) “What can a comprehensive plan really tell us about a region?: A cluster analysis of county comprehensive plans in Idaho”, Western Economics Forum. Pp.22-37.\nJaya, I.G.M., Ruchjana, B.N., Andriyana, Y. & Agata, R (2019) “Clustering with spatial constraints: The case of diarrhea in Bandung city, Indonesia”\nde Souza, D. C. & Taconeli, C. A. (2022) “Spatial and non-spatial clustering algorithm in the analysis of Brazilian educational data”, Communications in Statistics: Case Studies, Data Analysis, and Applications. Vol. 8, No. 4, 588-606. (Available in SMU digital library)\n\n\n\nAll About R\n\nHierarchical Cluster Analysis.\nskater: A function from spdep package that implements a SKATER procedure for spatial clustering analysis.\nClustGeo: Hierarchical Clustering with Spatial Constraints\n\nIntroduction to Clustgeo"
+  },
+  {
+    "objectID": "outline/Lesson06a_outline.html",
+    "href": "outline/Lesson06a_outline.html",
+    "title": "Lesson 6: Emerging Hot Spot Analysis",
+    "section": "",
+    "text": "Emerging Hot Spot Analysis (EHSA) is a spatio-temporal analysis method for revealing and describing how hot spot and cold spot areas evolve over time. The analysis consist of four main steps:\nIn this lesson, you will learn the basic concepts of time-space cube and EHSA. You will also gain hands-on experience of how to build a time-spce cube and to perform EHSA by using sfdep package."
+  },
+  {
+    "objectID": "outline/Lesson06a_outline.html#content",
+    "href": "outline/Lesson06a_outline.html#content",
+    "title": "Lesson 6: Emerging Hot Spot Analysis",
+    "section": "Content",
+    "text": "Content\n\nWhat is Spatial Autocorrelation\n\nMeasures of Global Spatial Autocorrelation\nMeasures of Global High/Low Clustering\n\nIntroducing Localised Geospatial Analysis\n\nLocal Indicators of Spatial Association (LISA)\n\nCluster and Outlier Analysis\n\nLocal Moran and Local Geary\nMoran scatterplot\nLISA Cluster Map\n\nHot Spot and Cold Spot Areas Analysis\n\nGetis and Ord’s G-statistics\n\nCase Studies"
+  },
+  {
+    "objectID": "outline/Lesson06a_outline.html#lesson-slides-and-hands-on-notes",
+    "href": "outline/Lesson06a_outline.html#lesson-slides-and-hands-on-notes",
+    "title": "Lesson 6: Emerging Hot Spot Analysis",
+    "section": "Lesson Slides and Hands-on Notes",
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson 5 slides.\nHands-on Exercise 5: Global Measures of Spatial Autocorrelation.\nHands-on Exercise 5: Local Measures of Spatial Autocorrelation"
+  },
+  {
+    "objectID": "outline/Lesson06a_outline.html#self-reading-before-meet-up",
+    "href": "outline/Lesson06a_outline.html#self-reading-before-meet-up",
+    "title": "Lesson 6: Emerging Hot Spot Analysis",
+    "section": "Self-reading Before Meet-up",
+    "text": "Self-reading Before Meet-up\nTo read before class:\n\nMoran, P. A. P. (1950). “Notes on Continuous Stochastic Phenomena”. Biometrika. 37 (1): 17–23.\nGeary, R.C. (1954) “The Contiguity Ratio and Statistical Mapping”. The Incorporated Statistician, Vol. 5, No. 3, pp. 115-127.\nGetis, A., & Ord, K. (1992). “The Analysis of Spatial Association by Use of Distance Statistics”. Geographical Analysis, 24, 189–206.\nAnselin, L. (1995). “Local indicators of spatial association – LISA”. Geographical Analysis, 27(4): 93-115.\nGetis, A. and Ord, J.K. (1992) “The analysis of spatial association by use of distance statistics”. Geographical Analysis, 24(3): 189-206.\nOrd, J.K. and Getis, A. (2010) “Local spatial autocorrelation statistics: Distributional issues and an application”. Geographical Analysis, 27(4): 286-306.\n\nThese six papers are classics of Global and Local Spatial Autocorrelation. Be warned: All classic papers assume that the readers are academic researchers."
+  },
+  {
+    "objectID": "outline/Lesson06a_outline.html#references",
+    "href": "outline/Lesson06a_outline.html#references",
+    "title": "Lesson 6: Emerging Hot Spot Analysis",
+    "section": "References",
+    "text": "References\n\nD. A. Griffith (2009) “Spatial autocorrelation”.\nGetis, A., 2010 “B.3 Spatial Autocorrelation” in Fischer, M.M., and Getis, A. 2010 Handbook of Applied Spatial Analysis: Software Tools, Methods and Applications, Springer.\nAnselin, L. (1996) “The Moran scatterplot as an ESDA tool to assess local instability in spatial association”\nGriffith, Daniel (2009) “Modeling spatial autocorrelation in spatial interaction data: empirical evidence from 2002 Germany journey-to-work flows”. Journal of Geographical Systems, Vol.11(2), pp.117-140.\nCelebioglu, F., and Dall’erba, S. (2010) “Spatial disparities across the regions of Turkey: An exploratory spatial data analysis”. The Annals of Regional Science, 45:379–400.\nMack, Z.W.V. and Kam T.S. (2018) “Is There Space for Violence?: A Data-driven Approach to the Exploration of Spatial-Temporal Dimensions of Conflict” Proceedings of 2nd ACM SIGSPATIAL Workshop on Geospatial Humanities (ACM SIGSPATIAL’18). Seattle, Washington, USA, 10 pages.\nTAN, Yong Ying and KAM, Tin Seong (2019). “Exploring and Visualizing Household Electricity Consumption Patterns in Singapore: A Geospatial Analytics Approach”, Information in Contemporary Society: 14th International Conference, iConference 2019, Washington, DC, USA, March 31–April 3, 2019, Proceedings. Pp 785-796.\nSingh A., Pathak P.K., Chauhan R.K., and Pan, W. (2011) “Infant and Child Mortality in India in the Last Two Decades: A Geospatial Analysis”. PLoS ONE 6(11), 1:19."
+  },
+  {
+    "objectID": "outline/Lesson07_outline.html",
+    "href": "outline/Lesson07_outline.html",
+    "title": "Lesson 7: Geographically Weighted Regression",
+    "section": "",
+    "text": "In this lesson, you will learn the basic concepts and methods of geographically weighted regression."
+  },
+  {
+    "objectID": "outline/Lesson07_outline.html#lesson-slides-and-hands-on-notes",
+    "href": "outline/Lesson07_outline.html#lesson-slides-and-hands-on-notes",
+    "title": "Lesson 7: Geographically Weighted Regression",
+    "section": "Lesson Slides and Hands-on Notes",
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson 8 slides.\nHands-on Exercise 8."
+  },
+  {
+    "objectID": "outline/Lesson07_outline.html#self-reading-before-meet-up",
+    "href": "outline/Lesson07_outline.html#self-reading-before-meet-up",
+    "title": "Lesson 7: Geographically Weighted Regression",
+    "section": "Self-reading Before Meet-up",
+    "text": "Self-reading Before Meet-up\nTo read before class:\n\nBrunsdon, C., Fotheringham, A.S., and Charlton, M. (2002) “Geographically weighted regression: A method for exploring spatial nonstationarity”. Geographical Analysis, 28: 281-289.\nBrunsdon, C., Fotheringham, A.S. and Charlton, M., (1999) “Some Notes on Parametric Significance Tests for Geographically Weighted Regression”. Journal of Regional Science, 39(3), 497-524."
+  },
+  {
+    "objectID": "outline/Lesson07_outline.html#references",
+    "href": "outline/Lesson07_outline.html#references",
+    "title": "Lesson 7: Geographically Weighted Regression",
+    "section": "References",
+    "text": "References\n\nMennis, Jeremy (2006) “Mapping the Results of Geographically Weighted Regression”, The Cartographic Journal, Vol.43 (2), p.171-179.\nStephen A. Matthews ; Tse-Chuan Yang (2012) “Mapping the results of local statistics: Using geographically weighted regression”, Demographic Research, Vol.26, p.151-166."
+  },
+  {
+    "objectID": "outline/Lesson07_outline.html#all-about-r",
+    "href": "outline/Lesson07_outline.html#all-about-r",
+    "title": "Lesson 7: Geographically Weighted Regression",
+    "section": "All About R",
+    "text": "All About R\n\nGWmodel package, especially\n\nGollini, I et. al. (2015) “GWmodel: An R Package for Exploring Spatial Heterogeneity Using Geographically Weighted Models”, Journal of Statistical Software, Volume 63, Issue 17 and\nBinbin Lu, Paul Harris, Martin Charlton & Chris Brunsdon (2014) “The GWmodel R package: further topics for exploring spatial heterogeneity using geographically weighted models”, Geo-spatial Information Science, 17:2, 85-101, DOI: 10.1080/10095020.2014.917453.\n\nlctools package especially gw() and gwr() related functions.\nspgwr implements of geographically weighted regression methods for exploring possible non-stationarity.\ngwrr: its geographically weighted regression (GWR) models and has tools to diagnose and remediate collinearity in the GWR models. Also fits geographically weighted ridge regression (GWRR) and geographically weighted lasso (GWL) models."
+  },
+  {
+    "objectID": "outline/Lesson06.html",
+    "href": "outline/Lesson06.html",
+    "title": "Lesson 6: Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "",
+    "text": "Motivation of developing web-enabled applications\n\nBasic principles of web applications\n\nIntroducing R Shiny\n\nGetting to know Shiny\nArchitecture of Shiny\nBuilding block of Shiny app\n\nAdvanced R Shiny\n\nReactive feature of Shiny\nBuild interactive Shiny application by using plotly R\nBuild static, interactive and reactive geovisualisation application by using tmap\n\nManaging R Shiny Project\n\nThe basic development cycle of creating apps\nDebug errors in the codes\nBuild complex Shiny application using module\nImprove the productivity of Shiny applications development\n\nDeploying Shiny Application\n\nDeploy to the cloud: shinyapps.io\nDeploy on-premises (open source): Shiny Server\nDeploy on-premises (commercial): RStudio Connect"
+  },
+  {
+    "objectID": "outline/Lesson06.html#content",
+    "href": "outline/Lesson06.html#content",
+    "title": "Lesson 6: Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "",
+    "text": "Motivation of developing web-enabled applications\n\nBasic principles of web applications\n\nIntroducing R Shiny\n\nGetting to know Shiny\nArchitecture of Shiny\nBuilding block of Shiny app\n\nAdvanced R Shiny\n\nReactive feature of Shiny\nBuild interactive Shiny application by using plotly R\nBuild static, interactive and reactive geovisualisation application by using tmap\n\nManaging R Shiny Project\n\nThe basic development cycle of creating apps\nDebug errors in the codes\nBuild complex Shiny application using module\nImprove the productivity of Shiny applications development\n\nDeploying Shiny Application\n\nDeploy to the cloud: shinyapps.io\nDeploy on-premises (open source): Shiny Server\nDeploy on-premises (commercial): RStudio Connect"
+  },
+  {
+    "objectID": "outline/Lesson06.html#workshop-slides-and-hands-on-notes",
+    "href": "outline/Lesson06.html#workshop-slides-and-hands-on-notes",
+    "title": "Lesson 6: Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "Workshop Slides and Hands-on Notes",
+    "text": "Workshop Slides and Hands-on Notes\n\nIntroducing R Shiny slides in html and pdf formats\nAdvanced R Shiny I slides in html and pdf formats\nManaging R Shiny Project slides in html and pdf formats"
+  },
+  {
+    "objectID": "outline/Lesson06.html#must-do",
+    "href": "outline/Lesson06.html#must-do",
+    "title": "Lesson 6: Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "Must Do!",
+    "text": "Must Do!\n\nView the three parts series of Shiny Tutorial at this link."
+  },
+  {
+    "objectID": "outline/Lesson06.html#readings",
+    "href": "outline/Lesson06.html#readings",
+    "title": "Lesson 6: Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "Readings",
+    "text": "Readings\n\nCore Readings\n\nShiny reference guide at CRAN.\nHadley Wickham (2021) Mastering Shiny, O’Reilly Media. This is a highly recommended book. You can find the online version with this link.\nPaula Moraga (2020) Geospatial Health Data: Modeling and Visualization with R-INLA and Shiny, Chapman & Hall/CRC. Chapter 13, 14 and 15.\n\n\n\nAdditional references\n\nColin Fay, Sébastien Rochette, Vincent Guyader, Cervan Girard (2020), Engineering Production-Grade Shiny Apps, Chapman & Hall. You can find the online version with this link.\nOutstanding User Interfaces with Shiny.\nHow to Build a Shiny Application from Scratch.\n\n\n\nDeploying Shiny Application on shinyapps.io\n\nGetting started with shinyapps.io\nshinyapps.io user guide"
+  },
+  {
+    "objectID": "outline/Lesson06.html#gallery",
+    "href": "outline/Lesson06.html#gallery",
+    "title": "Lesson 6: Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "Gallery",
+    "text": "Gallery\n\nWinners of the 1st Shiny Contest\nWinners of the 2nd Annual Shiny Contest\nWinners of the 3rd annual Shiny Contest\nShiny Gallery\nFifteen New Zealand government Shiny web apps\nShinyApps Gallery\ndreamRs shiny gallery\nTools for Teaching Quantitative Thinking"
+  },
+  {
+    "objectID": "outline/Lesson07.html",
+    "href": "outline/Lesson07.html",
+    "title": "Lesson 6: Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "",
+    "text": "Motivation of developing web-enabled applications\n\nBasic principles of web applications\n\nIntroducing R Shiny\n\nGetting to know Shiny\nArchitecture of Shiny\nBuilding block of Shiny app\n\nAdvanced R Shiny\n\nReactive feature of Shiny\nBuild interactive Shiny application by using plotly R\nBuild static, interactive and reactive geovisualisation application by using tmap\n\nManaging R Shiny Project\n\nThe basic development cycle of creating apps\nDebug errors in the codes\nBuild complex Shiny application using module\nImprove the productivity of Shiny applications development\n\nDeploying Shiny Application\n\nDeploy to the cloud: shinyapps.io\nDeploy on-premises (open source): Shiny Server\nDeploy on-premises (commercial): RStudio Connect"
+  },
+  {
+    "objectID": "outline/Lesson07.html#content",
+    "href": "outline/Lesson07.html#content",
+    "title": "Lesson 6: Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "",
+    "text": "Motivation of developing web-enabled applications\n\nBasic principles of web applications\n\nIntroducing R Shiny\n\nGetting to know Shiny\nArchitecture of Shiny\nBuilding block of Shiny app\n\nAdvanced R Shiny\n\nReactive feature of Shiny\nBuild interactive Shiny application by using plotly R\nBuild static, interactive and reactive geovisualisation application by using tmap\n\nManaging R Shiny Project\n\nThe basic development cycle of creating apps\nDebug errors in the codes\nBuild complex Shiny application using module\nImprove the productivity of Shiny applications development\n\nDeploying Shiny Application\n\nDeploy to the cloud: shinyapps.io\nDeploy on-premises (open source): Shiny Server\nDeploy on-premises (commercial): RStudio Connect"
+  },
+  {
+    "objectID": "outline/Lesson07.html#workshop-slides-and-hands-on-notes",
+    "href": "outline/Lesson07.html#workshop-slides-and-hands-on-notes",
+    "title": "Lesson 6: Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "Workshop Slides and Hands-on Notes",
+    "text": "Workshop Slides and Hands-on Notes\n\nIntroducing R Shiny slides in html and pdf formats\nAdvanced R Shiny I slides in html and pdf formats\nManaging R Shiny Project slides in html and pdf formats"
+  },
+  {
+    "objectID": "outline/Lesson07.html#must-do",
+    "href": "outline/Lesson07.html#must-do",
+    "title": "Lesson 6: Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "Must Do!",
+    "text": "Must Do!\n\nView the three parts series of Shiny Tutorial at this link."
+  },
+  {
+    "objectID": "outline/Lesson07.html#readings",
+    "href": "outline/Lesson07.html#readings",
+    "title": "Lesson 6: Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "Readings",
+    "text": "Readings\n\nCore Readings\n\nShiny reference guide at CRAN.\nHadley Wickham (2021) Mastering Shiny, O’Reilly Media. This is a highly recommended book. You can find the online version with this link.\nPaula Moraga (2020) Geospatial Health Data: Modeling and Visualization with R-INLA and Shiny, Chapman & Hall/CRC. Chapter 13, 14 and 15.\n\n\n\nAdditional references\n\nColin Fay, Sébastien Rochette, Vincent Guyader, Cervan Girard (2020), Engineering Production-Grade Shiny Apps, Chapman & Hall. You can find the online version with this link.\nOutstanding User Interfaces with Shiny.\nHow to Build a Shiny Application from Scratch.\n\n\n\nDeploying Shiny Application on shinyapps.io\n\nGetting started with shinyapps.io\nshinyapps.io user guide"
+  },
+  {
+    "objectID": "outline/Lesson07.html#gallery",
+    "href": "outline/Lesson07.html#gallery",
+    "title": "Lesson 6: Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "Gallery",
+    "text": "Gallery\n\nWinners of the 1st Shiny Contest\nWinners of the 2nd Annual Shiny Contest\nWinners of the 3rd annual Shiny Contest\nShiny Gallery\nFifteen New Zealand government Shiny web apps\nShinyApps Gallery\ndreamRs shiny gallery\nTools for Teaching Quantitative Thinking"
   }
 ]
