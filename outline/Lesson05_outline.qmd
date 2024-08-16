@@ -1,5 +1,5 @@
 ---
-title: "Lesson 4: Spatial Weights and Applications"
+title: "Lesson 5: Spatial Weights and Applications"
 date: "July 25, 2024"
 date-modified: "last-modified"
 output:
@@ -23,8 +23,8 @@ Computing spatial weight is an essential step toward measuring the strength of t
 
 ## Lesson Slides and Hands-on Notes
 
--   [Lesson 4](../lesson/Lesson04/Lesson04-Spatial_Weights.html) slides.
--   [Hands-on Exercise 4](https://r4gdsa.netlify.app/chap08.html)
+-   [Lesson 5](../lesson/Lesson04/Lesson04-Spatial_Weights.html) slides.
+-   [Hands-on Exercise 5](https://r4gdsa.netlify.app/chap08.html)
 
 ### Self-reading Before Meet-up
 

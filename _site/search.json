@@ -1255,35 +1255,35 @@
   {
     "objectID": "outline/Lesson05_outline.html",
     "href": "outline/Lesson05_outline.html",
-    "title": "Lesson 4: Spatial Weights and Applications",
+    "title": "Lesson 5: Spatial Weights and Applications",
     "section": "",
     "text": "Computing spatial weight is an essential step toward measuring the strength of the spatial relationships between objects. In this lesson, the basic concept of spatial weight will be introduced. This is followed by a discussion of methods to compute spatial weights."
   },
   {
     "objectID": "outline/Lesson05_outline.html#content",
     "href": "outline/Lesson05_outline.html#content",
-    "title": "Lesson 4: Spatial Weights and Applications",
+    "title": "Lesson 5: Spatial Weights and Applications",
     "section": "Content",
     "text": "Content\n\nTobler’s First law of Geography\nPrinciples of Spatial Autocorrelation\nConcepts of Spatial Proximity and Spatial Weights\n\nContiguity-Based Spatial Weights: Rook’s & Queen’s\nDistance-Band Spatial Weights: fixed and adaptive\n\nApplications of Spatial Weights\n\nSpatially Lagged Variables\nGeographically Weighted Summary Statistics"
   },
   {
     "objectID": "outline/Lesson05_outline.html#lesson-slides-and-hands-on-notes",
     "href": "outline/Lesson05_outline.html#lesson-slides-and-hands-on-notes",
-    "title": "Lesson 4: Spatial Weights and Applications",
+    "title": "Lesson 5: Spatial Weights and Applications",
     "section": "Lesson Slides and Hands-on Notes",
-    "text": "Lesson Slides and Hands-on Notes\n\nLesson 4 slides.\nHands-on Exercise 4\n\n\nSelf-reading Before Meet-up\nTo read before class:\n\nChapter 2. Codifying the neighbourhood structure of Handbook of Spatial Analysis: Theory and Application with R.\n\nAlternatively\n\nChapter 9: Modelling Areal Data of Applied Spatial Data Analysis with R (2nd Edition). This book is available in smu digital library. Until section 9.3.1."
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson 5 slides.\nHands-on Exercise 5\n\n\nSelf-reading Before Meet-up\nTo read before class:\n\nChapter 2. Codifying the neighbourhood structure of Handbook of Spatial Analysis: Theory and Application with R.\n\nAlternatively\n\nChapter 9: Modelling Areal Data of Applied Spatial Data Analysis with R (2nd Edition). This book is available in smu digital library. Until section 9.3.1."
   },
   {
     "objectID": "outline/Lesson05_outline.html#references",
     "href": "outline/Lesson05_outline.html#references",
-    "title": "Lesson 4: Spatial Weights and Applications",
+    "title": "Lesson 5: Spatial Weights and Applications",
     "section": "References",
     "text": "References\n\nFrançois Bavaud (2010) “Models for Spatial Weights: A Systematic Look” Geographical Analysis, Vol. 30, No.2, pp 153-171.\nTony H. Grubesic and Andrea L. Rosso (2014) “The Use of Spatially Lagged Explanatory Variables for Modeling Neighborhood Amenities and Mobility in Older Adults”, Cityscape, Vol. 16, No. 2, pp. 205-214."
   },
   {
     "objectID": "outline/Lesson05_outline.html#all-about-r",
     "href": "outline/Lesson05_outline.html#all-about-r",
-    "title": "Lesson 4: Spatial Weights and Applications",
+    "title": "Lesson 5: Spatial Weights and Applications",
     "section": "All About R",
     "text": "All About R\n\nspdep package\nsfdep package\nrgeoda package"
   },
