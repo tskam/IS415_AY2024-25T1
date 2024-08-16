@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2024-07-25">
 
-<title>IS415 AY2022-23T2 - Lesson 6: Emerging Hot Spot Analysis</title>
+<title>IS415 AY2022-23T2 - Lesson 11: Spatial Interaction Models</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -164,7 +164,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#content" id="toc-content" class="nav-link active" data-scroll-target="#content">Content</a></li>
   <li><a href="#lesson-slides-and-hands-on-notes" id="toc-lesson-slides-and-hands-on-notes" class="nav-link" data-scroll-target="#lesson-slides-and-hands-on-notes">Lesson Slides and Hands-on Notes</a></li>
   <li><a href="#self-reading-before-meet-up" id="toc-self-reading-before-meet-up" class="nav-link" data-scroll-target="#self-reading-before-meet-up">Self-reading Before Meet-up</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">Reference</a></li>
+  <li><a href="#all-about-r" id="toc-all-about-r" class="nav-link" data-scroll-target="#all-about-r">All About R:</a></li>
   </ul>
 </nav>
     </div>
@@ -173,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lesson 6: Emerging Hot Spot Analysis</h1>
+<h1 class="title">Lesson 11: Spatial Interaction Models</h1>
 </div>
 
 
@@ -191,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">July 28, 2024</p>
+      <p class="date-modified">August 15, 2024</p>
     </div>
   </div>
     
@@ -202,71 +203,68 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Emerging Hot Spot Analysis (EHSA) is a spatio-temporal analysis method for revealing and describing how hot spot and cold spot areas evolve over time. The analysis consist of four main steps:</p>
-<ul>
-<li>Building a space-time cube,</li>
-<li>Calculating Getis-Ord local Gi* statistic for each bin by using an FDR correction,</li>
-<li>Evaluating these hot and cold spot trends by using Mann-Kendall trend test,</li>
-<li>Categorising each study area location by referring to the resultant trend z-score and p-value for each location with data, and with the hot spot z-score and p-value for each bin.</li>
-</ul>
-<p>In this lesson, you will learn the basic concepts of time-space cube and EHSA. You will also gain hands-on experience of how to build a time-spce cube and to perform EHSA by using sfdep package.</p>
+<p>In this lesson, you will learn the basic concepts and methods of Spatial Interaction Models.</p>
 <section id="content" class="level2">
 <h2 class="anchored" data-anchor-id="content">Content</h2>
 <ul>
-<li>What is Spatial Autocorrelation
+<li>Basic Concepts of Spatial Interaction Models
 <ul>
-<li>Measures of Global Spatial Autocorrelation</li>
-<li>Measures of Global High/Low Clustering</li>
-</ul></li>
-<li>Introducing Localised Geospatial Analysis
+<li>A Family of Gravity Models
 <ul>
-<li>Local Indicators of Spatial Association (LISA)</li>
+<li>Unconstrained</li>
+<li>Origin constrained</li>
+<li>Destination constrained</li>
+<li>Doubly constrained</li>
 </ul></li>
-<li>Cluster and Outlier Analysis
+<li>Statistical Approach</li>
+<li>Interpreting and Visualising Modelling Results</li>
+</ul></li>
+<li>Spatial Econometric Interaction Models
 <ul>
-<li>Local Moran and Local Geary</li>
-<li>Moran scatterplot</li>
-<li>LISA Cluster Map</li>
-</ul></li>
-<li>Hot Spot and Cold Spot Areas Analysis
+<li>The general formula
 <ul>
-<li>Getis and Ord’s G-statistics</li>
+<li>What is Econometrics?</li>
+<li>What is Spatial Econometrics?</li>
 </ul></li>
-<li>Case Studies</li>
+<li>Spatial Econometric Interaction Model Specifications</li>
+</ul></li>
 </ul>
 </section>
 <section id="lesson-slides-and-hands-on-notes" class="level2">
 <h2 class="anchored" data-anchor-id="lesson-slides-and-hands-on-notes">Lesson Slides and Hands-on Notes</h2>
 <ul>
-<li><p><a href="../lesson/Lesson05/Lesson05-GLSA.html">Lesson 5</a> slides.</p></li>
-<li><p><a href="https://r4gdsa.netlify.app/chap09.html">Hands-on Exercise 5: Global Measures of Spatial Autocorrelation</a>.</p></li>
-<li><p><a href="https://r4gdsa.netlify.app/chap10.html">Hands-on Exercise 5: Local Measures of Spatial Autocorrelation</a></p></li>
+<li><p>Lesson slides in <a href="../lesson/Lesson11/Lesson11-SIM.html">html</a> format.</p></li>
+<li><p><a href="https://r4gdsa.netlify.app/chap15">Hands-on Exercise 11a: Processing and Visualising Flow Data</a>.</p></li>
+<li><p><a href="https://r4gdsa.netlify.app/chap16">Hands-on Exercise 11b: Calibrating Spatial Interaction Models with R</a>.</p></li>
 </ul>
 </section>
 <section id="self-reading-before-meet-up" class="level2">
 <h2 class="anchored" data-anchor-id="self-reading-before-meet-up">Self-reading Before Meet-up</h2>
-<p>To read before class:</p>
+<p>Read before lesson:</p>
 <ul>
-<li><p>Moran, P. A. P. (1950). <a href="https://www-jstor-org.libproxy.smu.edu.sg/stable/2332142?seq=1#metadata_info_tab_contents">“Notes on Continuous Stochastic Phenomena”</a>. Biometrika. 37 (1): 17–23.</p></li>
-<li><p>Geary, R.C. (1954) <a href="https://www-jstor-org.libproxy.smu.edu.sg/stable/2986645?sid=primo&amp;origin=crossref&amp;seq=1#metadata_info_tab_contents">“The Contiguity Ratio and Statistical Mapping”</a>. <em>The Incorporated Statistician</em>, Vol. 5, No.&nbsp;3, pp.&nbsp;115-127.</p></li>
-<li><p>Getis, A., &amp; Ord, K. (1992). <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.1992.tb00261.x">“The Analysis of Spatial Association by Use of Distance Statistics”</a>. <em>Geographical Analysis</em>, 24, 189–206.</p></li>
-<li><p>Anselin, L. (1995). <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1538-4632.1995.tb00338.x">“Local indicators of spatial association – LISA”</a>. <em>Geographical Analysis</em>, 27(4): 93-115.</p></li>
-<li><p>Getis, A. and Ord, J.K. (1992) <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1538-4632.1992.tb00261.x">“The analysis of spatial association by use of distance statistics”</a>. <em>Geographical Analysis</em>, 24(3): 189-206.</p></li>
-<li><p>Ord, J.K. and Getis, A. (2010) <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1538-4632.1995.tb00912.x">“Local spatial autocorrelation statistics: Distributional issues and an application”</a>. <em>Geographical Analysis</em>, 27(4): 286-306.</p></li>
+<li>Kingsley E. Haynes and A. Stewart Fotheringham (2020) <a href="https://researchrepository.wvu.edu/rri-web-book/16/"><strong>Gravity and Spatial Interaction Models</strong></a>, Web Book of Regional Science. Chapter 1 and Sub-section 2.2.</li>
+<li>Farmer, C. and Oshan, T. (2017). <a href="https://gistbok.ucgis.org/bok-topics/spatial-interaction">“Spatial interaction”</a>. <strong>The Geographic Information Science &amp; Technology Body of Knowledge</strong> (4th Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2017.4.5 (link is external)</li>
+<li>Flowerdew R, Aitkin M (1982) <a href="https://www.academia.edu/38321611/A_Method_of_Fitting_the_Gravity_Model_Based_on_the_Poisson_Distribution_">“A method of fitting the gravity model based on the Poisson distribution”</a>. <em>Journal of Regional Science</em>, 22: 191–202.</li>
+<li><a href="https://www.insee.fr/en/statistiques/fichier/3635545/imet131-j-chapitre-6.pdf">” Chapter 6. Spatial econometrics - common models”</a>, Handbook of Spatial Analysis.</li>
+<li>James P. LeSage and R. Kelley Pace (2008) <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9787.2008.00573.x">“Spatial Econometric Modeling of Origin-Destination Flows”</a>. <em>Journal of Regional Science</em>, Vol. 48, No.&nbsp;5, pp.&nbsp;941-967.</li>
 </ul>
-<p>These six papers are classics of Global and Local Spatial Autocorrelation. Be warned: All classic papers assume that the readers are academic researchers.</p>
 </section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
+<section id="reference" class="level2">
+<h2 class="anchored" data-anchor-id="reference">Reference</h2>
 <ul>
-<li>D. A. Griffith (2009) “Spatial autocorrelation”.</li>
-<li>Getis, A., 2010 “B.3 Spatial Autocorrelation” in Fischer, M.M., and Getis, A. 2010 Handbook of Applied Spatial Analysis: Software Tools, Methods and Applications, Springer.</li>
-<li>Anselin, L. (1996) “The Moran scatterplot as an ESDA tool to assess local instability in spatial association”</li>
-<li>Griffith, Daniel (2009) “Modeling spatial autocorrelation in spatial interaction data: empirical evidence from 2002 Germany journey-to-work flows”. Journal of Geographical Systems, Vol.11(2), pp.117-140.</li>
-<li>Celebioglu, F., and Dall’erba, S. (2010) “Spatial disparities across the regions of Turkey: An exploratory spatial data analysis”. The Annals of Regional Science, 45:379–400.</li>
-<li>Mack, Z.W.V. and Kam T.S. (2018) <a href="https://ink.library.smu.edu.sg/sis_research/4331/">“Is There Space for Violence?: A Data-driven Approach to the Exploration of Spatial-Temporal Dimensions of Conflict”</a> <em>Proceedings of 2nd ACM SIGSPATIAL Workshop on Geospatial Humanities (ACM SIGSPATIAL’18)</em>. Seattle, Washington, USA, 10 pages.</li>
-<li>TAN, Yong Ying and KAM, Tin Seong (2019). <a href="https://ink.library.smu.edu.sg/sis_research/4376/">“Exploring and Visualizing Household Electricity Consumption Patterns in Singapore: A Geospatial Analytics Approach”</a>, <em>Information in Contemporary Society: 14th International Conference</em>, iConference 2019, Washington, DC, USA, March 31–April 3, 2019, Proceedings. Pp 785-796.</li>
-<li>Singh A., Pathak P.K., Chauhan R.K., and Pan, W. (2011) “Infant and Child Mortality in India in the Last Two Decades: A Geospatial Analysis”. PLoS ONE 6(11), 1:19.</li>
+<li>Pavel KLAPKA, et. al.&nbsp;(2013) <a href="https://sciendo.com/de/article/10.2478/mgr-2013-0013">“The Footfall of Shopping Centre in Olomouc (CZECH REPUBLIC): An Application of The Gravity Model”</a>, <em>Moravian Geographical Reports</em>, Vol 21, pp.&nbsp;12-26.<br>
+</li>
+<li>Yang Yue et. al.&nbsp;(2012) “Exploratory calibration of a spatial interaction model using taxi GPS trajectories”, <em>Computers, Environment and Urban Systems</em>, 36 (2012) 140–153.</li>
+<li>Morito Tsutsumi and Kazuki Tamesue (2012) “Intraregional flow problem in spatial econometric model for origin-destination flows”, <em>Environment and Planning B: Planning and Design</em>, Vol. 39, pp.&nbsp;1006-1015. Access via SMU e-journal.</li>
+</ul>
+</section>
+<section id="all-about-r" class="level2">
+<h2 class="anchored" data-anchor-id="all-about-r">All About R:</h2>
+<ul>
+<li>Paul Roback and Julie Legler (2020) <strong>Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R</strong>, CRC Press. On line version (January 26, 2021). <a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-poissonreg.html">Chapter 4</a></li>
+<li><a href="https://stats.idre.ucla.edu/r/dae/negative-binomial-regression/">Negative Binomial Regression</a> and <a href="https://stats.idre.ucla.edu/r/dae/poisson-regression/">Poisson Regression</a> from UCLA Institute for Digital Research &amp; Education.</li>
+<li><a href="https://lukece.github.io/spflow/index.html">spflow</a></li>
+<li><a href="https://lukece.github.io/spflow/articles/paris_commute_flows.html">Home-to-work commuting flows within the municipalities around Paris</a></li>
 </ul>
 
 

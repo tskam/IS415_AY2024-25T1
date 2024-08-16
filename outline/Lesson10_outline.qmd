@@ -1,5 +1,5 @@
 ---
-title: "Lesson 10: Modelling Geographic of Accessibility"
+title: "Lesson 9: Geographically Weighted Predictive Modelling"
 date: "July 25, 2024"
 date-modified:  "last-modified"
 format: html
@@ -8,46 +8,34 @@ editor: visual
 
 ## Content
 
--   Basic Concepts of Geographic Accessibility
--   Gravitational Law and Distance Decay Function
--   Introducing Potential Models
-    -   The classic model
--   Hansen Potential Accessibility Model
--   Two-step Floating Catchment Area (2SFCA) Method
--   Kernel Density Two-Step Floating Catchment Area (KD2SFCA) Method
--   Interpreting and Visualising Modelling Results
+-   What is Predictive Modelling?
+-   What is Geospatial Predictive Modelling
+-   Introducing Recursive Partitioning
+-   Advanced Recursive Partitioning: Random Forest
+-   Introducing Geographically Weighted Random Forest
 
 ## Lesson Slides and Hands-on Notes
 
--   [Lesson 10](../lesson/lesson10/lesson10-GeoAcc.html) slides.
+-   [Lesson 9](../lesson/Lesson09/Lesson09-GWRF.html) slides.
 
--   [Hands-on Exercise 10](https://r4gdsa.netlify.app/chap17.html) handout.
+-   Handout of [Hands-on Exercise 9](https://r4gdsa.netlify.app/chap14.html).
 
-## Self-reading Before Meet-up
+### Self-reading Before Meet-up
 
-Read before lesson:
+To read before class:
 
--   Long, J. (2017). [Modelling Accessibility. The Geographic Information Science & Technology Body of Knowledge](https://gistbok.ucgis.org/bok-topics/modelling-accessibility) (3rd Quarter 2017 Edition), John P. Wilson (ed.).
+-   Stefanos Georganos et. al. (2019) ["Geographical Random Forests: A Spatial Extension of the Random Forest Algorithm to Address Spatial Heterogeneity in Remote Sensing and Population Modelling"](https://www.tandfonline.com/doi/full/10.1080/10106049.2019.1595177), *Geocarto International*, DOI: 10.1080/10106049.2019.1595177.
 
--   Hansen, W. G. (1959): ["How Accessibility Shapes Land Use"](https://dspace.mit.edu/bitstream/handle/1721.1/74869/32597665-MIT.pdf?...2). *Journal of the American Institute of Planners*, 25, 2, p. 73-76.
+-   Georganos, S. and Kalogirou, S. (2022) ["A Forest of Forests: A Spatially Weighted and Computationally Efficient Formulation of Geographical Random Forests"](https://www.mdpi.com/2220-9964/11/9/471). **ISPRS, International Journal of Geo-Information**, 2022, 11, 471. <https://www.mdpi.com/2220-9964/11/9/471>
 
--   Luo, W.; Wang, F. (2003) ["Measures of spatial accessibility to health care in a GIS environment: synthesis and a case study in the Chicago region"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8238135/). *Environment and Planning B: Planning and Design.* 30 (6): 865--884. doi:10.1068/b29120.
+### References
 
--   Luo, W.; Qi, Y. (2009). ["An enhanced two-step floating catchment area (E2SFCA) method for measuring spatial accessibility to primary care physicians"](https://www.researchgate.net/publication/26646789_An_Enhanced_Two-Step_Floating_Catchment_Area_E2SFCA_Method_for_Measuring_Spatial_Accessibility_to_Primary_Care_Physicians). *Health & Place*. 15 (4): 1100--1107.
+-   George Grekousis et. al. (2022) ["Ranking the importance of demographic, socioeconomic, and underlying health factors on US COVID-19 deaths: A geographical random forest approach"](https://doi.org/10.1016/j.healthplace.2022.102744), *Health and Place*, vol. 74, pp. 1-12.
 
-## Reference
+-   Yaowen Luo, Jianguo Yan & Stephen McClure. (2020) "[Distribution of the environmental and socioeconomic risk factors on COVID-19 death rate across continental USA: a spatial nonlinear analysis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7527667/pdf/11356_2020_Article_10962.pdf)", *Environmental Science and Pollution Research*, 28:6587–6599.
 
--   Section on "Transportation and Accessibility" in The Geography of Transport Systems.
--   Rich, D.C. (1980) Potential Models in Human Geography.
--   Orpana, T./Lampinen, J. (2003) "Building spatial choice models from aggregate data". Journal of Regional Science,43, 2, p. 319-347.
--   [Two-step floating catchment area method](https://en.wikipedia.org/wiki/Two-step_floating_catchment_area_method).
--   Cheng, Gang et. al. (2016) "Spatial difference analysis for accessibility to high level hospitals based on travel time in Shenzhen, China" Habitat International, Vol.53, p.485-494.
--   Polzin, Pierre ; Borges, José ; Coelho, António (2014) "An Extended Kernel Density Two-Step Floating Catchment Area Method to Analyze Access to Health Care" Environment and planning. B, Planning & design, Vol.41 (4), p.717-735.
+-   Eun-Hee Koh, Eunhee Lee, & Kang-Kun Lee (2020) "[Application of geographically weighted regression models to predict spatial characteristics of nitrate contamination: Implications for an effective groundwater management strategy](https://www.sciencedirect.com/science/article/pii/S0301479720305788)", *Journal of Environmental Management*. Vol. 268
 
-## All About R:
+### All About R
 
--   [accessibility](https://ipeagit.github.io/accessibility/)
-
--   [SpatialAcc](https://cran.r-project.org/web/packages/SpatialAcc/) package.
-
--   [Potential](https://riatelab.github.io/potential/index.html) package.
+-   [SpatialML](https://cran.r-project.org/web/packages/SpatialML/index.html)

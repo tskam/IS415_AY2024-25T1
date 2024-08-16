@@ -18,10 +18,6 @@ Spatial Point Pattern Analysis is the evaluation of the pattern, or distribution
 -   2nd Order Spatial Point Patterns Analysis (SPPA)
     -   Basic concepts of 2nd order spatial point patterns
     -   2nd order SPPA methods: J, F, K and L functions
--   Spatio-temporal Point Patterns Analysis
-    -   Spatio-temporal point patterns
-    -   Spatio-temporal KDE
-    -   Spatio-temporal L function
 
 ## Lesson Slides
 
@@ -70,4 +66,4 @@ Prof. Luc Anselin on point pattern analysis (YouTube):
 
 -   [spatstat](https://cran.r-project.org/web/packages/spatstat/index.html) at R Cran
     -   [spatstat](https://spatstat.org/resources.html) resource.
--   [sparr: Spatial and Spatiotemporal Relative Risk](https://tilmandavies.github.io/sparr/) package, especially [`spattemp.density()`](https://tilmandavies.github.io/sparr/reference/spattemp.density.html)
+
