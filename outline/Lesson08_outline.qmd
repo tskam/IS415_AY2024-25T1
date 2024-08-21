@@ -1,5 +1,5 @@
 ---
-title: "Lesson 6: Geographic Segmentation with Spatially Constrained Cluster Analysis"
+title: "Lesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis"
 date: "July 25, 2024"
 date-modified: "last-modified"
 format: html
@@ -19,7 +19,7 @@ toc: true
 
 ## Lesson slides
 
--   [Lesson 7: Geographic Segmentation with Spatially Constrained Cluster Analysis](..\lesson\Lesson07\Lesson07-SCCA.html) slides.
+-   [Lesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis](..\lesson\Lesson07\Lesson07-SCCA.html) slides.
 
 ## Hands-on Exercise
 
@@ -39,6 +39,7 @@ To read before class:
 -   Demeter, T. and Bratucu, G. (2013) ["Statistical Analysis Of The EU Countries from A Touristic Point of View"](https://webbut.unitbv.ro/index.php/Series_V/article/view/5438), *Bulletin of the Transilvania University of Braşov*, 6(55): 121-130.
 -   Brown, N.S. & Watson, P. (2012) ["What can a comprehensive plan really tell us about a region?: A cluster analysis of county comprehensive plans in Idaho"](https://ageconsearch.umn.edu/record/176591/files/WEFFall2012v11n2_Brown.pdf), Western Economics Forum. Pp.22-37.
 -   Jaya, I.G.M., Ruchjana, B.N., Andriyana, Y. & Agata, R (2019) ["Clustering with spatial constraints: The case of diarrhea in Bandung city, Indonesia"](https://iopscience.iop.org/article/10.1088/1742-6596/1397/1/012068)
+-   Distefano, V., Mameli, V., & Poli, I. (2020) "Identifying spatial patterns with the Bootstrap ClustGeo technique", *Spatial statistics*, Vol.38. (Available in SMU digital library)
 -   de Souza, D. C. & Taconeli, C. A. (2022) "Spatial and non-spatial clustering algorithm in the analysis of Brazilian educational data", *Communications in Statistics: Case Studies, Data Analysis, and Applications*. Vol. 8, No. 4, 588-606. (Available in SMU digital library)
 
 ### All About R
