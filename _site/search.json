@@ -674,98 +674,98 @@
   {
     "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#content",
     "href": "lesson/Lesson02/Lesson02-GeoVis.html#content",
-    "title": "Lesson 2: GeoVisualisation and Analytical Mappingtmap Methods",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
     "section": "Content",
-    "text": "Content\n\n\nChoropleth Mapping with in R\n\nType of choropleth map\nChoosing number of classes\nData classification methods\nSelecting colour scheme\n\ntmap Methods\n\ntmap framewok\ntmap elements\ntmap layers\ntmap layout\ntmap style\ntmap facet\n\n\n\n\nThis lesson consists of two parts. First, I will share with you the concepts and design principles of choropleth maps. Next, I will introduce you to tmap, an R package specially designed for thematic mapping based on Layered Grammar of Graphics"
+    "text": "Content\n\nIntroducing maps\nTypology of maps\n\nReference maps\nThematic maps\n\nProportional Symbol Map\nChoropleth Mapping\nIntroduction to tmap Methods\n\n\nThis lesson consists of two parts. First, I will share with you the concepts and design principles of choropleth maps. Next, I will introduce you to tmap, an R package specially designed for thematic mapping based on Layered Grammar of Graphics"
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#choropleth-map",
     "href": "lesson/Lesson02/Lesson02-GeoVis.html#choropleth-map",
-    "title": "Lesson 2: GeoVisualisation and Analytical Mappingtmap Methods",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
     "section": "Choropleth Map",
     "text": "Choropleth Map\nA choropleth map is a type of thematic map in which areas are shaded or patterned in proportion to a statistical variable that represents an aggregate summary of a geographic characteristic within each area, such as population or per-capita income."
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#data-classification",
     "href": "lesson/Lesson02/Lesson02-GeoVis.html#data-classification",
-    "title": "Lesson 2: GeoVisualisation and Analytical Mappingtmap Methods",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
     "section": "Data classification",
     "text": "Data classification\n\n\nNot sure how many classes to use? Have a look at the distribution of your data in a histogram (see examples below): Are there obvious clusters within your data? Are there large gaps in your data range that suggest nice compact data classes? If so, pick that number of classes and place those class breaks around those clusters."
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#colour-scheme",
     "href": "lesson/Lesson02/Lesson02-GeoVis.html#colour-scheme",
-    "title": "Lesson 2: GeoVisualisation and Analytical Mappingtmap Methods",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
     "section": "Colour scheme",
     "text": "Colour scheme\nColorBrewer"
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#mapping-packages-in-r",
     "href": "lesson/Lesson02/Lesson02-GeoVis.html#mapping-packages-in-r",
-    "title": "Lesson 2: GeoVisualisation and Analytical Mappingtmap Methods",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
     "section": "Mapping packages in R",
     "text": "Mapping packages in R\n\n\nSelected popular mapping packages\nCRAN Task View: Analysis of Spatial Data\n\ntmap\nmapsf\nleaflet\nggplot2. Read Chapter 6: Maps of ‘ggplot2: Elegant Graphics for Data Analysis’ for more detail.\nggmap\nquickmapr\nmapview\n\n\nOther packages\n\nRColorBrewer\nclassInt"
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#introducing-tmap",
     "href": "lesson/Lesson02/Lesson02-GeoVis.html#introducing-tmap",
-    "title": "Lesson 2: GeoVisualisation and Analytical Mappingtmap Methods",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
     "section": "Introducing tmap",
     "text": "Introducing tmap\n\n\n\ntmap is a R package specially designed for creating thematic maps using the pricinples of the Grammar of Graphics.\nIt offers a flexible, layer-based, and easy to use approach to create thematic maps, such as choropleths and proportional symbol maps.\nIt supports two modes: plot(static maps) and view (interactive maps).\nIt provides shiny integration(with tmapOutput and renderTmap)."
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#tmap-elements",
     "href": "lesson/Lesson02/Lesson02-GeoVis.html#tmap-elements",
-    "title": "Lesson 2: GeoVisualisation and Analytical Mappingtmap Methods",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
     "section": "tmap elements",
     "text": "tmap elements\ntm_shape()\n\nThe first element to start with is tm_shape(), which specifies the shape object."
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#tmap-elements-1",
     "href": "lesson/Lesson02/Lesson02-GeoVis.html#tmap-elements-1",
-    "title": "Lesson 2: GeoVisualisation and Analytical Mappingtmap Methods",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
     "section": "tmap elements",
     "text": "tmap elements\nBase layers\n\nNext, one, or a combination of the following drawing layers should be specified:\n\n\n\nLinks to tm_polygons(), tm_symbols(), tm_lines(), tm_raster() and tm_text()"
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#tmap-elements-2",
     "href": "lesson/Lesson02/Lesson02-GeoVis.html#tmap-elements-2",
-    "title": "Lesson 2: GeoVisualisation and Analytical Mappingtmap Methods",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
     "section": "tmap elements",
     "text": "tmap elements\nBase layers\n\nEach of these functions specifies the geometry, mapping, and scaling component of the LGTM.\nAn aesthetic can take a constant value, a data variable name, or a vector consisting of values or variable names.\nIf a data variable is provided, the scale is automatically configured according to the values of this variable, but can be adjusted with several arguments. For instance, the main scaling arguments for a color aesthetic are color palette, the preferred number of classes, and a style to create classes.\nAlso, for each aesthetic, except for the text labels, a legend is automatically created.\nIf a vector of variable names is provided, small multiples are created, which will be explained further below."
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#tmap-elements-3",
     "href": "lesson/Lesson02/Lesson02-GeoVis.html#tmap-elements-3",
-    "title": "Lesson 2: GeoVisualisation and Analytical Mappingtmap Methods",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
     "section": "tmap elements",
     "text": "tmap elements\nDerived layers\n\n\nEach aesthetic can take a constant value or a data variable name. For instance, tm_fill(col=\"blue\") colors all polygons blue, while tm_fill(col=\"var1\"), where “var1” is the name of a data variable in the shape object, creates a choropleth.\n\nThe supported derived layers are as follows:"
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#data-classification-methods-of-tmap",
     "href": "lesson/Lesson02/Lesson02-GeoVis.html#data-classification-methods-of-tmap",
-    "title": "Lesson 2: GeoVisualisation and Analytical Mappingtmap Methods",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
     "section": "Data classification methods of tmap",
     "text": "Data classification methods of tmap\n\n\nMost choropleth maps employ some method of data classification. The point of classification is to take a large number of observations and group them into data ranges or classes.\n\n\n\n\n\n\nNote\n\n\n\ntmap provides a total ten data classification methods, namely: fixed, sd, equal, pretty (default), quantile, kmeans, hclust, bclust, fisher, and jenks.\nTo define a data classification method, the style argument of tm_fill() or tm_polygons() will be used.\nThe choropleth map on the right shows a quantile data classification with 8 classes are used.\n\n\n\n\n\n\n\ntm_shape(mpszpop2020)+\n  tm_fill(\"DEPENDENCY\",\n          n = 8,\n          style = \"quantile\") +\n  tm_borders(alpha = 0.5)"
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#colour-scheme-1",
     "href": "lesson/Lesson02/Lesson02-GeoVis.html#colour-scheme-1",
-    "title": "Lesson 2: GeoVisualisation and Analytical Mappingtmap Methods",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
     "section": "Colour Scheme",
     "text": "Colour Scheme\n\n\ntmap supports colour ramps either defined by the user or a set of predefined colour ramps from the RColorBrewer package.\n\n\n\n\n\n\nNote\n\n\n\nTo change the colour, we assign the preferred colour to palette argument of tm_fill().\nNotice that the word blues is used instead of blue and the alphabet b is in uppercase.\n\n\n\n\n\n\n\ntm_shape(mpszpop2020)+\n  tm_fill(\"DEPENDENCY\",\n          n = 6,\n          style = \"quantile\",\n          palette = \"Blues\") +\n  tm_borders(alpha = 0.5)"
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#reference",
     "href": "lesson/Lesson02/Lesson02-GeoVis.html#reference",
-    "title": "Lesson 2: GeoVisualisation and Analytical Mappingtmap Methods",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
     "section": "Reference",
     "text": "Reference\nPrinciples, Concepts and Methods of Choropleth Maps Design\nCore Reading\n\nChoropleth Maps\nThe Basics of Data Classification\n\nAdditional Readings\n\nChoropleth Maps – A Guide to Data Classification\nBivariate Choropleth\nValue-by-alpha maps\nWhat to consider when creating choropleth maps\nChoropleth Mapping with Exploratory Data Analysis"
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#references",
     "href": "lesson/Lesson02/Lesson02-GeoVis.html#references",
-    "title": "Lesson 2: GeoVisualisation and Analytical Mappingtmap Methods",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
     "section": "References",
     "text": "References\nAll About tmap package\n\ntmap: Thematic Maps in R\nDevelopment site\ntmap Reference\ntmap: get started!\ntmap: version changes\ntmap: creating thematic maps in a flexible way (useR!2015)\nExploring and presenting maps with tmap (useR!2017)"
   },
@@ -1173,54 +1173,54 @@
     "href": "lesson.html",
     "title": "Weekly Lesson Plan",
     "section": "",
-    "text": "Week\nDate\nTopic\nRemark\n\n\n\n\n1\n19/8/2024\nLesson 1: Introduction to Geospatial Analytics\n\n\n\n2\n26/8/2024\nLesson 2: GeoVisualisation and Analytical Mapping\n\n\n\n3\n2/9/2024\nLesson 3: Spatial Point Patterns Analysis\n\n\n\n4\n9/9/2024\nLesson 4: Advanced Spatial Point Patterns Analysis\n\n\n\n5\n16/9/2024\nLesson 5: Spatial Weights and Applications\n\n\n\n6\n23/9/2024\nLesson 6: Measures of Global and Local Spatial Association\n\n\n\n7\n30/9/2024\nLesson 7: Shiny for Building Web-enabled Geospatial Analytics Application\n\n\n\n8\n7/10/2024\nRecess week\n\n\n\n9\n14/10/2024\nLesson 8: Geographic Segmentation\n\n\n\n10\n21/10/2024\nLesson 9: Geographically Weighted Regression\n\n\n\n11\n28/10/2024\nLesson 10: Geographically Weighted Predictive Modelling\n\n\n\n12\n4/11/2024\nLesson 11: Modelling Geographic of Accessibility\n\n\n\n13\n11/11/2024\nLesson 12: Spatial Interaction Models\n\n\n\n14\n18/11/2024\nTownhall Presentation\n\n\n\n15"
+    "text": "Week\nDate\nTopic\nRemark\n\n\n\n\n1\n19/8/2024\nLesson 1: Introduction to Geospatial Analytics\n\n\n\n2\n26/8/2024\nLesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods\n\n\n\n3\n2/9/2024\nLesson 3: Spatial Point Patterns Analysis\n\n\n\n4\n9/9/2024\nLesson 4: Advanced Spatial Point Patterns Analysis\n\n\n\n5\n16/9/2024\nLesson 5: Spatial Weights and Applications\n\n\n\n6\n23/9/2024\nLesson 6: Measures of Global and Local Spatial Association\n\n\n\n7\n30/9/2024\nLesson 7: Shiny for Building Web-enabled Geospatial Analytics Application\n\n\n\n8\n7/10/2024\nRecess week\n\n\n\n9\n14/10/2024\nLesson 8: Geographic Segmentation\n\n\n\n10\n21/10/2024\nLesson 9: Geographically Weighted Regression\n\n\n\n11\n28/10/2024\nLesson 10: Geographically Weighted Predictive Modelling\n\n\n\n12\n4/11/2024\nLesson 11: Modelling Geographic of Accessibility\n\n\n\n13\n11/11/2024\nLesson 12: Spatial Interaction Models\n\n\n\n14\n18/11/2024\nTownhall Presentation\n\n\n\n15"
   },
   {
     "objectID": "outline/Lesson02_outline.html",
     "href": "outline/Lesson02_outline.html",
-    "title": "Lesson 2: GeoVisualisation and Analytical Mapping",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
     "section": "",
     "text": "In this lesson, the basic principles and concepts of thematic mapping and geovisualisation will be introduced. You will also gain hands-on experience on using tmap package to build cartographic quality thematic maps."
   },
   {
     "objectID": "outline/Lesson02_outline.html#overview",
     "href": "outline/Lesson02_outline.html#overview",
-    "title": "Lesson 2: GeoVisualisation and Analytical Mapping",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
     "section": "",
     "text": "In this lesson, the basic principles and concepts of thematic mapping and geovisualisation will be introduced. You will also gain hands-on experience on using tmap package to build cartographic quality thematic maps."
   },
   {
     "objectID": "outline/Lesson02_outline.html#content",
     "href": "outline/Lesson02_outline.html#content",
-    "title": "Lesson 2: GeoVisualisation and Analytical Mapping",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
     "section": "Content",
     "text": "Content\n\nGeospatial Visualisation\n\nClassification of maps\nPrinciples of map design\nThematic mapping techniques\nAnalytical mapping techniques"
   },
   {
     "objectID": "outline/Lesson02_outline.html#lesson-slides",
     "href": "outline/Lesson02_outline.html#lesson-slides",
-    "title": "Lesson 2: GeoVisualisation and Analytical Mapping",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
     "section": "Lesson Slides",
-    "text": "Lesson Slides\n\nLesson 2: GeoVisualisation and Analytical Mapping slides."
+    "text": "Lesson Slides\n\nLesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods slides."
   },
   {
     "objectID": "outline/Lesson02_outline.html#hands-on-exercise",
     "href": "outline/Lesson02_outline.html#hands-on-exercise",
-    "title": "Lesson 2: GeoVisualisation and Analytical Mapping",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
     "section": "Hands-on Exercise",
     "text": "Hands-on Exercise\n\nChoropleth Mapping with R\n\n\nSelf-reading Before Meet-up\nTo read before class:\n\nProportional Symbols\nChoropleth Maps\nThe Basics of Data Classification\nChoropleth Mapping with Exploratory Data Analysis\nTennekes, M. (2018) “tmap: Thematic Maps in R”, Journal of Statistical Software, Vol 84:6, 1-39."
   },
   {
     "objectID": "outline/Lesson02_outline.html#all-about-r",
     "href": "outline/Lesson02_outline.html#all-about-r",
-    "title": "Lesson 2: GeoVisualisation and Analytical Mapping",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
     "section": "All About R",
     "text": "All About R\n\ntmap: thematic maps in R package especially:\n\ntmap: get started!,\ntmap: version changes, and\nChapter 8 Making maps with R of Geocomputation with R."
   },
   {
     "objectID": "outline/Lesson02_outline.html#reference",
     "href": "outline/Lesson02_outline.html#reference",
-    "title": "Lesson 2: GeoVisualisation and Analytical Mapping",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
     "section": "Reference",
     "text": "Reference\n\nThe Concept of Map Symbols\nChoropleth map\nChoropleth Maps – A Guide to Data Classification\nBivariate Choropleth\nValue-by-alpha maps\nWhat to consider when creating choropleth maps"
   },
@@ -1587,5 +1587,75 @@
     "title": "Syllabus",
     "section": "Course Assessment Details",
     "text": "Course Assessment Details\n\nPre-lesson Learning and Class Participation\nPre-lesson learning materials, namely: videos, slides, recommended readings and hands-on exercises will be released one week before the weekly lesson starts. A strict requirement for each class meeting is to complete the assigned pre-learning materials before coming to class. Students are required write down at least one question or issue encountered while viewing the video, reading the recommended articles or working on the hands-on exercises and post them on Piazza for discussion.\nStudent sharing of insights from readings of assigned materials on Piazza will form a large part of the learning in this course.\n\n\nHands-on Exercise (20%)\nHands-on exercises aim to provide students to gain hands-on experience on using selected R packages to perform geospatial analysis with real world use cases. It is important for students to complete the hands-on exercises before class.\n\n\nIn-class Exercise (20%)\nIn-class exercise and discussion will extend the methods learned from the hands-on exercise to advanced modelling. The in-class discussion will also focus on how to interpret the analysis results and to communicate the analysis results by using appropriate map and data visualisation techniques. Students may also be quizzed in class and thereby contribute to in-class exercise.\n\n\nTake-home Exercise (30%)\nThere are three take-home exercises that are due throughout the term. They aim to provide students the opportunities to apply the methods learned in class by working through mini real-world cases. Each take-home exercise is an extension of the hands-on and in-class exercises. What this means is that, for example, in Lesson 1, students will learn the concept of spatial point processes and the hands-on exercise will provide students step-by-step guide on how to use R packages to perform spatial point patterns analysis. The in-class discussion, beside clarification of the concepts and usage of R packages syntax and argument, it will focus more on how to interpret and communicate the analysis results. Then the take-home exercise will require students to synthesise what they have learned from the readings, hands-on exercise and in-class exercise. The estimated workload will be about 6-8 hours per week.\nEach take-home exercise will carry a same weightage of 10%. The deliverable format of the take-home exercises and marking rubric of will be provided on the handout of the take-home exercise. Feedback on take-home exercise will be provided weekly before the weekly lesson starts. This is to ensure that students will learn from mistakes made in the earlier take-home exercise and improve their work progressively in the subsequent take-home exercises.\nStudents may work together to help one another with computer or geospatial issues and discuss the materials that constitute the take-home exercise. However, each student is required to prepare and submit the take-home exercise (including any computer work) on their own. Cheating is strictly prohibited. Cheating includes but not limited to: plagiarism and submission of work that is not the student’s.\n\n\nGeospatial Analytics Project (30%)\nThe purpose of the geospatial analytics project is to provide students first hand experience on building web-based geospatial analytics tool by integrating open source web mapping API(s), data visualisation API(s) and geospatial analysis libraries. You will also learn how to collecting, processing and analysing spatially related issues using real world data. Students are encouraged to focus on research topics that are relevant to their field of study.\n\n\nFinal Exam\nThere will be no final examination for this course."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#what-is-a-map",
+    "href": "lesson/Lesson02/Lesson02-GeoVis.html#what-is-a-map",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
+    "section": "What is a Map?",
+    "text": "What is a Map?\nA model of real world depict by a collection of cartographic symbols or/and visual abstraction."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#typology-of-maps",
+    "href": "lesson/Lesson02/Lesson02-GeoVis.html#typology-of-maps",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
+    "section": "Typology of Maps",
+    "text": "Typology of Maps"
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#thematic-mapping-principles-and-methods",
+    "href": "lesson/Lesson02/Lesson02-GeoVis.html#thematic-mapping-principles-and-methods",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
+    "section": "Thematic Mapping: Principles and Methods",
+    "text": "Thematic Mapping: Principles and Methods\n\nDisplaying\n\nQualitative data\nQuantitative data\n\nChoosing -Appropriate classification method for displaying data\n\nAppropriate number of classes\n\nTechniques in data analysis\n\nUsing the classification histogram\nNormalizing data"
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#qualitative-thematic-maps",
+    "href": "lesson/Lesson02/Lesson02-GeoVis.html#qualitative-thematic-maps",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
+    "section": "Qualitative Thematic Maps",
+    "text": "Qualitative Thematic Maps\nVisual Variables and Cartographic Symbols\n\n\n\nQualitative visual variables are used for nominal scale data.\nThe goal of qualitative visual variables is to show how entities differ from each other.\nThe visual variables that do a good job of showing ordinal differences are: colour value, colour saturation, size and texture/grain.\n\nFigure on the right for examples of these four ordinal visual variables used each in point, linear and areal symbols."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#qualitative-thematic-map",
+    "href": "lesson/Lesson02/Lesson02-GeoVis.html#qualitative-thematic-map",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
+    "section": "Qualitative Thematic Map",
+    "text": "Qualitative Thematic Map\nPoint symbol map\n\n\n\nDifferent point symbols are used to represent school types."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#qualitative-thematic-map-1",
+    "href": "lesson/Lesson02/Lesson02-GeoVis.html#qualitative-thematic-map-1",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
+    "section": "Qualitative Thematic Map",
+    "text": "Qualitative Thematic Map\nLine symbol map\n\n\n\nA road map is an example of a thematic map. It shows the road network of an area. In this map, lines with different colour intensity and tickness are used to differentiate hierarchy of roads."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#qualitative-thematic-map-2",
+    "href": "lesson/Lesson02/Lesson02-GeoVis.html#qualitative-thematic-map-2",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
+    "section": "Qualitative Thematic Map",
+    "text": "Qualitative Thematic Map\nArea map\n\n\n\nLand use map below is a good example of a discrete thematic map. In this map, different colours are use to represent different land use types."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#quantitative-thematic-map",
+    "href": "lesson/Lesson02/Lesson02-GeoVis.html#quantitative-thematic-map",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
+    "section": "Quantitative Thematic Map",
+    "text": "Quantitative Thematic Map\nVisual Variables and Cartographic Symbols\n\n\n\nQuantitative visual variables are used to display ordinal, interval or ratio scale data.\n\nThe goal of the quantitative visual variable is to show relative magnitude or order between entities.\nThe visual variables that do a good job of showing ordinal differences are: colour value, colour saturation, size and texture/grain.\n\nFigure on the right shows of these four ordinal visual variables used each in point, linear and areal symbols."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#proportional-symbol-map",
+    "href": "lesson/Lesson02/Lesson02-GeoVis.html#proportional-symbol-map",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
+    "section": "Proportional Symbol Map",
+    "text": "Proportional Symbol Map\n\nThe proportional symbol technique uses symbols of different sizes to represent data associated with different areas or locations within the map.\n\n\n\nThe proportional symbol technique uses symbols of different sizes to represent data associated with different areas or locations within the map. For example, the proportional maps above use circle with different sizes to represent millions of people. There are two types of point features that are typically depicted with proportional symbols: features for which the data represents a geographic position directly (e.g., gallons of oil from individual oil wells), and features that are geographic areas to which data are aggregated and the data magnitudes are assigned to a representative point within the area (e.g., the geographic centroid of a state as in the examples above). In either case, the area of the symbol is scaled to represent the data magnitude, sometimes with a bit of exaggeration to adjust for a general tendency of human vision to underestimate differences in area. A variant on this direct data-to-symbol scaling groups values into categories first, then scales the symbol to represent the mean for the category, assigning a symbol to each place to represent the category range that the mean for the place falls within"
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-GeoVis.html#dot-density-map",
+    "href": "lesson/Lesson02/Lesson02-GeoVis.html#dot-density-map",
+    "title": "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods",
+    "section": "Dot Density Map",
+    "text": "Dot Density Map\nA dot-density map is a type of thematic map that uses dots or other symbols on the map to show the values of one or more numeric data fields. Each dot on a dot-density map represents some amount of data.\n\n\nOne dot represent 100 households.\n\n\nReference: Dot distribution map at wiki and Dot Density Maps"
   }
 ]

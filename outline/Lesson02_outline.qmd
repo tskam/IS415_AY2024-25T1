@@ -1,5 +1,5 @@
 ---
-title: "Lesson 2: GeoVisualisation and Analytical Mapping"
+title: "Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods"
 date: "February 25, 2024"
 date-modified: "last-modified"
 format: html
@@ -20,7 +20,7 @@ In this lesson, the basic principles and concepts of thematic mapping and geovis
 
 ## Lesson Slides
 
--   [Lesson 2: GeoVisualisation and Analytical Mapping](..\lesson\Lesson02\Lesson02-GeoVis.html) slides.
+-   [Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods](..\lesson\Lesson02\Lesson02-GeoVis.html) slides.
 
 ## Hands-on Exercise
 
