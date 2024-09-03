@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-01-08">
+<meta name="dcterms.date" content="2024-09-07">
 
-<title>IS415 AY2022-23T2 - Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of Grab hailing services in Singapore</title>
+<title>IS415 AY2022-23T2 - Take-home Exercise 1: Geospatial Analytics for Social Good: Application of Spatial and Spatio-temporal Point Patterns Analysis to discover the geographical distribution of Armed Conflict in Myanmar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -163,12 +163,12 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#setting-the-scene" id="toc-setting-the-scene" class="nav-link active" data-scroll-target="#setting-the-scene">Setting the Scene</a></li>
   <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
-  <li><a href="#the-task" id="toc-the-task" class="nav-link" data-scroll-target="#the-task">The Task</a></li>
   <li><a href="#the-data" id="toc-the-data" class="nav-link" data-scroll-target="#the-data">The Data</a>
   <ul class="collapse">
-  <li><a href="#apstial-data" id="toc-apstial-data" class="nav-link" data-scroll-target="#apstial-data">Apstial data</a></li>
-  <li><a href="#geospatial-data" id="toc-geospatial-data" class="nav-link" data-scroll-target="#geospatial-data">Geospatial data</a></li>
+  <li><a href="#armed-conflict-data" id="toc-armed-conflict-data" class="nav-link" data-scroll-target="#armed-conflict-data">Armed conflict data</a></li>
+  <li><a href="#gis-data" id="toc-gis-data" class="nav-link" data-scroll-target="#gis-data">GIS Data</a></li>
   </ul></li>
+  <li><a href="#the-task" id="toc-the-task" class="nav-link" data-scroll-target="#the-task">The Task</a></li>
   <li><a href="#grading-criteria" id="toc-grading-criteria" class="nav-link" data-scroll-target="#grading-criteria">Grading Criteria</a></li>
   <li><a href="#submission-instructions" id="toc-submission-instructions" class="nav-link" data-scroll-target="#submission-instructions">Submission Instructions</a></li>
   <li><a href="#due-date" id="toc-due-date" class="nav-link" data-scroll-target="#due-date">Due Date</a></li>
@@ -182,7 +182,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of Grab hailing services in Singapore</h1>
+<h1 class="title">Take-home Exercise 1: Geospatial Analytics for Social Good: Application of Spatial and Spatio-temporal Point Patterns Analysis to discover the geographical distribution of Armed Conflict in Myanmar</h1>
 </div>
 
 
@@ -193,14 +193,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 8, 2023</p>
+      <p class="date">September 7, 2024</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">August 15, 2024</p>
+      <p class="date-modified">September 3, 2024</p>
     </div>
   </div>
     
@@ -211,66 +211,66 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Please kindly note that this is <strong>Take-home Exercise 1 of AY2023-24 Term 2</strong>. It aims to provides students a a better understanding on the expectation of the Take-home Exercises. Students taking this course must review them, especially the selected submissions by your seniors before getting started with the take-home exercise.</p>
-</div>
-</div>
 <section id="setting-the-scene" class="level2">
 <h2 class="anchored" data-anchor-id="setting-the-scene">Setting the Scene</h2>
-<p>Human mobility, the movement of human beings in space and time, reflects the spatial-temporal characteristics of human behavior. With the advancement Information and Communication Technologies (ICT) especially smart phone, a large volume of data related to human mobility have been collected. By using appropriate GIS analysis methods, these data are potentially useful in supporting smart city planning and management.</p>
-<p>In Singapore, one of the important source of data related to human mobility is from <a href="https://datamall.lta.gov.sg/content/datamall/en.html">Land Transport Authority (LTA) DataMall</a>. Two data sets related to human mobility are provided by the portal, they are: Passenger Volume by Origin Destination Train Stations and Passenger Volume by Origin Destination Bus Stops. One of the limitation of these data sets is that their location are biased to either bus stops or MRT/LRT stations. In 2020, another very interesting human mobility data set called <a href="https://engineering.grab.com/grab-posisi">Grab Posisi</a> was released by GRAB, one of the largest shared taxi operator in South-east Asia. There are two data sets been released and one of them is for Singapore.</p>
+<p>Millions of people have their lives shattered by armed conflict – wars – every year.</p>
+<p>Armed conflict has been on the rise since about 2012, after a decline in the 1990s and early 2000s. First came conflicts in Libya, Syria and Yemen, triggered by the 2011 Arab uprisings. Libya’s instability spilled south, helping set off a protracted crisis in the Sahel region. A fresh wave of major combat followed: the 2020 Azerbaijani-Armenian war over the Nagorno-Karabakh enclave, horrific fighting in Ethiopia’s northern Tigray region that began weeks later, the conflict prompted by the Myanmar army’s 2021 power grab and Russia’s 2022 assault on Ukraine. Add to those 2023’s devastation in Sudan and Gaza. Around the globe, more people are dying in fighting, being forced from their homes or in need of life-saving aid than in decades.</p>
+<p>Source: <a href="https://www.crisisgroup.org/global/10-conflicts-watch-2024">10 Conflicts to Watch in 2024</a></p>
 </section>
 <section id="objectives" class="level2">
 <h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
-<p>Geospatial analytics hold tremendous potential to address complex problems facing society. In this study, you are tasked to apply appropriate spatial point patterns analysis methods to discover the geographical and spatio-temporal distribution of Grab hailing services locations in Singapore.</p>
+<p>Geospatial analytics hold tremendous potential to address complex problems facing society. In this study, you are tasked to apply spatial point patterns analysis methods to discover the spatial and spatio-temporal distribution of armed conflict in Myanmar.</p>
+</section>
+<section id="the-data" class="level2">
+<h2 class="anchored" data-anchor-id="the-data">The Data</h2>
+<section id="armed-conflict-data" class="level3">
+<h3 class="anchored" data-anchor-id="armed-conflict-data">Armed conflict data</h3>
+<p>For the purpose of this assignment, armed conflict data of Myanmar between 2021-2024 from <a href="https://acleddata.com/">Armed Conflict Location &amp; Event Data (ACLED)</a>, an independent, impartial, international non-profit organization collecting data on violent conflict and protest in all countries and territories in the world, should be used.</p>
+<p>In terms of event types, students should focus on at least four main event types, namely: Battles, Explosion/Remote violence, Strategic developments, and Violence against civilians.</p>
+<p>In terms of study period, students should focus on quarterly armed conflict events from January 2021 until June 2024.</p>
+</section>
+<section id="gis-data" class="level3">
+<h3 class="anchored" data-anchor-id="gis-data">GIS Data</h3>
+<ul>
+<li><a href="http://geonode.themimu.info/layers/?limit=100&amp;offset=0">Geospatial data</a> on <a href="http://www.themimu.info/">Myanmar Information Management Unit, MIMU</a></li>
+</ul>
+</section>
 </section>
 <section id="the-task" class="level2">
 <h2 class="anchored" data-anchor-id="the-task">The Task</h2>
 <p>The specific tasks of this take-home exercise are as follows:</p>
 <ul>
-<li>Using appropriate function of <strong>sf</strong> and <strong>tidyverse</strong>, preparing the following geospatial data layer in sf tibble data.frames:
-<ul>
-<li>Grab taxi location points either by origins or destinations.</li>
-<li>Road layer within Singapore excluding outer islands.</li>
-<li>Singapore boundary layer excluding outer islands</li>
-</ul></li>
-<li>Using the extracted data, derive traditional Kernel Density Estimation layers.</li>
-<li>Using the extracted data, derive either Network Kernel Density Estimation (NKDE) or Temporal Network Kernel Density Estimation (TNKDE)</li>
-<li>Using appropriate <strong>tmap</strong> functions, display the kernel density layers on openstreetmap of Singapore.</li>
-<li>Describe the spatial patterns revealed by the kernel density maps.</li>
+<li>Using appropriate function of <strong>sf</strong> and <strong>tidyverse</strong> packages, import and transform the downloaded armed conflict data and administrative boundary data into sf tibble data.frames.</li>
+<li>Using the geospatial data sets prepared, derive quarterly KDE layers.</li>
+<li>Using the geospatial data sets prepared, perform 2nd-Order Spatial Point Patterns Analysis.</li>
+<li>Using the geospatial data sets prepared, derive quarterly spatio-temporal KDE layers.</li>
+<li>Using the geospatial data sets prepared, perform 2nd-Order Spatio-temporal Point Patterns Analysis.</li>
+<li>Using appropriate <strong>tmap</strong> functions, display the KDE and Spatio-temporal KDE layers on openstreetmap of Myanmar.</li>
+<li>Describe the spatial patterns revealed by the KDE and Spatio-temporal KDE maps.</li>
 </ul>
-</section>
-<section id="the-data" class="level2">
-<h2 class="anchored" data-anchor-id="the-data">The Data</h2>
-<section id="apstial-data" class="level3">
-<h3 class="anchored" data-anchor-id="apstial-data">Apstial data</h3>
-<p>For the purpose of this assignment, <a href="https://engineering.grab.com/grab-posisi">Grab-Posisi</a> of Singapore will be used.</p>
-</section>
-<section id="geospatial-data" class="level3">
-<h3 class="anchored" data-anchor-id="geospatial-data">Geospatial data</h3>
-<ul>
-<li>Road data set from OpenStreetMap of <a href="https://download.geofabrik.de/">Geofabrik download server</a>. The Malaysia, Singapore, and Brunei coverage should be downloaded.<br>
-</li>
-<li>Master Plan 2019 Subzone Boundary (No Sea) from Data.gov.sg.</li>
-</ul>
-</section>
 </section>
 <section id="grading-criteria" class="level2">
 <h2 class="anchored" data-anchor-id="grading-criteria">Grading Criteria</h2>
 <p>This exercise will be graded by using the following criteria:</p>
 <ul>
-<li><p><strong>Geospatial Data Wrangling (20 marks):</strong> This is an important aspect of geospatial analytics. You will be assessed on your ability to employ appropriate R functions from various R packages specifically designed for modern data science such as readxl, tidyverse (tidyr, dplyr, ggplot2), sf just to mention a few of them, to perform the entire geospatial data wrangling processes, including. This is not limited to data import, data extraction, data cleaning and data transformation. Besides assessing your ability to use the R functions, this criterion also includes your ability to clean and derive appropriate variables to meet the analysis need. (Warning: All data are like vast grassland full of land mines. Your job is to clear those mines and not to step on them).</p></li>
-<li><p><strong>Geospatial Analysis (30 marks):</strong> In this exercise, you are expected to use the appropriate thematic and analytics mapping techniques and R functions introduced in class to analysis the geospatial data prepared. You will be assessed on your ability to derive analytical maps by using appropriate kernel estimation techniques.</p></li>
-<li><p><strong>Geovisualisation and geocommunication (20 marks):</strong> In this section, you will be assessed on your ability to communicate Exploratory Spatial Data Analysis results in business friendly visual representations. This course is geospatial centric, hence, it is important for you to demonstrate your competency in using appropriate geovisualisation techniques to reveal and communicate the findings of your analysis.</p></li>
+<li><strong>Geospatial Data Wrangling (20 marks):</strong> This is an important aspect of geospatial analytics. You will be assessed on your ability to employ appropriate R functions from various R packages specifically designed for modern data science such as readxl, tidyverse (tidyr, dplyr, ggplot2), sf just to mention a few of them, to perform the entire geospatial data wrangling processes, including. This is not limited to data import, data extraction, data cleaning and data transformation. Besides assessing your ability to use the R functions, this criterion also includes your ability to clean and derive appropriate variables to meet the analysis need.</li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>All data are like vast grassland full of land mines. Your job is to clear those mines and not to step on them).</p>
+</div>
+</div>
+<ul>
+<li><p><strong>Geospatial Analysis (30 marks):</strong> In this exercise, you are expected to use the appropriate spatial point patterns analysis methods and R packages introduced in class to analysis the geospatial data prepared. You will be assessed on your ability to derive analytical products by using appropriate kernel estimation techniques.</p></li>
+<li><p><strong>Geovisualisation and geocommunication (20 marks):</strong> In this section, you will be assessed on your ability to communicate Exploratory Spatial Data Analysis and Confirmatory Spatial Data Analysis results in layman friendly visual representations. This course is geospatial centric, hence, it is important for you to demonstrate your competency in using appropriate geovisualisation techniques to reveal and communicate the findings of your analysis.</p></li>
 <li><p><strong>Reproducibility (15 marks):</strong> This is an important learning outcome of this exercise. You will be assessed on your ability to provide a comprehensive documentation of the analysis procedures in the form of code chunks of Quarto. It is important to note that it is not enough by merely providing the code chunk without any explanation on the purpose and R function(s) used.</p></li>
 <li><p><strong>Bonus (15 marks):</strong> Demonstrate your ability to employ methods beyond what you had learned in class to gain insights from the data.</p></li>
 </ul>
@@ -284,11 +284,15 @@ Important
 </section>
 <section id="due-date" class="level2">
 <h2 class="anchored" data-anchor-id="due-date">Due Date</h2>
-<p><strong>4th February 2024 (Sunday, mid-night 11:59pm)</strong>.</p>
+<p><strong>22nd September 2024 (Sunday, mid-night 11:59pm)</strong>.</p>
 </section>
 <section id="reference" class="level2">
 <h2 class="anchored" data-anchor-id="reference">Reference</h2>
-<p><a href="https://engineering.grab.com/files/Grab-Posisi_An_Extensive_Real-Life_GPS_Trajectory_Dataset_in_Southeast_Asia.pdf">Grab-Posisi: An Extensive Real-Life GPS Trajectory Dataset in Southeast Asia</a></p>
+<ul>
+<li><p><a href="https://www.cfr.org/backgrounder/myanmar-history-coup-military-rule-ethnic-conflict-rohingya">Myanmar’s Troubled History: Coups, Military Rule, and Ethnic Conflict</a></p></li>
+<li><p><a href="https://en.wikipedia.org/wiki/Myanmar_conflict">Myanmar conflict</a></p></li>
+<li><p><a href="https://en.wikipedia.org/wiki/Myanmar_civil_war_(2021%E2%80%93present)">Myanmar civil war (2021–present)</a></p></li>
+</ul>
 </section>
 <section id="learning-from-senior" class="level2">
 <h2 class="anchored" data-anchor-id="learning-from-senior">Learning from senior</h2>
