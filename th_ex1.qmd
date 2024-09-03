@@ -1,6 +1,6 @@
 ---
 title: "Take-home Exercise 1: Geospatial Analytics for Social Good: Application of Spatial and Spatio-temporal Point Patterns Analysis to discover the geographical distribution of Armed Conflict in Myanmar"
-date: "September 7, 2024"
+date: "August 30, 2024"
 date-modified: "last-modified"
 format: html
 toc: true
