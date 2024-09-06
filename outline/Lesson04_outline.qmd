@@ -37,6 +37,8 @@ In this lesson, you will learn the basic concepts and methods of Spatio-temporal
 
 ## All About R
 
+-   González & Moraga, "[Non-Parametric Analysis of Spatial and Spatio-Temporal Point Patterns](https://journal.r-project.org/articles/RJ-2023-025/)", The R Journal, 2023
+
 -   [stpp](https://cran.r-project.org/web/packages/stpp/index.html)
     -   [stpp: An R Package for Plotting, Simulating and Analyzing Spatio-Temporal Point Patterns](https://www.jstatsoft.org/article/view/v053i02), Journal of Statistical Software (JSS), April 2013, Volume 53, Issue 2.
 

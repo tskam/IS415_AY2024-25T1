@@ -1250,7 +1250,7 @@
     "href": "outline/Lesson04_outline.html#all-about-r",
     "title": "Lesson 4: Spatio-Temporal Point Patterns Analysis",
     "section": "All About R",
-    "text": "All About R\n\nstpp\n\nstpp: An R Package for Plotting, Simulating and Analyzing Spatio-Temporal Point Patterns, Journal of Statistical Software (JSS), April 2013, Volume 53, Issue 2.\n\nsparr: Spatial and Spatiotemporal Relative Ris\nstopp\n\nstpp: An R Package for Plotting, Simulating and Analysing Spatio-Temporal Point Patterns"
+    "text": "All About R\n\nGonzález & Moraga, “Non-Parametric Analysis of Spatial and Spatio-Temporal Point Patterns”, The R Journal, 2023\nstpp\n\nstpp: An R Package for Plotting, Simulating and Analyzing Spatio-Temporal Point Patterns, Journal of Statistical Software (JSS), April 2013, Volume 53, Issue 2.\n\nsparr: Spatial and Spatiotemporal Relative Ris\nstopp\n\nstpp: An R Package for Plotting, Simulating and Analysing Spatio-Temporal Point Patterns"
   },
   {
     "objectID": "outline/Lesson05_outline.html",
