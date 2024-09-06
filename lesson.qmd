@@ -4,11 +4,11 @@ editor: visual
 ---
 
 | Week | Date       | Topic                                                                                                      | Remark |
-|-----------------|-----------------|--------------------|-----------------|
+|------------------|------------------|--------------------|------------------|
 | 1    | 19/8/2024  | [Lesson 1: Introduction to Geospatial Analytics](outline/lesson01_outline.html)                            |        |
-| 2    | 26/8/2024  | [Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods](outline/lesson02_outline.html)                         |        |
+| 2    | 26/8/2024  | [Lesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods](outline/lesson02_outline.html)   |        |
 | 3    | 2/9/2024   | [Lesson 3: Spatial Point Patterns Analysis](outline/lesson03_outline.html)                                 |        |
-| 4    | 9/9/2024   | [Lesson 4: Advanced Spatial Point Patterns Analysis](outline/lesson04_outline.html)                        |        |
+| 4    | 9/9/2024   | [Lesson 4: Spatio-Temporal Point Patterns Analysis](outline/lesson04_outline.html)                        |        |
 | 5    | 16/9/2024  | [Lesson 5: Spatial Weights and Applications](outline/lesson05_outline.html)                                |        |
 | 6    | 23/9/2024  | [Lesson 6: Measures of Global and Local Spatial Association](outline/lesson06_outline.html)                |        |
 | 7    | 30/9/2024  | [Lesson 7: Shiny for Building Web-enabled Geospatial Analytics Application](outline/lesson07_outline.html) |        |
