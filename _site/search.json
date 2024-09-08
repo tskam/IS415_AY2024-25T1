@@ -976,85 +976,85 @@
     "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics",
     "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics",
     "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "Demystifying Geospatial Analytics",
-    "text": "Demystifying Geospatial Analytics\n\nA Geographical Information System (GIS) is a toolkit for creating, managing, analysing, visualising, and sharing data of any kind according to where it’s located.\n\n\n\nGeospatial analytics is more than a GIS."
+    "section": "",
+    "text": "A Geographical Information System (GIS) is a toolkit for creating, managing, analysing, visualising, and sharing data of any kind according to where it’s located.\n\n\n\n\n\n\n\nGeospatial analytics is more than a GIS."
   },
   {
     "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics-1",
     "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics-1",
     "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "Demystifying Geospatial Analytics",
-    "text": "Demystifying Geospatial Analytics\n\nGeospatial analytics is more than data visualisation\n\n\n\n\n\nSource: Singapore’s first disease map delivers real-time information on infectious diseases"
+    "section": "",
+    "text": "Geospatial analytics is more than data visualisation\n\n\n\n\n\nSource: Singapore’s first disease map delivers real-time information on infectious diseases"
   },
   {
     "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics-2",
     "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics-2",
     "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "Demystifying Geospatial Analytics",
-    "text": "Demystifying Geospatial Analytics\n\nGeospatial analytics is more than just mapping."
+    "section": "",
+    "text": "Geospatial analytics is more than just mapping."
   },
   {
     "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics",
     "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics",
     "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "Motivation of Geospatial Analytics",
-    "text": "Motivation of Geospatial Analytics\n\nAbout 80% of all data maintained by organisations around the world has a location component.\n\n\n\n(Source: BusinessWeek Research Services, 2006)"
+    "section": "",
+    "text": "About 80% of all data maintained by organisations around the world has a location component.\n\n\n\n\n\n\n\n(Source: BusinessWeek Research Services, 2006)"
   },
   {
     "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-1",
     "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-1",
     "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "Motivation of Geospatial Analytics",
-    "text": "Motivation of Geospatial Analytics\n\nGeospatial information in Smart Nation.\n\n\n\nSee more at this link"
+    "section": "",
+    "text": "Geospatial information in Smart Nation.\n\n\n\n\n\n\n\nSee more at this link"
   },
   {
     "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-2",
     "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-2",
     "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "Motivation of Geospatial Analytics",
-    "text": "Motivation of Geospatial Analytics\n\nThe explosion in the availability of open geospatial data from both the public and private sectors at national and international levels."
+    "section": "",
+    "text": "The explosion in the availability of open geospatial data from both the public and private sectors at national and international levels."
   },
   {
     "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-3",
     "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-3",
     "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "Motivation of Geospatial Analytics",
-    "text": "Motivation of Geospatial Analytics\n\nThe national geospatial master plan.\n\n\n\nSource: Singapore Geospatial Master Plan"
+    "section": "",
+    "text": "The national geospatial master plan.\n\n\n\n\n\n\n\nSource: Singapore Geospatial Master Plan"
   },
   {
     "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics",
     "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics",
     "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "The role of Geospatial Analytics",
-    "text": "The role of Geospatial Analytics\n\nUncovering insights not found in statistical graphs and tables.\n\n\n\nSource: SGSAS - Simple Geo-Spatial Analysis using R Shiny"
+    "section": "",
+    "text": "Uncovering insights not found in statistical graphs and tables.\n\n\n\nSource: SGSAS - Simple Geo-Spatial Analysis using R Shiny"
   },
   {
     "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-1",
     "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-1",
     "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "The role of Geospatial Analytics",
-    "text": "The role of Geospatial Analytics\n\nTo reveal the untapped property of spatial contiguity in geographic knowledge discovery in databases.\n\n\n\nSource: SGSAS - Simple Geo-Spatial Analysis using R Shiny"
+    "section": "",
+    "text": "To reveal the untapped property of spatial contiguity in geographic knowledge discovery in databases.\n\n\n\n\n\n\n\nSource: SGSAS - Simple Geo-Spatial Analysis using R Shiny"
   },
   {
     "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-2",
     "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-2",
     "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "The role of Geospatial Analytics",
-    "text": "The role of Geospatial Analytics\n\nTo uncover the complexity of the real world relationship.\n\n\n\nSource: SGSAS - Simple Geo-Spatial Analysis using R Shiny"
+    "section": "",
+    "text": "To uncover the complexity of the real world relationship.\n\n\n\n\n\n\n\nSource: SGSAS - Simple Geo-Spatial Analysis using R Shiny"
   },
   {
     "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-3",
     "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-3",
     "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "The role of Geospatial Analytics",
-    "text": "The role of Geospatial Analytics\n\nTo model spatial interactions and flows.\n\n\n\nSource: IS415 Bus Rider Flow Project"
+    "section": "",
+    "text": "To model spatial interactions and flows.\n\n\n\n\n\n\n\nSource: IS415 Bus Rider Flow Project"
   },
   {
     "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#geospatial-analytics-and-social-consciousness",
     "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#geospatial-analytics-and-social-consciousness",
     "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "Geospatial Analytics and Social Consciousness",
-    "text": "Geospatial Analytics and Social Consciousness\nThe true power of geospatial analytics is to provide decision makers and planners with data-driven and process information for better problem solving and more efficient use of resources."
+    "section": "",
+    "text": "The true power of geospatial analytics is to provide decision makers and planners with data-driven and process information for better problem solving and more efficient use of resources."
   },
   {
     "objectID": "lesson/Lesson03/Lesson03-SPPA-2.html#content",
@@ -1250,7 +1250,7 @@
     "href": "outline/Lesson04_outline.html#all-about-r",
     "title": "Lesson 4: Spatio-Temporal Point Patterns Analysis",
     "section": "All About R",
-    "text": "All About R\n\nGonzález & Moraga, “Non-Parametric Analysis of Spatial and Spatio-Temporal Point Patterns”, The R Journal, 2023\nstpp\n\nstpp: An R Package for Plotting, Simulating and Analyzing Spatio-Temporal Point Patterns, Journal of Statistical Software (JSS), April 2013, Volume 53, Issue 2.\n\nsparr: Spatial and Spatiotemporal Relative Ris\nstopp\n\nstpp: An R Package for Plotting, Simulating and Analysing Spatio-Temporal Point Patterns"
+    "text": "All About R\n\nGonzález & Moraga, “Non-Parametric Analysis of Spatial and Spatio-Temporal Point Patterns”, The R Journal, 2023\nstpp\n\nstpp: An R Package for Plotting, Simulating and Analyzing Spatio-Temporal Point Patterns, Journal of Statistical Software (JSS), April 2013, Volume 53, Issue 2.\n\nsparr: Spatial and Spatiotemporal Relative Risk\nstopp\n\nstpp: An R Package for Plotting, Simulating and Analysing Spatio-Temporal Point Patterns"
   },
   {
     "objectID": "outline/Lesson05_outline.html",
@@ -1668,22 +1668,29 @@
   {
     "objectID": "lesson/Lesson04/Lesson04-STPPA.html#content",
     "href": "lesson/Lesson04/Lesson04-STPPA.html#content",
-    "title": "Lesson 4: Spatio-temporal Point Patterns Analysis",
+    "title": "Lesson 4: Spatio-Temporal Point Patterns Analysis (STPPA)",
     "section": "Content",
     "text": "Content"
   },
   {
     "objectID": "lesson/Lesson04/Lesson04-STPPA.html#what-is-a-spatio-temporal-point-process",
     "href": "lesson/Lesson04/Lesson04-STPPA.html#what-is-a-spatio-temporal-point-process",
-    "title": "Lesson 4: Spatio-temporal Point Patterns Analysis",
-    "section": "What is a Spatio-temporal Point Process",
-    "text": "What is a Spatio-temporal Point Process\nA spatio-temporal point process (also called space-time or spatial-temporal point process) is a random collection of points, where each point represents the time and location of an event. Examples of events include incidence of disease, sightings or births of a species, or the occurrences of fires, earthquakes, lightning strikes, tsunamis, or volcanic eruptions. Typically the spatio-temporal point events are recorded in three-dimension, namely: longitude, latitude, and time as shown in the figure below."
+    "title": "Lesson 4: Spatio-Temporal Point Patterns Analysis (STPPA)",
+    "section": "What is a Spatio-Temporal Point Process",
+    "text": "What is a Spatio-Temporal Point Process\nA spatio-temporal point process (also called space-time or spatial-temporal point process) is a random collection of points, where each point represents the time and location of an event. Examples of events include incidence of disease, sightings or births of a species, or the occurrences of fires, earthquakes, lightning strikes, tsunamis, or volcanic eruptions. Typically the spatio-temporal point events are recorded in three-dimension, namely: longitude, latitude, and time as shown in the figure below."
   },
   {
     "objectID": "lesson/Lesson04/Lesson04-STPPA.html#spatio-temporal-kde-stkde",
     "href": "lesson/Lesson04/Lesson04-STPPA.html#spatio-temporal-kde-stkde",
-    "title": "Lesson 4: Spatio-temporal Point Patterns Analysis",
-    "section": "Spatio-temporal KDE (STKDE)",
-    "text": "Spatio-temporal KDE (STKDE)\nMathematically, STKDE is defined as"
+    "title": "Lesson 4: Spatio-Temporal Point Patterns Analysis (STPPA)",
+    "section": "Spatio-Temporal KDE (STKDE)",
+    "text": "Spatio-Temporal KDE (STKDE)\nMathematically, STKDE is defined as"
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "",
+    "text": "Demystifying Geospatial Analytics\nMotivation of Geospatial Analytics\nThe Role of Geospatial Analytics\nGeospatial Analytics and Social Consciousness\n\n\n\n\nA Geographical Information System (GIS) is a toolkit for creating, managing, analysing, visualising, and sharing data of any kind according to where it’s located.\n\n\n\n\n\n\n\nGeospatial analytics is more than a GIS.\n\n\n\n\n\nGeospatial analytics is more than data visualisation\n\n\n\n\n\nSource: Singapore’s first disease map delivers real-time information on infectious diseases\n\n\n\n\n\n\n\n\n\nGeospatial analytics is more than just mapping.\n\n\n\n\n\n\nAbout 80% of all data maintained by organisations around the world has a location component.\n\n\n\n\n\n\n\n(Source: BusinessWeek Research Services, 2006)\n\n\n\n\n\nGeospatial information in Smart Nation.\n\n\n\n\n\n\n\nSee more at this link\n\n\n\n\n\nThe explosion in the availability of open geospatial data from both the public and private sectors at national and international levels.\n\n\n\n\n\n\n\n\n\n\nThe national geospatial master plan.\n\n\n\n\n\n\n\nSource: Singapore Geospatial Master Plan\n\n\n\n\n\nUncovering insights not found in statistical graphs and tables.\n\n\n\nSource: SGSAS - Simple Geo-Spatial Analysis using R Shiny\n\n\n\n\n\nTo reveal the untapped property of spatial contiguity in geographic knowledge discovery in databases.\n\n\n\n\n\n\n\nSource: SGSAS - Simple Geo-Spatial Analysis using R Shiny\n\n\n\n\n\nTo uncover the complexity of the real world relationship.\n\n\n\n\n\n\n\nSource: SGSAS - Simple Geo-Spatial Analysis using R Shiny\n\n\n\n\n\nTo model spatial interactions and flows.\n\n\n\n\n\n\n\nSource: IS415 Bus Rider Flow Project\n\n\n\n\nThe true power of geospatial analytics is to provide decision makers and planners with data-driven and process information for better problem solving and more efficient use of resources."
   }
 ]
