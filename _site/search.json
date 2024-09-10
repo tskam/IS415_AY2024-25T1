@@ -1236,7 +1236,7 @@
     "href": "outline/Lesson04_outline.html#content",
     "title": "Lesson 4: Spatio-Temporal Point Patterns Analysis",
     "section": "Content",
-    "text": "Content\n\nSpatio-temporal Point Processes\n\nBasic concepts of spatio-temporal point processes.\nExamples of real-world spatio-temporal point processes.\n\nSpatio-temporal Point Patterns Analysis methods\n\nSpatio-temporal Kernel Density Estimation (STKDE)\nSpatio-temporal K-functions\n\n\n\nLesson Slides and Hands-on Notes\n\nLesson 4 slides\nHands-on Exercise 4: Spatio-temporalPoint Patterns Analysis."
+    "text": "Content\n\nSpatio-temporal Point Processes\n\nBasic concepts of spatio-temporal point processes.\nExamples of real-world spatio-temporal point processes.\n\nSpatio-temporal Point Patterns Analysis methods\n\nSpatio-temporal Kernel Density Estimation (STKDE)\nSpatio-temporal K-functions\n\n\n\nLesson Slides and Hands-on Notes\n\nLesson 4 slides\nHands-on Exercise 4: Spatio-Temporal Point Patterns Analysis."
   },
   {
     "objectID": "outline/Lesson04_outline.html#references",
@@ -1670,7 +1670,7 @@
     "href": "lesson/Lesson04/Lesson04-STPPA.html#content",
     "title": "Lesson 4: Spatio-Temporal Point Patterns Analysis (STPPA)",
     "section": "Content",
-    "text": "Content"
+    "text": "Content\n\nBasic concepts of Spatio-Temporal Point Process\nSpatio-Temporal Kernel Density Estimation"
   },
   {
     "objectID": "lesson/Lesson04/Lesson04-STPPA.html#what-is-a-spatio-temporal-point-process",

@@ -19,9 +19,9 @@ A spatio-temporal point process (also called space-time or spatial-temporal poin
 
 ### Lesson Slides and Hands-on Notes
 
--   [Lesson 4](../lesson/Lesson04/Lesson04-ASPAA.html) slides
+-   [Lesson 4](../lesson/Lesson04/Lesson04-STPPA.html) slides
 
--   [Hands-on Exercise 4: Spatio-temporalPoint Patterns Analysis](https://r4gdsa.netlify.app/chap00).
+-   [Hands-on Exercise 4: Spatio-Temporal Point Patterns Analysis](https://r4gdsa.netlify.app/chap06).
 
 ## References
 
