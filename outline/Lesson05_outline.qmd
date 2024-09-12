@@ -23,7 +23,7 @@ Computing spatial weight is an essential step toward measuring the strength of t
 
 ## Lesson Slides and Hands-on Notes
 
--   [Lesson 5](../lesson/Lesson04/Lesson04-Spatial_Weights.html) slides.
+-   [Lesson 5](../lesson/Lesson05/Lesson05-Spatial_Weights.html) slides.
 -   [Hands-on Exercise 5](https://r4gdsa.netlify.app/chap08.html)
 
 ### Self-reading Before Meet-up
