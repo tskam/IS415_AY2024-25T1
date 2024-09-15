@@ -5,6 +5,7 @@ institute: "School of Computing and Information Systems,<br/>Singapore Managemen
 date: "`r Sys.Date()`"
 format: 
   revealjs:
+    pdf: default
     width: 1600
     height: 900
     show-notes: false
@@ -118,8 +119,6 @@ tm_shape(geodemog)+
             frame = TRUE) +
   tm_borders(alpha = 0.5) 
 ```
-
-\]
 
 ::: notes
 As a result, a formal statistical test of spatial randomness is needed.
@@ -268,7 +267,7 @@ Spatial window sum, on the other hand, summed up the GDPPC of all neighbours and
 #| echo: false
 #| eval: false
 renderthis::to_pdf(
-  from = "https://is415-ay2022-23t2.netlify.app/lesson/lesson06/lesson06-spatial_weights.html",
-  to = "D://IS415_AY2022-23T2/02-Lesson/Lesson05.pdf"
+  from = "https://is415-ay2024-25t1.netlify.app/lesson/lesson05/lesson05-spatial_weights.html",
+  to = "D://IS415_AY2024-25T1/02-Lesson/Lesson05.pdf"
 )
 ```
