@@ -1,7 +1,7 @@
 ---
 title: "Geospatial Analytics Project"
 subtitle: Democratising Geospatial Data and Analytics with Shiny App
-date: "31 Dec, 2023"
+date: "31 July, 2024"
 date-modified: "last-modified"
 format: html
 toc: true
