@@ -21,7 +21,7 @@ Students are required to update their project websites with all the details incl
 
 ## Project Theme
 
-Students are required to choose one of the following theme to develop the GeoSpaital Analytics Project:
+Students are required to choose one of the [ASEAN](https://asean.org/member-states/) country as the study area and select at least one following theme to develop the GeoSpaital Analytics Project:
 
 -   Spatial Point Patterns Analysis
 -   Exploratory Spatial Data Analysis
@@ -46,9 +46,9 @@ Please feel free to approach me for more details.
 
 -   Brainstorming project ideas and consulting with course instructor between **Week 2 to Week 7**.
 -   Editing and publishing project proposal by the end of **Week 8**.
--   Submission of project poster: **4th April 2024 by 11:59pm (mid-night)**
--   Townhall presentation: **8th April 2024 (Monday)**, at 12:00-2:00pm. Venue: LKSLIB Basement concourse. Students are required to be at the venue latest by 11:30am to setup your project poster.
--   Submission of updated project webpage, final application, user guide, project poster and artifacts: **14th April 2024 by 11:59pm (mid-night)**
+-   Submission of project poster: **13th November 2024 by 11:59pm (mid-night)**
+-   Townhall presentation: **18th November 2024 (Monday)**, at 12:00-2:00pm. Venue: LKSLIB Basement concourse. Students are required to be at the venue latest by 11:30am to setup your project poster.
+-   Submission of updated project webpage, final application, user guide, project poster and artifacts: **24th November 2024 by 11:59pm (mid-night)**
 
 ## Project Deliverables
 
@@ -190,11 +190,11 @@ The poster will be graded based on the following criteria:
 ## Project Links
 
 -   [Group 2: CrimeWatch - Vietnam Law and Order](https://is415-g2-crimewatch.netlify.app/)
--   [Group 3: SimplyGEO-Analysing Push-Pull Factors for Public Bus Demand in Singapore Using Spatial Econometric Interaction Modelling](https://is415-gaa-project-group3.netlify.app/). The project website is well designed, providing a clear and comprehensive description of the project, UI design, and User Guide.  The project minutes were well documented.
+-   [Group 3: SimplyGEO-Analysing Push-Pull Factors for Public Bus Demand in Singapore Using Spatial Econometric Interaction Modelling](https://is415-gaa-project-group3.netlify.app/). The project website is well designed, providing a clear and comprehensive description of the project, UI design, and User Guide. The project minutes were well documented.
 -   [Group 4: ELDANALYZE: Simple Geospatial Analysis Using Shiny](https://project-gaa-t4.netlify.app/)
 -   [Group 5: Culinary Crossroads](https://culinarycrossroads.netlify.app/)
 -   [Group 6: RecycleSG](https://is415-gaa-jkw.netlify.app/)
--   [Group 7: WhatTown](https://is415-gaa-g1t7-23-24.netlify.app/). The Shiny application is very well designed.  Able to provide a collection of useful UIs for calibrating the Accessibility models and Spatial Point Patterns Analysis. 
+-   [Group 7: WhatTown](https://is415-gaa-g1t7-23-24.netlify.app/). The Shiny application is very well designed. Able to provide a collection of useful UIs for calibrating the Accessibility models and Spatial Point Patterns Analysis.
 -   [Group 8: Quake Quest!](https://is415-gaa-g1g8.netlify.app/)
 -   [Group 9: Happy Hideouts](https://happy-hideouts.netlify.app/)
 -   [Gourp 10: ThaiRoad - Spatial Points Pattern Analysis on Road Accidents in Thailand](https://gga-thairoad.netlify.app/)
