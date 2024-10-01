@@ -2077,5 +2077,110 @@
     "title": "IS415 AY2022-23T2",
     "section": "",
     "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     dataset\n\n\n        0 0     false"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#getting-started",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#getting-started",
+    "title": "In-class Exercise 2",
+    "section": "Getting started",
+    "text": "Getting started\n\nThe taskThe code\n\n\nFor the purpose of this in-class exercise, tidyverseand sf packages will be used. Write a code chunk to check if these two packages have been installed in R. If yes, load them in R environment.\n\n\n\n\npacman::p_load(tidyverse, sf)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#working-with-master-plan-planning-sub-zone-data",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#working-with-master-plan-planning-sub-zone-data",
+    "title": "In-class Exercise 2",
+    "section": "Working with Master Plan Planning Sub-zone Data",
+    "text": "Working with Master Plan Planning Sub-zone Data\n\nThe taskThe code\n\n\n\nCreate a sub-folder called data in In-class_Ex02 folder.\nIf necessary visit data.gov.sg and download Master Plan 2014 Subzone Boundary (Web) from the portal. You are required to download both the ESRI shapefile and kml file.\nWrite a code chunk to import Master Plan 2014 Subzone Boundary (Web) in shapefile and kml save them in sf simple features data frame.\n\n\n\n\nThis code chunk imports shapefile.\n\nmpsz14_shp &lt;- st_read(dsn = \"data/\",\n                layer = \"MP14_SUBZONE_WEB_PL\")\n\nReading layer `MP14_SUBZONE_WEB_PL' from data source \n  `D:\\tskam\\IS415_AY2024-25T1\\In-class_Ex\\In-class_Ex02\\data' \n  using driver `ESRI Shapefile'\nSimple feature collection with 323 features and 15 fields\nGeometry type: MULTIPOLYGON\nDimension:     XY\nBounding box:  xmin: 2667.538 ymin: 15748.72 xmax: 56396.44 ymax: 50256.33\nProjected CRS: SVY21\n\n\nThis code chunk imports kml file.\n\nmpsz14_kml &lt;- st_read(\"data/MasterPlan2014SubzoneBoundaryWebKML.kml\")"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#working-with-master-plan-planning-sub-zone-data-1",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#working-with-master-plan-planning-sub-zone-data-1",
+    "title": "In-class Exercise 2",
+    "section": "Working with Master Plan Planning Sub-zone Data",
+    "text": "Working with Master Plan Planning Sub-zone Data\n\nThe taskThe code\n\n\n\nWrite a code chunk to export mpsz14_shp sf data.frame into kml file save the output in data sub-folder. Name the output file MP14_SUBZONE_WEB_PL.\n\n\n\n\n\nst_write(mpsz14_shp, \n         \"data/MP14_SUBZONE_WEB_PL.kml\",\n         delete_dsn = TRUE)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#working-with-pre-school-location-data",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#working-with-pre-school-location-data",
+    "title": "In-class Exercise 2",
+    "section": "Working with Pre-school Location Data",
+    "text": "Working with Pre-school Location Data\n\nThe taskThe code\n\n\n\nIf necessary visit data.gov.sg and download Pre-Schools Location from the portal. You are required to download both the kml and geojson files.\nWrite a code chunk to import Pre-Schools Location in kml geojson save them in sf simple features data frame.\n\n\n\n\nThis code chunk imports kml file.\n\npreschool_kml &lt;- st_read(\"data/PreSchoolsLocation.kml\")\n\nThis code chunk imports geojson file.\n\npreschool_geojson &lt;- st_read(\"data/PreSchoolsLocation.geojson\")"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#working-with-master-plan-2019-subzone-boundary-data",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#working-with-master-plan-2019-subzone-boundary-data",
+    "title": "In-class Exercise 2",
+    "section": "Working with Master Plan 2019 Subzone Boundary Data",
+    "text": "Working with Master Plan 2019 Subzone Boundary Data\n\nThe taskTo import shapefileTo import kml\n\n\n\nVisit data.gov.sg and download Master Plan 2019 Subzone Boundary (No Sea) from the portal. You are required to download both the kml file.\nMove MPSZ-2019 shapefile provided for In-class Exercise 1 folder on elearn to data sub-folder of In-class_Ex02.\nWrite a code chunk to import Master Plan 2019 Subzone Boundary (No SEA) kml and MPSZ-2019 into sf simple feature data.frame.\n\n\n\n\n\nmpsz19_shp &lt;- st_read(dsn = \"data/\",\n                layer = \"MPSZ-2019\")\n\nReading layer `MPSZ-2019' from data source \n  `D:\\tskam\\IS415_AY2024-25T1\\In-class_Ex\\In-class_Ex02\\data' \n  using driver `ESRI Shapefile'\nSimple feature collection with 332 features and 6 fields\nGeometry type: MULTIPOLYGON\nDimension:     XY\nBounding box:  xmin: 103.6057 ymin: 1.158699 xmax: 104.0885 ymax: 1.470775\nGeodetic CRS:  WGS 84\n\n\n\n\n\n\n\nmpsz19_kml &lt;- st_read(\"data/MasterPlan2019SubzoneBoundaryNoSeaKML.kml\")\n\nReading layer `URA_MP19_SUBZONE_NO_SEA_PL' from data source \n  `D:\\tskam\\IS415_AY2024-25T1\\In-class_Ex\\In-class_Ex02\\data\\MasterPlan2019SubzoneBoundaryNoSeaKML.kml' \n  using driver `KML'\nSimple feature collection with 332 features and 2 fields\nGeometry type: MULTIPOLYGON\nDimension:     XY, XYZ\nBounding box:  xmin: 103.6057 ymin: 1.158699 xmax: 104.0885 ymax: 1.470775\nz_range:       zmin: 0 zmax: 0\nGeodetic CRS:  WGS 84"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#handling-coordinate-systems",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#handling-coordinate-systems",
+    "title": "In-class Exercise 2",
+    "section": "Handling Coordinate Systems",
+    "text": "Handling Coordinate Systems\nChecking coordinate system\n\nThe taskThe code\n\n\nWrite a code chunk to check the project of the imported sf objects.\n\n\n\n\nst_crs(mpsz19_shp)\n\nCoordinate Reference System:\n  User input: WGS 84 \n  wkt:\nGEOGCRS[\"WGS 84\",\n    DATUM[\"World Geodetic System 1984\",\n        ELLIPSOID[\"WGS 84\",6378137,298.257223563,\n            LENGTHUNIT[\"metre\",1]]],\n    PRIMEM[\"Greenwich\",0,\n        ANGLEUNIT[\"degree\",0.0174532925199433]],\n    CS[ellipsoidal,2],\n        AXIS[\"latitude\",north,\n            ORDER[1],\n            ANGLEUNIT[\"degree\",0.0174532925199433]],\n        AXIS[\"longitude\",east,\n            ORDER[2],\n            ANGLEUNIT[\"degree\",0.0174532925199433]],\n    ID[\"EPSG\",4326]]"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#handling-coordinate-systems-1",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#handling-coordinate-systems-1",
+    "title": "In-class Exercise 2",
+    "section": "Handling Coordinate Systems",
+    "text": "Handling Coordinate Systems\nTransforming coordinate system\n\nThe taskTo import MPSZ-2019To import PreSchoolsLocation.kml\n\n\nRe-write the code chunk to import the Master Plan Sub-zone 2019 and Pre-schools Location with proper transformation\n\n\n\n\nmpsz19_shp &lt;- st_read(dsn = \"data/\",\n                layer = \"MPSZ-2019\") %&gt;%\n  st_transform(crs = 3414)\n\nReading layer `MPSZ-2019' from data source \n  `D:\\tskam\\IS415_AY2024-25T1\\In-class_Ex\\In-class_Ex02\\data' \n  using driver `ESRI Shapefile'\nSimple feature collection with 332 features and 6 fields\nGeometry type: MULTIPOLYGON\nDimension:     XY\nBounding box:  xmin: 103.6057 ymin: 1.158699 xmax: 104.0885 ymax: 1.470775\nGeodetic CRS:  WGS 84\n\n\n\n\n\n\n\npreschool &lt;- st_read(\"data/PreSchoolsLocation.kml\") %&gt;%\n  st_transform(crs = 3414)\n\nReading layer `PRESCHOOLS_LOCATION' from data source \n  `D:\\tskam\\IS415_AY2024-25T1\\In-class_Ex\\In-class_Ex02\\data\\PreSchoolsLocation.kml' \n  using driver `KML'\nSimple feature collection with 2290 features and 2 fields\nGeometry type: POINT\nDimension:     XYZ\nBounding box:  xmin: 103.6878 ymin: 1.247759 xmax: 103.9897 ymax: 1.462134\nz_range:       zmin: 0 zmax: 0\nGeodetic CRS:  WGS 84"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#geospatial-data-wrangling",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#geospatial-data-wrangling",
+    "title": "In-class Exercise 2",
+    "section": "Geospatial Data Wrangling",
+    "text": "Geospatial Data Wrangling\nPoint-in-Polygon count\n\nThe taskThe code\n\n\nWrite a code chunk to count the number of pre-schools in each planning sub-zone.\n\n\n\n\nmpsz19_shp &lt;- mpsz19_shp %&gt;%\n  mutate(`PreSch Count` = lengths(\n    st_intersects(mpsz19_shp, preschool)))"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#geospatial-data-wrangling-1",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#geospatial-data-wrangling-1",
+    "title": "In-class Exercise 2",
+    "section": "Geospatial Data Wrangling",
+    "text": "Geospatial Data Wrangling\nComputing density\n\nThe taskThe code\n\n\nWrite a single line code to perform the following tasks:\n\nDerive the area of each planning sub-zone.\nDrop the unit of measurement of the area (i.e. m^2)\nCalculate the density of pre-school at the planning sub-zone level.\n\n\n\n\n\nmpsz19_shp &lt;- mpsz19_shp %&gt;%\n  mutate(Area = units::drop_units(\n    st_area(.)),\n    `PreSch Density` = `PreSch Count` / Area * 1000000\n  )"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#statistical-analysis",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#statistical-analysis",
+    "title": "In-class Exercise 2",
+    "section": "Statistical Analysis",
+    "text": "Statistical Analysis\n\nThe taskThe codeThe plot\n\n\nUsing appropriate Exploratory Data Analysis (EDA) and Confirmatory Data Analysis (CDA) methods to explore and confirm the statistical relationship between Pre-school Density and Pre-school count.\nTip: Refer to ggscatterstats() of ggstatsplot package.\n\n\n\n\nmpsz$`PreSch Density` &lt;- as.numeric(as.character(mpsz19_shp$`PreSch Density`))\nmpsz$`PreSch Count` &lt;- as.numeric(as.character(mpsz19_shp$`PreSch Count`)) \nmpsz19_shp &lt;- as.data.frame(mpsz19_shp)\n\nggscatterstats(data = mpsz19_shp,\n               x = `PreSch Density`,\n               y = `PreSch Count`,\n               type = \"parametric\")"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#working-with-population-data",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#working-with-population-data",
+    "title": "In-class Exercise 2",
+    "section": "Working with Population Data",
+    "text": "Working with Population Data\n\nThe taskThe code\n\n\n\nVisit and extract the latest Singapore Residents by Planning Area / Subzone, Age Group, Sex and Type of Dwelling from Singstat homepage.\n\n\n\n\n\npopdata &lt;- read_csv(\"data/respopagesextod2023.csv\")"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#data-wrangling",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#data-wrangling",
+    "title": "In-class Exercise 2",
+    "section": "Data Wrangling",
+    "text": "Data Wrangling\n\nThe taskThe code\n\n\n\nWrite a code chunk to prepare a data.frame showing population by Planning Area and Planning subzone\n\n\n\n\n\npopdata2023 &lt;- popdata %&gt;% \n  group_by(PA, SZ, AG) %&gt;% \n  summarise(`POP`=sum(`Pop`)) %&gt;%  \n  ungroup() %&gt;% \n  pivot_wider(names_from=AG,\n              values_from = POP)\n\ncolnames(popdata2023)\n\n [1] \"PA\"          \"SZ\"          \"0_to_4\"      \"10_to_14\"    \"15_to_19\"   \n [6] \"20_to_24\"    \"25_to_29\"    \"30_to_34\"    \"35_to_39\"    \"40_to_44\"   \n[11] \"45_to_49\"    \"50_to_54\"    \"55_to_59\"    \"5_to_9\"      \"60_to_64\"   \n[16] \"65_to_69\"    \"70_to_74\"    \"75_to_79\"    \"80_to_84\"    \"85_to_89\"   \n[21] \"90_and_Over\""
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#data-processing",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#data-processing",
+    "title": "In-class Exercise 2",
+    "section": "Data Processing",
+    "text": "Data Processing\n\nThe taskThe code\n\n\nWrite a code chunk to derive a tibble data.framewith the following fields PA, SZ, YOUNG, ECONOMY ACTIVE, AGED, TOTAL, DEPENDENCY where by:\n\nYOUNG: age group 0 to 4 until age groyup 20 to 24,\nECONOMY ACTIVE: age group 25-29 until age group 60-64,\nAGED: age group 65 and above,\nTOTAL: all age group, and\nDEPENDENCY: the ratio between young and aged against economy active group.\n\n\n\n\n\npopdata2023 &lt;- popdata2023 %&gt;%\n  mutate(YOUNG=rowSums(.[3:6]) # Aged 0 - 24, 10 - 24\n         +rowSums(.[14])) %&gt;% # Aged 5 - 9\n  mutate(`ECONOMY ACTIVE` = rowSums(.[7:13])+ # Aged 25 - 59\n  rowSums(.[15])) %&gt;%  # Aged 60 -64\n  mutate(`AGED`=rowSums(.[16:21])) %&gt;%\n  mutate(`TOTAL`=rowSums(.[3:21])) %&gt;%\n  mutate(`DEPENDENCY`=(`YOUNG` + `AGED`)\n  / `ECONOMY ACTIVE`) %&gt;% \n  select(`PA`, `SZ`, `YOUNG`, \n         `ECONOMY ACTIVE`, `AGED`,\n         `TOTAL`, `DEPENDENCY`)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#joining-popdata2023-and-mpsz19_shp",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#joining-popdata2023-and-mpsz19_shp",
+    "title": "In-class Exercise 2",
+    "section": "Joining popdata2023 and mpsz19_shp",
+    "text": "Joining popdata2023 and mpsz19_shp\nThe code chunk below is used to change data in the PA and SZ fields into uppercase.\n\n\npopdata2023 &lt;- popdata2023 %&gt;%\n  mutate_at(.vars = vars(PA, SZ), \n          .funs = list(toupper)) \n\n\nThe code chunk below is used to perform left-join whereby the join fields are SUBZONE_N from the mpsz19_shp sf data.frame and SZ from the popdata2023 data.frame.\n\n\nmpsz_pop2023 &lt;- left_join(mpsz19_shp, popdata2023,\n                          by = c(\"SUBZONE_N\" = \"SZ\"))"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#choropleth-map-of-dependency-ratio-by-planning-subzone",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02.html#choropleth-map-of-dependency-ratio-by-planning-subzone",
+    "title": "In-class Exercise 2",
+    "section": "Choropleth Map of Dependency Ratio by Planning Subzone",
+    "text": "Choropleth Map of Dependency Ratio by Planning Subzone\n\nThe mapThe code\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntm_shape(mpsz_pop2023)+\n  \n  tm_fill(\"DEPENDENCY\", \n          style = \"quantile\", \n          palette = \"Blues\",\n          title = \"Dependency ratio\") +\n  \n  tm_layout(main.title = \"Distribution of Dependency Ratio by planning subzone\",\n            main.title.position = \"center\",\n            main.title.size = 1,\n            legend.title.size = 1,\n            legend.height = 0.45, \n            legend.width = 0.35,\n            bg.color = \"#E4D5C9\",\n            frame = F) +\n  \n  tm_borders(alpha = 0.5) +\n  tm_compass(type=\"8star\", size = 1.5) +\n  tm_scale_bar() +\n  tm_grid(alpha =0.2) +\n  tm_credits(\"Source: Planning Sub-zone boundary from Urban Redevelopment Authorithy (URA)\\n and Population data from Department of Statistics (DOS)\", \n             position = c(\"left\", \"bottom\"))"
   }
 ]
