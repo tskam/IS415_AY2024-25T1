@@ -2182,5 +2182,215 @@
     "title": "In-class Exercise 2",
     "section": "Choropleth Map of Dependency Ratio by Planning Subzone",
     "text": "Choropleth Map of Dependency Ratio by Planning Subzone\n\nThe mapThe code\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntm_shape(mpsz_pop2023)+\n  \n  tm_fill(\"DEPENDENCY\", \n          style = \"quantile\", \n          palette = \"Blues\",\n          title = \"Dependency ratio\") +\n  \n  tm_layout(main.title = \"Distribution of Dependency Ratio by planning subzone\",\n            main.title.position = \"center\",\n            main.title.size = 1,\n            legend.title.size = 1,\n            legend.height = 0.45, \n            legend.width = 0.35,\n            bg.color = \"#E4D5C9\",\n            frame = F) +\n  \n  tm_borders(alpha = 0.5) +\n  tm_compass(type=\"8star\", size = 1.5) +\n  tm_scale_bar() +\n  tm_grid(alpha =0.2) +\n  tm_credits(\"Source: Planning Sub-zone boundary from Urban Redevelopment Authorithy (URA)\\n and Population data from Department of Statistics (DOS)\", \n             position = c(\"left\", \"bottom\"))"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/data/MPSZ-2019.html",
+    "href": "In-class_Ex/In-class_Ex02/data/MPSZ-2019.html",
+    "title": "IS415 AY2024-25T1",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     dataset\n\n\n        0 0     false"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html",
+    "href": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html",
+    "title": "Spatio-Temporal Point Patterns Analysis",
+    "section": "",
+    "text": "A spatio-temporal point process (also called space-time or spatial-temporal point process) is a random collection of points, where each point represents the time and location of an event. Examples of events include incidence of disease, sightings or births of a species, or the occurrences of fires, earthquakes, lightning strikes, tsunamis, or volcanic eruptions.\nThe analysis of spatio-temporal point patterns is becoming increasingly necessary, given the rapid emergence of geographically and temporally indexed data in a wide range of fields. Several spatio-temporal point patterns analysis methods have been introduced and implemented in R in the last ten years. This chapter shows how various R packages can be combined to run a set of spatio-temporal point pattern analyses in a guided and intuitive way. A real world forest fire events in Kepulauan Bangka Belitung, Indonesia from 1st January 2023 to 31st December 2023 is used to illustrate the methods, procedures and interpretations."
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#overview",
+    "href": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#overview",
+    "title": "Spatio-Temporal Point Patterns Analysis",
+    "section": "",
+    "text": "A spatio-temporal point process (also called space-time or spatial-temporal point process) is a random collection of points, where each point represents the time and location of an event. Examples of events include incidence of disease, sightings or births of a species, or the occurrences of fires, earthquakes, lightning strikes, tsunamis, or volcanic eruptions.\nThe analysis of spatio-temporal point patterns is becoming increasingly necessary, given the rapid emergence of geographically and temporally indexed data in a wide range of fields. Several spatio-temporal point patterns analysis methods have been introduced and implemented in R in the last ten years. This chapter shows how various R packages can be combined to run a set of spatio-temporal point pattern analyses in a guided and intuitive way. A real world forest fire events in Kepulauan Bangka Belitung, Indonesia from 1st January 2023 to 31st December 2023 is used to illustrate the methods, procedures and interpretations."
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#learning-outcome",
+    "href": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#learning-outcome",
+    "title": "Spatio-Temporal Point Patterns Analysis",
+    "section": "Learning Outcome",
+    "text": "Learning Outcome\n\nThe research questions\nThe specific questions we would like to answer are:\n\nare the locations of forest fire in Kepulauan Bangka Belitung spatial and spatio-temporally independent?\nif the answer is NO, where and when the observed forest fire locations tend to cluster?"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#the-data",
+    "href": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#the-data",
+    "title": "Spatio-Temporal Point Patterns Analysis",
+    "section": "The data",
+    "text": "The data\nFor the purpose of this exercise, two data sets will be used, they are:\n\nforestfires, a csv file provides locations of forest fire detected from the Moderate Resolution Imaging Spectroradiometer (MODIS) sensor data. The data are downloaded from Fire Information for Resource Management System. For the purpose of this exercise, only forest fires within Kepulauan Bangka Belitung will be used.\n\nKepulauan_Bangka_Belitung, an ESRI shapefile showing the sub-district (i.e. kelurahan) boundary of Kepulauan Bangka Belitung. The data set was downloaded from Indonesia Geospatial portal. The original data covers the whole Indonesia. For the purpose of this exercise, only sub-districts within Kepulauan Bangka Belitung are extracted."
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#installing-and-loading-the-r-packages",
+    "href": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#installing-and-loading-the-r-packages",
+    "title": "Spatio-Temporal Point Patterns Analysis",
+    "section": "Installing and Loading the R packages",
+    "text": "Installing and Loading the R packages\nFor the purpose of this study, six R packages will be used. They are:\n\nsf provides functions for importing processing and wrangling geospatial data,,\nraster for handling raster data in R,\nspatstat for performing Spatial Point Patterns Analysis such as kcross, Lcross, etc.,\nsparr provides functions to estimate fixed and adaptive kernel-smoothed spatial relative risk surfaces via the density-ratio method and perform subsequent inference. Fixed-bandwidth spatiotemporal density and relative risk estimation is also supported\ntmap provides functions to produce cartographic quality thematic maps, and\ntidyverse, a family of R packages that provide functions to perform common data science tasks including and not limited to data import, data transformation, data wrangling and data visualisation.\n\n\nDIYThe solution\n\n\nUsing the steps you learned from previous chapter, write a code chunk to load the packages above onto R environment.\n\n\n\npacman::p_load(sf, raster, spatstat, sparr, tmap, stopp, tidyverse, stpp)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#importing-and-preparing-study-area",
+    "href": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#importing-and-preparing-study-area",
+    "title": "Spatio-Temporal Point Patterns Analysis",
+    "section": "Importing and Preparing Study Area",
+    "text": "Importing and Preparing Study Area\n\nImporting study area\nCode chunk below is used import study area (i.e. Kepulauan Bangka Belitung) into R environment.\n\nkbb &lt;- st_read(dsn=\"data/rawdata\",\n               layer = \"Kepulauan_Bangka_Belitung\") %&gt;%\n  st_transform(crs = 32748)\n\nThe revised code chunk.\n\nkbb_sf &lt;- st_read(dsn=\"data/rawdata\",\n               layer = \"Kepulauan_Bangka_Belitung\") %&gt;%\n  st_union() %&gt;%\n  st_zm(drop = TRUE, what = \"ZM\") %&gt;%\n  st_transform(crs = 32748)\n\nReading layer `Kepulauan_Bangka_Belitung' from data source \n  `D:\\tskam\\IS415_AY2024-25T1\\In-class_Ex\\In-class_Ex04\\data\\rawdata' \n  using driver `ESRI Shapefile'\nSimple feature collection with 298 features and 27 fields\nGeometry type: POLYGON\nDimension:     XYZ\nBounding box:  xmin: 105.1085 ymin: -3.116593 xmax: 106.8488 ymax: -1.501603\nz_range:       zmin: 0 zmax: 0\nGeodetic CRS:  WGS 84\n\n\n\n\nConverting OWIN\nNext, as.owin() is used to convert kbb into an owin object.\n\nkbb_owin &lt;- as.owin(kbb_sf)\nkbb_owin\n\nwindow: polygonal boundary\nenclosing rectangle: [512066.8, 705559.4] x [9655398, 9834006] units\n\n\nNext, class() is used to confirm if the output is indeed an owin object.\n\nclass(kbb_owin)\n\n[1] \"owin\"\n\n\n\nwrite_rds(kbb_owin, \"data/rds/kbb_owin\")\n\n\nkbb_owin &lt;- read_rds(\"data/rds/kbb_owin\")"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#importing-and-preparing-forest-fire-data",
+    "href": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#importing-and-preparing-forest-fire-data",
+    "title": "Spatio-Temporal Point Patterns Analysis",
+    "section": "Importing and Preparing Forest Fire data",
+    "text": "Importing and Preparing Forest Fire data\nNext, we will import the forest fire data set (i.e. forestfires.csv) into R environment.\n\nfire_sf &lt;- read_csv(\"data/rawdata/forestfires.csv\") %&gt;%\n  st_as_sf(coords = c(\"longitude\", \"latitude\"),\n                       crs = 4326) %&gt;%\n  st_transform(crs = 32748)\n\nBecause ppp object only accept numerical or character as mark. The code chunk below is used to convert data type of acq_date to numeric.\n\nfire_sf &lt;- fire_sf %&gt;% \n  mutate(DayofYear = yday(acq_date)) %&gt;%\n  mutate(Month_num = month(acq_date)) %&gt;%\n  mutate(Month_fac = month(acq_date, \n                           label = TRUE, \n                           abbr = FALSE))"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#visualising-the-fire-points",
+    "href": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#visualising-the-fire-points",
+    "title": "Spatio-Temporal Point Patterns Analysis",
+    "section": "Visualising the Fire Points",
+    "text": "Visualising the Fire Points\n\nOverall plot\n\nDIYThe code\n\n\nUsing the steps you learned in Hands-on Exercise 2, prepare a point symbol map showing the distribution of fire points. The map should look similar to the figure below.\n\n\n\n\n\n\n\n\n\n\n\n\ntm_shape(kbb_sf)+\n  tm_polygons() +\ntm_shape(fire_sf) +\n  tm_dots()\n\n\n\n\n\n\n\n\n\n\n\n\n\nVisuaising geographic distribution of forest fires by month\n\nDIYThe code\n\n\nUsing the steps you learned in Hands-on Exercise 2, prepare a point symbol map showing the monthly geographic distribution of forest fires in 2023. The map should look similar to the figure below.\n\n\n\n\n\n\n\n\n\n\n\n\ntm_shape(kbb_sf)+\n  tm_polygons() +\ntm_shape(fire_sf) +\n  tm_dots(size = 0.1) +\ntm_facets(by=\"Month_fac\", \n            free.coords=FALSE, \n            drop.units = TRUE)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#computing-stkde-by-month",
+    "href": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#computing-stkde-by-month",
+    "title": "Spatio-Temporal Point Patterns Analysis",
+    "section": "Computing STKDE by Month",
+    "text": "Computing STKDE by Month\nIn this section, you will learn how to compute STKDE by using spattemp.density() of sparr package. Before using the function, it is highly recommended you read the function’s reference guide in detail in order to understand the input data requirements and the output object generated.\n\nExtracting forest fires by month\nThe code chunk below is used to remove the unwanted fields from fire_sf sf data.frame. This is because as.ppp() only need the mark field and geometry field from the input sf data.frame.\n\nfire_month &lt;- fire_sf %&gt;% \n  select(Month_num)\n\n\n\nCreating ppp\nThe code chunk below is used to derive a ppp object called fire_month from fire_month sf data.frame.\n\nfire_month_ppp &lt;- as.ppp(fire_month)\nfire_month_ppp\n\nMarked planar point pattern: 741 points\nmarks are numeric, of storage type  'double'\nwindow: rectangle = [521564.1, 695791] x [9658137, 9828767] units\n\n\nThe code chunk below is used to check the output is in the correct object class.\n\nsummary(fire_month_ppp)\n\nMarked planar point pattern:  741 points\nAverage intensity 2.49258e-08 points per square unit\n\nCoordinates are given to 10 decimal places\n\nmarks are numeric, of type 'double'\nSummary:\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  1.000   8.000   9.000   8.579  10.000  12.000 \n\nWindow: rectangle = [521564.1, 695791] x [9658137, 9828767] units\n                    (174200 x 170600 units)\nWindow area = 29728200000 square units\n\n\nNext, we will check if there are duplicated point events by using the code chunk below.\n\nany(duplicated(fire_month_ppp))\n\n[1] FALSE\n\n\n\n\nIncluding Owin object\nThe code chunk below is used to combine origin_am_ppp and am_owin objects into one.\n\nfire_month_owin &lt;- fire_month_ppp[kbb_owin]\nsummary(fire_month_owin)\n\nMarked planar point pattern:  741 points\nAverage intensity 6.424519e-08 points per square unit\n\nCoordinates are given to 10 decimal places\n\nmarks are numeric, of type 'double'\nSummary:\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  1.000   8.000   9.000   8.579  10.000  12.000 \n\nWindow: polygonal boundary\n2 separate polygons (no holes)\n           vertices        area relative.area\npolygon 1     47493 11533600000      1.00e+00\npolygon 2       256      306427      2.66e-05\nenclosing rectangle: [512066.8, 705559.4] x [9655398, 9834006] units\n                     (193500 x 178600 units)\nWindow area = 11533900000 square units\nFraction of frame area: 0.334\n\n\nAs a good practice, plot() is used to plot ff_owin so that we can examine the correctness of the output object.\n\nplot(fire_month_owin)\n\n\n\n\n\n\n\n\n\n\nComputing Spatio-temporal KDE\nNext, spattemp.density() of sparr package is used to compute the STKDE.\n\nst_kde &lt;- spattemp.density(fire_month_owin)\nsummary(st_kde)\n\nSpatiotemporal Kernel Density Estimate\n\nBandwidths\n  h = 15102.47 (spatial)\n  lambda = 0.0304 (temporal)\n\nNo. of observations\n  741 \n\nSpatial bound\n  Type: polygonal\n  2D enclosure: [512066.8, 705559.4] x [9655398, 9834006]\n\nTemporal bound\n  [1, 12]\n\nEvaluation\n  128 x 128 x 12 trivariate lattice\n  Density range: [1.233458e-27, 8.202976e-10]\n\n\n\n\nPlotting the spatio-temporal KDE object\nIn the code chunk below, plot() of R base is used to the KDE for between July 2023 - December 2023.\n\ntims &lt;- c(7,8,9,10,11,12)\npar(mfcol=c(2,3))\nfor(i in tims){ \n  plot(st_kde, i, \n       override.par=FALSE, \n       fix.range=TRUE, \n       main=paste(\"KDE at month\",i))\n}"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#computing-stkde-by-day-of-year",
+    "href": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#computing-stkde-by-day-of-year",
+    "title": "Spatio-Temporal Point Patterns Analysis",
+    "section": "Computing STKDE by Day of Year",
+    "text": "Computing STKDE by Day of Year\nIn this section, you will learn how to computer the STKDE of forest fires by day of year.\n\nCreating ppp object\nIn the code chunk below, DayofYear field is included in the output ppp object.\n\nfire_yday_ppp &lt;- fire_sf %&gt;% \n  select(DayofYear) %&gt;%\n  as.ppp()\n\n\n\nIncluding Owin object\nNext, code chunk below is used to combine the ppp object and the owin object.\n\nfire_yday_owin &lt;- fire_yday_ppp[kbb_owin]\nsummary(fire_yday_owin)\n\nMarked planar point pattern:  741 points\nAverage intensity 6.424519e-08 points per square unit\n\nCoordinates are given to 10 decimal places\n\nmarks are numeric, of type 'double'\nSummary:\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   10.0   213.0   258.0   245.9   287.0   352.0 \n\nWindow: polygonal boundary\n2 separate polygons (no holes)\n           vertices        area relative.area\npolygon 1     47493 11533600000      1.00e+00\npolygon 2       256      306427      2.66e-05\nenclosing rectangle: [512066.8, 705559.4] x [9655398, 9834006] units\n                     (193500 x 178600 units)\nWindow area = 11533900000 square units\nFraction of frame area: 0.334\n\n\n\n\n\n\nkde_yday &lt;- spattemp.density(\n  fire_yday_owin)\nsummary(kde_yday)\n\nSpatiotemporal Kernel Density Estimate\n\nBandwidths\n  h = 15102.47 (spatial)\n  lambda = 6.3198 (temporal)\n\nNo. of observations\n  741 \n\nSpatial bound\n  Type: polygonal\n  2D enclosure: [512066.8, 705559.4] x [9655398, 9834006]\n\nTemporal bound\n  [10, 352]\n\nEvaluation\n  128 x 128 x 343 trivariate lattice\n  Density range: [3.959516e-27, 2.751287e-12]\n\n\n\nplot(kde_yday)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#computing-stkde-by-day-of-year-improved-method",
+    "href": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#computing-stkde-by-day-of-year-improved-method",
+    "title": "Spatio-Temporal Point Patterns Analysis",
+    "section": "Computing STKDE by Day of Year: Improved method",
+    "text": "Computing STKDE by Day of Year: Improved method\nOne of the nice function provides in sparr package is BOOT.spattemp(). It support bandwidth selection for standalone spatiotemporal density/intensity based on bootstrap estimation of the MISE, providing an isotropic scalar spatial bandwidth and a scalar temporal bandwidth.\nCode chunk below uses BOOT.spattemp() to determine both the spatial bandwidth and the scalar temporal bandwidth.\n\nset.seed(1234)\nBOOT.spattemp(fire_yday_owin) \n\nInitialising...Done.\nOptimising...\nh = 15102.47 \b; lambda = 16.84806 \nh = 16612.72 \b; lambda = 16.84806 \nh = 15102.47 \b; lambda = 1527.095 \nh = 15480.03 \b; lambda = 771.9715 \nh = 15668.81 \b; lambda = 394.4098 \nh = 15763.2 \b; lambda = 205.6289 \nh = 15810.4 \b; lambda = 111.2385 \nh = 15833.99 \b; lambda = 64.04328 \nh = 15845.79 \b; lambda = 40.44567 \nh = 15851.69 \b; lambda = 28.64687 \nh = 15863.49 \b; lambda = 5.049258 \nh = 15854.64 \b; lambda = 22.74746 \nh = 15860.54 \b; lambda = 10.94866 \nh = 15859.07 \b; lambda = 13.89836 \nh = 14348.82 \b; lambda = 13.89836 \nh = 13216.87 \b; lambda = 12.42351 \nh = 12460.27 \b; lambda = 15.37321 \nh = 10760.88 \b; lambda = 16.11064 \nh = 8875.282 \b; lambda = 11.68608 \nh = 10432.08 \b; lambda = 12.97658 \nh = 7976.084 \b; lambda = 16.66371 \nh = 9286.281 \b; lambda = 15.60366 \nh = 9615.08 \b; lambda = 18.73771 \nh = 9206.581 \b; lambda = 21.61828 \nh = 8140.483 \b; lambda = 18.23073 \nh = 8795.582 \b; lambda = 17.70071 \nh = 9124.381 \b; lambda = 20.83477 \nh = 9164.856 \b; lambda = 19.52699 \nh = 8345.358 \b; lambda = 18.48998 \nh = 9297.65 \b; lambda = 18.67578 \nh = 8928.375 \b; lambda = 16.8495 \nh = 9105.736 \b; lambda = 18.85762 \nDone.\n\n\n         h     lambda \n9105.73611   18.85762 \n\n\nNow, the STKDE will be derived by using\n\nkde_yday &lt;- spattemp.density(\n  fire_yday_owin,\n  h = 9000,\n  lambda = 19)\nsummary(kde_yday)\n\nSpatiotemporal Kernel Density Estimate\n\nBandwidths\n  h = 9000 (spatial)\n  lambda = 19 (temporal)\n\nNo. of observations\n  741 \n\nSpatial bound\n  Type: polygonal\n  2D enclosure: [512066.8, 705559.4] x [9655398, 9834006]\n\nTemporal bound\n  [10, 352]\n\nEvaluation\n  128 x 128 x 343 trivariate lattice\n  Density range: [2.001642e-19, 2.445724e-12]\n\n\n\nplot(kde_yday)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#spatio-temporal-point-patterns-analysis-stpp-methods",
+    "href": "In-class_Ex/In-class_Ex04/In-class Ex04-stpp.html#spatio-temporal-point-patterns-analysis-stpp-methods",
+    "title": "Spatio-Temporal Point Patterns Analysis",
+    "section": "Spatio-temporal Point Patterns Analysis: stpp methods",
+    "text": "Spatio-temporal Point Patterns Analysis: stpp methods\nIn this section, you will gain hands-on experience on using functions of stpp package to perform spatio-temporal point patterns analysis.\n\nStudents are encouraged to read stpp: An R Package for Plotting, Simulating and Analyzing Spatio-Temporal Point Patterns to learn more about the package.\n\n\nPreparing spatio-temporal point process object of stpp\nStep 1: Extracting forest fire coordinates from the fire point events\n\ncoords &lt;- st_coordinates(fire_sf)\n\nStep 2: Creating a data frame by combining the x- and y-coordinates and temporal event. Note that the temporal event must be in integer.\n\nfire_df &lt;- data.frame(\n  x = coords[, 1],  \n  y = coords[, 2],\n  t = fire_sf$`DayofYear`)\n\nStep 3: Creating stpp spatio-temporal object\nIn the code chunk below, as.3dpoint() of stpp package is used to create stpp spatio-temporal object class.\n\nfire_stpp &lt;- as.3dpoints(fire_df)\n\nUse the code chunk below to confirm that the output is in stpp spatio-temporal object class.\n\nclass(fire_stpp)\n\n[1] \"stpp\"\n\n\nNext we can visual fire_stpp by using the code chunk below.\n\nplot(fire_stpp)\n\n\n\n\n\n\n\n\n\n\nComputing spatio-temporal k-function\nIn the code chunk below, STIKhat() of stpp package is used to compute space-time inhomogeneous K-function.\n\nkbb_stik &lt;- STIKhat(fire_stpp)\n\nNext, plotK() is used to visualise the output space-time inhomogeneous K-function.\n\nplotK(kbb_stik)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#issue-1-installing-maptools",
+    "href": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#issue-1-installing-maptools",
+    "title": "In-class Exercise 3: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Issue 1: Installing maptools",
+    "text": "Issue 1: Installing maptools\nmaptools is retired and binary is removed from CRAN. However, we can download from Posit Public Package Manager snapshots by using the code chunk below.\n\n\ninstall.packages(\"maptools\", \n                 repos = \"https://packagemanager.posit.co/cran/2023-10-13\")"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#issue-1-installing-maptools-1",
+    "href": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#issue-1-installing-maptools-1",
+    "title": "In-class Exercise 3: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Issue 1: Installing maptools",
+    "text": "Issue 1: Installing maptools\n\n\nAfter the installation is completed, it is important to edit the code chunk as shown below in order to avoid maptools being download and install repetitively every time the Quarto document been rendered."
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#issue-2-creating-coastal-outline",
+    "href": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#issue-2-creating-coastal-outline",
+    "title": "In-class Exercise 3: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Issue 2: Creating coastal outline",
+    "text": "Issue 2: Creating coastal outline\nIn sf package, there are two functions allow us to combine multiple simple features into one simple features. They are st_combine() and st_union().\nst_combine() returns a single, combined geometry, with no resolved boundaries; returned geometries may well be invalid.\nIf y is missing, st_union(x) returns a single geometry with resolved boundaries, else the geometries for all unioned pairs of x[i] and y[j]."
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#introducing-spatstat-package",
+    "href": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#introducing-spatstat-package",
+    "title": "In-class Exercise 3: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Introducing spatstat package",
+    "text": "Introducing spatstat package\nspatstat R package is a comprehensive open-source toolbox for analysing Spatial Point Patterns. Focused mainly on two-dimensional point patterns, including multitype or marked points, in any spatial region."
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#spatstat",
+    "href": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#spatstat",
+    "title": "In-class Exercise 3: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "spatstat",
+    "text": "spatstat\nspatstat sub-packages\n\n\nThe spatstat package now contains only documentation and introductory material. It provides beginner’s introductions, vignettes, interactive demonstration scripts, and a few help files summarising the package.\nThe spatstat.data package now contains all the datasets for spatstat.\nThe spatstat.utils package contains basic utility functions for spatstat.\nThe spatstat.univar package contains functions for estimating and manipulating probability distributions of one-dimensional random variables.\nThe spatstat.sparse package contains functions for manipulating sparse arrays and performing linear algebra.\nThe spatstat.geom package contains definitions of spatial objects (such as point patterns, windows and pixel images) and code which performs geometrical operations.\nThe spatstat.random package contains functions for random generation of spatial patterns and random simulation of models.\nThe spatstat.explore package contains the code for exploratory data analysis and nonparametric analysis of spatial data.\nThe spatstat.model package contains the code for model-fitting, model diagnostics, and formal inference.\nThe spatstat.linnet package defines spatial data on a linear network, and performs geometrical operations and statistical analysis on such data."
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#creating-ppp-objects-from-sf-data.frame",
+    "href": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#creating-ppp-objects-from-sf-data.frame",
+    "title": "In-class Exercise 3: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Creating ppp objects from sf data.frame",
+    "text": "Creating ppp objects from sf data.frame\nInstead of using the two steps approaches discussed in Hands-on Exercise 3 to create the ppp objects, in this section you will learn how to work with sf data.frame.\n\n\nIn the code chunk below, as.ppp() of spatstat.geom package is used to derive an ppp object layer directly from a sf tibble data.frame.\n\n\nchildcare_ppp &lt;- as.ppp(childcare_sf)\nplot(childcare_ppp)\n\n\n\n\n\n\n\n\n\n\nNext, summary() can be used to reveal the properties of the newly created ppp objects.\n\n\nsummary(childcare_ppp)\n\nMarked planar point pattern:  1925 points\nAverage intensity 2.417323e-06 points per square unit\n\nCoordinates are given to 11 decimal places\n\nmarks are of type 'character'\nSummary:\n   Length     Class      Mode \n     1925 character character \n\nWindow: rectangle = [11810.03, 45404.24] x [25596.33, 49300.88] units\n                    (33590 x 23700 units)\nWindow area = 796335000 square units"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#creating-owin-object-from-sf-data.frame",
+    "href": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#creating-owin-object-from-sf-data.frame",
+    "title": "In-class Exercise 3: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Creating owin object from sf data.frame",
+    "text": "Creating owin object from sf data.frame\n\n\nIn the code chunk as.owin() of spatstat.geom is used to create an owin object class from polygon sf tibble data.frame.\n\n\nsg_owin &lt;- as.owin(sg_sf)\nplot(sg_owin)\n\n\n\n\n\n\n\n\n\n\nNext, summary() function is used to display the summary information of the owin object class.\n\n\nsummary(sg_owin)\n\nWindow: polygonal boundary\n80 separate polygons (35 holes)\n                  vertices         area relative.area\npolygon 1            14650  6.97996e+08      8.93e-01\npolygon 2 (hole)         3 -2.21090e+00     -2.83e-09\npolygon 3              285  1.61128e+06      2.06e-03\npolygon 4 (hole)         3 -2.05920e-03     -2.63e-12\npolygon 5 (hole)         3 -8.83647e-03     -1.13e-11\npolygon 6              668  5.40368e+07      6.91e-02\npolygon 7               44  2.26577e+03      2.90e-06\npolygon 8               27  1.50315e+04      1.92e-05\npolygon 9              711  1.28815e+07      1.65e-02\npolygon 10 (hole)       36 -4.01660e+04     -5.14e-05\npolygon 11 (hole)      317 -5.11280e+04     -6.54e-05\npolygon 12 (hole)        3 -3.41405e-01     -4.37e-10\npolygon 13 (hole)        3 -2.89050e-05     -3.70e-14\npolygon 14              77  3.29939e+05      4.22e-04\npolygon 15              30  2.80002e+04      3.58e-05\npolygon 16 (hole)        3 -2.83151e-01     -3.62e-10\npolygon 17              71  8.18750e+03      1.05e-05\npolygon 18 (hole)        3 -1.68316e-04     -2.15e-13\npolygon 19 (hole)       36 -7.79904e+03     -9.97e-06\npolygon 20 (hole)        4 -2.05611e-02     -2.63e-11\npolygon 21 (hole)        3 -2.18000e-06     -2.79e-15\npolygon 22 (hole)        3 -3.65501e-03     -4.67e-12\npolygon 23 (hole)        3 -4.95057e-02     -6.33e-11\npolygon 24 (hole)        3 -3.99521e-02     -5.11e-11\npolygon 25 (hole)        3 -6.62377e-01     -8.47e-10\npolygon 26 (hole)        3 -2.09065e-03     -2.67e-12\npolygon 27              91  1.49663e+04      1.91e-05\npolygon 28 (hole)       26 -1.25665e+03     -1.61e-06\npolygon 29 (hole)      349 -1.21433e+03     -1.55e-06\npolygon 30 (hole)       20 -4.39069e+00     -5.62e-09\npolygon 31 (hole)       48 -1.38338e+02     -1.77e-07\npolygon 32 (hole)       28 -1.99862e+01     -2.56e-08\npolygon 33              40  1.38607e+04      1.77e-05\npolygon 34 (hole)       40 -6.00381e+03     -7.68e-06\npolygon 35 (hole)        7 -1.40545e-01     -1.80e-10\npolygon 36 (hole)       12 -8.36709e+01     -1.07e-07\npolygon 37              45  2.51218e+03      3.21e-06\npolygon 38             142  3.22293e+03      4.12e-06\npolygon 39             148  3.10395e+03      3.97e-06\npolygon 40              75  1.73526e+04      2.22e-05\npolygon 41              83  5.28920e+03      6.76e-06\npolygon 42             211  4.70521e+05      6.02e-04\npolygon 43             106  3.04104e+03      3.89e-06\npolygon 44             266  1.50631e+06      1.93e-03\npolygon 45              71  5.63061e+03      7.20e-06\npolygon 46              10  1.99717e+02      2.55e-07\npolygon 47             478  2.06120e+06      2.64e-03\npolygon 48             155  2.67502e+05      3.42e-04\npolygon 49            1027  1.27782e+06      1.63e-03\npolygon 50 (hole)        3 -1.16959e-03     -1.50e-12\npolygon 51              65  8.42861e+04      1.08e-04\npolygon 52              47  3.82087e+04      4.89e-05\npolygon 53               6  4.50259e+02      5.76e-07\npolygon 54             132  9.53357e+04      1.22e-04\npolygon 55 (hole)        3 -3.23310e-04     -4.13e-13\npolygon 56               4  2.69313e+02      3.44e-07\npolygon 57 (hole)        3 -1.46474e-03     -1.87e-12\npolygon 58            1045  4.44510e+06      5.68e-03\npolygon 59              22  6.74651e+03      8.63e-06\npolygon 60              64  3.43149e+04      4.39e-05\npolygon 61 (hole)        3 -1.98390e-03     -2.54e-12\npolygon 62 (hole)        4 -1.13774e-02     -1.46e-11\npolygon 63              14  5.86546e+03      7.50e-06\npolygon 64              95  5.96187e+04      7.62e-05\npolygon 65 (hole)        4 -1.86410e-02     -2.38e-11\npolygon 66 (hole)        3 -5.12482e-03     -6.55e-12\npolygon 67 (hole)        3 -1.96410e-03     -2.51e-12\npolygon 68 (hole)        3 -5.55856e-03     -7.11e-12\npolygon 69             234  2.08755e+06      2.67e-03\npolygon 70              10  4.90942e+02      6.28e-07\npolygon 71             234  4.72886e+05      6.05e-04\npolygon 72 (hole)       13 -3.91907e+02     -5.01e-07\npolygon 73              15  4.03300e+04      5.16e-05\npolygon 74             227  1.10308e+06      1.41e-03\npolygon 75              10  6.60195e+03      8.44e-06\npolygon 76              19  3.09221e+04      3.95e-05\npolygon 77             145  9.61782e+05      1.23e-03\npolygon 78              30  4.28933e+03      5.49e-06\npolygon 79              37  1.29481e+04      1.66e-05\npolygon 80               4  9.47108e+01      1.21e-07\nenclosing rectangle: [2667.54, 56396.44] x [15748.72, 50256.33] units\n                     (53730 x 34510 units)\nWindow area = 781945000 square units\nFraction of frame area: 0.422"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#combining-point-events-object-and-owin-object",
+    "href": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#combining-point-events-object-and-owin-object",
+    "title": "In-class Exercise 3: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Combining point events object and owin object",
+    "text": "Combining point events object and owin object\n\nThe taskThe codeThe output\n\n\nUsing the step you learned from Hands-on Exercise 3, create an ppp object by combining childcare_ppp and sg_owin.\n\n\n\n\nchildcareSG_ppp = childcare_ppp[sg_owin]\n\n\n\n\nThe output object combined both the point and polygon feature in one ppp object class as shown below.\n\n\nplot(childcareSG_ppp)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#kernel-density-estimation-of-spatial-point-event",
+    "href": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#kernel-density-estimation-of-spatial-point-event",
+    "title": "In-class Exercise 3: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Kernel Density Estimation of Spatial Point Event",
+    "text": "Kernel Density Estimation of Spatial Point Event\nThe code chunk below re-scale the unit of measurement from metre to kilometre before performing KDE.\n\n\nchildcareSG_ppp.km &lt;- rescale.ppp(childcareSG_ppp, \n                                  1000, \n                                  \"km\")\n\nkde_childcareSG_adaptive &lt;- adaptive.density(\n  childcareSG_ppp.km, \n  method=\"kernel\")\nplot(kde_childcareSG_adaptive)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#kernel-density-estimation",
+    "href": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#kernel-density-estimation",
+    "title": "In-class Exercise 3: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Kernel Density Estimation",
+    "text": "Kernel Density Estimation\nCode chunk shown two different ways to convert KDE output into grid object\n\nmaptools methodspatstat.geom method\n\n\n\n\npar(bg = '#E4D5C9')\n\ngridded_kde_childcareSG_ad &lt;- maptools::as.SpatialGridDataFrame.im(\n  kde_childcareSG_adaptive)\nspplot(gridded_kde_childcareSG_ad)\n\n\n\n\n\n\ngridded_kde_childcareSG_ad &lt;- as(\n  kde_childcareSG_adaptive,\n  \"SpatialGridDataFrame\")\nspplot(gridded_kde_childcareSG_ad)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#kernel-density-estimation-1",
+    "href": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#kernel-density-estimation-1",
+    "title": "In-class Exercise 3: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Kernel Density Estimation",
+    "text": "Kernel Density Estimation\nVisualising KDE using tmap\nThe code chunk below is used to plot the output raster by using tmap functions.\n\n\ntm_shape(kde_childcareSG_ad_raster) + \n  tm_raster(palette = \"viridis\") +\n  tm_layout(legend.position = c(\"right\", \"bottom\"), \n            frame = FALSE,\n            bg.color = \"#E4D5C9\")"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#extracting-study-area-using-sf-objects",
+    "href": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#extracting-study-area-using-sf-objects",
+    "title": "In-class Exercise 3: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Extracting study area using sf objects",
+    "text": "Extracting study area using sf objects\n\nThe taskThe code\n\n\nExtract and create an ppp object showing child care services and within Punggol Planning Area\n\n\nOn the other hand, filter() of dplyr package should be used to extract the target planning areas as shown in the code chunk below.\n\n\npg_owin &lt;- mpsz_sf %&gt;%\n  filter(PLN_AREA_N == \"PUNGGOL\") %&gt;%\n  as.owin()\n\nchildcare_pg = childcare_ppp[pg_owin]\n\nplot(childcare_pg)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#geospatial-analytics-for-social-good-myanmar-arm-conflict-case-study",
+    "href": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#geospatial-analytics-for-social-good-myanmar-arm-conflict-case-study",
+    "title": "In-class Exercise 3: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Geospatial Analytics for Social Good: Myanmar Arm Conflict Case Study",
+    "text": "Geospatial Analytics for Social Good: Myanmar Arm Conflict Case Study\n\nBackground\nMyanmar’s Troubled History: Coups, Military Rule, and Ethnic Conflict\nMyanmar conflict\nMyanmar civil war (2021–present)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#the-data",
+    "href": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#the-data",
+    "title": "In-class Exercise 3: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "The Data",
+    "text": "The Data\nArmed Conflict Location & Event Data (ACLED)\n\n\nAn independent, impartial, international non-profit organization collecting data on violent conflict and protest in all countries and territories in the world.\n\nGIS Data\n\nMyanmar Information Management Unit, MIMU"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#importing-acled-data",
+    "href": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#importing-acled-data",
+    "title": "In-class Exercise 3: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Importing ACLED Data",
+    "text": "Importing ACLED Data\n\nThe taskThe code\n\n\nUsing the steps you learned in previous lessons, import the ACLED data into R environment as an sf tibble data.frame.\n\n\n\n\nacled_sf &lt;- read_csv(\"data/ACLED_Myanmar.csv\") %&gt;%\n  st_as_sf(coords = c(\n    \"longitude\", \"latitude\"),\n    crs=4326) %&gt;%\n  st_transform(crs = 32647) %&gt;%\n  mutate(event_date = dmy(event_date))"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#visualising-acled-data",
+    "href": "In-class_Ex/In-class_Ex03/In-class_Ex03-SPAA.html#visualising-acled-data",
+    "title": "In-class Exercise 3: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Visualising ACLED Data",
+    "text": "Visualising ACLED Data\n\nThe taskThe code\n\n\nUsing the steps you learned in previous lessons, import the ACLED data into R environment as an sf tibble data.frame.\n\n\n\n\ntmap_mode(\"plot\")\nacled_sf %&gt;%\n  filter(year == 2023 | \n           event_type == \"Political violence\") %&gt;%\n  tm_shape()+\n  tm_dots()\n\n\n\n\n\n\n\ntmap_mode(\"plot\")"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex04/data/rawdata/Kepulauan_Bangka_Belitung.html",
+    "href": "In-class_Ex/In-class_Ex04/data/rawdata/Kepulauan_Bangka_Belitung.html",
+    "title": "IS415 AY2024-25T1",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     \n\n\n       GEOGCRS[“WGS 84”,ENSEMBLE[“World Geodetic System 1984 ensemble”,MEMBER[“World Geodetic System 1984 (Transit)”],MEMBER[“World Geodetic System 1984 (G730)”],MEMBER[“World Geodetic System 1984 (G873)”],MEMBER[“World Geodetic System 1984 (G1150)”],MEMBER[“World Geodetic System 1984 (G1674)”],MEMBER[“World Geodetic System 1984 (G1762)”],MEMBER[“World Geodetic System 1984 (G2139)”],ELLIPSOID[“WGS 84”,6378137,298.257223563,LENGTHUNIT[“metre”,1]],ENSEMBLEACCURACY[2.0]],PRIMEM[“Greenwich”,0,ANGLEUNIT[“degree”,0.0174532925199433]],CS[ellipsoidal,2],AXIS[“geodetic latitude (Lat)”,north,ORDER[1],ANGLEUNIT[“degree”,0.0174532925199433]],AXIS[“geodetic longitude (Lon)”,east,ORDER[2],ANGLEUNIT[“degree”,0.0174532925199433]],USAGE[SCOPE[“Horizontal component of 3D system.”],AREA[“World.”],BBOX[-90,-180,90,180]],ID[“EPSG”,4326]] +proj=longlat +datum=WGS84 +no_defs 3452 4326 EPSG:4326 WGS 84 longlat EPSG:7030 true"
   }
 ]
