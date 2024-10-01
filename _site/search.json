@@ -143,78 +143,78 @@
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#content",
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#content",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
-    "section": "Content",
-    "text": "Content\n\nWhat is a Web-enabled Geospatial Analytics Application?\nWhy building Web-enabled Geospatial Analytical Application?\nEvolution of web-based Technology\nGetting to Know Shiny"
+    "section": "",
+    "text": "What is a Web-enabled Geospatial Analytics Application?\nWhy building Web-enabled Geospatial Analytical Application?\nEvolution of web-based Technology\nGetting to Know Shiny"
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#what-is-a-web-enabled-geospatial-analytics-application",
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#what-is-a-web-enabled-geospatial-analytics-application",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
     "section": "What is a Web-enabled Geospatial Analytics Application?",
-    "text": "What is a Web-enabled Geospatial Analytics Application?\n\n\n\nFocuses and emphasises on interactivity and effective integration of techniques from data analytics, visualization and human-computer interaction (HCI)."
+    "text": "What is a Web-enabled Geospatial Analytics Application?\n\n\n\nFocuses and emphasises on interactivity and effective integration of techniques from data analytics, visualization and human-computer interaction (HCI).\n\n\n\n\n\n\n\nWhy building a Web-enabled Geospatial Analytics Application?\n\n\n\nTo explore how the best of these different but related domains can be combined such that the sum is greater than the parts.\nTo democratise data and analytics through web-based analytical applications for data exploration, visualisation analysis and modelling.\n\n\n\n\nSource: Democratize data analytics customer data platform\n\n\n\n\n\n\nTechnology Challenges\n\n\n\nMainframe computing tend to have low usability and low accessibility.\nDesktop computing tend to have high usability but low accessibility.\nWeb-based computing (including mobile computing) are highly accesible but with relatively low capability.\n\n\n\n\n\n\n\n\nWeb-based data visualisation\n\n\n\nThe break-through is Rich Internet Applications (RIA)\n\n\n\n\n\n\nReference: Rich Internet Applications\n\n\n\n\nDevelopment of RIA\n\n\n\nFirst generation RIA data visualisation (2000~)\n\nAdobe Flex Builder\n\nFlare\n\nMicrosoft Silverlight\nJavaFX\n\n\n\n\nSecond generation RIA data visualisation (2010~)\n\nHTML 5 + JavaScript + SVG + CSS\n\nClient-side rendering\nNo plug-in is required\nMobile computing enabled\n\nD3.js - Data Driven Document\n\n\n\n\n\n\n\nMethodological Challenges\n\n\n\nLack of analysis functions.\nNot reproducible.\nNot extendable.\nRequire to learn multiple technologies and methods."
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny",
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
     "section": "Getting to Know Shiny",
-    "text": "Getting to Know Shiny\nShiny: Overview\n\n\n\nShiny is an open source package from Posit (formally called RStudio).\nIt provides a web application framework to create interactive web applications (visualization) called “Shiny apps”.\nTo learn more about Shiny, visit its homepage"
+    "text": "Getting to Know Shiny\n\nShiny: Overview\n\n\n\nShiny is an open source package from Posit (formally called RStudio).\nIt provides a web application framework to create interactive web applications (visualization) called “Shiny apps”.\nTo learn more about Shiny, visit its homepage"
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-1",
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-1",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
     "section": "Getting to Know Shiny",
-    "text": "Getting to Know Shiny\nWhat is so special about Shiny?\n\n\nIt allows R users:\n\nto build and share highly interactive web-enabled applications without having to invest significant among of time and efforts to master core web design technologies such as html5, Javascript and CSS.\nto integrate the analytical and visualisation packages of R without having to change from one programming language to another."
+    "text": "Getting to Know Shiny\n\nWhat is so special about Shiny?\n\n\nIt allows R users:\n\nto build and share highly interactive web-enabled applications without having to invest significant among of time and efforts to master core web design technologies such as html5, Javascript and CSS.\nto integrate the analytical and visualisation packages of R without having to change from one programming language to another."
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-2",
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-2",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
     "section": "Getting to Know Shiny",
-    "text": "Getting to Know Shiny\nUnderstanding the architecture\n\nEvery Shiny app is maintained by a computer running R."
+    "text": "Getting to Know Shiny\n\nUnderstanding the architecture\n\nEvery Shiny app is maintained by a computer running R."
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-3",
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-3",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
     "section": "Getting to Know Shiny",
-    "text": "Getting to Know Shiny\nThe Structure of a Shiny app\n\n\n\nA Shiny app comprises of two components, namely:\n\na user-interface script, and\na server script."
+    "text": "Getting to Know Shiny\n\nThe Structure of a Shiny app\n\n\n\nA Shiny app comprises of two components, namely:\n\na user-interface script, and\na server script."
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-4",
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-4",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
     "section": "Getting to Know Shiny",
-    "text": "Getting to Know Shiny\nShiny’s user-interface, ui.R\n\nThe ui.R script controls the layout and appearance of a shiny app.\n\nIt is defined in a source script name ui.R.\nActually, ui is a web document that the user gets to see, it is based on the famous Twitter bootstrap framework, which makes the look and layout highly customizable and fully responsive.\nIn fact, you only need to know R and how to use the shiny package to build a pretty web application. Also, a little knowledge of HTML, CSS, and JavaScript may help."
+    "text": "Getting to Know Shiny\n\nShiny’s user-interface, ui.R\n\nThe ui.R script controls the layout and appearance of a shiny app.\n\nIt is defined in a source script name ui.R.\nActually, ui is a web document that the user gets to see, it is based on the famous Twitter bootstrap framework, which makes the look and layout highly customizable and fully responsive.\nIn fact, you only need to know R and how to use the shiny package to build a pretty web application. Also, a little knowledge of HTML, CSS, and JavaScript may help."
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-5",
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-5",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
     "section": "Getting to Know Shiny",
-    "text": "Getting to Know Shiny\nShiny’s server server.R\n\nThe server.R script contains the instructions that your computer needs to build your Shiny app.\nYou are expected to:\n\nknow how to programme with R.\nfamiliar with Tidyverse, specifically dplyr, tidyr and ggplot2"
+    "text": "Getting to Know Shiny\n\nShiny’s server server.R\n\nThe server.R script contains the instructions that your computer needs to build your Shiny app.\nYou are expected to:\n\nknow how to programme with R.\nfamiliar with Tidyverse, specifically dplyr, tidyr and ggplot2"
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-6",
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-6",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
     "section": "Getting to Know Shiny",
-    "text": "Getting to Know Shiny\nShiny Examples\nThe Shiny package has eleven built-in examples that each demonstrates how Shiny works."
+    "text": "Getting to Know Shiny\n\nShiny Examples\nThe Shiny package has eleven built-in examples that each demonstrates how Shiny works."
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-7",
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#getting-to-know-shiny-7",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
     "section": "Getting to Know Shiny",
-    "text": "Getting to Know Shiny\nRunning Shiny example\n\n\n\nlibrary(shiny)\nrunExample(\"01_hello\")"
+    "text": "Getting to Know Shiny\n\nRunning Shiny example\n\n\n\nlibrary(shiny)\nrunExample(\"01_hello\")"
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#building-a-shiny-app",
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#building-a-shiny-app",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
     "section": "Building a Shiny app",
-    "text": "Building a Shiny app\n\nA Shiny app can be in a form of a single file called app.R.\nAlternatively, a Shiny app can be also created using separate ui.R and server.R files.\nThe seperate files way is preferred when the app is complex and involves more codes."
+    "text": "Building a Shiny app\n\nA Shiny app can be in a form of a single file called app.R.\nAlternatively, a Shiny app can be also created using separate ui.R and server.R files.\nThe seperate files way is preferred when the app is complex and involves more codes.\n\n\n\n\nA basic Shiny app script\n\n\n\n\nImportant tips of Shiny app file\n\n\n\n\n\n\n\n\nTip\n\n\n\n\nIt is very important that the name of the file is app.R, otherwise it would not be recognized as a Shiny app.\nYou should not have any R code after the shinyApp(ui = ui, server = server) line. That line needs to be the last line in your file.\nIt is good practice to place this app in its own folder, and not in a folder that already has other R scripts or files, unless those other files are used by your app.\n\n\n\n\n\n\n\n\nLoading the dataset\n\n\n\n\npacman::p_load(shiny, sf, tmap,\n               bslib, tidyverse)\n\nhunan &lt;- st_read(dsn = \"data/geospatial\",\n                 layer = \"Hunan\")\ndata &lt;- read_csv(\"data/aspatial/Hunan_2012.csv\")\nhunan_data &lt;- left_join(hunan, data,\n                        by = c(\"County\" = \"COUNTY\"))\n\nui &lt;- fluidPage()\nserver &lt;- function(input, output){}\n\nshinyApp(ui = ui, server = server)\n\n\n\n\nMake sure that the data file path and file name are correct.\nTo check if the dataset has been added correctly, you can add a print() argument after reading the data."
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-layout",
@@ -228,77 +228,77 @@
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-layout-panels",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
     "section": "Shiny Layout Panels",
-    "text": "Shiny Layout Panels\n\nPanels are used to group multiple elements into a single element that has its own properties.\nEspecially important and useful for complex apps with a large number of inputs and outputs such that it might not be clear to the user where to get started."
+    "text": "Shiny Layout Panels\n\nPanels are used to group multiple elements into a single element that has its own properties.\nEspecially important and useful for complex apps with a large number of inputs and outputs such that it might not be clear to the user where to get started.\n\n\n\n\nWorking with titlePanel\n\n\n\ntitlePanel() is used to add the application title.\n\n\n\npacman::p_load(shiny, sf, tmap,\n               bslib, tidyverse)\n\nhunan &lt;- st_read(dsn = \"data/geospatial\",\n                 layer = \"Hunan\")\ndata &lt;- read_csv(\"data/aspatial/Hunan_2012.csv\")\nhunan_data &lt;- left_join(hunan, data,\n                        by = c(\"County\" = \"COUNTY\"))\n\nui &lt;- fluidPage(\n  titlePanel(\"Choropleth Mapping\")\n)\nserver &lt;- function(input, output){}\n\nshinyApp(ui = ui, server = server)\n\n\n\n\n\n\n\n\n\nShiny Layout Panel : sidebarLayout()\n\n\n\nsidebarLayout() always takes two arguments:\n\nsidebarPanel() function output\nmainPanel() function output\n\nThese functions place content in either the sidebar or the main panels.\nThe sidebarPanel() will appear on the left side of your app by default. You can move it to the right side by giving sidebarLayout() the optional argument position = “right”.\n\n\n\n\n\n\n\n\n\nHands-on Exercise: Working with sidebarLayout()\n\n\nLets add the highlighted codes into the original code chunk.\n\n\nRefresh Shiny App and your screen should look similar to the figure below.\n\n\n\n\n\n\n\nNote\n\n\n\nNote that in a fluid design your sidebar and other elements may “collapse” if your browser view is not wide enough."
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-inputs",
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-inputs",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
     "section": "Shiny Inputs",
-    "text": "Shiny Inputs\nAn overview of Shiny Inputs\n\n\n\nInputs are what gives users a way to interact with a Shiny app.\nShiny provides many input functions to support many kinds of interactions that the user could have with an app.\n\n\n\n\n\nReference: Refer to 2 Basic UI of Master Shiny to learn more about Shiny UI usage and arguments."
+    "text": "Shiny Inputs\n\nAn overview of Shiny Inputs\n\n\n\nInputs are what gives users a way to interact with a Shiny app.\nShiny provides many input functions to support many kinds of interactions that the user could have with an app.\n\n\n\n\n\nReference: Refer to 2 Basic UI of Master Shiny to learn more about Shiny UI usage and arguments."
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-inputs-1",
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-inputs-1",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
     "section": "Shiny Inputs",
-    "text": "Shiny Inputs\nInputs syntax\n\n\n\nAll input functions have the same first two arguments: inputId and label.\nThe inputId will be the name that Shiny will use to refer to this input when you want to retrieve its current value.\nIt is important to note that every input must have a unique inputId.\nThe label argument specifies the text in the display label that goes along with the input widget.\nEvery input can also have multiple other arguments specific to that input type."
+    "text": "Shiny Inputs\n\nInputs syntax\n\n\n\nAll input functions have the same first two arguments: inputId and label.\nThe inputId will be the name that Shiny will use to refer to this input when you want to retrieve its current value.\nIt is important to note that every input must have a unique inputId.\nThe label argument specifies the text in the display label that goes along with the input widget.\nEvery input can also have multiple other arguments specific to that input type.\n\n\n\n\n\n\n\n\nHands-on Exercise: Adding inputs\nAdding inputs to the UI by using selectInput() and sliderInput()."
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-output",
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-output",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
     "section": "Shiny Output()",
-    "text": "Shiny Output()\nAn overview of Shiny Output()\n\nAfter creating all the inputs, we should add elements to the UI to display the outputs.\nTo display output, add it to fluidPage() with an Output() function.\n\n\n\n\n\n\n\n\nNote\n\n\n\nSimilarly to the input functions, all the output functions have a outputId argument that is used to identify each output, and this argument must be unique for each output.\nEach output needs to be constructed in the server code later."
+    "text": "Shiny Output()\n\nAn overview of Shiny Output()\n\nAfter creating all the inputs, we should add elements to the UI to display the outputs.\nTo display output, add it to fluidPage() with an Output() function.\n\n\n\n\n\n\n\n\nNote\n\n\n\n\nSimilarly to the input functions, all the output functions have a outputId argument that is used to identify each output, and this argument must be unique for each output.\nEach output needs to be constructed in the server code later."
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-output-1",
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-output-1",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
     "section": "Shiny Output()",
-    "text": "Shiny Output()\nShiny Output() options\n\n\n\nOutputs can be any object that R creates and that we want to display in our app - such as a plot, a table, or text."
+    "text": "Shiny Output()\n\nShiny Output() options\n\n\n\nOutputs can be any object that R creates and that we want to display in our app - such as a plot, a table, or text.\n\n\n\n\n\n\n\n\nHands-on Exercise:\n\n\nAdding plotOutput()"
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-server.r",
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-server.r",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
     "section": "Shiny server.R",
-    "text": "Shiny server.R\nBuilding an output\nThere are three rules to build an output in Shiny, they are:\n\nSave the output object into the output list (remember the app template - every server function has an output argument).\nBuild the object with a render() function, where is the type of output.\nAccess input values using the input list (every server function has an input argument)\n\n\n\n\n\n\n\nNote\n\n\nThe third rule is only required if you want your output to depend on some input."
+    "text": "Shiny server.R\n\nBuilding an output\nThere are three rules to build an output in Shiny, they are:\n\nSave the output object into the output list (remember the app template - every server function has an output argument).\nBuild the object with a render() function, where is the type of output.\nAccess input values using the input list (every server function has an input argument)\n\n\n\n\n\n\n\nNote\n\n\n\nThe third rule is only required if you want your output to depend on some input."
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-server.r-1",
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-server.r-1",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
     "section": "Shiny server.R",
-    "text": "Shiny server.R\nA generic Shiny render() syntax"
+    "text": "Shiny server.R\n\nA generic Shiny render() syntax"
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-server.r-2",
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#shiny-server.r-2",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
     "section": "Shiny server.R",
-    "text": "Shiny server.R\nShiny render()"
+    "text": "Shiny server.R\n\nShiny render()\n\n\n\n\nHands-on Exercise: Building a basic output\n\n\nLet’s first see how to build a very basic output using renderPlot(). We’ll create a plot and send it to the mapPlot output.\n\n\n\n\n\n\n\n\nNote\n\n\n\n\nThis simple code shows the first two rules: we’re creating a plot inside the renderPlot() function, and assigning it to distPlot in the output list.\nRemember that every output created in the UI must have a unique ID, now we see why. In order to attach an R object to an output with ID x, we assign the R object to output$distPlot.\nSince distPlot was defined as a plotOutput, we must use the renderPlot() function, and we must create a plot inside the renderPlot() function."
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#the-shinyapp",
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#the-shinyapp",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
     "section": "The shinyApp()",
-    "text": "The shinyApp()\n\n\n\n\n\n\n\n\nImportant\n\n\n\nIt is important to add shinyApp() at the end of your Shiny application.\n\n\n\n\n\nshinyApp(ui = ui, server = server)"
+    "text": "The shinyApp()\n\n\n\n\n\n\n\n\nImportant\n\n\n\n\nIt is important to add shinyApp() at the end of your Shiny application.\n\n\n\n\nshinyApp(ui = ui, server = server)"
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#programming-shiny-survival-tip",
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#programming-shiny-survival-tip",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
     "section": "Programming Shiny: Survival Tip!",
-    "text": "Programming Shiny: Survival Tip!\n\n\n\n\n\n\nTip\n\n\n\nAlways run the entire script, not just up to the point where you’re developing code.\nSometimes the best way to see what’s wrong is to run the app and review the error.\nWatch out for commas!"
+    "text": "Programming Shiny: Survival Tip!\n\n\n\n\n\n\nTip\n\n\n\n\nAlways run the entire script, not just up to the point where you’re developing code.\nSometimes the best way to see what’s wrong is to run the app and review the error.\nWatch out for commas!"
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#building-shiny-application-survival-tip",
     "href": "ShinyWorkshop/Shiny1/Shiny1.html#building-shiny-application-survival-tip",
     "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
     "section": "Building Shiny Application: Survival Tip!",
-    "text": "Building Shiny Application: Survival Tip!\n\n\nWhat can we learn from Lego?\n\n\n\nSketch the storyboard\nBuilding the app incrementally\n\nUsing prototyping approach\nStart as simple as possible\nAdding features one at a time\n\nSave -&gt; Run App"
+    "text": "Building Shiny Application: Survival Tip!\n\n\n\nWhat can we learn from Lego?\n\n\n\n\nSketch the storyboard\nBuilding the app incrementally\n\nUsing prototyping approach\nStart as simple as possible\nAdding features one at a time\n\nSave -&gt; Run App"
   },
   {
     "objectID": "ShinyWorkshop/Shiny1/Shiny1.html#references",
@@ -2014,5 +2014,68 @@
     "title": "Take-home Exercise 2: Application of Geospatial Analysis Methods to Discover Thailand Drug Abuse at the Province Level",
     "section": "Reference",
     "text": "Reference\n\nWorld Drug Report 2023\nThailand Country Report 2023\nKhan, D. et. al. (2017) “Hot spots, cluster detection and spatial outlier analysis of teen birth rates in the U.S., 2003–2012”, Spatial and Spatio-temporal Epidemiology, Vol. 21, pp. 67–75.\nMuhammad Arif & Didit Purnomo (2017) “Measuring Spatial Cluster for Leading Industries in Surakarta with Exploratory Spatial Data Analysis (ESDA)”, Jurnal Ekonomi Pembangunan, Vol. 18 (1), pp. 64-81.\nStamatis Kalogirou (2012) “Testing local versions of correlation coefficients”, Review of Regional Research, Vol., pp. 45–61. SMU e-journal."
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex01/In-class_Ex01.html",
+    "href": "In-class_Ex/In-class_Ex01/In-class_Ex01.html",
+    "title": "In-class Exercise 1",
+    "section": "",
+    "text": "The taskThe code\n\n\nFor the purpose of this in-class exercise, tidyverse, sf and ggstatsplot packages will be used. Write a code chunk to check if these two packages have been installed in R. If yes, load them in R environment.\n\n\n\npacman::p_load(tidyverse, sf, ggstatsplot)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex01/In-class_Ex01.html#getting-started",
+    "href": "In-class_Ex/In-class_Ex01/In-class_Ex01.html#getting-started",
+    "title": "In-class Exercise 1",
+    "section": "",
+    "text": "The taskThe code\n\n\nFor the purpose of this in-class exercise, tidyverse, sf and ggstatsplot packages will be used. Write a code chunk to check if these two packages have been installed in R. If yes, load them in R environment.\n\n\n\npacman::p_load(tidyverse, sf, ggstatsplot)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex01/In-class_Ex01.html#working-with-master-plan-planning-sub-zone-data",
+    "href": "In-class_Ex/In-class_Ex01/In-class_Ex01.html#working-with-master-plan-planning-sub-zone-data",
+    "title": "In-class Exercise 1",
+    "section": "Working with Master Plan Planning Sub-zone Data",
+    "text": "Working with Master Plan Planning Sub-zone Data\n\nThe taskThe code\n\n\n\nCreate a sub-folder called data in In-class_Ex01 folder.\nIf necessary visit data.gov.sg and download Master Plan 2014 Subzone Boundary (Web) from the portal. You are required to download both the ESRI shapefile and kml file.\nWrite a code chunk to import Master Plan 2014 Subzone Boundary (Web) in shapefile and kml save them in sf simple features data frame.\n\n\n\n\nmpsz_shp &lt;- st_read(dsn = \"data/\",\n                layer = \"MPSZ-2019\")\n\nReading layer `MPSZ-2019' from data source \n  `D:\\tskam\\IS415_AY2024-25T1\\In-class_Ex\\In-class_Ex01\\data' \n  using driver `ESRI Shapefile'\nSimple feature collection with 332 features and 6 fields\nGeometry type: MULTIPOLYGON\nDimension:     XY\nBounding box:  xmin: 103.6057 ymin: 1.158699 xmax: 104.0885 ymax: 1.470775\nGeodetic CRS:  WGS 84\n\nmpsz_kml &lt;- st_read(\"data/MP19_SUBZONE_WEB_PL.kml\")\n\nReading layer `URA_MP19_SUBZONE_NO_SEA_PL' from data source \n  `D:\\tskam\\IS415_AY2024-25T1\\In-class_Ex\\In-class_Ex01\\data\\MP19_SUBZONE_WEB_PL.kml' \n  using driver `KML'\nSimple feature collection with 332 features and 2 fields\nGeometry type: MULTIPOLYGON\nDimension:     XY, XYZ\nBounding box:  xmin: 103.6057 ymin: 1.158699 xmax: 104.0885 ymax: 1.470775\nz_range:       zmin: 0 zmax: 0\nGeodetic CRS:  WGS 84"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex01/In-class_Ex01.html#working-with-pre-school-location-data",
+    "href": "In-class_Ex/In-class_Ex01/In-class_Ex01.html#working-with-pre-school-location-data",
+    "title": "In-class Exercise 1",
+    "section": "Working with Pre-school Location Data",
+    "text": "Working with Pre-school Location Data\n\nThe taskThe code\n\n\n\nIf necessary visit data.gov.sg and download Pre-Schools Location from the portal. You are required to download both the kml and geojson files.\nWrite a code chunk to import Pre-Schools Location in kml geojson save them in sf simple features data frame.\n\n\n\n\npreschool_kml &lt;- st_read(\"data/PreSchoolsLocation.kml\")\n\nReading layer `PRESCHOOLS_LOCATION' from data source \n  `D:\\tskam\\IS415_AY2024-25T1\\In-class_Ex\\In-class_Ex01\\data\\PreSchoolsLocation.kml' \n  using driver `KML'\nSimple feature collection with 2290 features and 2 fields\nGeometry type: POINT\nDimension:     XYZ\nBounding box:  xmin: 103.6878 ymin: 1.247759 xmax: 103.9897 ymax: 1.462134\nz_range:       zmin: 0 zmax: 0\nGeodetic CRS:  WGS 84\n\npreschool_geojson &lt;- st_read(\"data/PreSchoolsLocation.geojson\") \n\nReading layer `PreSchoolsLocation' from data source \n  `D:\\tskam\\IS415_AY2024-25T1\\In-class_Ex\\In-class_Ex01\\data\\PreSchoolsLocation.geojson' \n  using driver `GeoJSON'\nSimple feature collection with 2290 features and 2 fields\nGeometry type: POINT\nDimension:     XYZ\nBounding box:  xmin: 103.6878 ymin: 1.247759 xmax: 103.9897 ymax: 1.462134\nz_range:       zmin: 0 zmax: 0\nGeodetic CRS:  WGS 84"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex01/In-class_Ex01.html#handling-coordinate-systems",
+    "href": "In-class_Ex/In-class_Ex01/In-class_Ex01.html#handling-coordinate-systems",
+    "title": "In-class Exercise 1",
+    "section": "Handling Coordinate Systems",
+    "text": "Handling Coordinate Systems\n\nChecking coordinate system\n\nThe taskThe code\n\n\nWrite a code chunk to check the project of the imported sf objects.\n\n\n\nst_crs(mpsz_shp)\n\nCoordinate Reference System:\n  User input: WGS 84 \n  wkt:\nGEOGCRS[\"WGS 84\",\n    DATUM[\"World Geodetic System 1984\",\n        ELLIPSOID[\"WGS 84\",6378137,298.257223563,\n            LENGTHUNIT[\"metre\",1]]],\n    PRIMEM[\"Greenwich\",0,\n        ANGLEUNIT[\"degree\",0.0174532925199433]],\n    CS[ellipsoidal,2],\n        AXIS[\"latitude\",north,\n            ORDER[1],\n            ANGLEUNIT[\"degree\",0.0174532925199433]],\n        AXIS[\"longitude\",east,\n            ORDER[2],\n            ANGLEUNIT[\"degree\",0.0174532925199433]],\n    ID[\"EPSG\",4326]]\n\n\n\n\n\n\n\nTransforming coordinate system\n\nThe taskThe code\n\n\nRe-write the code chunk to import the Master Plan Sub-zone 2019 and Pre-schools Location with proper transformation\n\n\n\nmpsz &lt;- st_read(dsn = \"data/\",\n                layer = \"MPSZ-2019\") %&gt;%\n  st_transform(crs = 3414)\n\nReading layer `MPSZ-2019' from data source \n  `D:\\tskam\\IS415_AY2024-25T1\\In-class_Ex\\In-class_Ex01\\data' \n  using driver `ESRI Shapefile'\nSimple feature collection with 332 features and 6 fields\nGeometry type: MULTIPOLYGON\nDimension:     XY\nBounding box:  xmin: 103.6057 ymin: 1.158699 xmax: 104.0885 ymax: 1.470775\nGeodetic CRS:  WGS 84\n\npreschool &lt;- st_read(\"data/PreSchoolsLocation.kml\") %&gt;%\n  st_transform(crs = 3414)\n\nReading layer `PRESCHOOLS_LOCATION' from data source \n  `D:\\tskam\\IS415_AY2024-25T1\\In-class_Ex\\In-class_Ex01\\data\\PreSchoolsLocation.kml' \n  using driver `KML'\nSimple feature collection with 2290 features and 2 fields\nGeometry type: POINT\nDimension:     XYZ\nBounding box:  xmin: 103.6878 ymin: 1.247759 xmax: 103.9897 ymax: 1.462134\nz_range:       zmin: 0 zmax: 0\nGeodetic CRS:  WGS 84"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex01/In-class_Ex01.html#geospatial-data-wrangling",
+    "href": "In-class_Ex/In-class_Ex01/In-class_Ex01.html#geospatial-data-wrangling",
+    "title": "In-class Exercise 1",
+    "section": "Geospatial Data Wrangling",
+    "text": "Geospatial Data Wrangling\n\nPoint-in-Polygon count\n\nThe taskThe code\n\n\nWrite a code chunk to count the number of pre-schools in each planning sub-zone.\n\n\n\nmpsz &lt;- mpsz %&gt;%\n  mutate(`PreSch Count` = lengths(st_intersects(mpsz, preschool)))\n\n\n\n\n\n\nComputing density\n\nThe taskThe code\n\n\nWrite a single line code to perform the following tasks:\n\nDerive the area of each planning sub-zone.\nDrop the unit of measurement of the area (i.e. m^2)\nCalculate the density of pre-school at the planning sub-zone level.\n\n\n\n\nmpsz &lt;- mpsz %&gt;%\n  mutate(Area = units::drop_units(\n    st_area(.)),\n    `PreSch Density` = `PreSch Count` / Area * 1000000\n  )"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex01/In-class_Ex01.html#statistical-analysis",
+    "href": "In-class_Ex/In-class_Ex01/In-class_Ex01.html#statistical-analysis",
+    "title": "In-class Exercise 1",
+    "section": "Statistical Analysis",
+    "text": "Statistical Analysis\n\nThe taskThe codeThe plot\n\n\nUsing appropriate Exploratory Data Analysis (EDA) and Confirmatory Data Analysis (CDA) methods to explore and confirm the statistical relationship between Pre-school Density and Pre-school count.\nTip: Refer to ggscatterstats() of ggstatsplot package.\n\n\n\nmpsz$`PreSch Density` &lt;- as.numeric(as.character(mpsz$`PreSch Density`))\nmpsz$`PreSch Count` &lt;- as.numeric(as.character(mpsz$`PreSch Count`)) \nmpsz &lt;- as.data.frame(mpsz)\n\nggscatterstats(data = mpsz,\n               x = `PreSch Density`,\n               y = `PreSch Count`,\n               type = \"parametric\")\n\n\n\n\n\n\n\n\n\n\n\n\nCommet:"
+  },
+  {
+    "objectID": "ShinyWorkshop/Shiny1/Shiny1.html",
+    "href": "ShinyWorkshop/Shiny1/Shiny1.html",
+    "title": "Building Web-enabled Geospatial Analytics Applications with Shiny: Shiny basic",
+    "section": "",
+    "text": "What is a Web-enabled Geospatial Analytics Application?\nWhy building Web-enabled Geospatial Analytical Application?\nEvolution of web-based Technology\nGetting to Know Shiny"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex01/data/MPSZ-2019.html",
+    "href": "In-class_Ex/In-class_Ex01/data/MPSZ-2019.html",
+    "title": "IS415 AY2022-23T2",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     dataset\n\n\n        0 0     false"
   }
 ]

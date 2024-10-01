@@ -33,7 +33,7 @@ editor: visual
 
 ## What is a Web-enabled Geospatial Analytics Application?
 
-::: columns
+::::: columns
 ::: {.column width="40%"}
 -   Focuses and emphasises on **interactivity** and effective integration of techniques from **data analytics, visualization and human-computer interaction (HCI)**.
 :::
@@ -41,33 +41,33 @@ editor: visual
 ::: {.column width="60%"}
 ![](img/image1.jpg)
 :::
-:::
+:::::
 
 ------------------------------------------------------------------------
 
 ### Why building a Web-enabled Geospatial Analytics Application?
 
-::: columns
+:::::: columns
 ::: {.column width="50%"}
 -   To explore how the best of these different but related domains can be combined such that **the sum is greater than the parts**.
 
 -   To **democratise data and analytics** through web-based analytical applications for data exploration, visualisation analysis and modelling.
 :::
 
-::: {.column width="50%"}
+:::: {.column width="50%"}
 ![](img/image2.jpg)
 
 ::: {style="font-size: 0.75em"}
 Source: [Democratize data analytics customer data platform](https://www.rekener.com/blog/democratize-data-analytics-customer-data-platform-B2B)
 :::
-:::
-:::
+::::
+::::::
 
 ------------------------------------------------------------------------
 
 ### Technology Challenges
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 -   Mainframe computing tend to have low usability and low accessibility.
 
@@ -79,13 +79,13 @@ Source: [Democratize data analytics customer data platform](https://www.rekener.
 ::: {.column width="50%"}
 ![](img/image3.jpg)
 :::
-:::
+:::::
 
 ------------------------------------------------------------------------
 
 ### Web-based data visualisation
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 -   The break-through is Rich Internet Applications (RIA)
 :::
@@ -93,7 +93,7 @@ Source: [Democratize data analytics customer data platform](https://www.rekener.
 ::: {.column width="50%"}
 ![](img/image3-1.jpg)
 :::
-:::
+:::::
 
 ::: {style="font-size: 0.75em"}
 Reference: [Rich Internet Applications](https://www.computerworld.com/article/2551058/rich-internet-applications.html)
@@ -103,7 +103,7 @@ Reference: [Rich Internet Applications](https://www.computerworld.com/article/25
 
 ### Development of RIA
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 #### First generation RIA data visualisation (2000\~)
 
@@ -122,13 +122,13 @@ Reference: [Rich Internet Applications](https://www.computerworld.com/article/25
     -   Mobile computing enabled
 -   [D3.js](https://d3js.org/) - Data Driven Document
 :::
-:::
+:::::
 
 ------------------------------------------------------------------------
 
 ### Methodological Challenges
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 -   Lack of analysis functions.
 
@@ -142,13 +142,13 @@ Reference: [Rich Internet Applications](https://www.computerworld.com/article/25
 ::: {.column width="50%"}
 ![](img/image4.jpg)
 :::
-:::
+:::::
 
 ## Getting to Know Shiny
 
 ### Shiny: Overview
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 -   Shiny is an open source package from [Posit](https://posit.co/) (formally called RStudio).
 
@@ -160,13 +160,13 @@ Reference: [Rich Internet Applications](https://www.computerworld.com/article/25
 ::: {.column width="50%"}
 ![](img/image5.jpg)
 :::
-:::
+:::::
 
 ## Getting to Know Shiny
 
 ### What is so special about Shiny?
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 It allows R users:
 
@@ -178,7 +178,7 @@ It allows R users:
 ::: {.column width="50%"}
 ![](img/image6.jpg)
 :::
-:::
+:::::
 
 ## Getting to Know Shiny
 
@@ -192,7 +192,7 @@ It allows R users:
 
 ### The Structure of a Shiny app
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 -   A Shiny app comprises of two components, namely:
     -   a user-interface script, and
@@ -202,7 +202,7 @@ It allows R users:
 ::: {.column width="50%"}
 ![](img/image7-1.jpg)
 :::
-:::
+:::::
 
 ## Getting to Know Shiny
 
@@ -238,7 +238,7 @@ The Shiny package has eleven built-in examples that each demonstrates how Shiny 
 
 ### Running Shiny example
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 ```{r, echo=TRUE, eval=FALSE}
 library(shiny)
@@ -249,7 +249,7 @@ runExample("01_hello")
 ::: {.column width="50%"}
 ![](img/image7-3.jpg){fig-align="center" width="543"}
 :::
-:::
+:::::
 
 ## Building a Shiny app
 
@@ -269,8 +269,8 @@ runExample("01_hello")
 
 ### Important tips of Shiny app file
 
-::: columns
-::: {.column width="50%"}
+::::: columns
+:::: {.column width="50%"}
 ::: callout-tip
 -   It is very important that the name of the file is *app.R*, otherwise it would not be recognized as a Shiny app.
 
@@ -278,15 +278,15 @@ runExample("01_hello")
 
 -   It is good practice to place this app in its own folder, and not in a folder that already has other R scripts or files, unless those other files are used by your app.
 :::
-:::
-:::
+::::
+:::::
 
 ------------------------------------------------------------------------
 
 ### Loading the dataset
 
-::: columns
-::: {.column width="65%"}
+:::::: columns
+:::: {.column width="65%"}
 ::: {style="font-size: 1.35em"}
 ```{r}
 #| echo: true
@@ -306,14 +306,14 @@ server <- function(input, output){}
 shinyApp(ui = ui, server = server)
 ```
 :::
-:::
+::::
 
 ::: {.column width="35%"}
 -   Make sure that the data file path and file name are correct.
 
 -   To check if the dataset has been added correctly, you can add a `print()` argument after reading the data.
 :::
-:::
+::::::
 
 ## Shiny Layout
 
@@ -335,8 +335,8 @@ shinyApp(ui = ui, server = server)
 
 ### Working with `titlePanel`
 
-::: columns
-::: {.column width="60%"}
+:::::: columns
+:::: {.column width="60%"}
 -   [`titlePanel()`](https://shiny.rstudio.com/reference/shiny/1.7.4/titlepanel) is used to add the application title.
 
 ::: {style="font-size: 1.20em"}
@@ -359,18 +359,18 @@ server <- function(input, output){}
 shinyApp(ui = ui, server = server)
 ```
 :::
-:::
+::::
 
 ::: {.column width="40%"}
 ![](img/image18.jpg)
 :::
-:::
+::::::
 
 ------------------------------------------------------------------------
 
 ### Shiny Layout Panel : `sidebarLayout()`
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 -   [`sidebarLayout()`](https://shiny.rstudio.com/reference/shiny/1.7.4/sidebarlayout) always takes two arguments:
     -   `sidebarPanel()` function output
@@ -384,20 +384,20 @@ shinyApp(ui = ui, server = server)
 
 ![](img/image15b.jpg)
 :::
-:::
+:::::
 
 ------------------------------------------------------------------------
 
 ### Hands-on Exercise: Working with `sidebarLayout()`
 
-::: columns
+:::::: columns
 ::: {.column width="50%"}
 Lets add the highlighted codes into the original code chunk.
 
 ![](img/image31.jpg)
 :::
 
-::: {.column width="50%"}
+:::: {.column width="50%"}
 Refresh Shiny App and your screen should look similar to the figure below.
 
 ![](img/image19.jpg)
@@ -405,14 +405,14 @@ Refresh Shiny App and your screen should look similar to the figure below.
 ::: callout-note
 Note that in a fluid design your sidebar and other elements may "collapse" if your browser view is not wide enough.
 :::
-:::
-:::
+::::
+::::::
 
 ## Shiny Inputs
 
 ### An overview of Shiny Inputs
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 -   Inputs are what gives users a way to interact with a Shiny app.
 
@@ -422,7 +422,7 @@ Note that in a fluid design your sidebar and other elements may "collapse" if yo
 ::: {.column width="50%"}
 ![](img/image26.jpg)
 :::
-:::
+:::::
 
 Reference: Refer to [2 Basic UI](https://mastering-shiny.org/basic-ui.html) of Master Shiny to learn more about Shiny UI usage and arguments.
 
@@ -430,7 +430,7 @@ Reference: Refer to [2 Basic UI](https://mastering-shiny.org/basic-ui.html) of M
 
 ### Inputs syntax
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 -   All input functions have the same first two arguments: inputId and label.
 -   The inputId will be the name that Shiny will use to refer to this input when you want to retrieve its current value.
@@ -442,7 +442,7 @@ Reference: Refer to [2 Basic UI](https://mastering-shiny.org/basic-ui.html) of M
 ::: {.column width="50%"}
 ![](img/image27.jpg)
 :::
-:::
+:::::
 
 ------------------------------------------------------------------------
 
@@ -470,7 +470,7 @@ Adding inputs to the UI by using [`selectInput()`](https://shiny.rstudio.com/ref
 
 ### Shiny `Output()` options
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 -   Outputs can be any object that R creates and that we want to display in our app - such as a plot, a table, or text.
 :::
@@ -478,19 +478,19 @@ Adding inputs to the UI by using [`selectInput()`](https://shiny.rstudio.com/ref
 ::: {.column width="50%"}
 ![](img/image28.jpg)
 :::
-:::
+:::::
 
 ------------------------------------------------------------------------
 
 ### Hands-on Exercise:
 
-::: columns
+:::: columns
 ::: {.column width="50%"}
 Adding [`plotOutput()`](https://shiny.rstudio.com/reference/shiny/1.7.4/plotoutput)
 
 ![](img/image33.jpg)
 :::
-:::
+::::
 
 ## Shiny server.R
 
@@ -524,26 +524,26 @@ The third rule is only required if you want your output to depend on some input.
 
 ### Hands-on Exercise: Building a basic output
 
-::: columns
+:::::: columns
 ::: {.column width="50%"}
 Let's first see how to build a very basic output using [`renderPlot()`](https://shiny.rstudio.com/reference/shiny/1.7.4/renderplot). We'll create a plot and send it to the ***mapPlot*** output.
 
 ![](img/image34.jpg)
 :::
 
-::: {.column width="50%"}
+:::: {.column width="50%"}
 ::: callout-note
 -   This simple code shows the first two rules: we're creating a plot inside the `renderPlot()` function, and assigning it to ***distPlot*** in the output list.
 -   Remember that every output created in the UI must have a unique ID, now we see why. In order to attach an R object to an output with ID x, we assign the R object to ***output\$distPlot***.
 -   Since ***distPlot*** was defined as a ***plotOutput***, we must use the `renderPlot()` function, and we must create a plot inside the `renderPlot()` function.
 :::
-:::
-:::
+::::
+::::::
 
 ## The shinyApp()
 
-::: columns
-::: {.column width="50%"}
+::::: columns
+:::: {.column width="50%"}
 ::: callout-important
 -   It is important to add *shinyApp()* at the end of your Shiny application.
 :::
@@ -553,8 +553,8 @@ Let's first see how to build a very basic output using [`renderPlot()`](https://
 #| eval: false
 shinyApp(ui = ui, server = server)
 ```
-:::
-:::
+::::
+:::::
 
 ## Programming Shiny: Survival Tip!
 
@@ -568,7 +568,7 @@ shinyApp(ui = ui, server = server)
 
 ## Building Shiny Application: Survival Tip!
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 ### What can we learn from Lego?
 
@@ -583,7 +583,7 @@ shinyApp(ui = ui, server = server)
     -   Adding features one at a time
 -   Save -\> Run App
 :::
-:::
+:::::
 
 ## References
 
@@ -608,5 +608,5 @@ shinyApp(ui = ui, server = server)
 ```{r}
 #| eval: false 
 #| echo: false 
-renderthis::to_pdf(from = "https://is415-ay2023-24t2.netlify.app/shinyworkshop/shiny1/Shiny1.html")
+renderthis::to_pdf(from = "D://tskam/IS415_AY2024-25T1/_site/ShinyWorkshop/Shiny1/Shiny1.html")
 ```
