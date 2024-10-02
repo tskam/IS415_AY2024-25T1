@@ -2476,5 +2476,89 @@
     "title": "Spatio-Temporal Point Patterns Analysis",
     "section": "Spatio-temporal Point Patterns Analysis: stpp methods",
     "text": "Spatio-temporal Point Patterns Analysis: stpp methods\nIn this section, you will gain hands-on experience on using functions of stpp package to perform spatio-temporal point patterns analysis.\n\nStudents are encouraged to read stpp: An R Package for Plotting, Simulating and Analyzing Spatio-Temporal Point Patterns to learn more about the package.\n\n\nPreparing spatio-temporal point process object of stpp\nStep 1: Extracting forest fire coordinates from the fire point events\n\ncoords &lt;- st_coordinates(fire_sf)\n\nStep 2: Creating a data frame by combining the x- and y-coordinates and temporal event. Note that the temporal event must be in integer.\n\nfire_df &lt;- data.frame(\n  x = coords[, 1],  \n  y = coords[, 2],\n  t = fire_sf$`DayofYear`)\n\nStep 3: Creating stpp spatio-temporal object\nIn the code chunk below, as.3dpoint() of stpp package is used to create stpp spatio-temporal object class.\n\nfire_stpp &lt;- as.3dpoints(fire_df)\n\nUse the code chunk below to confirm that the output is in stpp spatio-temporal object class.\n\nclass(fire_stpp)\n\n[1] \"stpp\"\n\n\nNext we can visual fire_stpp by using the code chunk below.\n\nplot(fire_stpp)\n\n\n\n\n\n\n\n\n\n\nComputing spatio-temporal k-function\nIn the code chunk below, STIKhat() of stpp package is used to compute space-time inhomogeneous K-function.\n\nkbb_stik &lt;- STIKhat(fire_stpp)\n\nNext, plotK() is used to visualise the output space-time inhomogeneous K-function.\n\nplotK(kbb_stik)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#loading-the-package",
+    "href": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#loading-the-package",
+    "title": "In-class Exercise 5: Geographically Weighted Statistics - gwModel methods",
+    "section": "Loading the package",
+    "text": "Loading the package\nIn this in-class exercise, sf, spdep, tmap, tidyverse, knitr and GWmodel will be used.\n\nDIYThe code\n\n\nUsing the step you leanred from previous hands-in, install and load the necessary R packages in R environment.\n\n\n\n\npacman::p_load(sf, spdep, tmap, tidyverse, knitr, GWmodel)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#preparing-the-data",
+    "href": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#preparing-the-data",
+    "title": "In-class Exercise 5: Geographically Weighted Statistics - gwModel methods",
+    "section": "Preparing the Data",
+    "text": "Preparing the Data\nFor this in-class exercise, Hunan shapefile and Hunan_2012 data file will be used.\n\nDIYImporting Hunan shapefileImporting Hunan_2012 tableJoining Hunan and Hunan_2012\n\n\nUsing the steps you learned from previous hands-on, complete the following tasks:\n\nimport Hunan shapefile and parse it into a sf polygon feature object.\nimport Hunan_2012.csv file parse it into a tibble data.frame.\njoin Hunan and Hunan_2012 data.frames.\n\n\n\n\n\nhunan_sf &lt;- st_read(dsn = \"data/geospatial\", \n                 layer = \"Hunan\")\n\nReading layer `Hunan' from data source \n  `D:\\tskam\\IS415_AY2024-25T1\\In-class_Ex\\In-class_Ex05\\data\\geospatial' \n  using driver `ESRI Shapefile'\nSimple feature collection with 88 features and 7 fields\nGeometry type: POLYGON\nDimension:     XY\nBounding box:  xmin: 108.7831 ymin: 24.6342 xmax: 114.2544 ymax: 30.12812\nGeodetic CRS:  WGS 84\n\n\n\n\n\n\n\nhunan2012 &lt;- read_csv(\"data/aspatial/Hunan_2012.csv\")\n\n\n\n\n\n\nhunan_sf &lt;- left_join(hunan_sf, hunan2012) %&gt;%\n  select(1:3, 7, 15, 16, 31, 32)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#mapping-gdppc",
+    "href": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#mapping-gdppc",
+    "title": "In-class Exercise 5: Geographically Weighted Statistics - gwModel methods",
+    "section": "Mapping GDPPC",
+    "text": "Mapping GDPPC\n\nDIYThe code\n\n\nUsing the steps you learned from Hands-on Exercise 5, prepare a choropleth map showing the geographic distribution of GDPPC of Hunan Province.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nbasemap &lt;- tm_shape(hunan_sf) +\n  tm_polygons() +\n  tm_text(\"NAME_3\", size=0.5)\n\ngdppc &lt;- qtm(hunan, \"GDPPC\")\ntmap_arrange(basemap, gdppc, asp=1, ncol=2)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#converting-to-spatialpolygondataframe",
+    "href": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#converting-to-spatialpolygondataframe",
+    "title": "In-class Exercise 5: Geographically Weighted Statistics - gwModel methods",
+    "section": "Converting to SpatialPolygonDataFrame",
+    "text": "Converting to SpatialPolygonDataFrame\n\n\n\n\n\n\nNote\n\n\nGWmodel presently is built around the older sp and not sf formats for handling spatial data in R.\n\n\n\n\n\nhunan_sp &lt;- hunan_sf %&gt;%\n  as_Spatial()"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#geographically-weighted-summary-statistics-with-adaptive-bandwidth",
+    "href": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#geographically-weighted-summary-statistics-with-adaptive-bandwidth",
+    "title": "In-class Exercise 5: Geographically Weighted Statistics - gwModel methods",
+    "section": "Geographically Weighted Summary Statistics with adaptive bandwidth",
+    "text": "Geographically Weighted Summary Statistics with adaptive bandwidth\nDetermine adaptive bandwidth\n\nCross-validationAIC\n\n\n\n\nbw_CV &lt;- bw.gwr(GDPPC ~ 1, \n             data = hunan_sp,\n             approach = \"CV\",\n             adaptive = TRUE, \n             kernel = \"bisquare\", \n             longlat = T)\n\nAdaptive bandwidth: 62 CV score: 15515442343 \nAdaptive bandwidth: 46 CV score: 14937956887 \nAdaptive bandwidth: 36 CV score: 14408561608 \nAdaptive bandwidth: 29 CV score: 14198527496 \nAdaptive bandwidth: 26 CV score: 13898800611 \nAdaptive bandwidth: 22 CV score: 13662299974 \nAdaptive bandwidth: 22 CV score: 13662299974 \n\nbw_CV\n\n[1] 22\n\n\n\n\n\n\n\nbw_AIC &lt;- bw.gwr(GDPPC ~ 1, \n             data = hunan_sp,\n             approach =\"AIC\",\n             adaptive = TRUE, \n             kernel = \"bisquare\", \n             longlat = T)\n\nAdaptive bandwidth (number of nearest neighbours): 62 AICc value: 1923.156 \nAdaptive bandwidth (number of nearest neighbours): 46 AICc value: 1920.469 \nAdaptive bandwidth (number of nearest neighbours): 36 AICc value: 1917.324 \nAdaptive bandwidth (number of nearest neighbours): 29 AICc value: 1916.661 \nAdaptive bandwidth (number of nearest neighbours): 26 AICc value: 1914.897 \nAdaptive bandwidth (number of nearest neighbours): 22 AICc value: 1914.045 \nAdaptive bandwidth (number of nearest neighbours): 22 AICc value: 1914.045 \n\nbw_AIC\n\n[1] 22"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#geographically-weighted-summary-statistics-with-adaptive-bandwidth-1",
+    "href": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#geographically-weighted-summary-statistics-with-adaptive-bandwidth-1",
+    "title": "In-class Exercise 5: Geographically Weighted Statistics - gwModel methods",
+    "section": "Geographically Weighted Summary Statistics with adaptive bandwidth",
+    "text": "Geographically Weighted Summary Statistics with adaptive bandwidth\nComputing geographically wieghted summary statistics\n\n\ngwstat &lt;- gwss(data = hunan_sp,\n               vars = \"GDPPC\",\n               bw = bw_AIC,\n               kernel = \"bisquare\",\n               adaptive = TRUE,\n               longlat = T)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#geographically-weighted-summary-statistics-with-adaptive-bandwidth-2",
+    "href": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#geographically-weighted-summary-statistics-with-adaptive-bandwidth-2",
+    "title": "In-class Exercise 5: Geographically Weighted Statistics - gwModel methods",
+    "section": "Geographically Weighted Summary Statistics with adaptive bandwidth",
+    "text": "Geographically Weighted Summary Statistics with adaptive bandwidth\nPreparing the output data\nCode chunk below is used to extract SDF data table from gwss object output from gwss(). It will be converted into data.frame by using as.data.frame().\n\n\ngwstat_df &lt;- as.data.frame(gwstat$SDF)\n\n\nNext, cbind() is used to append the newly derived data.frame onto hunan_sf sf data.frame.\n\n\nhunan_gstat &lt;- cbind(hunan_sf, gwstat_df)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#geographically-weighted-summary-statistics-with-adaptive-bandwidth-3",
+    "href": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#geographically-weighted-summary-statistics-with-adaptive-bandwidth-3",
+    "title": "In-class Exercise 5: Geographically Weighted Statistics - gwModel methods",
+    "section": "Geographically Weighted Summary Statistics with adaptive bandwidth",
+    "text": "Geographically Weighted Summary Statistics with adaptive bandwidth\nVisualising geographically weighted summary statistics\n\nThe Geographically Weighted MeanThe code\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntm_shape(hunan_gstat) +\n  tm_fill(\"GDPPC_LM\",\n          n = 5,\n          style = \"quantile\") +\n  tm_borders(alpha = 0.5) +\n  tm_layout(main.title = \"Distribution of geographically wieghted mean\",\n            main.title.position = \"center\",\n            main.title.size = 2.0,\n            legend.text.size = 1.2,\n            legend.height = 1.50, \n            legend.width = 1.50,\n            frame = TRUE)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#geographically-weighted-summary-statistics-with-fixed",
+    "href": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#geographically-weighted-summary-statistics-with-fixed",
+    "title": "In-class Exercise 5: Geographically Weighted Statistics - gwModel methods",
+    "section": "Geographically Weighted Summary Statistics with fixed",
+    "text": "Geographically Weighted Summary Statistics with fixed\nDetermine fixed bandwidth\n\nCross-validationAIC\n\n\n\n\nbw_CV &lt;- bw.gwr(GDPPC ~ 1, \n             data = hunan_sp,\n             approach = \"CV\",\n             adaptive = FALSE, \n             kernel = \"bisquare\", \n             longlat = T)\n\nFixed bandwidth: 357.4897 CV score: 16265191728 \nFixed bandwidth: 220.985 CV score: 14954930931 \nFixed bandwidth: 136.6204 CV score: 14134185837 \nFixed bandwidth: 84.48025 CV score: 13693362460 \nFixed bandwidth: 52.25585 CV score: Inf \nFixed bandwidth: 104.396 CV score: 13891052305 \nFixed bandwidth: 72.17162 CV score: 13577893677 \nFixed bandwidth: 64.56447 CV score: 14681160609 \nFixed bandwidth: 76.8731 CV score: 13444716890 \nFixed bandwidth: 79.77877 CV score: 13503296834 \nFixed bandwidth: 75.07729 CV score: 13452450771 \nFixed bandwidth: 77.98296 CV score: 13457916138 \nFixed bandwidth: 76.18716 CV score: 13442911302 \nFixed bandwidth: 75.76323 CV score: 13444600639 \nFixed bandwidth: 76.44916 CV score: 13442994078 \nFixed bandwidth: 76.02523 CV score: 13443285248 \nFixed bandwidth: 76.28724 CV score: 13442844774 \nFixed bandwidth: 76.34909 CV score: 13442864995 \nFixed bandwidth: 76.24901 CV score: 13442855596 \nFixed bandwidth: 76.31086 CV score: 13442847019 \nFixed bandwidth: 76.27264 CV score: 13442846793 \nFixed bandwidth: 76.29626 CV score: 13442844829 \nFixed bandwidth: 76.28166 CV score: 13442845238 \nFixed bandwidth: 76.29068 CV score: 13442844678 \nFixed bandwidth: 76.29281 CV score: 13442844691 \nFixed bandwidth: 76.28937 CV score: 13442844698 \nFixed bandwidth: 76.2915 CV score: 13442844676 \nFixed bandwidth: 76.292 CV score: 13442844679 \nFixed bandwidth: 76.29119 CV score: 13442844676 \nFixed bandwidth: 76.29099 CV score: 13442844676 \nFixed bandwidth: 76.29131 CV score: 13442844676 \nFixed bandwidth: 76.29138 CV score: 13442844676 \nFixed bandwidth: 76.29126 CV score: 13442844676 \nFixed bandwidth: 76.29123 CV score: 13442844676 \n\nbw_CV\n\n[1] 76.29126\n\n\n\n\n\n\n\nbw_AIC &lt;- bw.gwr(GDPPC ~ 1, \n             data = hunan_sp,\n             approach =\"AIC\",\n             adaptive = FALSE, \n             kernel = \"bisquare\", \n             longlat = T)\n\nFixed bandwidth: 357.4897 AICc value: 1927.631 \nFixed bandwidth: 220.985 AICc value: 1921.547 \nFixed bandwidth: 136.6204 AICc value: 1919.993 \nFixed bandwidth: 84.48025 AICc value: 1940.603 \nFixed bandwidth: 168.8448 AICc value: 1919.457 \nFixed bandwidth: 188.7606 AICc value: 1920.007 \nFixed bandwidth: 156.5362 AICc value: 1919.41 \nFixed bandwidth: 148.929 AICc value: 1919.527 \nFixed bandwidth: 161.2377 AICc value: 1919.392 \nFixed bandwidth: 164.1433 AICc value: 1919.403 \nFixed bandwidth: 159.4419 AICc value: 1919.393 \nFixed bandwidth: 162.3475 AICc value: 1919.394 \nFixed bandwidth: 160.5517 AICc value: 1919.391 \n\nbw_AIC\n\n[1] 160.5517"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#geographically-weighted-summary-statistics-with-fixed-1",
+    "href": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#geographically-weighted-summary-statistics-with-fixed-1",
+    "title": "In-class Exercise 5: Geographically Weighted Statistics - gwModel methods",
+    "section": "Geographically Weighted Summary Statistics with fixed",
+    "text": "Geographically Weighted Summary Statistics with fixed\nComputing adaptive bandwidth\n\n\ngwstat &lt;- gwss(data = hunan_sp,\n               vars = \"GDPPC\",\n               bw = bw_AIC,\n               kernel = \"bisquare\",\n               adaptive = FALSE,\n               longlat = T)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#geographically-weighted-summary-statistics-with-fixed-bandwidth",
+    "href": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#geographically-weighted-summary-statistics-with-fixed-bandwidth",
+    "title": "In-class Exercise 5: Geographically Weighted Statistics - gwModel methods",
+    "section": "Geographically Weighted Summary Statistics with fixed bandwidth",
+    "text": "Geographically Weighted Summary Statistics with fixed bandwidth\nPreparing the output data\nCode chunk below is used to extract SDF data table from gwss object output from gwss(). It will be converted into data.frame by using as.data.frame().\n\n\ngwstat_df &lt;- as.data.frame(gwstat$SDF)\n\n\nNext, cbind() is used to append the newly derived data.frame onto hunan_sf sf data.frame.\n\n\nhunan_gstat &lt;- cbind(hunan_sf, gwstat_df)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#geographically-weighted-summary-statistics-with-fixed-2",
+    "href": "In-class_Ex/In-class_Ex05/In-class_Ex05.html#geographically-weighted-summary-statistics-with-fixed-2",
+    "title": "In-class Exercise 5: Geographically Weighted Statistics - gwModel methods",
+    "section": "Geographically Weighted Summary Statistics with fixed",
+    "text": "Geographically Weighted Summary Statistics with fixed\nVisualising geographically weighted summary statistics\n\nThe Geographically Weighted MeanThe code\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntm_shape(hunan_gstat) +\n  tm_fill(\"GDPPC_LM\",\n          n = 5,\n          style = \"quantile\") +\n  tm_borders(alpha = 0.5) +\n  tm_layout(main.title = \"Distribution of geographically wieghted mean\",\n            main.title.position = \"center\",\n            main.title.size = 2.0,\n            legend.text.size = 1.2,\n            legend.height = 1.50, \n            legend.width = 1.50,\n            frame = TRUE)"
   }
 ]
