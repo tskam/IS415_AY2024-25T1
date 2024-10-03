@@ -331,23 +331,23 @@
   {
     "objectID": "outline/Lesson12_outline.html",
     "href": "outline/Lesson12_outline.html",
-    "title": "Lesson 11: Spatial Interaction Models",
+    "title": "Lesson 12: Geographically Weighted Predictive Modelling",
     "section": "",
-    "text": "In this lesson, you will learn the basic concepts and methods of Spatial Interaction Models."
+    "text": "What is Predictive Modelling?\nWhat is Geospatial Predictive Modelling\nIntroducing Recursive Partitioning\nAdvanced Recursive Partitioning: Random Forest\nIntroducing Geographically Weighted Random Forest"
   },
   {
     "objectID": "outline/Lesson12_outline.html#content",
     "href": "outline/Lesson12_outline.html#content",
-    "title": "Lesson 11: Spatial Interaction Models",
-    "section": "Content",
-    "text": "Content\n\nBasic Concepts of Spatial Interaction Models\n\nA Family of Gravity Models\n\nUnconstrained\nOrigin constrained\nDestination constrained\nDoubly constrained\n\nStatistical Approach\nInterpreting and Visualising Modelling Results\n\nSpatial Econometric Interaction Models\n\nThe general formula\n\nWhat is Econometrics?\nWhat is Spatial Econometrics?\n\nSpatial Econometric Interaction Model Specifications"
+    "title": "Lesson 12: Geographically Weighted Predictive Modelling",
+    "section": "",
+    "text": "What is Predictive Modelling?\nWhat is Geospatial Predictive Modelling\nIntroducing Recursive Partitioning\nAdvanced Recursive Partitioning: Random Forest\nIntroducing Geographically Weighted Random Forest"
   },
   {
     "objectID": "outline/Lesson12_outline.html#lesson-slides-and-hands-on-notes",
     "href": "outline/Lesson12_outline.html#lesson-slides-and-hands-on-notes",
-    "title": "Lesson 11: Spatial Interaction Models",
+    "title": "Lesson 12: Geographically Weighted Predictive Modelling",
     "section": "Lesson Slides and Hands-on Notes",
-    "text": "Lesson Slides and Hands-on Notes\n\nLesson slides in html format.\nHands-on Exercise 11a: Processing and Visualising Flow Data.\nHands-on Exercise 11b: Calibrating Spatial Interaction Models with R."
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson 9 slides.\nHandout of Hands-on Exercise 9.\n\n\nSelf-reading Before Meet-up\nTo read before class:\n\nStefanos Georganos et. al. (2019) “Geographical Random Forests: A Spatial Extension of the Random Forest Algorithm to Address Spatial Heterogeneity in Remote Sensing and Population Modelling”, Geocarto International, DOI: 10.1080/10106049.2019.1595177.\nGeorganos, S. and Kalogirou, S. (2022) “A Forest of Forests: A Spatially Weighted and Computationally Efficient Formulation of Geographical Random Forests”. ISPRS, International Journal of Geo-Information, 2022, 11, 471. https://www.mdpi.com/2220-9964/11/9/471\n\n\n\nReferences\n\nGeorge Grekousis et. al. (2022) “Ranking the importance of demographic, socioeconomic, and underlying health factors on US COVID-19 deaths: A geographical random forest approach”, Health and Place, vol. 74, pp. 1-12.\nYaowen Luo, Jianguo Yan & Stephen McClure. (2020) “Distribution of the environmental and socioeconomic risk factors on COVID-19 death rate across continental USA: a spatial nonlinear analysis”, Environmental Science and Pollution Research, 28:6587–6599.\nEun-Hee Koh, Eunhee Lee, & Kang-Kun Lee (2020) “Application of geographically weighted regression models to predict spatial characteristics of nitrate contamination: Implications for an effective groundwater management strategy”, Journal of Environmental Management. Vol. 268\n\n\n\nAll About R\n\nSpatialML"
   },
   {
     "objectID": "outline/Lesson12_outline.html#self-reading-before-meet-up",
@@ -373,42 +373,42 @@
   {
     "objectID": "outline/Lesson10_outline.html",
     "href": "outline/Lesson10_outline.html",
-    "title": "Lesson 9: Geographically Weighted Predictive Modelling",
+    "title": "Lesson 10: Regression Modelling of Geographically Reference Data",
     "section": "",
-    "text": "What is Predictive Modelling?\nWhat is Geospatial Predictive Modelling\nIntroducing Recursive Partitioning\nAdvanced Recursive Partitioning: Random Forest\nIntroducing Geographically Weighted Random Forest"
+    "text": "In this lesson, you will learn the basic concepts and methods of geographically weighted regression."
   },
   {
     "objectID": "outline/Lesson10_outline.html#content",
     "href": "outline/Lesson10_outline.html#content",
-    "title": "Lesson 9: Geographically Weighted Predictive Modelling",
-    "section": "",
-    "text": "What is Predictive Modelling?\nWhat is Geospatial Predictive Modelling\nIntroducing Recursive Partitioning\nAdvanced Recursive Partitioning: Random Forest\nIntroducing Geographically Weighted Random Forest"
+    "title": "Lesson 10: Regression Modelling of Geographically Reference Data",
+    "section": "Content",
+    "text": "Content\n\nBasic concepts and principles of linear regression\n\nSimple linear regression\nMultiple linear regression\n\nRegression Diagnostics\n\nLinearity: The relationship between X and the mean of Y is linear.\nHomoscedasticity: The variance of residual is the same for any value of X.\nIndependence: Observations are independent of each other.\nNormality: For any fixed value of X, Y is normally distributed.\n\nThe spatial stationarity assumption of multiple"
   },
   {
     "objectID": "outline/Lesson10_outline.html#lesson-slides-and-hands-on-notes",
     "href": "outline/Lesson10_outline.html#lesson-slides-and-hands-on-notes",
-    "title": "Lesson 9: Geographically Weighted Predictive Modelling",
+    "title": "Lesson 10: Regression Modelling of Geographically Reference Data",
     "section": "Lesson Slides and Hands-on Notes",
-    "text": "Lesson Slides and Hands-on Notes\n\nLesson 9 slides.\nHandout of Hands-on Exercise 9.\n\n\nSelf-reading Before Meet-up\nTo read before class:\n\nStefanos Georganos et. al. (2019) “Geographical Random Forests: A Spatial Extension of the Random Forest Algorithm to Address Spatial Heterogeneity in Remote Sensing and Population Modelling”, Geocarto International, DOI: 10.1080/10106049.2019.1595177.\nGeorganos, S. and Kalogirou, S. (2022) “A Forest of Forests: A Spatially Weighted and Computationally Efficient Formulation of Geographical Random Forests”. ISPRS, International Journal of Geo-Information, 2022, 11, 471. https://www.mdpi.com/2220-9964/11/9/471\n\n\n\nReferences\n\nGeorge Grekousis et. al. (2022) “Ranking the importance of demographic, socioeconomic, and underlying health factors on US COVID-19 deaths: A geographical random forest approach”, Health and Place, vol. 74, pp. 1-12.\nYaowen Luo, Jianguo Yan & Stephen McClure. (2020) “Distribution of the environmental and socioeconomic risk factors on COVID-19 death rate across continental USA: a spatial nonlinear analysis”, Environmental Science and Pollution Research, 28:6587–6599.\nEun-Hee Koh, Eunhee Lee, & Kang-Kun Lee (2020) “Application of geographically weighted regression models to predict spatial characteristics of nitrate contamination: Implications for an effective groundwater management strategy”, Journal of Environmental Management. Vol. 268\n\n\n\nAll About R\n\nSpatialML"
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson 8 slides.\nHands-on Exercise 8."
   },
   {
     "objectID": "outline/Lesson08_outline.html#content",
     "href": "outline/Lesson08_outline.html#content",
-    "title": "Lesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis",
+    "title": "Lesson 8: Hierarchical Clustering of Multivariate Georeferenced Data",
     "section": "Content",
-    "text": "Content\n\nBasic concepts of geographic segmentation\nConventional cluster analysis techniques\nApproaches for clustering geographically referenced data\n\nHierarchical clustering with spatial constraints\nMinimum spanning trees\nClustGeo method"
+    "text": "Content\n\nBasic concepts of clustering analysis\nHierarchical clustering methods\n\nProximity matrices\nAgglomerative hierarchical clustering algorithms\n\nHierarchical clustering processes and best practices"
   },
   {
     "objectID": "outline/Lesson08_outline.html#lesson-slides",
     "href": "outline/Lesson08_outline.html#lesson-slides",
-    "title": "Lesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis",
+    "title": "Lesson 8: Hierarchical Clustering of Multivariate Georeferenced Data",
     "section": "Lesson slides",
     "text": "Lesson slides\n\nLesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis slides."
   },
   {
     "objectID": "outline/Lesson08_outline.html#hands-on-exercise",
     "href": "outline/Lesson08_outline.html#hands-on-exercise",
-    "title": "Lesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis",
+    "title": "Lesson 8: Hierarchical Clustering of Multivariate Georeferenced Data",
     "section": "Hands-on Exercise",
     "text": "Hands-on Exercise\n\n12 Geographical Segmentation with Spatially Constrained Clustering Techniques\n\n\nSelf-reading Before Meet-up\nTo read before class:\n\nAssuncao, R. M., Neves, M.C., Camara, G. and Costa Freitas, C.D. 2006. “Efficient Regionalization Techniques for Socio-Economic Geographical Units Using Minimum Spanning Trees”. International Journal of Geographical Information Science 20: 797-811. (Available in SMU digital library)\nChavent, M., Kuentz-Simonet, V., Labenne,A. and Saracco, J. 2018. “ClustGeo: an R package for hierarchical clustering with spatial constraints” Computational Statistics, 33: 1799-1822. (Available in SMU digital library)\n\n\n\nReferences\n\nRovan, J. and Sambt, J. (2003) “Socio-economic Differences Among Slovenian Municipalities: A Cluster Analysis Approach”, Developments in Applied Statistics, pp. 265-278.\n\nDemeter, T. and Bratucu, G. (2013) “Statistical Analysis Of The EU Countries from A Touristic Point of View”, Bulletin of the Transilvania University of Braşov, 6(55): 121-130.\nBrown, N.S. & Watson, P. (2012) “What can a comprehensive plan really tell us about a region?: A cluster analysis of county comprehensive plans in Idaho”, Western Economics Forum. Pp.22-37.\nJaya, I.G.M., Ruchjana, B.N., Andriyana, Y. & Agata, R (2019) “Clustering with spatial constraints: The case of diarrhea in Bandung city, Indonesia”\nDistefano, V., Mameli, V., & Poli, I. (2020) “Identifying spatial patterns with the Bootstrap ClustGeo technique”, Spatial statistics, Vol.38. (Available in SMU digital library)\nde Souza, D. C. & Taconeli, C. A. (2022) “Spatial and non-spatial clustering algorithm in the analysis of Brazilian educational data”, Communications in Statistics: Case Studies, Data Analysis, and Applications. Vol. 8, No. 4, 588-606. (Available in SMU digital library)\n\n\n\nAll About R\n\nHierarchical Cluster Analysis.\nskater: A function from spdep package that implements a SKATER procedure for spatial clustering analysis.\nClustGeo: Hierarchical Clustering with Spatial Constraints\n\nIntroduction to Clustgeo"
   },
@@ -1173,7 +1173,7 @@
     "href": "lesson.html",
     "title": "Weekly Lesson Plan",
     "section": "",
-    "text": "Week\nDate\nTopic\nRemark\n\n\n\n\n1\n19/8/2024\nLesson 1: Introduction to Geospatial Analytics\n\n\n\n2\n26/8/2024\nLesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods\n\n\n\n3\n2/9/2024\nLesson 3: Spatial Point Patterns Analysis\n\n\n\n4\n9/9/2024\nLesson 4: Spatio-Temporal Point Patterns Analysis\n\n\n\n5\n16/9/2024\nLesson 5: Spatial Weights and Applications\n\n\n\n6\n23/9/2024\nLesson 6: Measures of Global and Local Spatial Association\n\n\n\n7\n30/9/2024\nLesson 7: Shiny for Building Web-enabled Geospatial Analytics Application\n\n\n\n8\n7/10/2024\nRecess week\n\n\n\n9\n14/10/2024\nLesson 8: Geographic Segmentation\n\n\n\n10\n21/10/2024\nLesson 9: Geographically Weighted Regression\n\n\n\n11\n28/10/2024\nLesson 10: Geographically Weighted Predictive Modelling\n\n\n\n12\n4/11/2024\nLesson 11: Modelling Geographic of Accessibility\n\n\n\n13\n11/11/2024\nLesson 12: Spatial Interaction Models\n\n\n\n14\n18/11/2024\nTownhall Presentation\n\n\n\n15"
+    "text": "Week\nDate\nTopic\nRemark\n\n\n\n\n1\n19/8/2024\nLesson 1: Introduction to Geospatial Analytics\n\n\n\n2\n26/8/2024\nLesson 2: Fundamental of Geospatial Data Visualisation and tmap Methods\n\n\n\n3\n2/9/2024\nLesson 3: Spatial Point Patterns Analysis\n\n\n\n4\n9/9/2024\nLesson 4: Spatio-Temporal Point Patterns Analysis\n\n\n\n5\n16/9/2024\nLesson 5: Spatial Weights and Applications\n\n\n\n6\n23/9/2024\nLesson 6: Measures of Global and Local Spatial Association\n\n\n\n7\n30/9/2024\nLesson 7: Shiny for Building Web-enabled Geospatial Analytics Application\n\n\n\n8\n7/10/2024\nRecess week\n\n\n\n9\n14/10/2024\nLesson 8: Hierarchical Clustering of Multivariate Geographically Referenced Data\n\n\n\n10\n21/10/2024\nLesson 9: Spatially Constrained Clustering Analysis\n\n\n\n11\n28/10/2024\nLesson 10: Regression Modelling of Geographically Reference Data\n\n\n\n12\n4/11/2024\nLesson 11: Geographically Weighted Regression\n\n\n\n13\n11/11/2024\nLesson 12: Geographically Weighted Predictive Modelling\n\n\n\n14\n18/11/2024\nTownhall Presentation\n\n\n\n15"
   },
   {
     "objectID": "outline/Lesson02_outline.html",
@@ -1339,9 +1339,9 @@
   {
     "objectID": "outline/Lesson09_outline.html#content",
     "href": "outline/Lesson09_outline.html#content",
-    "title": "Lesson 8: Geographically Weighted Regression",
+    "title": "Lesson 8: Spatially Constrained Cluster Analysis",
     "section": "Content",
-    "text": "Content\n\nBasic concepts and principles of linear regression\n\nSimple linear regression\nMultiple linear regression\n\nThe spatial stationarity assumption of multiple linear regression.\nIntroducing Geographically Weighted Regression\n\nWeighting functions (kernel)\nWeighting schemes\nBandwidth\nInterpreting and Visualising"
+    "text": "Content\n\nBasic concepts of spatially constrained cluster analysis\nApproaches for clustering geographically referenced data\n\nMinimum spanning trees\nClustGeo method"
   },
   {
     "objectID": "outline/Lesson09_outline.html#lesson-slides-and-hands-on-notes",
@@ -1374,30 +1374,30 @@
   {
     "objectID": "outline/Lesson11_outline.html",
     "href": "outline/Lesson11_outline.html",
-    "title": "Lesson 10: Modelling Geographic of Accessibility",
+    "title": "Lesson 11: Geographically Weighted Regression",
     "section": "",
-    "text": "Basic Concepts of Geographic Accessibility\nGravitational Law and Distance Decay Function\nIntroducing Potential Models\n\nThe classic model\n\nHansen Potential Accessibility Model\nTwo-step Floating Catchment Area (2SFCA) Method\nKernel Density Two-Step Floating Catchment Area (KD2SFCA) Method\nInterpreting and Visualising Modelling Results"
+    "text": "In this lesson, you will learn the basic concepts and methods of geographically weighted regression."
   },
   {
     "objectID": "outline/Lesson11_outline.html#content",
     "href": "outline/Lesson11_outline.html#content",
-    "title": "Lesson 10: Modelling Geographic of Accessibility",
-    "section": "",
-    "text": "Basic Concepts of Geographic Accessibility\nGravitational Law and Distance Decay Function\nIntroducing Potential Models\n\nThe classic model\n\nHansen Potential Accessibility Model\nTwo-step Floating Catchment Area (2SFCA) Method\nKernel Density Two-Step Floating Catchment Area (KD2SFCA) Method\nInterpreting and Visualising Modelling Results"
+    "title": "Lesson 11: Geographically Weighted Regression",
+    "section": "Content",
+    "text": "Content\n\nIntroducing Geographically Weighted Regression\n\nWeighting functions (kernel)\nWeighting schemes\nBandwidth\nInterpreting and Visualising"
   },
   {
     "objectID": "outline/Lesson11_outline.html#lesson-slides-and-hands-on-notes",
     "href": "outline/Lesson11_outline.html#lesson-slides-and-hands-on-notes",
-    "title": "Lesson 10: Modelling Geographic of Accessibility",
+    "title": "Lesson 11: Geographically Weighted Regression",
     "section": "Lesson Slides and Hands-on Notes",
-    "text": "Lesson Slides and Hands-on Notes\n\nLesson 10 slides.\nHands-on Exercise 10 handout."
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson 8 slides.\nHands-on Exercise 8."
   },
   {
     "objectID": "outline/Lesson11_outline.html#self-reading-before-meet-up",
     "href": "outline/Lesson11_outline.html#self-reading-before-meet-up",
-    "title": "Lesson 10: Modelling Geographic of Accessibility",
+    "title": "Lesson 11: Geographically Weighted Regression",
     "section": "Self-reading Before Meet-up",
-    "text": "Self-reading Before Meet-up\nRead before lesson:\n\nLong, J. (2017). Modelling Accessibility. The Geographic Information Science & Technology Body of Knowledge (3rd Quarter 2017 Edition), John P. Wilson (ed.).\nHansen, W. G. (1959): “How Accessibility Shapes Land Use”. Journal of the American Institute of Planners, 25, 2, p. 73-76.\nLuo, W.; Wang, F. (2003) “Measures of spatial accessibility to health care in a GIS environment: synthesis and a case study in the Chicago region”. Environment and Planning B: Planning and Design. 30 (6): 865–884. doi:10.1068/b29120.\nLuo, W.; Qi, Y. (2009). “An enhanced two-step floating catchment area (E2SFCA) method for measuring spatial accessibility to primary care physicians”. Health & Place. 15 (4): 1100–1107."
+    "text": "Self-reading Before Meet-up\nTo read before class:\n\nBrunsdon, C., Fotheringham, A.S., and Charlton, M. (2002) “Geographically weighted regression: A method for exploring spatial nonstationarity”. Geographical Analysis, 28: 281-289.\nBrunsdon, C., Fotheringham, A.S. and Charlton, M., (1999) “Some Notes on Parametric Significance Tests for Geographically Weighted Regression”. Journal of Regional Science, 39(3), 497-524."
   },
   {
     "objectID": "outline/Lesson11_outline.html#reference",
@@ -1409,9 +1409,9 @@
   {
     "objectID": "outline/Lesson11_outline.html#all-about-r",
     "href": "outline/Lesson11_outline.html#all-about-r",
-    "title": "Lesson 10: Modelling Geographic of Accessibility",
-    "section": "All About R:",
-    "text": "All About R:\n\naccessibility\nSpatialAcc package.\nPotential package."
+    "title": "Lesson 11: Geographically Weighted Regression",
+    "section": "All About R",
+    "text": "All About R\n\nGWmodel package, especially\n\nGollini, I et. al. (2015) “GWmodel: An R Package for Exploring Spatial Heterogeneity Using Geographically Weighted Models”, Journal of Statistical Software, Volume 63, Issue 17 and\nBinbin Lu, Paul Harris, Martin Charlton & Chris Brunsdon (2014) “The GWmodel R package: further topics for exploring spatial heterogeneity using geographically weighted models”, Geo-spatial Information Science, 17:2, 85-101, DOI: 10.1080/10095020.2014.917453.\n\nlctools package especially gw() and gwr() related functions.\nspgwr implements of geographically weighted regression methods for exploring possible non-stationarity.\ngwrr: its geographically weighted regression (GWR) models and has tools to diagnose and remediate collinearity in the GWR models. Also fits geographically weighted ridge regression (GWRR) and geographically weighted lasso (GWL) models."
   },
   {
     "objectID": "Quarto.html",
@@ -2630,5 +2630,47 @@
     "title": "In-class Exercise 6: Global and Local Measures of Spatial Autocorrelation: sfdep methods",
     "section": "Hot Spot and Cold Spot Area Analysis (HCSA)",
     "text": "Hot Spot and Cold Spot Area Analysis (HCSA)\n\n\nHCSA uses spatial weights to identify locations of statistically significant hot spots and cold spots in an spatially weighted attribute that are in proximity to one another based on a calculated distance. The analysis groups features when similar high (hot) or low (cold) values are found in a cluster. The polygon features usually represent administration boundaries or a custom grid structure."
+  },
+  {
+    "objectID": "outline/Lesson11_outline.html#references",
+    "href": "outline/Lesson11_outline.html#references",
+    "title": "Lesson 11: Geographically Weighted Regression",
+    "section": "References",
+    "text": "References\n\nMennis, Jeremy (2006) “Mapping the Results of Geographically Weighted Regression”, The Cartographic Journal, Vol.43 (2), p.171-179.\nStephen A. Matthews ; Tse-Chuan Yang (2012) “Mapping the results of local statistics: Using geographically weighted regression”, Demographic Research, Vol.26, p.151-166."
+  },
+  {
+    "objectID": "outline/Lesson10_outline.html#self-reading-before-meet-up",
+    "href": "outline/Lesson10_outline.html#self-reading-before-meet-up",
+    "title": "Lesson 10: Regression Modelling of Geographically Reference Data",
+    "section": "Self-reading Before Meet-up",
+    "text": "Self-reading Before Meet-up\nTo read before class:\n\nBrunsdon, C., Fotheringham, A.S., and Charlton, M. (2002) “Geographically weighted regression: A method for exploring spatial nonstationarity”. Geographical Analysis, 28: 281-289.\nBrunsdon, C., Fotheringham, A.S. and Charlton, M., (1999) “Some Notes on Parametric Significance Tests for Geographically Weighted Regression”. Journal of Regional Science, 39(3), 497-524."
+  },
+  {
+    "objectID": "outline/Lesson10_outline.html#references",
+    "href": "outline/Lesson10_outline.html#references",
+    "title": "Lesson 10: Regression Modelling of Geographically Reference Data",
+    "section": "References",
+    "text": "References\n\nMennis, Jeremy (2006) “Mapping the Results of Geographically Weighted Regression”, The Cartographic Journal, Vol.43 (2), p.171-179.\nStephen A. Matthews ; Tse-Chuan Yang (2012) “Mapping the results of local statistics: Using geographically weighted regression”, Demographic Research, Vol.26, p.151-166."
+  },
+  {
+    "objectID": "outline/Lesson10_outline.html#all-about-r",
+    "href": "outline/Lesson10_outline.html#all-about-r",
+    "title": "Lesson 10: Regression Modelling of Geographically Reference Data",
+    "section": "All About R",
+    "text": "All About R\n\nGWmodel package, especially\n\nGollini, I et. al. (2015) “GWmodel: An R Package for Exploring Spatial Heterogeneity Using Geographically Weighted Models”, Journal of Statistical Software, Volume 63, Issue 17 and\nBinbin Lu, Paul Harris, Martin Charlton & Chris Brunsdon (2014) “The GWmodel R package: further topics for exploring spatial heterogeneity using geographically weighted models”, Geo-spatial Information Science, 17:2, 85-101, DOI: 10.1080/10095020.2014.917453.\n\nlctools package especially gw() and gwr() related functions.\nspgwr implements of geographically weighted regression methods for exploring possible non-stationarity.\ngwrr: its geographically weighted regression (GWR) models and has tools to diagnose and remediate collinearity in the GWR models. Also fits geographically weighted ridge regression (GWRR) and geographically weighted lasso (GWL) models."
+  },
+  {
+    "objectID": "outline/Lesson09_outline.html#lesson-slides",
+    "href": "outline/Lesson09_outline.html#lesson-slides",
+    "title": "Lesson 8: Spatially Constrained Cluster Analysis",
+    "section": "Lesson slides",
+    "text": "Lesson slides\n\nLesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis slides."
+  },
+  {
+    "objectID": "outline/Lesson09_outline.html#hands-on-exercise",
+    "href": "outline/Lesson09_outline.html#hands-on-exercise",
+    "title": "Lesson 8: Spatially Constrained Cluster Analysis",
+    "section": "Hands-on Exercise",
+    "text": "Hands-on Exercise\n\n12 Geographical Segmentation with Spatially Constrained Clustering Techniques\n\n\nSelf-reading Before Meet-up\nTo read before class:\n\nAssuncao, R. M., Neves, M.C., Camara, G. and Costa Freitas, C.D. 2006. “Efficient Regionalization Techniques for Socio-Economic Geographical Units Using Minimum Spanning Trees”. International Journal of Geographical Information Science 20: 797-811. (Available in SMU digital library)\nChavent, M., Kuentz-Simonet, V., Labenne,A. and Saracco, J. 2018. “ClustGeo: an R package for hierarchical clustering with spatial constraints” Computational Statistics, 33: 1799-1822. (Available in SMU digital library)\n\n\n\nReferences\n\nRovan, J. and Sambt, J. (2003) “Socio-economic Differences Among Slovenian Municipalities: A Cluster Analysis Approach”, Developments in Applied Statistics, pp. 265-278.\n\nDemeter, T. and Bratucu, G. (2013) “Statistical Analysis Of The EU Countries from A Touristic Point of View”, Bulletin of the Transilvania University of Braşov, 6(55): 121-130.\nBrown, N.S. & Watson, P. (2012) “What can a comprehensive plan really tell us about a region?: A cluster analysis of county comprehensive plans in Idaho”, Western Economics Forum. Pp.22-37.\nJaya, I.G.M., Ruchjana, B.N., Andriyana, Y. & Agata, R (2019) “Clustering with spatial constraints: The case of diarrhea in Bandung city, Indonesia”\nDistefano, V., Mameli, V., & Poli, I. (2020) “Identifying spatial patterns with the Bootstrap ClustGeo technique”, Spatial statistics, Vol.38. (Available in SMU digital library)\nde Souza, D. C. & Taconeli, C. A. (2022) “Spatial and non-spatial clustering algorithm in the analysis of Brazilian educational data”, Communications in Statistics: Case Studies, Data Analysis, and Applications. Vol. 8, No. 4, 588-606. (Available in SMU digital library)\n\n\n\nAll About R\n\nHierarchical Cluster Analysis.\nskater: A function from spdep package that implements a SKATER procedure for spatial clustering analysis.\nClustGeo: Hierarchical Clustering with Spatial Constraints\n\nIntroduction to Clustgeo"
   }
 ]

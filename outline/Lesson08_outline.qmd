@@ -1,5 +1,5 @@
 ---
-title: "Lesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis"
+title: "Lesson 8: Hierarchical Clustering of Multivariate Georeferenced Data"
 date: "July 25, 2024"
 date-modified: "last-modified"
 format: html
@@ -10,12 +10,12 @@ toc: true
 
 ## Content
 
--   Basic concepts of geographic segmentation
--   Conventional cluster analysis techniques
--   Approaches for clustering geographically referenced data
-    -   Hierarchical clustering with spatial constraints
-    -   Minimum spanning trees
-    -   ClustGeo method
+-   Basic concepts of clustering analysis
+-   Hierarchical clustering methods
+    -   Proximity matrices
+    -   Agglomerative hierarchical clustering algorithms
+-   Hierarchical clustering processes and best practices
+
 
 ## Lesson slides
 
