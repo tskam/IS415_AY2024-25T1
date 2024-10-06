@@ -1,5 +1,5 @@
 ---
-title: "Lesson 8: Spatially Constrained Cluster Analysis"
+title: "Lesson 9: Spatially Constrained Cluster Analysis"
 date: "July 25, 2024"
 date-modified: "last-modified"
 format: html
@@ -17,11 +17,11 @@ toc: true
 
 ## Lesson slides
 
--   [Lesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis](..\lesson\Lesson07\Lesson07-SCCA.html) slides.
+-   [Lesson 9: Geographic Segmentation with Spatially Constrained Cluster Analysis](..\lesson\Lesson09\Lesson09.html) slides.
 
 ## Hands-on Exercise
 
--   [12 Geographical Segmentation with Spatially Constrained Clustering Techniques](https://r4gdsa.netlify.app/chap12.html)
+-   [12 Geographical Segmentation with Spatially Constrained Clustering Techniques](https://r4gdsa.netlify.app/chap12.html), section 12.8 onward.
 
 ### Self-reading Before Meet-up
 
