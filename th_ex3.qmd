@@ -1,0 +1,55 @@
+---
+title: "Take-home Exercise 3: Prototyping Modules for Geospatial Analytics Shiny Application"
+date: "6 Septermber, 2024"
+date-modified: "last-modified"
+format: html
+execute: 
+  freeze: true
+---
+
+::: callout-important
+## Prototyping is crucial
+
+Prototyping first may help keep you from investing far too much time for marginal gains.
+
+*The Art of UNIX Programming (Raymond 2003)*
+:::
+
+## The Task
+
+In this take-home exercise, you are required to select one of the module of your proposed Geospatial Analytics Shiny Application and complete the following tasks:
+
+-   To evaluate and determine the necessary R packages needed for your Shiny application are supported in R CRAN,
+-   To prepare and test the specific R codes can be run and returned the correct output as expected,
+-   To determine the parameters and outputs that will be exposed on the Shiny applications, and
+-   To select the appropriate Shiny UI components for exposing the parameters determine above.
+
+All teams must consult the [SimplyGeo](https://khantminnaing.shinyapps.io/simplyGEO/) page of [SimplyGeo](https://is415-gaa-project-group3.netlify.app/). Then, examine their respective Take-home Exercise 3 page: 
+
+-   [Take-Home Exercise 03: Prototyping Modules for Geospatial Analytics Shiny Application](https://is415-geospatial-with-khant.netlify.app/take-home_ex/take-home_ex03/take-home_ex03),
+-   [Take Home Exercise 3: Prototyping Modules for Geospatial Analytics Shiny Application](https://is415-gaa-fathima.netlify.app/take-home_ex/take-home_ex03/take-home_ex03)
+-   [Takehome-Ex 3: Exploratory Spatial Data Analysis for Potential Push & Pull Factors of Locations in Singapore using Public Bus Data](https://is415-gaa-vic.netlify.app/take-home_ex/take-home_ex03/take-home_ex03a)
+
+Each of them were prepared by one of the member of the project team. After that they combined them into the Prototype page of their project website.
+
+## Submission Instructions
+
+This is an individual assignment. You are required to work on the take-home exercises and prepare submission individually.
+
+The specific submission instructions are as follows:
+
+-   You are required to prepare the prototype module report as Take-home Exercise 3 submission. This mean, it has to be published on your own coursework page.
+-   You are required to include a section called UI design for the different components of the UIs for the proposed design.  For storyboarding the UI Design, please consult [Storyboard](https://giniceseah.netlify.app/posts/2021-07-31-storyboard/) link.
+
+-   The write-up of the take-home exercise must be in **Quarto html document** format. You are required to publish the write-up on [**Netlify**](https://www.netlify.com/).
+-   Zip the take-home exercise folder and upload it onto eLearn. If the size of the zip file is beyond the capacity of eLearn, you can upload it on SMU OneDrive and provide the download link on eLearn.
+
+## Submission date
+
+Your completed take-home exercise is due on **3rd November 2024, by 11:59pm evening**.
+
+::: callout-warning
+Students are strongly recommended to complete Take-home Exercise 3 ahead of the submission deadline. This will allow you to have more time to focus on the building of the Shiny application and to iterate the usability of the application.
+:::
+
+## Peer Learning

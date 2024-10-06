@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-08-30">
+<meta name="dcterms.date" content="2024-09-06">
 
-<title>Take-home Exercise 1: Geospatial Analytics for Social Good: Application of Spatial and Spatio-temporal Point Patterns Analysis to discover the geographical distribution of Armed Conflict in Myanmar – IS415 AY2024-25T1</title>
+<title>Take-home Exercise 3: Prototyping Modules for Geospatial Analytics Shiny Application – IS415 AY2024-25T1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -192,19 +192,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#setting-the-scene" id="toc-setting-the-scene" class="nav-link active" data-scroll-target="#setting-the-scene">Setting the Scene</a></li>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
-  <li><a href="#the-data" id="toc-the-data" class="nav-link" data-scroll-target="#the-data">The Data</a>
-  <ul class="collapse">
-  <li><a href="#armed-conflict-data" id="toc-armed-conflict-data" class="nav-link" data-scroll-target="#armed-conflict-data">Armed conflict data</a></li>
-  <li><a href="#gis-data" id="toc-gis-data" class="nav-link" data-scroll-target="#gis-data">GIS Data</a></li>
-  </ul></li>
-  <li><a href="#the-task" id="toc-the-task" class="nav-link" data-scroll-target="#the-task">The Task</a></li>
-  <li><a href="#grading-criteria" id="toc-grading-criteria" class="nav-link" data-scroll-target="#grading-criteria">Grading Criteria</a></li>
+  <li><a href="#the-task" id="toc-the-task" class="nav-link active" data-scroll-target="#the-task">The Task</a></li>
   <li><a href="#submission-instructions" id="toc-submission-instructions" class="nav-link" data-scroll-target="#submission-instructions">Submission Instructions</a></li>
-  <li><a href="#due-date" id="toc-due-date" class="nav-link" data-scroll-target="#due-date">Due Date</a></li>
-  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">Reference</a></li>
-  <li><a href="#learning-from-senior" id="toc-learning-from-senior" class="nav-link" data-scroll-target="#learning-from-senior">Learning from senior</a></li>
+  <li><a href="#submission-date" id="toc-submission-date" class="nav-link" data-scroll-target="#submission-date">Submission date</a></li>
+  <li><a href="#peer-learning" id="toc-peer-learning" class="nav-link" data-scroll-target="#peer-learning">Peer Learning</a></li>
   </ul>
 </nav>
     </div>
@@ -213,7 +204,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Take-home Exercise 1: Geospatial Analytics for Social Good: Application of Spatial and Spatio-temporal Point Patterns Analysis to discover the geographical distribution of Armed Conflict in Myanmar</h1>
+<h1 class="title">Take-home Exercise 3: Prototyping Modules for Geospatial Analytics Shiny Application</h1>
 </div>
 
 
@@ -224,14 +215,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 30, 2024</p>
+      <p class="date">September 6, 2024</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">September 3, 2024</p>
+      <p class="date-modified">October 6, 2024</p>
     </div>
   </div>
     
@@ -242,50 +233,51 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="setting-the-scene" class="level2">
-<h2 class="anchored" data-anchor-id="setting-the-scene">Setting the Scene</h2>
-<p>Millions of people have their lives shattered by armed conflict – wars – every year.</p>
-<p>Armed conflict has been on the rise since about 2012, after a decline in the 1990s and early 2000s. First came conflicts in Libya, Syria and Yemen, triggered by the 2011 Arab uprisings. Libya’s instability spilled south, helping set off a protracted crisis in the Sahel region. A fresh wave of major combat followed: the 2020 Azerbaijani-Armenian war over the Nagorno-Karabakh enclave, horrific fighting in Ethiopia’s northern Tigray region that began weeks later, the conflict prompted by the Myanmar army’s 2021 power grab and Russia’s 2022 assault on Ukraine. Add to those 2023’s devastation in Sudan and Gaza. Around the globe, more people are dying in fighting, being forced from their homes or in need of life-saving aid than in decades.</p>
-<p>Source: <a href="https://www.crisisgroup.org/global/10-conflicts-watch-2024">10 Conflicts to Watch in 2024</a></p>
-</section>
-<section id="objectives" class="level2">
-<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
-<p>Geospatial analytics hold tremendous potential to address complex problems facing society. In this study, you are tasked to apply spatial point patterns analysis methods to discover the spatial and spatio-temporal distribution of armed conflict in Myanmar.</p>
-</section>
-<section id="the-data" class="level2">
-<h2 class="anchored" data-anchor-id="the-data">The Data</h2>
-<section id="armed-conflict-data" class="level3">
-<h3 class="anchored" data-anchor-id="armed-conflict-data">Armed conflict data</h3>
-<p>For the purpose of this assignment, armed conflict data of Myanmar between 2021-2024 from <a href="https://acleddata.com/">Armed Conflict Location &amp; Event Data (ACLED)</a>, an independent, impartial, international non-profit organization collecting data on violent conflict and protest in all countries and territories in the world, should be used.</p>
-<p>In terms of event types, students should focus on at least four main event types, namely: Battles, Explosion/Remote violence, Strategic developments, and Violence against civilians.</p>
-<p>In terms of study period, students should focus on quarterly armed conflict events from January 2021 until June 2024.</p>
-</section>
-<section id="gis-data" class="level3">
-<h3 class="anchored" data-anchor-id="gis-data">GIS Data</h3>
-<ul>
-<li><a href="http://geonode.themimu.info/layers/?limit=100&amp;offset=0">Geospatial data</a> on <a href="http://www.themimu.info/">Myanmar Information Management Unit, MIMU</a></li>
-</ul>
-</section>
-</section>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Prototyping is crucial
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Prototyping first may help keep you from investing far too much time for marginal gains.</p>
+<p><em>The Art of UNIX Programming (Raymond 2003)</em></p>
+</div>
+</div>
 <section id="the-task" class="level2">
 <h2 class="anchored" data-anchor-id="the-task">The Task</h2>
-<p>The specific tasks of this take-home exercise are as follows:</p>
+<p>In this take-home exercise, you are required to select one of the module of your proposed Geospatial Analytics Shiny Application and complete the following tasks:</p>
 <ul>
-<li>Using appropriate function of <strong>sf</strong> and <strong>tidyverse</strong> packages, import and transform the downloaded armed conflict data and administrative boundary data into sf tibble data.frames.</li>
-<li>Using the geospatial data sets prepared, derive quarterly KDE layers.</li>
-<li>Using the geospatial data sets prepared, perform 2nd-Order Spatial Point Patterns Analysis.</li>
-<li>Using the geospatial data sets prepared, derive quarterly spatio-temporal KDE layers.</li>
-<li>Using the geospatial data sets prepared, perform 2nd-Order Spatio-temporal Point Patterns Analysis.</li>
-<li>Using appropriate <strong>tmap</strong> functions, display the KDE and Spatio-temporal KDE layers on openstreetmap of Myanmar.</li>
-<li>Describe the spatial patterns revealed by the KDE and Spatio-temporal KDE maps.</li>
+<li>To evaluate and determine the necessary R packages needed for your Shiny application are supported in R CRAN,</li>
+<li>To prepare and test the specific R codes can be run and returned the correct output as expected,</li>
+<li>To determine the parameters and outputs that will be exposed on the Shiny applications, and</li>
+<li>To select the appropriate Shiny UI components for exposing the parameters determine above.</li>
+</ul>
+<p>All teams must consult the <a href="https://khantminnaing.shinyapps.io/simplyGEO/">SimplyGeo</a> page of <a href="https://is415-gaa-project-group3.netlify.app/">SimplyGeo</a>. Then, examine their respective Take-home Exercise 3 page:</p>
+<ul>
+<li><a href="https://is415-geospatial-with-khant.netlify.app/take-home_ex/take-home_ex03/take-home_ex03">Take-Home Exercise 03: Prototyping Modules for Geospatial Analytics Shiny Application</a>,</li>
+<li><a href="https://is415-gaa-fathima.netlify.app/take-home_ex/take-home_ex03/take-home_ex03">Take Home Exercise 3: Prototyping Modules for Geospatial Analytics Shiny Application</a></li>
+<li><a href="https://is415-gaa-vic.netlify.app/take-home_ex/take-home_ex03/take-home_ex03a">Takehome-Ex 3: Exploratory Spatial Data Analysis for Potential Push &amp; Pull Factors of Locations in Singapore using Public Bus Data</a></li>
+</ul>
+<p>Each of them were prepared by one of the member of the project team. After that they combined them into the Prototype page of their project website.</p>
+</section>
+<section id="submission-instructions" class="level2">
+<h2 class="anchored" data-anchor-id="submission-instructions">Submission Instructions</h2>
+<p>This is an individual assignment. You are required to work on the take-home exercises and prepare submission individually.</p>
+<p>The specific submission instructions are as follows:</p>
+<ul>
+<li><p>You are required to prepare the prototype module report as Take-home Exercise 3 submission. This mean, it has to be published on your own coursework page.</p></li>
+<li><p>You are required to include a section called UI design for the different components of the UIs for the proposed design. For storyboarding the UI Design, please consult <a href="https://giniceseah.netlify.app/posts/2021-07-31-storyboard/">Storyboard</a> link.</p></li>
+<li><p>The write-up of the take-home exercise must be in <strong>Quarto html document</strong> format. You are required to publish the write-up on <a href="https://www.netlify.com/"><strong>Netlify</strong></a>.</p></li>
+<li><p>Zip the take-home exercise folder and upload it onto eLearn. If the size of the zip file is beyond the capacity of eLearn, you can upload it on SMU OneDrive and provide the download link on eLearn.</p></li>
 </ul>
 </section>
-<section id="grading-criteria" class="level2">
-<h2 class="anchored" data-anchor-id="grading-criteria">Grading Criteria</h2>
-<p>This exercise will be graded by using the following criteria:</p>
-<ul>
-<li><strong>Geospatial Data Wrangling (20 marks):</strong> This is an important aspect of geospatial analytics. You will be assessed on your ability to employ appropriate R functions from various R packages specifically designed for modern data science such as readxl, tidyverse (tidyr, dplyr, ggplot2), sf just to mention a few of them, to perform the entire geospatial data wrangling processes, including. This is not limited to data import, data extraction, data cleaning and data transformation. Besides assessing your ability to use the R functions, this criterion also includes your ability to clean and derive appropriate variables to meet the analysis need.</li>
-</ul>
+<section id="submission-date" class="level2">
+<h2 class="anchored" data-anchor-id="submission-date">Submission date</h2>
+<p>Your completed take-home exercise is due on <strong>3rd November 2024, by 11:59pm evening</strong>.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -296,44 +288,12 @@ Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>All data are like vast grassland full of land mines. Your job is to clear those mines and not to step on them).</p>
+<p>Students are strongly recommended to complete Take-home Exercise 3 ahead of the submission deadline. This will allow you to have more time to focus on the building of the Shiny application and to iterate the usability of the application.</p>
 </div>
 </div>
-<ul>
-<li><p><strong>Geospatial Analysis (30 marks):</strong> In this exercise, you are expected to use the appropriate spatial point patterns analysis methods and R packages introduced in class to analysis the geospatial data prepared. You will be assessed on your ability to derive analytical products by using appropriate kernel estimation techniques.</p></li>
-<li><p><strong>Geovisualisation and geocommunication (20 marks):</strong> In this section, you will be assessed on your ability to communicate Exploratory Spatial Data Analysis and Confirmatory Spatial Data Analysis results in layman friendly visual representations. This course is geospatial centric, hence, it is important for you to demonstrate your competency in using appropriate geovisualisation techniques to reveal and communicate the findings of your analysis.</p></li>
-<li><p><strong>Reproducibility (15 marks):</strong> This is an important learning outcome of this exercise. You will be assessed on your ability to provide a comprehensive documentation of the analysis procedures in the form of code chunks of Quarto. It is important to note that it is not enough by merely providing the code chunk without any explanation on the purpose and R function(s) used.</p></li>
-<li><p><strong>Bonus (15 marks):</strong> Demonstrate your ability to employ methods beyond what you had learned in class to gain insights from the data.</p></li>
-</ul>
 </section>
-<section id="submission-instructions" class="level2">
-<h2 class="anchored" data-anchor-id="submission-instructions">Submission Instructions</h2>
-<ul>
-<li>The write-up of the take-home exercise must be in <strong>Quarto html document</strong> format. You are required to publish the write-up on <a href="https://www.netlify.com/"><strong>Netlify</strong></a>.</li>
-<li>Zip the take-home exercise folder and upload it onto eLearn. If the size of the zip file is beyond the capacity of eLearn, you can upload it on SMU OneDrive and provide the download link on eLearn..</li>
-</ul>
-</section>
-<section id="due-date" class="level2">
-<h2 class="anchored" data-anchor-id="due-date">Due Date</h2>
-<p><strong>22nd September 2024 (Sunday, mid-night 11:59pm)</strong>.</p>
-</section>
-<section id="reference" class="level2">
-<h2 class="anchored" data-anchor-id="reference">Reference</h2>
-<ul>
-<li><p><a href="https://www.cfr.org/backgrounder/myanmar-history-coup-military-rule-ethnic-conflict-rohingya">Myanmar’s Troubled History: Coups, Military Rule, and Ethnic Conflict</a></p></li>
-<li><p><a href="https://en.wikipedia.org/wiki/Myanmar_conflict">Myanmar conflict</a></p></li>
-<li><p><a href="https://en.wikipedia.org/wiki/Myanmar_civil_war_(2021%E2%80%93present)">Myanmar civil war (2021–present)</a></p></li>
-</ul>
-</section>
-<section id="learning-from-senior" class="level2">
-<h2 class="anchored" data-anchor-id="learning-from-senior">Learning from senior</h2>
-<p>You are advised to review these sample submissions prepared by your seniors.</p>
-<ul>
-<li><a href="https://is415-gaa-vic.netlify.app/take-home_ex/take-home_ex01/take-home_ex01">ANN MEI YI VICTORIA GRACE</a>. <img src="img/thumbup1.jpg" class="img-fluid"> The discussion on <a href="https://is415-gaa-vic.netlify.app/take-home_ex/take-home_ex01/take-home_ex01a#network-constrained-kernel-density-estimation-nkde-analysis">Network-Constrained Kernel Density Estimation (NKDE) &amp; Analysis</a> section is very interesting.</li>
-<li><a href="https://is415-geospatial-with-khant.netlify.app/take-home_ex/take-home_ex01">KHANT MIN NAING</a> <img src="img/thumbup1.jpg" class="img-fluid">. A very well researched submission. Did exceptionally well in performing geospatial analysis and geocommucating and did well in geospatial data wrangling and geovisualisation.</li>
-<li><a href="https://is415-gaa-matthew-ho.netlify.app/takehomeex/takehomeex1/the1">MATTHEW HO YIWEN</a><img src="img/thumbup1.jpg" class="img-fluid"> Did exceptionally well in geospatial data wrangling and reproducibility, excellence in geospatial analysis and moderate well in geovisualisation and geocommunication.<br>
-</li>
-</ul>
+<section id="peer-learning" class="level2">
+<h2 class="anchored" data-anchor-id="peer-learning">Peer Learning</h2>
 
 
 </section>
