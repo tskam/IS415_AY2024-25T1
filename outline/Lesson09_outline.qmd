@@ -21,7 +21,7 @@ toc: true
 
 ## Hands-on Exercise
 
--   [12 Geographical Segmentation with Spatially Constrained Clustering Techniques](https://r4gdsa.netlify.app/chap12.html), section 12.8 onward.
+-   [12 Geographical Segmentation with Spatially Constrained Clustering Techniques](https://r4gdsa.netlify.app/chap12.html), from **Section 12.8** onward.
 
 ### Self-reading Before Meet-up
 

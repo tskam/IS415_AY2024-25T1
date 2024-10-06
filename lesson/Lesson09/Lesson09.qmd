@@ -200,11 +200,5 @@ Figure on the left below reveals that the proportion of explained pseudo-inertia
 :::
 :::::
 
-```{r}
-#| eval: false
-#| echo: false
-
-renderthis::to_pdf(from = "Lesson09.qmd")
-```
 
 
