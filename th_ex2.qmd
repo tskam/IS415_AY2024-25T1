@@ -28,7 +28,6 @@ Figure below shows geographic distribution of drug use cases by province and by 
 
 ![](img/th_ex2_img1.png)
 
-
 ## Objectives
 
 As a curious geospatial analytics green horn, you are interested to discover:
@@ -48,16 +47,15 @@ The specific tasks of this take-home exercise are as follows:
 -   Using the extracted data, perform local spatial autocorrelation analysis by using [sfdep methods](https://r4gdsa.netlify.app/chap10.html).
 -   Describe the spatial patterns revealed by the analysis above.
 
-::: {.callout-note}
-A quality research should go beyond pre-defined scope of work.  Students are encouraged to extend your investigate by using the suggested.  You are also encouraged to explore appropriate method(s) not mentioned above.
+::: callout-note
+A quality research should go beyond pre-defined scope of work. Students are encouraged to extend your investigate by using the suggested. You are also encouraged to explore appropriate method(s) not mentioned above.
 :::
-
 
 ## The Data
 
 For the purpose of this take-home exercise, two data sets shall be used, they are:
 
--   [Thailand Drug Offenses [2017-2022]](https://www.kaggle.com/datasets/thaweewatboy/thailand-drug-offenses-2017-2022) at Kaggle.
+-   [Thailand Drug Offenses \[2017-2022\]](https://www.kaggle.com/datasets/thaweewatboy/thailand-drug-offenses-2017-2022) at Kaggle.
 
 -   [Thailand - Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-tha?) at HDX. You are required to use the province boundary data set.
 
@@ -92,7 +90,7 @@ All data are like vast grassland full of land mines. Your job is to clear those 
 
 ## Due Date
 
-6th October 2024 (Sunday), 11.59pm (midnight).
+~~6~~ 13th October 2024 (Sunday), 11.59pm (midnight).
 
 ## Learning from senior
 
@@ -114,4 +112,3 @@ Please submit your questions or queries related to this take-home exercise on Pi
 -   Khan, D. et. al. (2017) "[Hot spots, cluster detection and spatial outlier analysis of teen birth rates in the U.S., 2003–2012](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5618106/)", *Spatial and Spatio-temporal Epidemiology*, Vol. 21, pp. 67–75.
 -   Muhammad Arif & Didit Purnomo (2017) "[Measuring Spatial Cluster for Leading Industries in Surakarta with Exploratory Spatial Data Analysis (ESDA)](https://journals.ums.ac.id/index.php/JEP/article/view/4178/0)", *Jurnal Ekonomi Pembangunan*, Vol. 18 (1), pp. 64-81.
 -   Stamatis Kalogirou (2012) "Testing local versions of correlation coefficients", *Review of Regional Research*, Vol., pp. 45–61. SMU e-journal.
- 

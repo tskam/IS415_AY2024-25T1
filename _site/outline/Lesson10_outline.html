@@ -194,7 +194,6 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#content" id="toc-content" class="nav-link active" data-scroll-target="#content">Content</a></li>
   <li><a href="#lesson-slides-and-hands-on-notes" id="toc-lesson-slides-and-hands-on-notes" class="nav-link" data-scroll-target="#lesson-slides-and-hands-on-notes">Lesson Slides and Hands-on Notes</a></li>
-  <li><a href="#self-reading-before-meet-up" id="toc-self-reading-before-meet-up" class="nav-link" data-scroll-target="#self-reading-before-meet-up">Self-reading Before Meet-up</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   <li><a href="#all-about-r" id="toc-all-about-r" class="nav-link" data-scroll-target="#all-about-r">All About R</a></li>
   </ul>
@@ -223,7 +222,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">October 3, 2024</p>
+      <p class="date-modified">October 4, 2024</p>
     </div>
   </div>
     
@@ -234,7 +233,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In this lesson, you will learn the basic concepts and methods of geographically weighted regression.</p>
+<p>In this lesson, you will learn the basic concepts and methods of simple and multiple linear regression and their applications on geographically referenced data.</p>
 <section id="content" class="level2">
 <h2 class="anchored" data-anchor-id="content">Content</h2>
 <ul>
@@ -250,43 +249,21 @@ ul.task-list li input[type="checkbox"] {
 <li>Independence: Observations are independent of each other.</li>
 <li>Normality: For any fixed value of X, Y is normally distributed.</li>
 </ul></li>
-<li>The spatial stationarity assumption of multiple</li>
+<li>The spatial stationarity assumption of multivariate regression.</li>
 </ul>
 </section>
 <section id="lesson-slides-and-hands-on-notes" class="level2">
 <h2 class="anchored" data-anchor-id="lesson-slides-and-hands-on-notes">Lesson Slides and Hands-on Notes</h2>
 <ul>
-<li><p><a href="../lesson/lesson08/lesson08-gwr.html">Lesson 8 slides</a>.</p></li>
-<li><p><a href="https://r4gdsa.netlify.app/chap13.html">Hands-on Exercise 8</a>.</p></li>
-</ul>
-</section>
-<section id="self-reading-before-meet-up" class="level2">
-<h2 class="anchored" data-anchor-id="self-reading-before-meet-up">Self-reading Before Meet-up</h2>
-<p>To read before class:</p>
-<ul>
-<li>Brunsdon, C., Fotheringham, A.S., and Charlton, M. (2002) “Geographically weighted regression: A method for exploring spatial nonstationarity”. Geographical Analysis, 28: 281-289.</li>
-<li>Brunsdon, C., Fotheringham, A.S. and Charlton, M., (1999) “Some Notes on Parametric Significance Tests for Geographically Weighted Regression”. Journal of Regional Science, 39(3), 497-524.</li>
+<li><p><a href="../lesson/lesson10/lesson10.pdf">Lesson 10 slides</a>.</p></li>
+<li><p><a href="https://r4gdsa.netlify.app/chap13.html">Hands-on Exercise 8</a>. <strong>Section 13.1-13.8</strong> only.</p></li>
 </ul>
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
-<ul>
-<li>Mennis, Jeremy (2006) “Mapping the Results of Geographically Weighted Regression”, The Cartographic Journal, Vol.43 (2), p.171-179.</li>
-<li>Stephen A. Matthews ; Tse-Chuan Yang (2012) “Mapping the results of local statistics: Using geographically weighted regression”, Demographic Research, Vol.26, p.151-166.</li>
-</ul>
 </section>
 <section id="all-about-r" class="level2">
 <h2 class="anchored" data-anchor-id="all-about-r">All About R</h2>
-<ul>
-<li><a href="https://cran.r-project.org/web/packages/GWmodel/"><strong>GWmodel</strong></a> package, especially
-<ul>
-<li>Gollini, I et. al.&nbsp;(2015) <a href="https://www.jstatsoft.org/article/view/v063i17">“GWmodel: An R Package for Exploring Spatial Heterogeneity Using Geographically Weighted Models”</a>, <em>Journal of Statistical Software</em>, Volume 63, Issue 17 and</li>
-<li>Binbin Lu, Paul Harris, Martin Charlton &amp; Chris Brunsdon (2014) <a href="https://www.tandfonline.com/doi/full/10.1080/10095020.2014.917453">“The GWmodel R package: further topics for exploring spatial heterogeneity using geographically weighted models”</a>, <em>Geo-spatial Information Science</em>, 17:2, 85-101, DOI: 10.1080/10095020.2014.917453.</li>
-</ul></li>
-<li><a href="https://cran.r-project.org/web/packages/lctools/index.html"><strong>lctools</strong></a> package especially <em>gw()</em> and <em>gwr()</em> related functions.</li>
-<li><a href="https://cran.r-project.org/web/packages/spgwr/index.html"><strong>spgwr</strong></a> implements of geographically weighted regression methods for exploring possible non-stationarity.</li>
-<li><a href="https://cran.r-project.org/web/packages/gwrr/index.html"><strong>gwrr</strong></a>: its geographically weighted regression (GWR) models and has tools to diagnose and remediate collinearity in the GWR models. Also fits geographically weighted ridge regression (GWRR) and geographically weighted lasso (GWL) models.</li>
-</ul>
 
 
 </section>
