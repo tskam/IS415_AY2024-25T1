@@ -394,21 +394,21 @@
   {
     "objectID": "outline/Lesson08_outline.html#content",
     "href": "outline/Lesson08_outline.html#content",
-    "title": "Lesson 8: Hierarchical Clustering of Multivariate Georeferenced Data",
+    "title": "Lesson 8: Hierarchical Clustering for Multivariate Geographically Referenced Data",
     "section": "Content",
     "text": "Content\n\nBasic concepts of clustering analysis\nHierarchical clustering methods\n\nProximity matrices\nAgglomerative hierarchical clustering algorithms\n\nHierarchical clustering processes and best practices"
   },
   {
     "objectID": "outline/Lesson08_outline.html#lesson-slides",
     "href": "outline/Lesson08_outline.html#lesson-slides",
-    "title": "Lesson 8: Hierarchical Clustering of Multivariate Georeferenced Data",
+    "title": "Lesson 8: Hierarchical Clustering for Multivariate Geographically Referenced Data",
     "section": "Lesson slides",
     "text": "Lesson slides\n\nLesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis slides."
   },
   {
     "objectID": "outline/Lesson08_outline.html#hands-on-exercise",
     "href": "outline/Lesson08_outline.html#hands-on-exercise",
-    "title": "Lesson 8: Hierarchical Clustering of Multivariate Georeferenced Data",
+    "title": "Lesson 8: Hierarchical Clustering for Multivariate Geographically Referenced Data",
     "section": "Hands-on Exercise",
     "text": "Hands-on Exercise\n\n12 Geographical Segmentation with Spatially Constrained Clustering Techniques, Section 12.1-12.7 only."
   },
@@ -2676,7 +2676,7 @@
   {
     "objectID": "outline/Lesson08_outline.html#references",
     "href": "outline/Lesson08_outline.html#references",
-    "title": "Lesson 8: Hierarchical Clustering of Multivariate Georeferenced Data",
+    "title": "Lesson 8: Hierarchical Clustering for Multivariate Geographically Referenced Data",
     "section": "References",
     "text": "References\n\nRovan, J. and Sambt, J. (2003) “Socio-economic Differences Among Slovenian Municipalities: A Cluster Analysis Approach”, Developments in Applied Statistics, pp. 265-278.\n\nDemeter, T. and Bratucu, G. (2013) “Statistical Analysis Of The EU Countries from A Touristic Point of View”, Bulletin of the Transilvania University of Braşov, 6(55): 121-130.\nBrown, N.S. & Watson, P. (2012) “What can a comprehensive plan really tell us about a region?: A cluster analysis of county comprehensive plans in Idaho”, Western Economics Forum. Pp.22-37.\n\n\nAll About R\n\nHierarchical Cluster Analysis."
   },
