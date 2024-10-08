@@ -13,7 +13,7 @@ editor: visual
 | 6 | 23/9/2024 | [Lesson 6: Measures of Global and Local Spatial Association](outline/lesson06_outline.html) |  |
 | 7 | 30/9/2024 | [Lesson 7: Shiny for Building Web-enabled Geospatial Analytics Application](outline/lesson07_outline.html) |  |
 | 8 | 7/10/2024 | Recess week |  |
-| 9 | 14/10/2024 | [Lesson 8: Hierarchical Clustering of Multivariate Geographically Referenced Data](outline/lesson08_outline.html) |  |
+| 9 | 14/10/2024 | [Lesson 8: Hierarchical Clustering for Multivariate Geographically Referenced Data](outline/lesson08_outline.html) |  |
 | 10 | 21/10/2024 | [Lesson 9: Spatially Constrained Clustering Analysis](outline/lesson09_outline.html) |  |
 | 11 | 28/10/2024 | [Lesson 10: Regression Modelling of Geographically Reference Data](outline/lesson10_outline.html) |  |
 | 12 | 4/11/2024 | [Lesson 11: Geographically Weighted Regression](outline/lesson11_outline.html) |  |
