@@ -368,11 +368,16 @@ plot(fire_stpp)
 In the code chunk below, `STIKhat()` of stpp package is used to compute space-time inhomogeneous K-function.
 
 ```{r}
+#| eval: false
 kbb_stik <- STIKhat(fire_stpp)
 ```
 
 Next, `plotK()` is used to visualise the output space-time inhomogeneous K-function.
 
 ```{r}
+#| eval: false
 plotK(kbb_stik)
 ```
+
+![](img/image1.png)
+
