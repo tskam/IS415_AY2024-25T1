@@ -199,6 +199,3 @@ Figure on the left below reveals that the proportion of explained pseudo-inertia
 ![](img/image9b.png)
 :::
 :::::
-
-
-
