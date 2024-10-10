@@ -22,7 +22,7 @@ In this lesson, you will learn the basic concepts and methods of simple and mult
 
 ## Lesson Slides and Hands-on Notes
 
--   [Lesson 10 slides](../lesson/lesson10/lesson10.pdf).
+-   [Lesson 10 slides](../lesson/lesson10/lesson10-Regression Analysis.pdf).
 
 -   [Hands-on Exercise 8](https://r4gdsa.netlify.app/chap13.html). **Section 13.1-13.8** only.
 
