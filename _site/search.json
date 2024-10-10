@@ -2776,14 +2776,14 @@
     "href": "lesson/Lesson11/Lesson11-gwr.html#content",
     "title": "Lesson 11: Geographically Weighted Regression",
     "section": "Content",
-    "text": "Content\n\nIntroducing Regression Modelling\n\nSimple Linear Regression\nMultiple Linear Regression\n\nWhat is Spatial Non-stationary\nIntroducing Geographically Weighted Regression\n\nWeighting functions (kernel)\nWeighting schemes\nBandwidth\n\nInterpreting and Visualising"
+    "text": "Content\n\nWhat is Spatial Non-stationary\nIntroducing Geographically Weighted Regression\n\nWeighting functions (kernel)\nWeighting schemes\nBandwidth\n\nInterpreting and Visualising"
   },
   {
     "objectID": "lesson/Lesson11/Lesson11-gwr.html#the-why-questions",
     "href": "lesson/Lesson11/Lesson11-gwr.html#the-why-questions",
     "title": "Lesson 11: Geographically Weighted Regression",
     "section": "The WHY Questions",
-    "text": "The WHY Questions\n\nWhy some condominium units were transacted at relatively higher prices than others?"
+    "text": "The WHY Questions\nWhy condominium units located at the central part of Singapore were transacted at relatively higher prices than others?"
   },
   {
     "objectID": "lesson/Lesson11/Lesson11-gwr.html#the-why-questions-1",
@@ -2825,7 +2825,7 @@
     "href": "lesson/Lesson11/Lesson11-gwr.html#references",
     "title": "Lesson 11: Geographically Weighted Regression",
     "section": "References",
-    "text": "References\nBrunsdon, C., Fotheringham, A.S., and Charlton, M. (2002) “Geographically weighted regression: A method for exploring spatial nonstationarity”. Geographical Analysis, 28: 281-289.\nBrunsdon, C., Fotheringham, A.S. and Charlton, M., (1999) [“Some Notes on Parametric Significance Tests for Geographically Weighted Regression”](https://onlinelibrary-wiley-com.libproxy.smu.edu.sg/doi/abs/10.1111/0022-4146.00146. Journal of Regional Science, 39(3), 497-524.\nMennis, Jeremy (2006) “Mapping the Results of Geographically Weighted Regression”, The Cartographic Journal, Vol.43 (2), p.171-179.\nStephen A. Matthews ; Tse-Chuan Yang (2012) “Mapping the results of local statistics: Using geographically weighted regression”, Demographic Research, Vol.26, p.151-166."
+    "text": "References\nBrunsdon, C., Fotheringham, A.S., and Charlton, M. (2002) “Geographically weighted regression: A method for exploring spatial nonstationarity”. Geographical Analysis, 28: 281-289.\nBrunsdon, C., Fotheringham, A.S. and Charlton, M., (1999) “Some Notes on Parametric Significance Tests for Geographically Weighted Regression”. Journal of Regional Science, 39(3), 497-524.\nMennis, Jeremy (2006) “Mapping the Results of Geographically Weighted Regression”, The Cartographic Journal, Vol.43 (2), p.171-179.\nStephen A. Matthews ; Tse-Chuan Yang (2012) “Mapping the results of local statistics: Using geographically weighted regression”, Demographic Research, Vol.26, p.151-166."
   },
   {
     "objectID": "lesson/Lesson12/Lesson12-GWRF.html#content",

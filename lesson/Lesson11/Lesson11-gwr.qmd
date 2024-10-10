@@ -16,11 +16,6 @@ editor: visual
 
 ## Content
 
--   Introducing Regression Modelling
-
-    -   Simple Linear Regression
-    -   Multiple Linear Regression
-
 -   What is Spatial Non-stationary
 
 -   Introducing Geographically Weighted Regression
@@ -33,226 +28,11 @@ editor: visual
 
 ## The WHY Questions
 
--   Why some condominium units were transacted at relatively higher prices than others?
-
-![](img/image9-1.jpg)
-
-## The WHY Questions
-
 Why condominium units located at the central part of Singapore were transacted at relatively higher prices than others?
 
 ![](img/image9-2.jpg)
 
-## What is regression analysis?
-
--   A set of statistical processes for explaining the relationships among variables.
-
--   The focus is on the relationship between a dependent variable (y) and one or more independent variables (x)
-
-    -   Does X affect Y? If so, how?
-    -   What is the change in Y given a one unit change in X?
-
--   Estimate outcomes based on the relationships modelled.
-
-------------------------------------------------------------------------
-
-### A Simple Linear Regression Model
-
-The formula:
-
-![](img/image9-3.jpg)
-
-------------------------------------------------------------------------
-
-### The Least Squares Method
-
--   The sum of the vertical deviations (y axis) of the points from the line is minimal.
-
-![](img/image9-4.jpg)
-
-------------------------------------------------------------------------
-
-### Multiple Linear Regression
-
-![](img/image9-5.jpg)
-
-------------------------------------------------------------------------
-
-### Assessing the goodness of fit
-
-![](img/image9-6.jpg)
-
-------------------------------------------------------------------------
-
-### Significance testing in regression
-
-![](img/image9-7.jpg)
-
-------------------------------------------------------------------------
-
-### Goodness of fit test
-
-![](img/image9-8.jpg)
-
-------------------------------------------------------------------------
-
-### Individual parameter testing
-
-![](img/image9-11.jpg)
-
-------------------------------------------------------------------------
-
-### Assessing individual parameters
-
-![](img/image9-9.jpg)
-
-------------------------------------------------------------------------
-
-### Are there redundant explanatory variables?
-
-![](img/image9-10.jpg)
-
-## Assumptions of linear regression models
-
--   **Linearity assumption**. The relationship between the dependent variable and independent variables is (approximately) linear.
-
--   **Normality assumption**. The residual errors are assumed to be normally distributed.
-
--   **Homogeneity of residuals variance**. The residuals are assumed to have a constant variance (homoscedasticity).
-
--   The residuals are uncorrelated with each other.
-
-    -   serial correlation, as with time series
-
--   (Optional) The errors (residuals) are normally distributed and have a 0 population mean.\]
-
-------------------------------------------------------------------------
-
-### The linearity assumption
-
-![](img/image9-12.jpg)
-
-------------------------------------------------------------------------
-
-### The linearity assumption
-
-Residuals vs Fitted plot - Used to check the linear relationship assumptions. A horizontal line, without distinct patterns is an indication for a linear relationship, what is good.
-
-![](img/image9-13.jpg)
-
-------------------------------------------------------------------------
-
-### Demystifying the linearity assumption myth
-
-::::: columns
-::: {.column width="50%"}
-The myth: - We should transform the values of the y variable when they are large.
-
-```{r}
-library(tidyverse)
-library(sjPlot)
-library(sjmisc)
-library(sjlabelled)
-library(olsrr)
-data1 <- read_delim("data/ex1_data.txt", delim=";")
-data1.lm <- lm(formula=y ~ x, data = data1)
-tab_model(data1.lm)
-```
-:::
-
-::: {.column width="50%"}
-```{r}
-ggplot(data=data1,  
-       aes(x=`x`, y=`y`)) +
-  geom_point() +
-  geom_smooth(method = lm)
-```
-:::
-:::::
-
-------------------------------------------------------------------------
-
-### The linearity assumption
-
-::::: columns
-::: {.column width="50%"}
-Despite the values of the dependent variable is rather similar to the values of the independent variable, the diagnostic plot shows that the linearity assumption has been violated.
-:::
-
-::: {.column width="50%"}
-```{r}
-ols_plot_obs_fit(data1.lm, print_plot = TRUE)
-```
-:::
-:::::
-
-------------------------------------------------------------------------
-
-### Data transformation come to rescue
-
-::::: columns
-::: {.column width="50%"}
-```{r}
-data.lm2 <- lm(formula=y ~ exp(x), data = data1)
-tab_model(data.lm2)
-```
-:::
-
-::: {.column width="50%"}
-```{r}
-ggplot(data=data1,  
-       aes(x=exp(x), y=`y`)) +
-  geom_point() +
-  geom_smooth(method = lm)
-```
-:::
-:::::
-
-------------------------------------------------------------------------
-
-### The linearity assumption
-
-::::: columns
-::: {.column width="50%"}
-The diagnostic plot on the right shows that the linearity assumption has been conformed.
-:::
-
-::: {.column width="50%"}
-```{r}
-ols_plot_obs_fit(data.lm2, print_plot = TRUE)
-```
-:::
-:::::
-
-------------------------------------------------------------------------
-
-### The normality assumption
-
-![](img/image9-15.jpg)
-
-::::: columns
-:::: {.column width="50%"}
-::: callout-warning
-This is the test on the **residual** and not on the dependent variable.
-:::
-::::
-:::::
-
-------------------------------------------------------------------------
-
-### Checking for serial correlation
-
-The purpose of this test is to ensure the residuals of a multiple regression are time independent.
-
-![](img/image9-14.jpg)
-
-## Spatial Non-stationary
-
--   When applied to spatial data, as can be seen, it assumes a stationary spatial process.
-    -   The same stimulus provokes the same response in all parts of the study region.
-    -   Highly untenable for spatial process.
-
-------------------------------------------------------------------------
+---
 
 ### Why do relationships vary spatially?
 
@@ -389,9 +169,9 @@ To test if the relationships in the model are **non-stationary**.
 
 Brunsdon, C., Fotheringham, A.S., and Charlton, M. (2002) ["Geographically weighted regression: A method for exploring spatial nonstationarity"](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.1996.tb00936.x). *Geographical Analysis*, 28: 281-289.
 
-Brunsdon, C., Fotheringham, A.S. and Charlton, M., (1999) \["Some Notes on Parametric Significance Tests for Geographically Weighted Regression"\](https://onlinelibrary-wiley-com.libproxy.smu.edu.sg/doi/abs/10.1111/0022-4146.00146. *Journal of Regional Science*, 39(3), 497-524.
+Brunsdon, C., Fotheringham, A.S. and Charlton, M., (1999) ["Some Notes on Parametric Significance Tests for Geographically Weighted Regression"](https://onlinelibrary-wiley-com.libproxy.smu.edu.sg/doi/abs/10.1111/0022-4146.00146). *Journal of Regional Science*, 39(3), 497-524.
 
-Mennis, Jeremy (2006) ["Mapping the Results of Geographically Weighted Regression"](https://web-b-ebscohost-com.libproxy.smu.edu.sg/ehost/pdfviewer/pdfviewer?vid=1&sid=2bc1df3b-6c17-46af-8650-2781032f1d91%40pdc-v-sessmgr04), *The Cartographic Journal*, Vol.43 (2), p.171-179.
+Mennis, Jeremy (2006) ["Mapping the Results of Geographically Weighted Regression"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4286400/), *The Cartographic Journal*, Vol.43 (2), p.171-179.
 
 Stephen A. Matthews ; Tse-Chuan Yang (2012) ["Mapping the results of local statistics: Using geographically weighted regression"](https://www.demographic-research.org/volumes/vol26/6/), *Demographic Research*, Vol.26, p.151-166.
 

@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Dr.&nbsp;Kam Tin Seong Assoc. Professor of Information Systems(Practice)">
-  <meta name="dcterms.date" content="2024-10-08">
+  <meta name="dcterms.date" content="2024-10-10">
   <title>IS415 AY2024-25T1 – Lesson 11:  Geographically Weighted Regression</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -340,16 +340,11 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
     </div>
 </div>
 
-  <p class="date">08 Oct 2024</p>
+  <p class="date">10 Oct 2024</p>
 </section>
 <section id="content" class="slide level2">
 <h2>Content</h2>
 <ul>
-<li><p>Introducing Regression Modelling</p>
-<ul>
-<li>Simple Linear Regression</li>
-<li>Multiple Linear Regression</li>
-</ul></li>
 <li><p>What is Spatial Non-stationary</p></li>
 <li><p>Introducing Geographically Weighted Regression</p>
 <ul>
@@ -362,289 +357,9 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 </section>
 <section id="the-why-questions" class="slide level2">
 <h2>The WHY Questions</h2>
-<ul>
-<li>Why some condominium units were transacted at relatively higher prices than others?</li>
-</ul>
-
-<img data-src="img/image9-1.jpg" class="r-stretch"></section>
-<section id="the-why-questions-1" class="slide level2">
-<h2>The WHY Questions</h2>
 <p>Why condominium units located at the central part of Singapore were transacted at relatively higher prices than others?</p>
 
 <img data-src="img/image9-2.jpg" class="r-stretch"></section>
-<section id="what-is-regression-analysis" class="slide level2">
-<h2>What is regression analysis?</h2>
-<ul>
-<li><p>A set of statistical processes for explaining the relationships among variables.</p></li>
-<li><p>The focus is on the relationship between a dependent variable (y) and one or more independent variables (x)</p>
-<ul>
-<li>Does X affect Y? If so, how?</li>
-<li>What is the change in Y given a one unit change in X?</li>
-</ul></li>
-<li><p>Estimate outcomes based on the relationships modelled.</p></li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="a-simple-linear-regression-model">A Simple Linear Regression Model</h3>
-<p>The formula:</p>
-
-<img data-src="img/image9-3.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="the-least-squares-method">The Least Squares Method</h3>
-<ul>
-<li>The sum of the vertical deviations (y axis) of the points from the line is minimal.</li>
-</ul>
-
-<img data-src="img/image9-4.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="multiple-linear-regression">Multiple Linear Regression</h3>
-
-<img data-src="img/image9-5.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="assessing-the-goodness-of-fit">Assessing the goodness of fit</h3>
-
-<img data-src="img/image9-6.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="significance-testing-in-regression">Significance testing in regression</h3>
-
-<img data-src="img/image9-7.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="goodness-of-fit-test">Goodness of fit test</h3>
-
-<img data-src="img/image9-8.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="individual-parameter-testing">Individual parameter testing</h3>
-
-<img data-src="img/image9-11.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="assessing-individual-parameters">Assessing individual parameters</h3>
-
-<img data-src="img/image9-9.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="are-there-redundant-explanatory-variables">Are there redundant explanatory variables?</h3>
-
-<img data-src="img/image9-10.jpg" class="r-stretch"></section>
-<section id="assumptions-of-linear-regression-models" class="slide level2">
-<h2>Assumptions of linear regression models</h2>
-<ul>
-<li><p><strong>Linearity assumption</strong>. The relationship between the dependent variable and independent variables is (approximately) linear.</p></li>
-<li><p><strong>Normality assumption</strong>. The residual errors are assumed to be normally distributed.</p></li>
-<li><p><strong>Homogeneity of residuals variance</strong>. The residuals are assumed to have a constant variance (homoscedasticity).</p></li>
-<li><p>The residuals are uncorrelated with each other.</p>
-<ul>
-<li>serial correlation, as with time series</li>
-</ul></li>
-<li><p>(Optional) The errors (residuals) are normally distributed and have a 0 population mean.]</p></li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="the-linearity-assumption">The linearity assumption</h3>
-
-<img data-src="img/image9-12.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="the-linearity-assumption-1">The linearity assumption</h3>
-<p>Residuals vs Fitted plot - Used to check the linear relationship assumptions. A horizontal line, without distinct patterns is an indication for a linear relationship, what is good.</p>
-
-<img data-src="img/image9-13.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="demystifying-the-linearity-assumption-myth">Demystifying the linearity assumption myth</h3>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>The myth: - We should transform the values of the y variable when they are large.</p>
-<div class="cell">
-<div class="cell-output-display">
-<table class="caption-top" data-quarto-postprocess="true" style="border-collapse:collapse; border:none;">
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">&nbsp;</td>
-<td colspan="3" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">y</td>
-</tr>
-<tr class="even">
-<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">Predictors</td>
-<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">Estimates</td>
-<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">CI</td>
-<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">p</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; padding: 0.2cm; vertical-align: top;">(Intercept)</td>
-<td style="text-align: left; padding: 0.2cm; vertical-align: top;">1.98</td>
-<td style="text-align: left; padding: 0.2cm; vertical-align: top;">1.66&nbsp;–&nbsp;2.30</td>
-<td style="text-align: left; padding: 0.2cm; vertical-align: top;"><strong>&lt;0.001</strong></td>
-</tr>
-<tr class="even">
-<td style="text-align: left; padding: 0.2cm; vertical-align: top;">x</td>
-<td style="text-align: left; padding: 0.2cm; vertical-align: top;">2.35</td>
-<td style="text-align: left; padding: 0.2cm; vertical-align: top;">2.13&nbsp;–&nbsp;2.57</td>
-<td style="text-align: left; padding: 0.2cm; vertical-align: top;"><strong>&lt;0.001</strong></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">Observations</td>
-<td colspan="3" style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">100</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">R<sup>2</sup> / R<sup>2</sup> adjusted</td>
-<td colspan="3" style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">0.819 / 0.817</td>
-</tr>
-</tbody>
-</table>
-
-
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="Lesson11-gwr_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-</div></div>
-</section>
-<section class="slide level2">
-
-<h3 id="the-linearity-assumption-2">The linearity assumption</h3>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Despite the values of the dependent variable is rather similar to the values of the independent variable, the diagnostic plot shows that the linearity assumption has been violated.</p>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="Lesson11-gwr_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-</div></div>
-</section>
-<section class="slide level2">
-
-<h3 id="data-transformation-come-to-rescue">Data transformation come to rescue</h3>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<table class="caption-top" data-quarto-postprocess="true" style="border-collapse:collapse; border:none;">
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">&nbsp;</td>
-<td colspan="3" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">y</td>
-</tr>
-<tr class="even">
-<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">Predictors</td>
-<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">Estimates</td>
-<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">CI</td>
-<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">p</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; padding: 0.2cm; vertical-align: top;">(Intercept)</td>
-<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.51</td>
-<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.36&nbsp;–&nbsp;0.65</td>
-<td style="text-align: left; padding: 0.2cm; vertical-align: top;"><strong>&lt;0.001</strong></td>
-</tr>
-<tr class="even">
-<td style="text-align: left; padding: 0.2cm; vertical-align: top;">x [exp]</td>
-<td style="text-align: left; padding: 0.2cm; vertical-align: top;">1.01</td>
-<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.98&nbsp;–&nbsp;1.04</td>
-<td style="text-align: left; padding: 0.2cm; vertical-align: top;"><strong>&lt;0.001</strong></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">Observations</td>
-<td colspan="3" style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">100</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">R<sup>2</sup> / R<sup>2</sup> adjusted</td>
-<td colspan="3" style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">0.977 / 0.977</td>
-</tr>
-</tbody>
-</table>
-
-
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="Lesson11-gwr_files/figure-revealjs/unnamed-chunk-5-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-</div></div>
-</section>
-<section class="slide level2">
-
-<h3 id="the-linearity-assumption-3">The linearity assumption</h3>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>The diagnostic plot on the right shows that the linearity assumption has been conformed.</p>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="Lesson11-gwr_files/figure-revealjs/unnamed-chunk-6-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
-</div></div>
-</section>
-<section class="slide level2">
-
-<h3 id="the-normality-assumption">The normality assumption</h3>
-
-<img data-src="img/image9-15.jpg" class="r-stretch"><div class="columns">
-<div class="column" style="width:50%;">
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Warning</strong></p>
-</div>
-<div class="callout-content">
-<p>This is the test on the <strong>residual</strong> and not on the dependent variable.</p>
-</div>
-</div>
-</div>
-</div></div>
-</section>
-<section class="slide level2">
-
-<h3 id="checking-for-serial-correlation">Checking for serial correlation</h3>
-<p>The purpose of this test is to ensure the residuals of a multiple regression are time independent.</p>
-
-<img data-src="img/image9-14.jpg" class="r-stretch"></section>
-<section id="spatial-non-stationary" class="slide level2">
-<h2>Spatial Non-stationary</h2>
-<ul>
-<li>When applied to spatial data, as can be seen, it assumes a stationary spatial process.
-<ul>
-<li>The same stimulus provokes the same response in all parts of the study region.</li>
-<li>Highly untenable for spatial process.</li>
-</ul></li>
-</ul>
-</section>
 <section class="slide level2">
 
 <h3 id="why-do-relationships-vary-spatially">Why do relationships vary spatially?</h3>
@@ -775,8 +490,8 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <section id="references" class="slide level2">
 <h2>References</h2>
 <p>Brunsdon, C., Fotheringham, A.S., and Charlton, M. (2002) <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.1996.tb00936.x">“Geographically weighted regression: A method for exploring spatial nonstationarity”</a>. <em>Geographical Analysis</em>, 28: 281-289.</p>
-<p>Brunsdon, C., Fotheringham, A.S. and Charlton, M., (1999) [“Some Notes on Parametric Significance Tests for Geographically Weighted Regression”](https://onlinelibrary-wiley-com.libproxy.smu.edu.sg/doi/abs/10.1111/0022-4146.00146. <em>Journal of Regional Science</em>, 39(3), 497-524.</p>
-<p>Mennis, Jeremy (2006) <a href="https://web-b-ebscohost-com.libproxy.smu.edu.sg/ehost/pdfviewer/pdfviewer?vid=1&amp;sid=2bc1df3b-6c17-46af-8650-2781032f1d91%40pdc-v-sessmgr04">“Mapping the Results of Geographically Weighted Regression”</a>, <em>The Cartographic Journal</em>, Vol.43 (2), p.171-179.</p>
+<p>Brunsdon, C., Fotheringham, A.S. and Charlton, M., (1999) <a href="https://onlinelibrary-wiley-com.libproxy.smu.edu.sg/doi/abs/10.1111/0022-4146.00146">“Some Notes on Parametric Significance Tests for Geographically Weighted Regression”</a>. <em>Journal of Regional Science</em>, 39(3), 497-524.</p>
+<p>Mennis, Jeremy (2006) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4286400/">“Mapping the Results of Geographically Weighted Regression”</a>, <em>The Cartographic Journal</em>, Vol.43 (2), p.171-179.</p>
 <p>Stephen A. Matthews ; Tse-Chuan Yang (2012) <a href="https://www.demographic-research.org/volumes/vol26/6/">“Mapping the results of local statistics: Using geographically weighted regression”</a>, <em>Demographic Research</em>, Vol.26, p.151-166.</p>
 
 <div class="quarto-auto-generated-content">
