@@ -295,7 +295,7 @@ plot(kde_yday)
 
 ## Computing STKDE by Day of Year: Improved method
 
-One of the nice function provides in sparr package is `BOOT.spattemp()`. It support bandwidth selection for standalone spatiotemporal density/intensity based on bootstrap estimation of the MISE, providing an isotropic scalar spatial bandwidth and a scalar temporal bandwidth.
+One of the nice function provides in **sparr** package is [`BOOT.spattemp()`](https://tilmandavies.github.io/sparr/reference/BOOT.spattemp.html). It support bandwidth selection for standalone spatiotemporal density/intensity based on bootstrap estimation of the MISE, providing an isotropic scalar spatial bandwidth and a scalar temporal bandwidth.
 
 Code chunk below uses `BOOT.spattemp()` to determine both the spatial bandwidth and the scalar temporal bandwidth.
 
@@ -380,4 +380,11 @@ plotK(kbb_stik)
 ```
 
 ![](img/image1.png)
+
+
+## Reference
+
+Peter Hall (1990) "[Using the Bootstrap to Estimate Mean Squared Error and Select Smoothing Parameter in Nonparametric Problems](https://core.ac.uk/download/pdf/81131953.pdf)", *JOURNAL OF MULTIVARIATE ANALYSIS*, Vol. 32, pp. 177-203.
+
+
 

@@ -264,6 +264,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#preparing-spatio-temporal-point-process-object-of-stpp" id="toc-preparing-spatio-temporal-point-process-object-of-stpp" class="nav-link" data-scroll-target="#preparing-spatio-temporal-point-process-object-of-stpp">Preparing spatio-temporal point process object of stpp</a></li>
   <li><a href="#computing-spatio-temporal-k-function" id="toc-computing-spatio-temporal-k-function" class="nav-link" data-scroll-target="#computing-spatio-temporal-k-function">Computing spatio-temporal k-function</a></li>
   </ul></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">Reference</a></li>
   </ul>
 </nav>
     </div>
@@ -290,7 +291,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">October 8, 2024</p>
+      <p class="date-modified">October 13, 2024</p>
     </div>
   </div>
     
@@ -3113,7 +3114,7 @@ Evaluation
 </section>
 <section id="computing-stkde-by-day-of-year-improved-method" class="level2">
 <h2 class="anchored" data-anchor-id="computing-stkde-by-day-of-year-improved-method">Computing STKDE by Day of Year: Improved method</h2>
-<p>One of the nice function provides in sparr package is <code>BOOT.spattemp()</code>. It support bandwidth selection for standalone spatiotemporal density/intensity based on bootstrap estimation of the MISE, providing an isotropic scalar spatial bandwidth and a scalar temporal bandwidth.</p>
+<p>One of the nice function provides in <strong>sparr</strong> package is <a href="https://tilmandavies.github.io/sparr/reference/BOOT.spattemp.html"><code>BOOT.spattemp()</code></a>. It support bandwidth selection for standalone spatiotemporal density/intensity based on bootstrap estimation of the MISE, providing an isotropic scalar spatial bandwidth and a scalar temporal bandwidth.</p>
 <p>Code chunk below uses <code>BOOT.spattemp()</code> to determine both the spatial bandwidth and the scalar temporal bandwidth.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1234</span>)</span>
@@ -5648,9 +5649,13 @@ Evaluation
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plotK</span>(kbb_stik)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><img src="img/image1.png" class="img-fluid"></p>
-
-
 </section>
+</section>
+<section id="reference" class="level2">
+<h2 class="anchored" data-anchor-id="reference">Reference</h2>
+<p>Peter Hall (1990) “<a href="https://core.ac.uk/download/pdf/81131953.pdf">Using the Bootstrap to Estimate Mean Squared Error and Select Smoothing Parameter in Nonparametric Problems</a>”, <em>JOURNAL OF MULTIVARIATE ANALYSIS</em>, Vol. 32, pp.&nbsp;177-203.</p>
+
+
 </section>
 
 </main> <!-- /main -->
