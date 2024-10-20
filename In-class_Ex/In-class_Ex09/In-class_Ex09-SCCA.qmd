@@ -1,0 +1,491 @@
+---
+title: "In-class Exercise 9: Geographic Segmentation with Spatial Constrained Cluster Analysis"
+author: "Dr. Kam Tin Seong"
+date: "`r Sys.Date()`"
+format: 
+  revealjs:
+    width: 1600
+    height: 900
+    show-notes: false
+    slide-number: true
+    show-slide-number: all
+execute: 
+  eval: true
+  echo: true
+  message: false
+  freeze: true
+date-format: "DD MMM YYYY"
+---
+
+## Loading R packages
+
+::::: columns
+:::: {.column width="60%"}
+::: {style="font-size: 1.50em"}
+```{r}
+pacman::p_load(spdep, sp, tmap, sf, ClustGeo, 
+               cluster, factoextra, NbClust,
+               tidyverse, GGally)
+```
+:::
+::::
+:::::
+
+## Importing the data
+
+::: {style="font-size: 1.50em"}
+```{r}
+shan_sf <- read_rds("data/rds/shan_sf.rds")
+shan_ict <- read_rds("data/rds/shan_ict.rds")
+shan_sf_cluster <- read_rds("data/rds/shan_sf_cluster.rds")
+```
+
+
+
+```{r}
+#| echo: false
+#| eval: false
+write_rds(shan_sf_cluster, 
+          "data/rds/shan_sf_cluster.rds")
+```
+:::
+
+## Conventional Hierarchical Clustering
+
+::: panel-tabset
+
+### Hierachical clustering
+
+::: {style="font-size: 1.50em"}
+```{r}
+proxmat <- dist(shan_ict, method = 'euclidean')
+hclust_ward <- hclust(proxmat, method = 'ward.D')
+groups <- as.factor(cutree(hclust_ward, k=6))
+```
+:::
+
+### Append to the geospatial data
+
+::: {style="font-size: 1.50em"}
+```{r}
+shan_sf_cluster <- cbind(shan_sf, 
+                         as.matrix(groups)) %>%
+  rename(`CLUSTER`=`as.matrix.groups.`) %>%
+  select(-c(3:4, 7:9)) %>%
+  rename(TS = TS.x)
+```
+:::
+
+### The dendrogram
+
+::: {style="font-size: 1.50em"}
+
+```{r}
+#| fig-height: 7
+#| fig-width: 12
+plot(hclust_ward, cex = 0.6)
+rect.hclust(hclust_ward, k = 6, border = 2:5)
+```
+:::
+
+### Cluster map
+
+::: {style="font-size: 1.50em"}
+```{r}
+#| fig-height: 7
+qtm(shan_sf_cluster, "CLUSTER")
+```
+:::
+:::
+
+## Spatially Constrained Clustering: SKATER method
+
+### Step 1: Computing nearest neighbours
+
+::::: columns
+:::: {.column width="50%"}
+::: {style="font-size: 1.50em"}
+```{r}
+shan.nb <- poly2nb(shan_sf)
+summary(shan.nb)
+```
+:::
+::::
+:::::
+
+------------------------------------------------------------------------
+
+### Step 2: Visualising the neighbours
+
+:::::: columns
+:::: {.column width="50%"}
+::: {style="font-size: 1.50em"}
+```{r}
+#| eval: false
+plot(st_geometry(shan_sf), 
+     border=grey(.5))
+pts <- st_coordinates(st_centroid(shan_sf))
+plot(shan.nb, 
+     pts, 
+     col="blue", 
+     add=TRUE)
+```
+:::
+::::
+
+::: {.column width="50%"}
+```{r}
+#| echo: false
+#| fig-width: 12
+#| fig-height: 13
+plot(st_geometry(shan_sf), 
+     border=grey(.5))
+pts <- st_coordinates(st_centroid(shan_sf))
+plot(shan.nb, 
+     pts, 
+     col="blue", 
+     add=TRUE)
+```
+:::
+::::::
+
+------------------------------------------------------------------------
+
+### Step 3:Computing minimum spanning tree
+
+:::::::::: panel-tabset
+#### Calculating edge costs
+
+::: {style="font-size: 1.50em"}
+```{r}
+lcosts <- nbcosts(shan.nb, shan_ict)
+```
+:::
+
+#### Incorporating these costs into a weights object
+
+::: {style="font-size: 1.50em"}
+```{r}
+shan.w <- nb2listw(shan.nb, 
+                   lcosts, 
+                   style="B")
+summary(shan.w)
+```
+:::
+
+#### Computing MST
+
+::: {style="font-size: 1.50em"}
+```{r}
+shan.mst <- mstree(shan.w)
+```
+:::
+
+#### Visualising MST
+
+:::::: columns
+:::: {.column width="50%"}
+::: {style="font-size: 1.50em"}
+```{r}
+#| eval: false
+plot(st_geometry(shan_sf), 
+     border=gray(.5))
+plot.mst(shan.mst, 
+         pts, 
+         col="blue", 
+         cex.lab=0.7, 
+         cex.circles=0.005, 
+         add=TRUE)
+```
+:::
+::::
+
+::: {.column width="50%"}
+```{r}
+#| echo: false
+#| fig-height: 10
+plot(st_geometry(shan_sf), 
+     border=gray(.5))
+plot.mst(shan.mst, 
+         pts, 
+         col="blue", 
+         cex.lab=0.7, 
+         cex.circles=0.005, 
+         add=TRUE)
+```
+:::
+::::::
+::::::::::
+
+## Computing spatially constrained clusters using SKATER method
+
+::::: panel-tabset
+### The code
+
+::: {style="font-size: 1.50em"}
+```{r}
+skater.clust6 <- skater(edges = shan.mst[,1:2], 
+                 data = shan_ict, 
+                 method = "euclidean", 
+                 ncuts = 5)
+```
+:::
+
+### The skater tree
+
+```{r}
+#| echo: false
+#| fig-width: 12
+#| fig-height: 8
+plot(st_geometry(shan_sf), 
+     border=gray(.5))
+plot(skater.clust6, 
+     pts, 
+     cex.lab=.7,
+     groups.colors=c("red","green","blue", "brown", "pink"),
+     cex.circles=0.005, 
+     add=TRUE)
+```
+
+### The code to plot skater tree
+
+::: {style="font-size: 1.50em"}
+```{r}
+#| eval: false
+plot(st_geometry(shan_sf), 
+     border=gray(.5))
+plot(skater.clust6, 
+     pts, 
+     cex.lab=.7,
+     groups.colors=c("red","green","blue", "brown", "pink"),
+     cex.circles=0.005, 
+     add=TRUE)
+```
+:::
+:::::
+
+## Visualising the clusters in choropleth map
+
+::: panel-tabset
+
+### The plot
+
+```{r}
+#| echo: false
+#| fig-height: 7
+groups_mat <- as.matrix(skater.clust6$groups)
+shan_sf_spatialcluster <- cbind(shan_sf_cluster, as.factor(groups_mat)) %>%
+  rename(`skater_CLUSTER`=`as.factor.groups_mat.`)
+qtm(shan_sf_spatialcluster, "skater_CLUSTER")
+```
+
+### The code
+::: {style="font-size: 1.50em"}
+```{r}
+#| eval: false
+groups_mat <- as.matrix(skater.clust6$groups)
+shan_sf_spatialcluster <- cbind(shan_sf_cluster, as.factor(groups_mat)) %>%
+  rename(`skater_CLUSTER`=`as.factor.groups_mat.`)
+qtm(shan_sf_spatialcluster, "skater_CLUSTER")
+```
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Plotting the cluster maps
+
+:::: panel-tabset
+#### The code
+
+::: {style="font-size: 1.50em"}
+```{r}
+#| eval: false
+hclust.map <- qtm(shan_sf_cluster,
+                  "CLUSTER") + 
+  tm_borders(alpha = 0.5) +
+  tm_layout(legend.position = c(0.8, 0.6))
+
+shclust.map <- qtm(shan_sf_spatialcluster,
+                   "skater_CLUSTER") + 
+  tm_borders(alpha = 0.5) +
+  tm_layout(legend.position = c(0.7, 0.6))
+
+tmap_arrange(hclust.map, shclust.map,
+             asp=NA, ncol=2)
+```
+:::
+
+#### The Plot
+
+```{r}
+#| echo: false
+#| fig-width: 12
+#| fig-height: 8
+hclust.map <- qtm(shan_sf_cluster,
+                  "CLUSTER") + 
+  tm_borders(alpha = 0.5) +
+  tm_layout(legend.position = c(0.8, 0.6))
+
+shclust.map <- qtm(shan_sf_spatialcluster,
+                   "skater_CLUSTER") + 
+  tm_borders(alpha = 0.5) +
+  tm_layout(legend.position = c(0.7, 0.6))
+
+tmap_arrange(hclust.map, shclust.map,
+             asp=NA, ncol=2)
+```
+::::
+
+## Spatially Constrained Clustering: ClustGeo Method
+
+::: panel-tabset
+
+### Computing spatial distance matrix
+
+In the code chunk below, [`st_distance()`](https://r-spatial.github.io/sf/reference/geos_measures.html) of **sf** package is used to compute the distance matrix.
+
+::: {style="font-size: 1.50em"}
+```{r}
+dist <- st_distance(shan_sf, shan_sf)
+distmat <- as.dist(dist)
+```
+:::
+
+### The cluster graphs 
+
+```{r}
+#| echo: false
+cr <- choicealpha(proxmat, distmat, 
+                  range.alpha = seq(0, 1, 0.1), 
+                  K=6, graph = TRUE)
+```
+
+### The code
+::: {style="font-size: 1.50em"}
+
+```{r}
+#| eval: false
+cr <- choicealpha(proxmat, distmat, 
+                  range.alpha = seq(0, 1, 0.1), 
+                  K=6, graph = TRUE)
+```
+:::
+
+### Saving clustGeo output 
+
+::: {style="font-size: 1.50em"}
+```{r}
+clustG <- hclustgeo(proxmat, distmat, alpha = 0.2)
+groups <- as.factor(cutree(clustG, k=6))
+shan_sf_clustGeo <- cbind(shan_sf, 
+                          as.matrix(groups)) %>%
+  rename(`clustGeo` = `as.matrix.groups.`)
+```
+:::
+:::
+
+---
+
+### Visualising the clustGeo map
+
+::: {style="font-size: 1.50em"}
+```{r}
+#| fig-height: 8
+qtm(shan_sf_clustGeo, "clustGeo")
+```
+:::
+
+------------------------------------------------------------------------
+
+### Comparing cluster maps
+
+::: panel-tabset
+#### The code
+
+::: {style="font-size: 1.50em"}
+```{r}
+#| eval: false
+hclust.map <- qtm(shan_sf_cluster,
+                  "CLUSTER") + 
+  tm_borders(alpha = 0.5) +
+  tm_layout(legend.position = c(0.8, 0.6))
+
+shclust.map <- qtm(shan_sf_spatialcluster,
+                   "skater_CLUSTER") + 
+  tm_borders(alpha = 0.5) +
+  tm_layout(legend.position = c(0.7, 0.6))
+
+clustGeo.map <- qtm(shan_sf_clustGeo,
+                   "clustGeo") + 
+  tm_borders(alpha = 0.5) +
+  tm_layout(legend.position = c(0.7, 0.6))
+
+tmap_arrange(hclust.map, shclust.map, 
+             clustGeo.map,
+             asp=NA, ncol=3)
+```
+:::
+
+#### The plot
+
+```{r}
+#| echo: false
+#| fig-width: 16
+#| fig-height: 6
+hclust.map <- qtm(shan_sf_cluster,
+                  "CLUSTER") + 
+  tm_borders(alpha = 0.5) +
+  tm_layout(legend.position = c(0.8, 0.6))
+
+shclust.map <- qtm(shan_sf_spatialcluster,
+                   "skater_CLUSTER") + 
+  tm_borders(alpha = 0.5) +
+  tm_layout(legend.position = c(0.7, 0.6))
+
+clustGeo.map <- qtm(shan_sf_clustGeo,
+                   "clustGeo") + 
+  tm_borders(alpha = 0.5) +
+  tm_layout(legend.position = c(0.7, 0.6))
+
+tmap_arrange(hclust.map, shclust.map, 
+             clustGeo.map,
+             asp=NA, ncol=3)
+```
+:::
+
+## Characterising the clusters
+
+::: panel-tabset
+#### The plot
+
+```{r}
+#| echo: false
+#| fig-width: 20
+#| fig-height: 8
+ggparcoord(data = shan_sf_clustGeo, 
+           columns = c(17:21), 
+           scale = "globalminmax",
+           alphaLines = 0.2,
+           boxplot = TRUE, 
+           title = "Multiple Parallel Coordinates Plots of ICT Variables by Cluster") +
+  facet_grid(~ clustGeo) + 
+  theme(axis.text.x = element_text(angle = 30))
+```
+
+#### The code
+
+::: {style="font-size: 1.50em"}
+```{r}
+#| eval: false
+ggparcoord(data = shan_sf_clustGeo, 
+           columns = c(17:21), 
+           scale = "globalminmax",
+           alphaLines = 0.2,
+           boxplot = TRUE, 
+           title = "Multiple Parallel Coordinates Plots of ICT Variables by Cluster") +
+  facet_grid(~ clustGeo) + 
+  theme(axis.text.x = element_text(angle = 30))
+```
+:::
+:::
