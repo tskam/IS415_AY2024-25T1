@@ -263,6 +263,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#preparing-spatio-temporal-point-process-object-of-stpp" id="toc-preparing-spatio-temporal-point-process-object-of-stpp" class="nav-link" data-scroll-target="#preparing-spatio-temporal-point-process-object-of-stpp">Preparing spatio-temporal point process object of stpp</a></li>
   <li><a href="#computing-spatio-temporal-k-function" id="toc-computing-spatio-temporal-k-function" class="nav-link" data-scroll-target="#computing-spatio-temporal-k-function">Computing spatio-temporal k-function</a></li>
+  <li><a href="#guide-to-interpret-the-plot" id="toc-guide-to-interpret-the-plot" class="nav-link" data-scroll-target="#guide-to-interpret-the-plot">Guide to interpret the plot</a></li>
   </ul></li>
   <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">Reference</a></li>
   </ul>
@@ -291,7 +292,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">October 13, 2024</p>
+      <p class="date-modified">October 14, 2024</p>
     </div>
   </div>
     
@@ -5649,6 +5650,14 @@ Evaluation
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plotK</span>(kbb_stik)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><img src="img/image1.png" class="img-fluid"></p>
+</section>
+<section id="guide-to-interpret-the-plot" class="level3">
+<h3 class="anchored" data-anchor-id="guide-to-interpret-the-plot">Guide to interpret the plot</h3>
+<ul>
+<li>If the contours show high values for small values of uu and vv, it suggests clustering at short spatial and temporal distances, meaning events occur close to each other in both space and time.</li>
+<li>If the contours are flat or show low values, it indicates a more random distribution or a lack of significant clustering at those distances.</li>
+</ul>
+<p>The spatial and temporal extent of clustering can be understood by observing how rapidly the contours increase or decrease as we move along the axes. In the plot above, we can see clustering at specific distances by observing the spacing and values of the contour lines.</p>
 </section>
 </section>
 <section id="reference" class="level2">

@@ -381,10 +381,13 @@ plotK(kbb_stik)
 
 ![](img/image1.png)
 
+### Guide to interpret the plot
+
+-   If the contours show high values for small values of uu and vv, it suggests clustering at short spatial and temporal distances, meaning events occur close to each other in both space and time.
+-   If the contours are flat or show low values, it indicates a more random distribution or a lack of significant clustering at those distances.
+
+The spatial and temporal extent of clustering can be understood by observing how rapidly the contours increase or decrease as we move along the axes. In the plot above, we can see clustering at specific distances by observing the spacing and values of the contour lines.
 
 ## Reference
 
 Peter Hall (1990) "[Using the Bootstrap to Estimate Mean Squared Error and Select Smoothing Parameter in Nonparametric Problems](https://core.ac.uk/download/pdf/81131953.pdf)", *JOURNAL OF MULTIVARIATE ANALYSIS*, Vol. 32, pp. 177-203.
-
-
-
