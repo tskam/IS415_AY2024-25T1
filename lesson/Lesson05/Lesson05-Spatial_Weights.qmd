@@ -51,7 +51,8 @@ A kind of data that is very similar to an ordinary data. The only difference is 
 
 The dependency ratio values by planning subzone are normally distributed.
 
-```{r echo=FALSE, eval=TRUE, fig.width=8, fig.height=6}
+```{r}
+#| eval: false
 gghistostats(data = geodemog, 
              x = DEPENDENCY,
              xlab = "Dependency ratio",

@@ -19,17 +19,17 @@ date-format: "DD MMM YYYY"
 
 ## Loading R packages
 
-::::: columns
-:::: {.column width="60%"}
+::: columns
+::: {.column width="60%"}
 ::: {style="font-size: 1.50em"}
 ```{r}
-pacman::p_load(spdep, sp, tmap, sf, ClustGeo, 
+pacman::p_load(spdep, tmap, sf, ClustGeo, 
                cluster, factoextra, NbClust,
                tidyverse, GGally)
 ```
 :::
-::::
-:::::
+:::
+:::
 
 ## Importing the data
 
@@ -39,8 +39,6 @@ shan_sf <- read_rds("data/rds/shan_sf.rds")
 shan_ict <- read_rds("data/rds/shan_ict.rds")
 shan_sf_cluster <- read_rds("data/rds/shan_sf_cluster.rds")
 ```
-
-
 
 ```{r}
 #| echo: false
@@ -53,7 +51,6 @@ write_rds(shan_sf_cluster,
 ## Conventional Hierarchical Clustering
 
 ::: panel-tabset
-
 ### Hierachical clustering
 
 ::: {style="font-size: 1.50em"}
@@ -79,7 +76,6 @@ shan_sf_cluster <- cbind(shan_sf,
 ### The dendrogram
 
 ::: {style="font-size: 1.50em"}
-
 ```{r}
 #| fig-height: 7
 #| fig-width: 12
@@ -99,26 +95,21 @@ qtm(shan_sf_cluster, "CLUSTER")
 :::
 
 ## Spatially Constrained Clustering: SKATER method
-
 ### Step 1: Computing nearest neighbours
 
-::::: columns
-:::: {.column width="50%"}
-::: {style="font-size: 1.50em"}
+
 ```{r}
 shan.nb <- poly2nb(shan_sf)
 summary(shan.nb)
 ```
-:::
-::::
-:::::
+
 
 ------------------------------------------------------------------------
 
 ### Step 2: Visualising the neighbours
 
-:::::: columns
-:::: {.column width="50%"}
+::: columns
+::: {.column width="50%"}
 ::: {style="font-size: 1.50em"}
 ```{r}
 #| eval: false
@@ -131,7 +122,7 @@ plot(shan.nb,
      add=TRUE)
 ```
 :::
-::::
+:::
 
 ::: {.column width="50%"}
 ```{r}
@@ -147,13 +138,13 @@ plot(shan.nb,
      add=TRUE)
 ```
 :::
-::::::
+:::
 
 ------------------------------------------------------------------------
 
 ### Step 3:Computing minimum spanning tree
 
-:::::::::: panel-tabset
+::: panel-tabset
 #### Calculating edge costs
 
 ::: {style="font-size: 1.50em"}
@@ -183,8 +174,8 @@ shan.mst <- mstree(shan.w)
 
 #### Visualising MST
 
-:::::: columns
-:::: {.column width="50%"}
+::: columns
+::: {.column width="50%"}
 ::: {style="font-size: 1.50em"}
 ```{r}
 #| eval: false
@@ -198,7 +189,7 @@ plot.mst(shan.mst,
          add=TRUE)
 ```
 :::
-::::
+:::
 
 ::: {.column width="50%"}
 ```{r}
@@ -214,12 +205,12 @@ plot.mst(shan.mst,
          add=TRUE)
 ```
 :::
-::::::
-::::::::::
+:::
+:::
 
 ## Computing spatially constrained clusters using SKATER method
 
-::::: panel-tabset
+::: panel-tabset
 ### The code
 
 ::: {style="font-size: 1.50em"}
@@ -262,12 +253,11 @@ plot(skater.clust6,
      add=TRUE)
 ```
 :::
-:::::
+:::
 
 ## Visualising the clusters in choropleth map
 
 ::: panel-tabset
-
 ### The plot
 
 ```{r}
@@ -280,6 +270,7 @@ qtm(shan_sf_spatialcluster, "skater_CLUSTER")
 ```
 
 ### The code
+
 ::: {style="font-size: 1.50em"}
 ```{r}
 #| eval: false
@@ -295,7 +286,7 @@ qtm(shan_sf_spatialcluster, "skater_CLUSTER")
 
 ### Plotting the cluster maps
 
-:::: panel-tabset
+::: panel-tabset
 #### The code
 
 ::: {style="font-size: 1.50em"}
@@ -335,12 +326,11 @@ shclust.map <- qtm(shan_sf_spatialcluster,
 tmap_arrange(hclust.map, shclust.map,
              asp=NA, ncol=2)
 ```
-::::
+:::
 
 ## Spatially Constrained Clustering: ClustGeo Method
 
 ::: panel-tabset
-
 ### Computing spatial distance matrix
 
 In the code chunk below, [`st_distance()`](https://r-spatial.github.io/sf/reference/geos_measures.html) of **sf** package is used to compute the distance matrix.
@@ -352,7 +342,7 @@ distmat <- as.dist(dist)
 ```
 :::
 
-### The cluster graphs 
+### The cluster graphs
 
 ```{r}
 #| echo: false
@@ -362,8 +352,8 @@ cr <- choicealpha(proxmat, distmat,
 ```
 
 ### The code
-::: {style="font-size: 1.50em"}
 
+::: {style="font-size: 1.50em"}
 ```{r}
 #| eval: false
 cr <- choicealpha(proxmat, distmat, 
@@ -372,7 +362,7 @@ cr <- choicealpha(proxmat, distmat,
 ```
 :::
 
-### Saving clustGeo output 
+### Saving clustGeo output
 
 ::: {style="font-size: 1.50em"}
 ```{r}
@@ -385,7 +375,7 @@ shan_sf_clustGeo <- cbind(shan_sf,
 :::
 :::
 
----
+------------------------------------------------------------------------
 
 ### Visualising the clustGeo map
 
