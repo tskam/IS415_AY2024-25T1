@@ -18,7 +18,7 @@ editor: visual
 
 -   [Lesson 12](../lesson/Lesson12/Lesson12-GWRF.html) slides.
 
--   Handout of [Hands-on Exercise 12](https://r4gdsa.netlify.app/chap14.html).
+-   Handout of [Hands-on Exercise 12](https://r4gdsa.netlify.app/chap14.html), excluding Section 14.8.
 
 ### Self-reading Before Meet-up
 
