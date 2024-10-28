@@ -1,0 +1,17 @@
+{
+  "hash": "f2bb03be7545719ccf92329750f706e1",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Calibrating Hedonic Pricing Model for Private Highrise Property with GWR Method\"\ndate: \"8 December 2022\"\ndate-modified: \"2024-10-27\"\nformat: html\nexecute: \n  echo: true\n  eval: true\n  warning: false\n  message: false\n  freeze: true\n  fig-retine: 3\n---\n\n\n\n## Getting Started\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\npacman::p_load(olsrr, ggstatsplot, sf,\n               spdep, GWmodel, tmap,\n               tidyverse, performance,\n               see, sfdep)\n```\n:::\n\n\n\n## Importing the data\n\n### URA Master Plan 2014 planning subzone boundary\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\ncondo_resale <- read_csv(\"data/aspatial/Condo_resale_2015.csv\")\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nmpsz <- read_rds(\"data/rds/mpsz.rds\")\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\ncondo_resale_sf <- read_rds(\n  \"data/rds/condo_resale_sf.rds\")\n```\n:::\n\n\n\n## \n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nggplot(data = condo_resale_sf,\n       aes(x = SELLING_PRICE)) +\n  geom_histogram()\n```\n\n::: {.cell-output-display}\n![](In-class_Ex10-gwr_files/figure-html/unnamed-chunk-5-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "In-class_Ex10-gwr_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

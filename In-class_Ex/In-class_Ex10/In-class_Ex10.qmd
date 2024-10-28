@@ -1,0 +1,585 @@
+---
+title: "In-class Exercise 10: Calibrating Hedonic Pricing Model for Private Highrise Property with MLR methods"
+author: "Dr. Kam Tin Seong<br/>Assoc. Professor of Information Systems(Practice)"
+institute: "School of Computing and Information Systems,<br/>Singapore Management University"
+date: "last-modified"
+format: 
+  revealjs:
+    pdf: default
+    width: 1600
+    height: 900
+    show-notes: false
+    slide-number: true
+    show-slide-number: all
+execute: 
+  eval: true
+  echo: true
+  warning: false
+  freeze: true
+editor: visual
+---
+
+## Getting Started
+
+::: {style="font-size: 1.5em"}
+```{r}
+pacman::p_load(olsrr, ggstatsplot, sf, 
+               tmap, tidyverse, gtsummary,
+               performance, see, sfdep)
+```
+:::
+
+## Importing the data
+
+::: panel-tabset
+
+### The task
+
+Use appropriate tidyverse and sf functions to import *Condo_resale_2015.csv*, *mpsz.rds* and *condo_resale_sf.rds* into RStudio environment.
+
+### The code chunk
+::: {style="font-size: 1.5em"}
+```{r}
+condo_resale <- read_csv("data/aspatial/Condo_resale_2015.csv")
+
+mpsz <- read_rds("data/rds/mpsz.rds")
+
+condo_resale_sf <- read_rds(
+  "data/rds/condo_resale_sf.rds")
+```
+:::
+:::
+
+
+## Correlation Analysis - ggstatsplot methods
+
+::: panel-tabset
+
+### The code chunk
+Correlation matrix is an effective graphical method for checking if there are pair independent variables with high correlation. In the code chunk below, [`ggcorrmat()`](https://indrajeetpatil.github.io/ggstatsplot/reference/ggcorrmat.html) of [**ggstatsplot**](https://indrajeetpatil.github.io/ggstatsplot/index.html) is used to plot the correlation matrix.
+
+::: {style="font-size: 1.5em"}
+```{r}
+#| eval: false
+ggcorrmat(condo_resale[, 5:23])
+```
+:::
+
+### The plot
+
+```{r}
+#| echo: false
+#| fig-width: 13
+#| fig-height: 8
+ggcorrmat(condo_resale[, 5:23])
+```
+
+:::
+
+## Building a Hedonic Pricing Model by using Multiple Linear Regression Method
+
+::: panel-tabset
+
+### The code chunk
+::: {style="font-size: 1.5em"}
+```{r}
+#| eval: false
+condo_mlr <- lm(formula = SELLING_PRICE ~ AREA_SQM + 
+                  AGE	+ PROX_CBD + PROX_CHILDCARE + 
+                  PROX_ELDERLYCARE + PROX_URA_GROWTH_AREA + 
+                  PROX_HAWKER_MARKET	+ PROX_KINDERGARTEN	+ 
+                  PROX_MRT	+ PROX_PARK	+ PROX_PRIMARY_SCH + 
+                  PROX_TOP_PRIMARY_SCH + PROX_SHOPPING_MALL	+ 
+                  PROX_SUPERMARKET + PROX_BUS_STOP + 
+                  NO_Of_UNITS + FAMILY_FRIENDLY + 
+                  FREEHOLD + LEASEHOLD_99YR, 
+                data=condo_resale_sf)
+summary(condo_mlr)
+```
+:::
+
+### The output
+
+::: {style="font-size: 1.35em"}
+```{r}
+#| echo: false
+condo_mlr <- lm(formula = SELLING_PRICE ~ AREA_SQM + 
+                  AGE	+ PROX_CBD + PROX_CHILDCARE + 
+                  PROX_ELDERLYCARE + PROX_URA_GROWTH_AREA + 
+                  PROX_HAWKER_MARKET	+ PROX_KINDERGARTEN	+ 
+                  PROX_MRT	+ PROX_PARK	+ PROX_PRIMARY_SCH + 
+                  PROX_TOP_PRIMARY_SCH + PROX_SHOPPING_MALL	+ 
+                  PROX_SUPERMARKET + PROX_BUS_STOP + 
+                  NO_Of_UNITS + FAMILY_FRIENDLY + 
+                  FREEHOLD + LEASEHOLD_99YR, 
+                data=condo_resale_sf)
+summary(condo_mlr)
+```
+:::
+:::
+
+## Introducing **olsrr** package
+
+[**olsrr**](https://olsrr.rsquaredacademy.com/) provides a collection of very useful methods for building better multiple linear regression models:
+
+-   **comprehensive regression output**
+-   residual diagnostics
+-   measures of influence
+-   heteroskedasticity tests
+-   model fit assessment
+-   variable contribution assessment
+-   **variable selection procedures**
+
+---
+
+### Generating tidy linear regression report
+
+::: {style="font-size: 1.5em"}
+```{r}
+ols_regress(condo_mlr)
+```
+:::
+
+---
+
+### Variable selection
+
+::: panel-tabset
+
+#### The methods
+
+Stepwise regression is the step-by-step iterative construction of a regression model that involves the selection of independent variables to be used in a final model. It involves adding or removing potential explanatory variables in succession and testing for statistical significance after each iteration. 
+
+-   [`ols_step_forward_p`](https://olsrr.rsquaredacademy.com/reference/ols_step_forward_p)
+-   [`ols_step_backward_p`](https://olsrr.rsquaredacademy.com/reference/ols_step_backward_p)
+-   [`ols_step_both_p`](https://olsrr.rsquaredacademy.com/reference/ols_step_both_p)
+
+#### The code
+
+::: {style="font-size: 1.5em"}
+```{r}
+#| eval: false
+condo_fw_mlr <- ols_step_forward_p(
+  condo_mlr,
+  p_val = 0.05,
+  details = FALSE)
+condo_fw_mlr
+```
+:::
+
+#### The output
+
+::: {style="font-size: 1.1em"}
+```{r}
+#| echo: false
+condo_fw_mlr <- ols_step_forward_p(
+  condo_mlr,
+  p_val = 0.05,
+  details = FALSE)
+condo_fw_mlr
+```
+:::
+
+#### The plot
+::: {style="font-size: 1.5em"}
+```{r}
+#| fig-width: 12
+#| fig-height: 10
+plot(condo_fw_mlr)
+```
+:::
+:::
+
+---
+
+### DIY
+
+::: panel-tabset
+#### The task
+Repeat the step in previous slides to calibrate:
+
+-   a backward stepwise multiple linear regression, and 
+-   a stepwise multiple linear regression.
+
+#### The code: Backward stepwise
+
+::: {style="font-size: 1.5em"}
+```{r}
+#| eval: false
+condo_bw_mlr <- ols_step_backward_p(
+  condo_mlr,
+  p_val = 0.05,
+  details = FALSE)
+condo_bw_mlr
+```
+:::
+
+#### The output: Backward stepwise
+
+::: {style="font-size: 1.1em"}
+```{r}
+#| echo: false
+condo_bw_mlr <- ols_step_backward_p(
+  condo_mlr,
+  p_val = 0.05,
+  details = FALSE)
+condo_bw_mlr
+```
+:::
+
+#### The code: Stepwise 
+
+::: {style="font-size: 1.5em"}
+```{r}
+#| eval: false
+condo_sb_mlr <- ols_step_both_p(
+  condo_mlr,
+  p_val = 0.05,
+  details = FALSE)
+condo_sb_mlr
+```
+:::
+
+#### The output: Stepwise 
+
+::: {style="font-size: 1.1em"}
+```{r}
+#| echo: false
+condo_sb_mlr <- ols_step_both_p(
+  condo_mlr,
+  p_val = 0.05,
+  details = FALSE)
+condo_sb_mlr
+```
+:::
+:::
+
+---
+
+### Model selection
+
+::: panel-tabset
+
+#### Comparing performance
+In the code chunk below, [`compare_performance()`](https://easystats.github.io/performance/reference/compare_performance.html) of **performance** package is used to compare the performance of the models.
+
+::: {style="font-size: 1.5em"}
+```{r}
+metric <- compare_performance(condo_mlr, 
+                    condo_fw_mlr$model,
+                    condo_bw_mlr$model,
+                    condo_sb_mlr$model)
+```
+:::
+
+In the code chunk below, `gsub()` is used to tidy the test value in *Name* field.
+
+::: {style="font-size: 1.45em"}
+```{r}
+metric$Name <- gsub(".*\\\\([a-zA-Z0-9_]+)\\\\, \\\\model\\\\.*", "\\1", metric$Name)
+```
+:::
+
+#### Visual comparison
+
+::: columns
+::: {.column width="40%"}
+In the code chunk below, `plot()` of see package is used to plot a radar chart to compare the performance measures of the models.  
+
+::: {style="font-size: 1.5em"}
+```{r}
+#| eval: false
+plot(metric)
+```
+:::
+
+::: callout-note
+The different indices are normalized and larger values indicate better model performance. Hence, points closer to the center indicate worse fit indices.
+:::
+:::
+
+::: {.column width="60%"}
+
+```{r}
+#| fig-width: 10
+#| fig-height: 8
+#| echo: false
+plot(metric)
+```
+:::
+:::
+:::
+
+---
+
+### Visualising model parameters
+
+```{r}
+#| fig-height: 12
+ggcoefstats(condo_sb_mlr$model,
+            sort = "ascending")
+```
+
+---
+
+### Checking for multicollinearity
+
+::: panel-tabset
+#### The concept
+-   **Multicollinearity** is a statistical concept where two or more independent variables in a regression model are correlated.
+-   A statistical technique called the **variance inflation factor (VIF)** can detect and measure the amount of collinearity in a multiple regression model. 
+-   VIF measures how much the variance of the estimated regression coefficients is inflated as compared to when the predictor variables are not linearly related. 
+
+-   Interpretation of VIF
+
+    -   < 5: low multicollinearity
+    -   5-10: moderate multicollinearity
+    -   \> 10: strong multicollineariy
+
+#### VIF
+
+::: {style="font-size: 1.5em"}
+```{r}
+check_collinearity(condo_sb_mlr$model)
+```
+:::
+
+#### Visualising VIF
+
+::: {style="font-size: 1.5em"}
+```{r}
+#| fig-width: 12
+#| fig-height: 6
+plot(check_collinearity(condo_sb_mlr$model)) +
+  theme(axis.text.x = element_text(
+    angle = 45, hjust = 1))
+```
+:::
+:::
+
+---
+
+### Linearity assumption test
+
+::: panel-tabset
+
+### The test
+In multiple linear regression, it is important for us to test the assumption that linearity and additivity of the relationship between dependent and independent variables.
+
+In the code chunk below, the [`check_model()`](https://easystats.github.io/performance/reference/check_model.html) of **performance** package is used to perform linearity assumption test.
+
+::: {style="font-size: 1.5em"}
+```{r}
+#| eval: false
+out <- plot(check_model(condo_sb_mlr$model, 
+                        panel = FALSE))
+out[[2]]
+```
+:::
+
+### Statistical interpretation
+
+```{r}
+#| echo: false
+out <- plot(check_model(condo_sb_mlr$model, 
+                        panel = FALSE))
+out[[2]]
+```
+
+::: {style="font-size: 0.8em"}
+Figure above reveals that most of the data points are scattered around the 0 line, hence we can safely conclude that the relationships between the dependent variable and independent variables are linear.
+:::
+:::
+
+---
+
+### Normality assumption test
+
+::: panel-tabset
+
+#### The concept
+Multiple Linear Regression analysis assumes that **the residuals (the differences between observed and predicted values) are normally distributed**.  This assumption can be assessed by using statistical graphics, or through statistical tests such as the Kolmogorov-Smirnov test.
+
+#### Visual test
+::: {style="font-size: 0.8em"}
+Code chunk below uses [`check_normality`](https://easystats.github.io/performance/reference/check_normality.html) of *performance* package to perform normality assumption test.
+:::
+::: {style="font-size: 1.5em"}
+```{r}
+plot(check_normality(condo_sb_mlr$model))
+```
+:::
+
+::: {style="font-size: 0.8em"}
+Figure above reveals that the residual of the multiple linear regression model (i.e. condo.mlr1) is resemble normal distribution.
+:::
+:::
+
+---
+
+### Checking of outliers
+
+::: panel-tabset
+
+#### The code
+
+::: {style="font-size: 1.5em"}
+```{r}
+outliers <- check_outliers(condo_sb_mlr$model,
+                           method = "cook")
+outliers
+```
+:::
+
+::: callout-note
+Read [Checking outliers with **performance**](https://easystats.github.io/performance/articles/check_outliers.html?q=outlier#multivariate-outliers) for more details.
+:::
+
+
+#### The plot
+
+::: {style="font-size: 1.5em"}
+```{r}
+plot(check_outliers(condo_sb_mlr$model,
+                           method = "cook"))
+```
+:::
+:::
+
+
+## Spatial Non-stationary Assumption
+
+The hedonic model we try to build are using geographically referenced attributes, hence it is also important for us to visual the residual of the hedonic pricing model.
+
+-   Ho: The residuals are randomly distributed (also known as spatial stationary) 
+-   H1: The residuals are spatially non-stationary
+
+---
+
+### Visualising spatial non-stationary
+
+::: panel-tabset
+
+#### Step 1
+
+First, we will export the residual of the hedonic pricing model and save it as a data frame.
+
+::: {style="font-size: 1.5em"}
+```{r}
+mlr_output <- as.data.frame(condo_fw_mlr$model$residuals) %>%
+  rename(`FW_MLR_RES` = `condo_fw_mlr$model$residuals`)
+```
+:::
+
+#### Step 2
+
+Next, we will join the newly created data frame with *condo_resale_sf* object.
+
+::: {style="font-size: 1.5em"}
+```{r}
+condo_resale_sf <- cbind(condo_resale_sf, 
+                        mlr_output$FW_MLR_RES) %>%
+  rename(`MLR_RES` = `mlr_output.FW_MLR_RES`)
+```
+:::
+
+#### Step 3
+
+Next, we will use **tmap** package to display the distribution of the residuals on an interactive map.
+
+The code churn below will turn on the interactive mode of tmap.
+
+::: {style="font-size: 1.5em"}
+```{r}
+#| eval: false
+tmap_mode("view")
+tm_shape(mpsz)+
+  tmap_options(check.and.fix = TRUE) +
+  tm_polygons(alpha = 0.4) +
+tm_shape(condo_resale_sf) +  
+  tm_dots(col = "MLR_RES",
+          alpha = 0.6,
+          style="quantile") 
+tmap_mode("plot")
+```
+:::
+
+#### The residual map
+
+Figure below reveals that there is sign of spatial autocorrelation.
+
+::: {style="font-size: 1.5em"}
+```{r}
+#| echo: false
+#| fig-width: 12
+#| fig-height: 7
+tmap_mode("view")
+tm_shape(mpsz)+
+  tmap_options(check.and.fix = TRUE) +
+  tm_polygons(alpha = 0.4) +
+tm_shape(condo_resale_sf) +  
+  tm_dots(col = "MLR_RES",
+          alpha = 0.6,
+          style="quantile") +
+   tm_view(set.zoom.limits = c(12,14))
+tmap_mode("plot")
+```
+:::
+:::
+
+---
+
+### Spatial stationary test
+
+To proof that our observation is indeed true, the Moran's I test will be performed
+
+::: panel-tabset
+
+#### Step 1
+First, we will compute the distance-based weight matrix by using [`dnearneigh()`](https://r-spatial.github.io/spdep/reference/dnearneigh.html) function of **spdep**.
+
+::: {style="font-size: 1.5em"}
+```{r}
+condo_resale_sf <- condo_resale_sf %>%
+  mutate(nb = st_knn(geometry, k=6,
+                     longlat = FALSE),
+         wt = st_weights(nb,
+                         style = "W"),
+         .before = 1)
+```
+:::
+
+#### Step 2
+Next, [`global_moran_perm()`](https://sfdep.josiahparry.com/reference/global_moran_perm) of sfdep is used to perform global Moran permutation test.
+
+::: {style="font-size: 1.5em"}
+```{r}
+#| eval: false
+global_moran_perm(condo_resale_sf$MLR_RES, 
+                  condo_resale_sf$nb, 
+                  condo_resale_sf$wt, 
+                  alternative = "two.sided", 
+                  nsim = 99)
+```
+:::
+
+#### The output
+
+::: {style="font-size: 1.5em"}
+```{r}
+#| echo: false
+global_moran_perm(condo_resale_sf$MLR_RES, 
+                  condo_resale_sf$nb, 
+                  condo_resale_sf$wt, 
+                  alternative = "two.sided", 
+                  nsim = 99)
+```
+:::
+
+#### Statistical interpretation
+
+The Global Moran's I test for residual spatial autocorrelation shows that **it's p-value is less than the alpha value of 0.05**. Hence, we **reject the null hypothesis** that the residuals are randomly distributed.
+
+Since the Observed Global Moran I = 0.25586 which is greater than 0, we can **infer** that the residuals resemble **cluster distribution**.
+
+:::
